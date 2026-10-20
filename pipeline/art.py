@@ -800,16 +800,24 @@ def title_card(story_title, subtitle_text, time="night"):
 
 
 def thumbnail(story_title, big_word, setting, time, weather, props, chars):
-    bg = background(setting, time, weather, props, seed=21).resize((1408, 792), Image.LANCZOS)
+    bg = background(setting, time, weather, [], seed=21, show_moon=(time == "night")).resize((1408, 792), Image.LANCZOS)
     bg = bg.crop((64, 36, 64 + 1280, 36 + 720))
     c = Canvas(1280, 720)
     c.paste(bg, 0, 0)
     c.rect(0, 0, 1280, 720, hexc("#FFFFFF", 30))
-    xs = [700, 960] if len(chars) > 1 else [880]
+    xs = [720, 960] if len(chars) > 1 else [880]
     for name, x in zip(chars[:2], xs):
         im = CHARACTERS[name]()
-        im = im.resize((int(im.width * 0.95), int(im.height * 0.95)), Image.LANCZOS)
+        im = im.resize((int(im.width * 0.9), int(im.height * 0.9)), Image.LANCZOS)
         c.paste(im, x - im.width / 2, 720 - im.height + 40)
+    spots = [(1160, 600), (1160, 380), (560, 610)]
+    for p, (px, py) in zip(props, spots):
+        name = p["name"] if isinstance(p, dict) else p
+        if name in ("bed", "table", "lamp", "puddle", "umbrella_over"):
+            continue
+        pc = Canvas(420, 420)
+        prop(pc, name, 210, 210, time)
+        c.paste(pc.final(), px - 210, py - 210)
     words = story_title.split()
     # title text, 2–3 lines, big and outlined
     f = font(86, "Bold")
@@ -830,5 +838,6 @@ def thumbnail(story_title, big_word, setting, time, weather, props, chars):
     c.text(81, y + 30, big_word, font(56, "Bold"), hexc("#FFFFFF"))
     c.rect(40, 600, 430, 685, hexc("#2B2350"), r=24)
     c.text(70, 615, "Learn English!", font(46, "SemiBold"), hexc("#FFE680"))
-    moon(c, 1200, 80, 42)
+    if time == "night":
+        moon(c, 1200, 80, 42)
     return c.final().convert("RGB")
