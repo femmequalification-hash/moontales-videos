@@ -151,7 +151,8 @@ def render_segment(i, seg, work, voice, title_img=None, recap_words=None):
     elif recap_words is not None:
         bg = recap_board(recap_words, seg)
     else:
-        bg = art.background(setting, time_, weather, seg.get("props", []), seed=i * 7 + 1)
+        bg = art.background(setting, time_, weather, seg.get("props", []), seed=i * 7 + 1,
+                            board=seg.get("board"))
     n_bg = add_img(bg, "bg.png")
     direction = 1 if i % 2 == 0 else -1
     filters.append(f"[{n_bg}:v]crop=1920:1080:x='96+{direction}*(70*t/{total:.3f}-35)':y=54,setsar=1[v0]")

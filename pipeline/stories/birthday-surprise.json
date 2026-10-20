@@ -1,0 +1,77 @@
+{
+  "slug": "birthday-surprise",
+  "story_title": "Lina and Adams and Milo's Birthday Surprise",
+  "lesson": "Learn birthday party words in English!",
+  "title": "Milo's Birthday Surprise 🎂🎈 | Learn Party Words in English for Kids | Moon Tales Kids",
+  "thumbnail_title": "Milo's Birthday Surprise",
+  "thumbnail_word": "Party words",
+  "thumbnail_scene": {"setting": "garden", "time": "day", "weather": "sunny", "props": [{"name": "balloon", "x": 1350, "y": 450}, {"name": "gift", "x": 1700, "y": 960}], "chars": ["lina", "adams"]},
+  "description": "Today is Milo the cat's birthday! Lina and Adams plan a big surprise party. 🎂🎈🎁\nIn this English story for kids, children learn 7 new words: birthday, surprise, balloon, gift, cake, candle and party. Listen, repeat, and learn English with Lina, Adams and Milo the cat.\n\n📚 New words in this story:\n🎉 birthday — عيد ميلاد — anniversaire\n😲 surprise — مفاجأة — surprise\n🎈 balloon — بالون — ballon de baudruche\n🎁 gift — هدية — cadeau\n🎂 cake — كعكة — gâteau\n🕯️ candle — شمعة — bougie\n🥳 party — حفلة — fête\n\n👨‍👩‍👧 For parents: sing Happy Birthday together and practise the new words! Perfect for ages 3 to 8 and for children learning English as a second language.\n\n🇲🇦 قصة باللغة الإنجليزية للأطفال لتعلم كلمات عيد الميلاد.\n🇫🇷 Une histoire en anglais pour enfants pour apprendre les mots de l'anniversaire.\n\n🌙 Subscribe to Moon Tales Kids for new English stories every day!\n\n#EnglishForKids #KidsStories #LearnEnglish #MoonTalesKids",
+  "tags": ["english stories for kids", "birthday words for kids", "birthday story for kids", "learn english for kids", "party words in english", "Lina and Adams", "Moon Tales Kids", "ESL kids", "قصص اطفال بالانجليزي", "عيد ميلاد بالانجليزي للاطفال", "تعلم الانجليزية للاطفال", "قصص للاطفال", "histoire en anglais pour enfant", "anniversaire en anglais", "apprendre l'anglais enfant", "dessin animé en anglais"],
+  "scenes": [
+    {"setting": "kitchen", "time": "day", "weather": "sunny", "chars": ["lina", "adams"], "word": "birthday", "lines": [
+      {"text": "Lina and Adams are whispering in the kitchen. Shh!"},
+      {"who": "lina", "text": "Adams, do you know what day it is today?"},
+      {"who": "adams", "text": "Yes! It is Milo's birthday! He is two years old today."},
+      {"text": "A birthday is the day when we were born. Every year, we celebrate it."},
+      {"text": "Can you say it with me? Birthday!"},
+      {"pause": 1.8}]},
+    {"setting": "kitchen", "time": "day", "weather": "sunny", "chars": ["lina", "adams"], "word": "surprise", "lines": [
+      {"who": "lina", "text": "Let's make a surprise for Milo!"},
+      {"who": "adams", "text": "Yes! But Milo must not know. It is a secret."},
+      {"text": "A surprise is something nice that you don't know is coming. Wow!"},
+      {"text": "Say it with me: surprise!"},
+      {"pause": 1.8},
+      {"text": "Where is Milo? He is sleeping in the bedroom. Good!"}]},
+    {"setting": "garden", "time": "day", "weather": "sunny", "chars": ["lina", "adams"], "props": [{"name": "balloon", "x": 1550, "y": 450}, {"name": "balloon", "x": 1800, "y": 520}], "word": "balloon", "lines": [
+      {"text": "Lina and Adams go into the garden to get ready."},
+      {"who": "adams", "text": "I will blow up the balloons. Whoo, whoo, whoo!"},
+      {"who": "lina", "text": "One pink balloon, two pink balloons! They are so big!"},
+      {"text": "A balloon is a soft toy filled with air. It can float up high."},
+      {"text": "Can you say it? Balloon!"},
+      {"pause": 1.8},
+      {"text": "Pop! Oh no, one balloon popped! Adams laughs. Let's make another one."}]},
+    {"setting": "garden", "time": "day", "weather": "sunny", "chars": ["lina", "adams"], "props": [{"name": "balloon", "x": 1550, "y": 450}, {"name": "gift", "x": 1750, "y": 960}], "word": "gift", "lines": [
+      {"who": "lina", "text": "I have a gift for Milo. It is in this purple box."},
+      {"who": "adams", "text": "What is inside? Tell me, tell me!"},
+      {"who": "lina", "text": "It is a new soft ball! Milo loves to play with balls."},
+      {"text": "A gift is something we give to someone, to make them happy."},
+      {"text": "Say it with me: gift!"},
+      {"pause": 1.8}]},
+    {"setting": "kitchen", "time": "day", "weather": "sunny", "chars": ["lina", "adams"], "props": ["cake"], "word": "cake", "lines": [
+      {"text": "Next, Lina and Adams make something sweet with Mom."},
+      {"who": "adams", "text": "We need a cake! A pink birthday cake."},
+      {"who": "lina", "text": "Mix, mix, mix. Bake, bake, bake. Now it is ready!"},
+      {"text": "A cake is a sweet food we eat at parties."},
+      {"text": "Can you say it? Cake!"},
+      {"pause": 1.8},
+      {"text": "And for Milo, there is a little fish treat. Cats don't eat cake!"}]},
+    {"setting": "kitchen", "time": "day", "weather": "sunny", "chars": ["lina", "adams"], "props": ["cake"], "word": "candle", "lines": [
+      {"who": "lina", "text": "We need candles on the cake. How many?"},
+      {"who": "adams", "text": "Milo is two years old. But I put three candles, one for good luck!"},
+      {"text": "A candle has a little flame on top. It gives light."},
+      {"text": "Only grown-ups light the candles, to be safe."},
+      {"text": "Say it with me: candle!"},
+      {"pause": 1.8}]},
+    {"setting": "garden", "time": "day", "weather": "sunny", "chars": ["lina", "adams", "milo"], "props": [{"name": "balloon", "x": 1550, "y": 450}, {"name": "gift", "x": 1750, "y": 960}, {"name": "cake", "x": 260, "y": 960}], "word": "party", "lines": [
+      {"text": "Everything is ready. Milo wakes up and walks into the garden."},
+      {"who": "lina", "text": "One, two, three..."},
+      {"who": "adams", "text": "Surprise! Happy birthday, Milo!"},
+      {"text": "Milo is so surprised! Meow, meow, meow! He jumps with joy."},
+      {"text": "A party is when friends and family get together to have fun."},
+      {"text": "Can you say it? Party!"},
+      {"pause": 1.8}]},
+    {"setting": "garden", "time": "sunset", "weather": "sunny", "chars": ["lina", "adams", "milo"], "props": [{"name": "balloon", "x": 1550, "y": 450}, {"name": "ball", "x": 1750, "y": 1000}], "lines": [
+      {"text": "Lina and Adams sing a song for Milo."},
+      {"who": "lina", "text": "Happy birthday to you, happy birthday, dear Milo!"},
+      {"text": "Milo opens his gift. A new ball! He plays and plays."},
+      {"who": "adams", "text": "This is the best birthday party ever!"},
+      {"text": "The sun goes down. What a happy day for Milo."}]},
+    {"setting": "bedroom", "time": "night", "weather": "sunny", "chars": ["lina", "adams", "milo"], "lines": [
+      {"text": "At night, Milo is sleepy. He curls up on the bed."},
+      {"who": "adams", "text": "Today was Milo's birthday. We made a surprise."},
+      {"who": "lina", "text": "We had balloons, a gift, a cake with candles, and a big party!"},
+      {"who": "adams", "text": "Happy birthday, Milo. We love you."},
+      {"text": "Purr, purr. Good night, Milo. Good night, friends."}]}
+  ]
+}

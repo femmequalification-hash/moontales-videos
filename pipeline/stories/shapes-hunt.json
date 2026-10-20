@@ -1,0 +1,76 @@
+{
+  "slug": "shapes-hunt",
+  "story_title": "Lina and Adams and the Shape Hunt",
+  "lesson": "Learn shapes in English!",
+  "title": "Lina and Adams and the Shape Hunt 🔺⭐ | Learn Shapes in English for Kids | Moon Tales Kids",
+  "thumbnail_title": "The Shape Hunt",
+  "thumbnail_word": "Shapes",
+  "thumbnail_scene": {"setting": "classroom", "time": "day", "weather": "sunny", "props": [{"name": "circle", "x": 1550, "y": 950}, {"name": "triangle", "x": 1800, "y": 950}], "chars": ["lina", "adams"]},
+  "description": "The teacher gives Lina and Adams a fun game: a shape hunt! Can they find a circle, a square, a triangle, a star and a heart? 🔴🟦🔺⭐❤️\nIn this English story for kids, children learn 6 new words: shape, circle, square, triangle, star and heart. Listen, repeat, and learn English with Lina, Adams and Milo the cat.\n\n📚 New words in this story:\n🔷 shape — شكل — forme\n🔴 circle — دائرة — cercle\n🟦 square — مربع — carré\n🔺 triangle — مثلث — triangle\n⭐ star — نجمة — étoile\n❤️ heart — قلب — cœur\n\n👨‍👩‍👧 For parents: after the video, go on your own shape hunt at home! Perfect for ages 3 to 8 and for children learning English as a second language.\n\n🇲🇦 قصة باللغة الإنجليزية للأطفال لتعلم الأشكال بطريقة ممتعة.\n🇫🇷 Une histoire en anglais pour enfants pour apprendre les formes.\n\n🌙 Subscribe to Moon Tales Kids for new English stories every day!\n\n#EnglishForKids #KidsStories #LearnEnglish #MoonTalesKids",
+  "tags": ["english stories for kids", "shapes for kids", "learn shapes in english", "learn english for kids", "circle square triangle", "Lina and Adams", "Moon Tales Kids", "ESL kids", "قصص اطفال بالانجليزي", "الاشكال بالانجليزي للاطفال", "تعلم الانجليزية للاطفال", "قصص للاطفال", "histoire en anglais pour enfant", "les formes en anglais", "apprendre l'anglais enfant", "dessin animé en anglais"],
+  "scenes": [
+    {"setting": "classroom", "time": "day", "weather": "sunny", "chars": ["lina", "adams"], "board": "Shapes", "word": "shape", "lines": [
+      {"text": "Lina and Adams are at school. The teacher writes a word on the board."},
+      {"who": "lina", "text": "Shapes! Today we learn shapes!"},
+      {"text": "The teacher says: Let's play a game. It is called a shape hunt! Find shapes everywhere you go."},
+      {"text": "A shape is the outside line of a thing. Things can be round, or have corners."},
+      {"text": "Can you say it with me? Shape!"},
+      {"pause": 1.8},
+      {"who": "adams", "text": "A shape hunt? Let's go!"}]},
+    {"setting": "classroom", "time": "day", "weather": "sunny", "chars": ["lina", "adams"], "board": "circle", "props": [{"name": "circle", "x": 1650, "y": 950}], "word": "circle", "lines": [
+      {"who": "lina", "text": "I found the first shape! Look, it is round."},
+      {"who": "adams", "text": "It is a circle!"},
+      {"text": "A circle is round, like a ball. It has no corners."},
+      {"text": "Let's draw a circle in the air with our finger. Round and round!"},
+      {"text": "Say it with me: circle!"},
+      {"pause": 1.8}]},
+    {"setting": "park", "time": "day", "weather": "sunny", "chars": ["lina", "adams"], "props": ["ball"], "lines": [
+      {"text": "After school, Lina and Adams go to the park. The hunt continues!"},
+      {"who": "adams", "text": "My ball is a circle too!"},
+      {"who": "lina", "text": "And look up at the sun. The sun is a big, yellow circle!"},
+      {"text": "Circles are everywhere. Can you find a circle in your room?"},
+      {"pause": 1.5}]},
+    {"setting": "classroom", "time": "day", "weather": "sunny", "chars": ["lina", "adams"], "board": "square", "props": [{"name": "square", "x": 1650, "y": 950}], "word": "square", "lines": [
+      {"text": "Back in the classroom, Adams points to a blue shape."},
+      {"who": "adams", "text": "This shape has four sides. One, two, three, four!"},
+      {"who": "lina", "text": "And all the sides are the same. It is a square!"},
+      {"text": "A square has four sides that are all the same, and four corners."},
+      {"text": "Can you say it? Square!"},
+      {"pause": 1.8},
+      {"who": "lina", "text": "The window is made of squares too!"}]},
+    {"setting": "garden", "time": "day", "weather": "sunny", "chars": ["lina", "adams", "milo"], "word": "triangle", "lines": [
+      {"text": "Lina and Adams go home. Milo is waiting in the garden. Meow!"},
+      {"who": "lina", "text": "Look at the roof of our house. It has three sides!"},
+      {"who": "adams", "text": "One, two, three. It is a triangle!"},
+      {"text": "A triangle has three sides and three corners."},
+      {"text": "Say it with me: triangle!"},
+      {"pause": 1.8},
+      {"text": "A piece of pizza is a triangle too. Yummy!"}]},
+    {"setting": "park", "time": "day", "weather": "windy", "chars": ["lina", "adams"], "props": ["kite"], "lines": [
+      {"who": "adams", "text": "Look at my kite! It has triangles on it."},
+      {"who": "lina", "text": "One, two, three, four triangles! Red and yellow."},
+      {"text": "The kite flies high in the windy sky. Whoosh!"},
+      {"text": "We found circles, squares and triangles. What will we find next?"}]},
+    {"setting": "bedroom", "time": "night", "weather": "sunny", "chars": ["lina", "adams"], "props": [{"name": "star", "x": 1300, "y": 260}], "word": "star", "lines": [
+      {"text": "At night, Lina looks out of the window."},
+      {"who": "lina", "text": "Look, Adams! Little lights in the sky!"},
+      {"who": "adams", "text": "They are stars! Stars have five points."},
+      {"text": "A star shape has five points. Let's count: one, two, three, four, five!"},
+      {"text": "Can you say it? Star!"},
+      {"pause": 1.8}]},
+    {"setting": "bedroom", "time": "night", "weather": "sunny", "chars": ["lina", "adams", "milo"], "props": [{"name": "heart", "x": 1300, "y": 560}], "word": "heart", "lines": [
+      {"text": "Lina draws one more shape for Milo."},
+      {"who": "lina", "text": "This is a heart, because I love you, Milo!"},
+      {"text": "Milo purrs. Purr, purr."},
+      {"text": "A heart is the shape of love."},
+      {"text": "Say it with me: heart!"},
+      {"pause": 1.8},
+      {"who": "adams", "text": "Our shape hunt is finished. We found six shapes!"}]},
+    {"setting": "classroom", "time": "day", "weather": "sunny", "chars": ["lina", "adams"], "board": "Well done!", "props": [{"name": "circle", "x": 1480, "y": 960}, {"name": "square", "x": 1690, "y": 960}, {"name": "triangle", "x": 1900, "y": 960}], "lines": [
+      {"text": "The next day, Lina and Adams tell the teacher about their shape hunt."},
+      {"who": "lina", "text": "We found a circle, a square and a triangle."},
+      {"who": "adams", "text": "And a star in the sky, and a heart for Milo!"},
+      {"text": "The teacher says: Well done! You are super shape hunters!"},
+      {"text": "Now it is your turn. Look around you. What shapes can you find?"}]}
+  ]
+}

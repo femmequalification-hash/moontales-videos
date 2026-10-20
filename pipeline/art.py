@@ -356,18 +356,128 @@ def prop(c, name, x, y, time="day"):
         c.poly([(x - 80, y - 150), (x + 80, y - 150), (x + 50, y - 250), (x - 50, y - 250)], hexc("#FFCF70"))
         for i in range(5, 0, -1):
             c.circle(x, y - 160, 60 + i * 30, hexc("#FFE7A0", 14))
+    elif name == "banana":
+        c.arc(x, y - 70, 110, 95, 25, 155, hexc("#FFD84A"), 46)
+        c.arc(x, y - 70, 110, 95, 40, 140, hexc("#FFE98A"), 14)
+        c.rect(x + 92, y - 32, x + 112, y - 8, hexc("#6B4A2B"), r=4)
+    elif name == "orange":
+        c.circle(x, y, 60, hexc("#FF9A2E"))
+        c.circle(x - 18, y - 18, 12, hexc("#FFC27A"))
+        c.ellipse(x + 14, y - 62, 22, 10, hexc("#4FAF4A"))
+    elif name == "carrot":
+        c.poly([(x - 30, y - 70), (x + 30, y - 70), (x, y + 90)], hexc("#FF8A2E"))
+        for k in range(3):
+            c.line([(x - 15, y - 30 + k * 35), (x + 5, y - 30 + k * 35)], hexc("#D9661A"), 5)
+        for dx in (-18, 0, 18):
+            c.ellipse(x + dx, y - 100, 10, 32, hexc("#4FAF4A"))
+    elif name == "sandwich":
+        c.poly([(x - 110, y + 40), (x + 110, y + 40), (x, y - 70)], hexc("#F2C27B"))
+        c.poly([(x - 100, y + 28), (x + 100, y + 28), (x, y - 58)], hexc("#7CCB5A"))
+        c.poly([(x - 92, y + 18), (x + 92, y + 18), (x, y - 50)], hexc("#F5D9A0"))
+    elif name == "car":
+        c.rect(x - 170, y - 40, x + 170, y + 50, hexc("#E84A4A"), r=30)
+        c.rect(x - 95, y - 110, x + 85, y - 30, hexc("#E84A4A"), r=30)
+        c.rect(x - 75, y - 95, x - 10, y - 40, hexc("#BFE6FF"), r=10)
+        c.rect(x + 5, y - 95, x + 65, y - 40, hexc("#BFE6FF"), r=10)
+        for wx in (-100, 100):
+            c.circle(x + wx, y + 55, 42, hexc("#333344"))
+            c.circle(x + wx, y + 55, 18, hexc("#C8CCD6"))
+        c.circle(x + 160, y - 10, 12, hexc("#FFE680"))
+    elif name == "bike":
+        for wx in (-90, 90):
+            c.circle(x + wx, y + 40, 60, None, outline=hexc("#333344"), width=10)
+        c.line([(x - 90, y + 40), (x - 10, y - 40), (x + 90, y + 40)], hexc("#4FA3E3"), 10)
+        c.line([(x - 10, y - 40), (x + 60, y - 40), (x + 90, y + 40)], hexc("#4FA3E3"), 10)
+        c.line([(x + 60, y - 40), (x + 70, y - 80)], hexc("#333344"), 8)
+        c.rect(x - 30, y - 60, x + 10, y - 45, hexc("#333344"), r=6)
+    elif name == "dog":
+        brown, dark = hexc("#C68B59"), hexc("#8A5A34")
+        c.ellipse(x, y + 40, 110, 60, brown)
+        for lx in (-70, -30, 40, 80):
+            c.rect(x + lx - 14, y + 60, x + lx + 14, y + 130, brown, r=10)
+        c.line([(x - 100, y + 20), (x - 150, y - 30)], brown, 18)
+        c.circle(x + 100, y - 30, 62, brown)
+        c.ellipse(x + 55, y - 40, 22, 48, dark)
+        c.ellipse(x + 148, y - 40, 22, 48, dark)
+        c.circle(x + 82, y - 40, 9, hexc("#2B1B12"))
+        c.circle(x + 120, y - 40, 9, hexc("#2B1B12"))
+        c.ellipse(x + 102, y - 10, 16, 11, hexc("#2B1B12"))
+        c.chord(x + 102, y + 4, 14, 18, 0, 180, hexc("#FF7F9B"))
+    elif name == "bird":
+        c.ellipse(x, y, 55, 42, hexc("#4FA3E3"))
+        c.circle(x + 45, y - 30, 30, hexc("#4FA3E3"))
+        c.poly([(x + 72, y - 32), (x + 100, y - 24), (x + 72, y - 18)], hexc("#FFB020"))
+        c.circle(x + 52, y - 36, 6, hexc("#2B1B12"))
+        c.pie(x - 10, y - 5, 45, 30, 180, 360, hexc("#2E6FA8"))
+        c.poly([(x - 50, y - 5), (x - 95, y - 30), (x - 85, y + 10)], hexc("#2E6FA8"))
+    elif name == "fish":
+        c.circle(x, y, 95, hexc("#CFEFFF", 200), outline=hexc("#FFFFFF"), width=6)
+        c.ellipse(x - 5, y + 10, 45, 28, hexc("#FF9A2E"))
+        c.poly([(x + 35, y + 10), (x + 70, y - 15), (x + 70, y + 35)], hexc("#FF9A2E"))
+        c.circle(x - 25, y + 4, 6, hexc("#2B1B12"))
+        c.rect(x - 95, y + 60, x + 95, y + 90, hexc("#F4D9A0", 220), r=12)
+    elif name == "hat":
+        c.ellipse(x, y + 30, 120, 26, hexc("#4FA3E3"))
+        c.rect(x - 70, y - 60, x + 70, y + 30, hexc("#4FA3E3"), r=40)
+        c.rect(x - 70, y + 2, x + 70, y + 22, hexc("#FFD23F"))
+    elif name == "shoes":
+        for dx in (-60, 60):
+            c.rect(x + dx - 50, y - 20, x + dx + 55, y + 30, hexc("#E85D8A"), r=22)
+            c.rect(x + dx - 50, y + 18, x + dx + 55, y + 34, hexc("#FFFFFF"), r=8)
+    elif name == "toothbrush":
+        c.rect(x - 120, y - 12, x + 60, y + 12, hexc("#4FA3E3"), r=12)
+        c.rect(x + 50, y - 20, x + 120, y + 6, hexc("#FFFFFF"), r=6)
+        for k in range(6):
+            c.rect(x + 54 + k * 11, y - 46, x + 61 + k * 11, y - 20, hexc("#BFE6FF"), r=3)
+    elif name == "balloon":
+        c.line([(x, y + 80), (x - 10, y + 260)], hexc("#555555", 200), 3)
+        c.ellipse(x, y, 62, 80, hexc("#FF6B8A"))
+        c.poly([(x - 10, y + 78), (x + 10, y + 78), (x, y + 92)], hexc("#FF6B8A"))
+        c.ellipse(x - 22, y - 30, 12, 20, hexc("#FFFFFF", 140))
+    elif name == "gift":
+        c.rect(x - 85, y - 60, x + 85, y + 70, hexc("#9B6BD3"), r=10)
+        c.rect(x - 14, y - 60, x + 14, y + 70, hexc("#FFD23F"))
+        c.rect(x - 95, y - 80, x + 95, y - 50, hexc("#B28AE0"), r=8)
+        c.ellipse(x - 30, y - 98, 30, 18, hexc("#FFD23F"))
+        c.ellipse(x + 30, y - 98, 30, 18, hexc("#FFD23F"))
+    elif name == "butterfly":
+        for s in (-1, 1):
+            c.ellipse(x + s * 40, y - 25, 40, 34, hexc("#FF8FB1"))
+            c.ellipse(x + s * 32, y + 25, 28, 24, hexc("#C9A0FF"))
+        c.ellipse(x, y, 8, 40, hexc("#3A2A20"))
+    elif name == "circle":
+        c.circle(x, y, 75, hexc("#FF6B6B"))
+    elif name == "square":
+        c.rect(x - 70, y - 70, x + 70, y + 70, hexc("#4FA3E3"), r=6)
+    elif name == "triangle":
+        c.poly([(x, y - 80), (x + 85, y + 65), (x - 85, y + 65)], hexc("#7CCB5A"))
+    elif name == "heart":
+        c.circle(x - 34, y - 20, 42, hexc("#FF6B8A"))
+        c.circle(x + 34, y - 20, 42, hexc("#FF6B8A"))
+        c.poly([(x - 74, y - 5), (x + 74, y - 5), (x, y + 80)], hexc("#FF6B8A"))
+
+
+def board_text(c, text):
+    """Write text on the classroom chalkboard."""
+    f = font(120 if len(text) <= 10 else 80, "SemiBold")
+    c.text(1060, 350, text, f, hexc("#FFFFFF", 235), anchor="mm")
 
 
 PROP_SPOT = {  # default placements in background coords
     "kite": (1620, 250), "ball": (1500, 960), "umbrella": (1580, 640), "umbrella_over": (1250, 330), "book": (1560, 930),
     "apple": (1480, 880), "cake": (1050, 790), "cup": (1350, 800), "star": (1700, 260),
     "flower": (1600, 900), "puddle": (1100, 1060), "boat": (1450, 980),
-    "bed": (1720, 900), "table": (1056, 840), "lamp": (300, 760),
+    "bed": (1720, 900),
+    "banana": (1500, 930), "orange": (1640, 950), "carrot": (1520, 930), "sandwich": (1560, 950),
+    "car": (1640, 960), "bike": (1620, 950), "dog": (1560, 900), "bird": (1500, 300),
+    "fish": (1600, 930), "hat": (1540, 960), "shoes": (1560, 1000), "toothbrush": (1560, 960),
+    "balloon": (1640, 560), "gift": (1560, 950), "butterfly": (1450, 520),
+    "circle": (1450, 950), "square": (1650, 950), "triangle": (1850, 950), "heart": (1560, 560), "table": (1056, 840), "lamp": (300, 760),
 }
 
 
 # ---------------------------------------------------------------- backgrounds
-def background(setting, time="day", weather="sunny", props=(), seed=1, show_moon=True):
+def background(setting, time="day", weather="sunny", props=(), seed=1, show_moon=True, board=None):
     c = Canvas(BW, BH)
     indoor = setting in ("kitchen", "bedroom", "classroom")
     if indoor:
@@ -382,9 +492,9 @@ def background(setting, time="day", weather="sunny", props=(), seed=1, show_moon
             c.circle(1650, 560, 40, hexc("#FFFFFF", 160))
             spot = {"cup": (1640, 345), "apple": (1820, 355), "cake": (1780, 335), "book": (1700, 365)}
             for p in props:
-                if p in spot:
+                if isinstance(p, str) and p in spot:
                     prop(c, p, *spot[p], time=time)
-            props = [p for p in props if p not in spot]
+            props = [p for p in props if not (isinstance(p, str) and p in spot)]
         elif setting == "bedroom":
             wall = hexc("#C9D7F2") if time != "night" else hexc("#5A6A9A")
             floor = hexc("#C9A27C") if time != "night" else hexc("#7A6450")
@@ -447,8 +557,12 @@ def background(setting, time="day", weather="sunny", props=(), seed=1, show_moon
                 c.poly(pts, hexc("#F7FBFF"))
             elif setting != "street":
                 flowers(c, 880, 1150, 26, seed, time)
+    if setting == "classroom" and board:
+        board_text(c, board)
     for p in props:
-        if p in PROP_SPOT:
+        if isinstance(p, dict):
+            prop(c, p["name"], p["x"], p["y"], time=time)
+        elif p in PROP_SPOT:
             prop(c, p, *PROP_SPOT[p], time=time)
     return c.final()
 
