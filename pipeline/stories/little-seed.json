@@ -1,0 +1,445 @@
+{
+  "slug": "little-seed",
+  "story_title": "Lina and Adams and the Little Seed",
+  "lesson": "Learn garden words in English!",
+  "title": "Lina and Adams and the Little Seed 🥕 | Learn Garden Words in English for Kids | Moon Tales Kids",
+  "thumbnail_title": "The Little Seed",
+  "thumbnail_word": "Garden words",
+  "thumbnail_scene": {
+    "setting": "garden",
+    "time": "day",
+    "weather": "sunny",
+    "props": [
+      {
+        "name": "carrot",
+        "x": 1650,
+        "y": 940
+      },
+      {
+        "name": "butterfly",
+        "x": 1800,
+        "y": 600
+      }
+    ],
+    "chars": [
+      "lina",
+      "adams",
+      "milo"
+    ]
+  },
+  "description": "Plant a little seed with Lina, Adams and Milo, and watch it grow! 🌱🥕🦋\nIn this English story for kids, children learn 8 new words: seed, soil, dig, grow, leaf, wait, carrot and butterfly. Listen, repeat, and learn English with Lina, Adams and Milo the cat.\n\n📚 New words in this story:\n🌰 seed — البذرة — la graine\n🟫 soil — التربة — la terre\n🕳️ dig — يحفر — creuser\n🌱 grow — ينمو — pousser\n🌿 leaf — الورقة — la feuille\n⏳ wait — ينتظر — attendre\n🥕 carrot — الجزر — la carotte\n🦋 butterfly — الفراشة — le papillon\n\n👨‍👩‍👧 For parents: play the story, pause after each new word, and ask your child to say it out loud. Perfect for ages 3 to 8 and for children learning English as a second language.\n\n🇲🇦 قصص باللغة الإنجليزية للأطفال لتعلم كلمات جديدة بطريقة ممتعة.\n🇫🇷 Histoires en anglais pour enfants : apprendre de nouveaux mots en s'amusant.\n\n🌙 Subscribe to Moon Tales Kids for a new English story every week!\n\n#EnglishForKids #KidsStories #LearnEnglish #MoonTalesKids",
+  "tags": [
+    "english stories for kids",
+    "learn english for kids",
+    "kids stories in english",
+    "Lina and Adams",
+    "Moon Tales Kids",
+    "ESL kids",
+    "garden words for kids",
+    "how plants grow for kids",
+    "vegetables story for kids",
+    "patience story kids",
+    "قصص اطفال بالانجليزي",
+    "تعلم الانجليزية للاطفال",
+    "الحديقة بالانجليزي",
+    "كيف تنمو النباتات للاطفال",
+    "histoire en anglais pour enfant",
+    "apprendre l'anglais enfant",
+    "le jardin en anglais",
+    "histoire de jardin pour enfant"
+  ],
+  "scenes": [
+    {
+      "setting": "kitchen",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "table"
+      ],
+      "word": "seed",
+      "lines": [
+        {
+          "text": "One spring morning, Lina opens a tiny paper bag."
+        },
+        {
+          "who": "lina",
+          "text": "Adams, look! Grandma gave us seeds!"
+        },
+        {
+          "who": "adams",
+          "text": "They are so small! What will they become?"
+        },
+        {
+          "who": "lina",
+          "text": "Grandma says they will become carrots!"
+        },
+        {
+          "text": "A seed is a tiny thing. When we plant it, a new plant comes out."
+        },
+        {
+          "text": "Say it with me: seed!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [],
+      "word": "soil",
+      "lines": [
+        {
+          "text": "Lina and Adams go out into the garden."
+        },
+        {
+          "who": "adams",
+          "text": "Where do we put the seeds?"
+        },
+        {
+          "who": "lina",
+          "text": "In the soil! It is soft and brown."
+        },
+        {
+          "text": "Milo puts his paw in the soil. Meow! It is cool."
+        },
+        {
+          "text": "Soil is the brown ground where plants live."
+        },
+        {
+          "text": "Say it with me: soil!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [],
+      "word": "dig",
+      "lines": [
+        {
+          "who": "adams",
+          "text": "I will make little holes for the seeds."
+        },
+        {
+          "text": "Adams uses a small spade. Dig, dig, dig!"
+        },
+        {
+          "who": "lina",
+          "text": "Not too deep, Adams. Just a little hole."
+        },
+        {
+          "text": "When we make a hole in the ground, we dig."
+        },
+        {
+          "text": "Say it with me: dig!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Lina puts one seed in each hole, and they cover them gently."
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [],
+      "lines": [
+        {
+          "who": "lina",
+          "text": "Now the seeds need water to drink."
+        },
+        {
+          "who": "adams",
+          "text": "I will water them with the watering can. Sprinkle, sprinkle!"
+        },
+        {
+          "text": "They give the seeds a little water, every day."
+        },
+        {
+          "text": "Milo sits next to the garden. He is the garden guard. Meow!"
+        },
+        {
+          "who": "adams",
+          "text": "Grow, little seeds, grow!"
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "day",
+      "weather": "cloudy",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [],
+      "word": "wait",
+      "lines": [
+        {
+          "text": "The next morning, Adams runs to the garden."
+        },
+        {
+          "who": "adams",
+          "text": "Oh! Nothing is here! Where are the carrots?"
+        },
+        {
+          "who": "lina",
+          "text": "Seeds take time, Adams. We must wait."
+        },
+        {
+          "text": "When we stay calm until something happens, we wait."
+        },
+        {
+          "text": "Say it with me: wait!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "adams",
+          "text": "Okay. I will wait. I will be patient."
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [],
+      "word": "grow",
+      "lines": [
+        {
+          "text": "Many days pass. The sun shines, and the seeds drink water."
+        },
+        {
+          "who": "lina",
+          "text": "Adams! Come quick! Something is coming out!"
+        },
+        {
+          "who": "adams",
+          "text": "Tiny green plants! The seeds are growing!"
+        },
+        {
+          "text": "When something gets bigger and bigger, we say it grows."
+        },
+        {
+          "text": "Say it with me: grow!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "flower",
+          "x": 1650,
+          "y": 940
+        }
+      ],
+      "word": "leaf",
+      "lines": [
+        {
+          "text": "The little plants have green leaves now."
+        },
+        {
+          "who": "lina",
+          "text": "Look at this leaf. It is long and thin, like a feather."
+        },
+        {
+          "who": "adams",
+          "text": "Every day, there are more leaves!"
+        },
+        {
+          "text": "A leaf is a flat green part of a plant."
+        },
+        {
+          "text": "Say it with me: leaf!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Lina touches a leaf very gently. Hello, little plant!"
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "butterfly",
+          "x": 1750,
+          "y": 620
+        },
+        {
+          "name": "flower",
+          "x": 1650,
+          "y": 940
+        }
+      ],
+      "word": "butterfly",
+      "lines": [
+        {
+          "text": "One day, a visitor flies into the garden."
+        },
+        {
+          "who": "adams",
+          "text": "Look! It has big orange wings!"
+        },
+        {
+          "who": "lina",
+          "text": "It is a butterfly! It wants to see our garden."
+        },
+        {
+          "text": "Milo watches it, but he does not chase it. Good cat, Milo!"
+        },
+        {
+          "text": "A butterfly is an insect with beautiful wings."
+        },
+        {
+          "text": "Say it with me: butterfly!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "carrot",
+          "x": 1600,
+          "y": 940
+        },
+        {
+          "name": "carrot",
+          "x": 1800,
+          "y": 950
+        }
+      ],
+      "word": "carrot",
+      "lines": [
+        {
+          "text": "At last, it is time. Lina and Adams pull the plants. One, two, three, pull!"
+        },
+        {
+          "who": "adams",
+          "text": "Carrots! Long, orange carrots!"
+        },
+        {
+          "who": "lina",
+          "text": "We waited, and they grew. We did it together!"
+        },
+        {
+          "text": "A carrot is an orange vegetable that grows under the ground."
+        },
+        {
+          "text": "Say it with me: carrot!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Crunch, crunch! The carrots are sweet and yummy."
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "bed",
+        "lamp"
+      ],
+      "lines": [
+        {
+          "text": "At night, Lina and Adams are tired and happy."
+        },
+        {
+          "who": "lina",
+          "text": "We planted seeds in the soil. We dug, and we waited."
+        },
+        {
+          "who": "adams",
+          "text": "The seeds grew leaves, a butterfly came, and we got carrots!"
+        },
+        {
+          "who": "lina",
+          "text": "Tomorrow, let's give some carrots to Grandma."
+        },
+        {
+          "who": "adams",
+          "text": "Good idea! Good night, Milo."
+        },
+        {
+          "who": "lina",
+          "text": "Good night, little garden. Good night, everyone!"
+        }
+      ]
+    }
+  ]
+}

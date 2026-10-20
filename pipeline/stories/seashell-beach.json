@@ -1,0 +1,430 @@
+{
+  "slug": "seashell-beach",
+  "story_title": "Lina and Adams and the Seashell Beach",
+  "lesson": "Learn beach words in English!",
+  "title": "Lina and Adams and the Seashell Beach 🐚 | Learn Beach Words in English for Kids | Moon Tales Kids",
+  "thumbnail_title": "Seashell Beach",
+  "thumbnail_word": "Beach words",
+  "thumbnail_scene": {
+    "setting": "beach",
+    "time": "day",
+    "weather": "sunny",
+    "props": [
+      {
+        "name": "boat",
+        "x": 1750,
+        "y": 760
+      }
+    ],
+    "chars": [
+      "lina",
+      "adams",
+      "milo"
+    ]
+  },
+  "description": "Come to the beach with Lina, Adams and Milo! 🏖️🐚🌊\nIn this English story for kids, children learn 8 new words: beach, sea, sand, wave, shell, castle, boat and hot. Listen, repeat, and learn English with Lina, Adams and Milo the cat.\n\n📚 New words in this story:\n🏖️ beach — الشاطئ — la plage\n🌊 sea — البحر — la mer\n⏳ sand — الرمل — le sable\n🌊 wave — الموجة — la vague\n🐚 shell — الصدفة — le coquillage\n🏰 castle — القلعة — le château\n⛵ boat — القارب — le bateau\n🔥 hot — حار — chaud\n\n👨‍👩‍👧 For parents: play the story, pause after each new word, and ask your child to say it out loud. Perfect for ages 3 to 8 and for children learning English as a second language.\n\n🇲🇦 قصص باللغة الإنجليزية للأطفال لتعلم كلمات جديدة بطريقة ممتعة.\n🇫🇷 Histoires en anglais pour enfants : apprendre de nouveaux mots en s'amusant.\n\n🌙 Subscribe to Moon Tales Kids for a new English story every week!\n\n#EnglishForKids #KidsStories #LearnEnglish #MoonTalesKids",
+  "tags": [
+    "english stories for kids",
+    "learn english for kids",
+    "kids stories in english",
+    "Lina and Adams",
+    "Moon Tales Kids",
+    "ESL kids",
+    "beach words for kids",
+    "summer story for kids",
+    "sea animals story kids",
+    "beach day cartoon",
+    "قصص اطفال بالانجليزي",
+    "تعلم الانجليزية للاطفال",
+    "الشاطئ بالانجليزي",
+    "قصة البحر للاطفال",
+    "histoire en anglais pour enfant",
+    "apprendre l'anglais enfant",
+    "la plage en anglais",
+    "histoire de mer pour enfant"
+  ],
+  "scenes": [
+    {
+      "setting": "kitchen",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "hat",
+        "sandwich"
+      ],
+      "word": "beach",
+      "lines": [
+        {
+          "text": "It is a bright summer morning. Lina and Adams are so excited."
+        },
+        {
+          "who": "adams",
+          "text": "Today we go to the beach! Hooray!"
+        },
+        {
+          "who": "lina",
+          "text": "I have my hat, and I have sandwiches for lunch."
+        },
+        {
+          "text": "Milo the cat wants to come too. Meow!"
+        },
+        {
+          "text": "A beach is a place next to the sea, with lots of sand."
+        },
+        {
+          "text": "Say it with me: beach!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "beach",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [],
+      "word": "sea",
+      "lines": [
+        {
+          "text": "They arrive at the beach. Wow! Look at all that water!"
+        },
+        {
+          "who": "lina",
+          "text": "The sea is so big and so blue!"
+        },
+        {
+          "who": "adams",
+          "text": "I can see it all the way to the sky!"
+        },
+        {
+          "text": "The sea is a very, very big area of salty water."
+        },
+        {
+          "text": "Say it with me: sea!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Milo sniffs the air. It smells salty. Meow!"
+        }
+      ]
+    },
+    {
+      "setting": "beach",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [],
+      "word": "hot",
+      "lines": [
+        {
+          "text": "Lina takes off her shoes. Ouch, ouch!"
+        },
+        {
+          "who": "lina",
+          "text": "The ground is very hot! The sun made it warm."
+        },
+        {
+          "who": "adams",
+          "text": "Let's put on our hats and drink some water."
+        },
+        {
+          "text": "When something is very warm, we say it is hot."
+        },
+        {
+          "text": "Say it with me: hot!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Remember: on a hot day, wear a hat and drink water."
+        }
+      ]
+    },
+    {
+      "setting": "beach",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [],
+      "word": "sand",
+      "lines": [
+        {
+          "text": "Lina and Adams sit down near the water."
+        },
+        {
+          "who": "adams",
+          "text": "The sand is soft. It feels like little tiny stones!"
+        },
+        {
+          "who": "lina",
+          "text": "I can make a hand print in the sand. Look!"
+        },
+        {
+          "text": "Milo makes paw prints. One, two, three, four! Meow!"
+        },
+        {
+          "text": "Sand is made of very small grains. We find it on the beach."
+        },
+        {
+          "text": "Say it with me: sand!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "beach",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [],
+      "word": "castle",
+      "lines": [
+        {
+          "who": "adams",
+          "text": "Let's build something with the sand!"
+        },
+        {
+          "who": "lina",
+          "text": "Let's build a castle, with big tall towers!"
+        },
+        {
+          "text": "They dig and pat and shape the sand together."
+        },
+        {
+          "who": "adams",
+          "text": "You make the towers, and I will make the door."
+        },
+        {
+          "text": "A castle is a big house for kings and queens. A sand castle is made of sand."
+        },
+        {
+          "text": "Say it with me: castle!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "beach",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [],
+      "word": "wave",
+      "lines": [
+        {
+          "text": "Whoosh! The water comes up on the sand."
+        },
+        {
+          "who": "adams",
+          "text": "Oh no! A wave is coming to our castle!"
+        },
+        {
+          "text": "The wave washes away one tower. Splash!"
+        },
+        {
+          "who": "lina",
+          "text": "That's okay, Adams. We can build it again, together."
+        },
+        {
+          "text": "A wave is water in the sea that goes up and comes down."
+        },
+        {
+          "text": "Say it with me: wave!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "And this time, they build the castle a little further from the water."
+        }
+      ]
+    },
+    {
+      "setting": "beach",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "star",
+          "x": 1650,
+          "y": 960
+        }
+      ],
+      "word": "shell",
+      "lines": [
+        {
+          "text": "Lina finds something pretty in the sand."
+        },
+        {
+          "who": "lina",
+          "text": "Look! A shell! It is pink and white, and round like a fan."
+        },
+        {
+          "who": "adams",
+          "text": "I found a shell too! It is long and curly."
+        },
+        {
+          "text": "A shell is the hard little house of a sea animal."
+        },
+        {
+          "text": "Say it with me: shell!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "lina",
+          "text": "Let's put the shells on our castle. It looks beautiful!"
+        }
+      ]
+    },
+    {
+      "setting": "beach",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "boat",
+          "x": 1750,
+          "y": 760
+        }
+      ],
+      "word": "boat",
+      "lines": [
+        {
+          "text": "Far away on the sea, something is moving."
+        },
+        {
+          "who": "adams",
+          "text": "Look, a boat! It has a white sail."
+        },
+        {
+          "who": "lina",
+          "text": "Hello, boat! Let's wave our hands. Hello!"
+        },
+        {
+          "text": "A boat carries people on the water."
+        },
+        {
+          "text": "Say it with me: boat!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "The people on the boat wave back. How kind!"
+        }
+      ]
+    },
+    {
+      "setting": "beach",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "sandwich"
+      ],
+      "lines": [
+        {
+          "text": "Now it is time to go home."
+        },
+        {
+          "who": "lina",
+          "text": "Let's take our things with us. We keep the beach clean."
+        },
+        {
+          "who": "adams",
+          "text": "I will carry the bag. You carry the hats."
+        },
+        {
+          "text": "They put every little paper in the bag. Good job, friends!"
+        },
+        {
+          "text": "Milo walks behind them, his tail high. Meow!"
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "bed",
+        "lamp"
+      ],
+      "lines": [
+        {
+          "text": "At night, Lina and Adams remember their happy day."
+        },
+        {
+          "who": "adams",
+          "text": "We saw the sea, we played in the sand, and we built a castle!"
+        },
+        {
+          "who": "lina",
+          "text": "And we found shells, and we saw a boat on the waves."
+        },
+        {
+          "text": "Lina puts her pink shell next to her bed."
+        },
+        {
+          "who": "lina",
+          "text": "Good night, sea. Good night, Milo."
+        },
+        {
+          "who": "adams",
+          "text": "Good night, everyone!"
+        }
+      ]
+    }
+  ]
+}

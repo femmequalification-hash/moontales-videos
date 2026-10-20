@@ -1,0 +1,459 @@
+{
+  "slug": "sparkly-morning",
+  "story_title": "Lina and Adams and the Sparkly Morning",
+  "lesson": "Learn morning routine words in English!",
+  "title": "Lina and Adams and the Sparkly Morning 🪥 | Learn Morning Routine Words in English | Moon Tales Kids",
+  "thumbnail_title": "Sparkly Morning",
+  "thumbnail_word": "Morning words",
+  "thumbnail_scene": {
+    "setting": "bedroom",
+    "time": "day",
+    "weather": "sunny",
+    "props": [
+      {
+        "name": "toothbrush",
+        "x": 1650,
+        "y": 930
+      }
+    ],
+    "chars": [
+      "lina",
+      "adams",
+      "milo"
+    ]
+  },
+  "description": "Good morning! Get ready for the day with Lina, Adams and Milo! 🪥🧼☀️\nIn this English story for kids, children learn 8 new words: wake up, teeth, toothbrush, soap, wash, towel, dress and clean. Listen, repeat, and learn English with Lina, Adams and Milo the cat.\n\n📚 New words in this story:\n⏰ wake up — استيقظ — se réveiller\n🦷 teeth — الأسنان — les dents\n🪥 toothbrush — فرشاة الأسنان — la brosse à dents\n🧼 soap — الصابون — le savon\n🫧 wash — يغسل — laver\n🧺 towel — المنشفة — la serviette\n👕 dress — يرتدي ملابسه — s'habiller\n✨ clean — نظيف — propre\n\n👨‍👩‍👧 For parents: play the story, pause after each new word, and ask your child to say it out loud. Perfect for ages 3 to 8 and for children learning English as a second language.\n\n🇲🇦 قصص باللغة الإنجليزية للأطفال لتعلم كلمات جديدة بطريقة ممتعة.\n🇫🇷 Histoires en anglais pour enfants : apprendre de nouveaux mots en s'amusant.\n\n🌙 Subscribe to Moon Tales Kids for a new English story every week!\n\n#EnglishForKids #KidsStories #LearnEnglish #MoonTalesKids",
+  "tags": [
+    "english stories for kids",
+    "learn english for kids",
+    "kids stories in english",
+    "Lina and Adams",
+    "Moon Tales Kids",
+    "ESL kids",
+    "morning routine for kids",
+    "brush your teeth song story",
+    "healthy habits for kids",
+    "good habits kids story",
+    "قصص اطفال بالانجليزي",
+    "تعلم الانجليزية للاطفال",
+    "تنظيف الاسنان للاطفال",
+    "عادات صحية للاطفال",
+    "histoire en anglais pour enfant",
+    "apprendre l'anglais enfant",
+    "routine du matin enfant",
+    "se brosser les dents enfant"
+  ],
+  "scenes": [
+    {
+      "setting": "bedroom",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "bed",
+        "lamp"
+      ],
+      "word": "wake up",
+      "lines": [
+        {
+          "text": "It is a new morning. The sun is peeking through the window."
+        },
+        {
+          "text": "Milo the cat jumps on the bed. Meow! Meow!"
+        },
+        {
+          "who": "milo",
+          "text": "Meow! Time to get up!"
+        },
+        {
+          "who": "lina",
+          "text": "Good morning, Milo! Good morning, Adams! Let's wake up!"
+        },
+        {
+          "who": "adams",
+          "text": "Yawn! I am still sleepy. Okay, I will wake up."
+        },
+        {
+          "text": "When we open our eyes and get out of bed, we wake up."
+        },
+        {
+          "text": "Say it with me: wake up!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        "cup",
+        {
+          "name": "toothbrush",
+          "x": 1650,
+          "y": 930
+        }
+      ],
+      "word": "teeth",
+      "lines": [
+        {
+          "text": "Lina and Adams go to the sink. They smile at the mirror."
+        },
+        {
+          "who": "lina",
+          "text": "Look at my teeth! They help me eat my food."
+        },
+        {
+          "who": "adams",
+          "text": "I have many teeth. Let's count. One, two, three, four!"
+        },
+        {
+          "text": "Teeth are the small white things in our mouth. We use them to bite and chew."
+        },
+        {
+          "text": "Can you show me your teeth? Say it with me: teeth!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "toothbrush",
+          "x": 1650,
+          "y": 930
+        },
+        "cup"
+      ],
+      "word": "toothbrush",
+      "lines": [
+        {
+          "who": "adams",
+          "text": "Oh no! Where is my toothbrush? I cannot find it."
+        },
+        {
+          "who": "lina",
+          "text": "Don't worry, Adams. I will help you look."
+        },
+        {
+          "text": "They look on the table. They look under the towel."
+        },
+        {
+          "text": "Then Milo meows and points with his paw. Meow!"
+        },
+        {
+          "who": "adams",
+          "text": "There it is, next to the cup! Thank you, Milo!"
+        },
+        {
+          "text": "A toothbrush is a little brush for cleaning our teeth."
+        },
+        {
+          "text": "Say it with me: toothbrush!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "toothbrush",
+          "x": 1650,
+          "y": 930
+        }
+      ],
+      "lines": [
+        {
+          "text": "Lina and Adams brush their teeth together."
+        },
+        {
+          "who": "lina",
+          "text": "Brush up and down. Brush round and round."
+        },
+        {
+          "who": "adams",
+          "text": "Brush the front, and brush the back!"
+        },
+        {
+          "text": "They brush slowly, for a long, long time. Scrub, scrub, scrub!"
+        },
+        {
+          "text": "Then they rinse with water and spit. Swish, swish!"
+        },
+        {
+          "who": "lina",
+          "text": "Look! Our teeth are shiny and sparkly!"
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "cup"
+      ],
+      "word": "soap",
+      "lines": [
+        {
+          "text": "Next, they go to wash their hands."
+        },
+        {
+          "who": "lina",
+          "text": "Here is the soap. It smells like flowers!"
+        },
+        {
+          "who": "adams",
+          "text": "Look, bubbles! Lots and lots of little bubbles!"
+        },
+        {
+          "text": "Milo tries to catch a bubble. Pop! Meow!"
+        },
+        {
+          "text": "Soap helps us take away the dirt and germs from our hands."
+        },
+        {
+          "text": "Say it with me: soap!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        "cup"
+      ],
+      "word": "wash",
+      "lines": [
+        {
+          "text": "Lina and Adams rub their hands with soap and water."
+        },
+        {
+          "who": "adams",
+          "text": "I wash my hands, and I wash my face."
+        },
+        {
+          "who": "lina",
+          "text": "Wash between the fingers too, Adams. Like this!"
+        },
+        {
+          "text": "When we use water and soap to make something clean, we wash it."
+        },
+        {
+          "text": "Say it with me: wash!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Splash, splash! The water feels so fresh."
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "table"
+      ],
+      "word": "towel",
+      "lines": [
+        {
+          "who": "adams",
+          "text": "My hands are dripping! Drip, drip, drip."
+        },
+        {
+          "who": "lina",
+          "text": "Here is a soft towel. Let's dry our hands."
+        },
+        {
+          "text": "Adams pats his hands on the towel. Pat, pat, pat. Now they are dry!"
+        },
+        {
+          "text": "A towel is a soft cloth we use to dry our body."
+        },
+        {
+          "text": "Say it with me: towel!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Milo snuggles in the warm towel. Purr, purr."
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        "hat",
+        "shoes"
+      ],
+      "word": "dress",
+      "lines": [
+        {
+          "text": "Now it is time to put on clothes."
+        },
+        {
+          "who": "lina",
+          "text": "I put on my purple dress and my shoes."
+        },
+        {
+          "who": "adams",
+          "text": "I put on my blue star shirt. And my hat!"
+        },
+        {
+          "text": "When we put on our clothes, we get dressed. We dress."
+        },
+        {
+          "text": "Say it with me: dress!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "adams",
+          "text": "Oops! My shoes are on the wrong feet!"
+        },
+        {
+          "text": "Lina helps him, and they both giggle."
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "table",
+        "banana",
+        "cup"
+      ],
+      "word": "clean",
+      "lines": [
+        {
+          "text": "Lina and Adams sit down for breakfast. Milo sits with them."
+        },
+        {
+          "who": "lina",
+          "text": "Our teeth are clean. Our hands are clean. Our faces are clean!"
+        },
+        {
+          "who": "adams",
+          "text": "And we are dressed and ready for a happy day!"
+        },
+        {
+          "text": "When something has no dirt on it, we say it is clean."
+        },
+        {
+          "text": "Say it with me: clean!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "bed",
+        "lamp",
+        {
+          "name": "toothbrush",
+          "x": 1650,
+          "y": 930
+        }
+      ],
+      "lines": [
+        {
+          "text": "The day goes by, and soon it is night."
+        },
+        {
+          "who": "adams",
+          "text": "Lina, before bed, we brush our teeth again!"
+        },
+        {
+          "who": "lina",
+          "text": "Yes! Morning and night, our teeth stay bright."
+        },
+        {
+          "text": "They brush, they wash, and they dry with a towel."
+        },
+        {
+          "who": "adams",
+          "text": "Good night, Milo. Good night, Lina."
+        },
+        {
+          "who": "lina",
+          "text": "Good night, everyone! See you in the morning!"
+        }
+      ]
+    }
+  ]
+}

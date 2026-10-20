@@ -1,0 +1,430 @@
+{
+  "slug": "first-snow",
+  "story_title": "Lina and Adams and the First Snow",
+  "lesson": "Learn winter words in English!",
+  "title": "Lina and Adams and the First Snow ❄️ | Learn Winter Words in English for Kids | Moon Tales Kids",
+  "thumbnail_title": "The First Snow",
+  "thumbnail_word": "Winter words",
+  "thumbnail_scene": {
+    "setting": "park",
+    "time": "day",
+    "weather": "snow",
+    "props": [
+      {
+        "name": "hat",
+        "x": 1650,
+        "y": 950
+      }
+    ],
+    "chars": [
+      "lina",
+      "adams",
+      "milo"
+    ]
+  },
+  "description": "It's snowing! Play in the first snow of winter with Lina, Adams and Milo! ❄️⛄🧣\nIn this English story for kids, children learn 8 new words: snow, cold, coat, scarf, gloves, snowman, warm and soup. Listen, repeat, and learn English with Lina, Adams and Milo the cat.\n\n📚 New words in this story:\n❄️ snow — الثلج — la neige\n🥶 cold — بارد — froid\n🧥 coat — المعطف — le manteau\n🧣 scarf — الوشاح — l'écharpe\n🧤 gloves — القفازات — les gants\n⛄ snowman — رجل الثلج — le bonhomme de neige\n🤗 warm — دافئ — chaud / au chaud\n🍲 soup — الحساء — la soupe\n\n👨‍👩‍👧 For parents: play the story, pause after each new word, and ask your child to say it out loud. Perfect for ages 3 to 8 and for children learning English as a second language.\n\n🇲🇦 قصص باللغة الإنجليزية للأطفال لتعلم كلمات جديدة بطريقة ممتعة.\n🇫🇷 Histoires en anglais pour enfants : apprendre de nouveaux mots en s'amusant.\n\n🌙 Subscribe to Moon Tales Kids for a new English story every week!\n\n#EnglishForKids #KidsStories #LearnEnglish #MoonTalesKids",
+  "tags": [
+    "english stories for kids",
+    "learn english for kids",
+    "kids stories in english",
+    "Lina and Adams",
+    "Moon Tales Kids",
+    "ESL kids",
+    "winter words for kids",
+    "snow story for kids",
+    "winter clothes for kids",
+    "snowman story kids",
+    "قصص اطفال بالانجليزي",
+    "تعلم الانجليزية للاطفال",
+    "الشتاء بالانجليزي للاطفال",
+    "ملابس الشتاء بالانجليزي",
+    "histoire en anglais pour enfant",
+    "apprendre l'anglais enfant",
+    "l'hiver en anglais enfant",
+    "vêtements d'hiver en anglais"
+  ],
+  "scenes": [
+    {
+      "setting": "bedroom",
+      "time": "day",
+      "weather": "snow",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "bed"
+      ],
+      "word": "snow",
+      "lines": [
+        {
+          "text": "One winter morning, Lina looks out of the window."
+        },
+        {
+          "who": "lina",
+          "text": "Adams! Wake up! Everything is white!"
+        },
+        {
+          "who": "adams",
+          "text": "Wow! It is snowing! Our first snow!"
+        },
+        {
+          "text": "Milo puts his nose on the window. Meow?"
+        },
+        {
+          "text": "Snow is soft, white, and cold. It falls from the sky in winter."
+        },
+        {
+          "text": "Say it with me: snow!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "street",
+      "time": "day",
+      "weather": "snow",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [],
+      "word": "cold",
+      "lines": [
+        {
+          "text": "Adams opens the door and steps outside. Brrr!"
+        },
+        {
+          "who": "adams",
+          "text": "Brrr! It is so cold! My nose is cold!"
+        },
+        {
+          "who": "lina",
+          "text": "Come back in, Adams. We need warm clothes first."
+        },
+        {
+          "text": "When something is not warm at all, we say it is cold."
+        },
+        {
+          "text": "Say it with me: cold!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Can you shiver like Adams? Brrr!"
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "day",
+      "weather": "snow",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        "hat",
+        "shoes"
+      ],
+      "word": "coat",
+      "lines": [
+        {
+          "who": "lina",
+          "text": "First, we put on our coats."
+        },
+        {
+          "who": "adams",
+          "text": "My coat is big and puffy. It is blue like my shirt!"
+        },
+        {
+          "who": "lina",
+          "text": "My coat is purple. Zip, zip!"
+        },
+        {
+          "text": "A coat is a big jacket we wear over our clothes when it is cold."
+        },
+        {
+          "text": "Say it with me: coat!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "day",
+      "weather": "snow",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "hat"
+      ],
+      "word": "scarf",
+      "lines": [
+        {
+          "text": "Next, Lina finds a long, soft scarf."
+        },
+        {
+          "who": "lina",
+          "text": "I wrap the scarf around my neck. Round and round."
+        },
+        {
+          "who": "adams",
+          "text": "Can I have a scarf too?"
+        },
+        {
+          "who": "lina",
+          "text": "Here, Adams. This one has stripes!"
+        },
+        {
+          "text": "A scarf is a long piece of cloth that keeps our neck warm."
+        },
+        {
+          "text": "Say it with me: scarf!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "day",
+      "weather": "snow",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        "hat",
+        "shoes"
+      ],
+      "word": "gloves",
+      "lines": [
+        {
+          "who": "adams",
+          "text": "Oh! My hands are still cold."
+        },
+        {
+          "who": "lina",
+          "text": "Here are your gloves, Adams. One for each hand."
+        },
+        {
+          "text": "Adams puts in one finger, two fingers, three, four, five!"
+        },
+        {
+          "text": "Gloves cover our hands and fingers to keep them warm."
+        },
+        {
+          "text": "Say it with me: gloves!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "adams",
+          "text": "Now I have my coat, my scarf, my hat, and my gloves. Let's go!"
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "day",
+      "weather": "snow",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [],
+      "word": "snowman",
+      "lines": [
+        {
+          "text": "Lina and Adams run to the park. Crunch, crunch, go their boots."
+        },
+        {
+          "who": "lina",
+          "text": "Let's make a snowman!"
+        },
+        {
+          "text": "They roll a big snowball, then a middle snowball, then a small one on top."
+        },
+        {
+          "who": "adams",
+          "text": "I will give him a carrot nose and a hat!"
+        },
+        {
+          "text": "A snowman is a friend made of snow."
+        },
+        {
+          "text": "Say it with me: snowman!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "day",
+      "weather": "snow",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "hat",
+          "x": 1650,
+          "y": 950
+        }
+      ],
+      "lines": [
+        {
+          "text": "Near the snowman, a little girl is standing alone."
+        },
+        {
+          "text": "She has no scarf. She looks very cold."
+        },
+        {
+          "who": "lina",
+          "text": "Hello! Are you cold? You can have my scarf."
+        },
+        {
+          "text": "Lina gently wraps her scarf around the little girl."
+        },
+        {
+          "who": "adams",
+          "text": "Do you want to play with us? We can make a snow family!"
+        },
+        {
+          "text": "The little girl smiles. Now they have a new friend!"
+        }
+      ]
+    },
+    {
+      "setting": "street",
+      "time": "sunset",
+      "weather": "snow",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [],
+      "word": "warm",
+      "lines": [
+        {
+          "text": "The sun goes down, and the air is colder now."
+        },
+        {
+          "who": "adams",
+          "text": "Let's go home and get warm!"
+        },
+        {
+          "text": "Inside the house, they take off their coats and gloves."
+        },
+        {
+          "who": "lina",
+          "text": "Ahh, it is nice and warm here."
+        },
+        {
+          "text": "When we are not cold, and we feel cozy, we are warm."
+        },
+        {
+          "text": "Say it with me: warm!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "night",
+      "weather": "snow",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "table",
+        "cup"
+      ],
+      "word": "soup",
+      "lines": [
+        {
+          "text": "Dinner is ready. There is a big bowl on the table."
+        },
+        {
+          "who": "lina",
+          "text": "Mmm, carrot soup! It smells so good."
+        },
+        {
+          "who": "adams",
+          "text": "Blow on it first. It is hot! Whoo, whoo."
+        },
+        {
+          "text": "Soup is a hot food we eat with a spoon."
+        },
+        {
+          "text": "Say it with me: soup!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Milo has warm milk. He purrs. Purr, purr."
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "night",
+      "weather": "snow",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "bed",
+        "lamp"
+      ],
+      "lines": [
+        {
+          "text": "Outside, the snow is still falling softly."
+        },
+        {
+          "who": "adams",
+          "text": "Today we saw snow. It was cold, but we had coats, scarves and gloves!"
+        },
+        {
+          "who": "lina",
+          "text": "We built a snowman, and we made a new friend."
+        },
+        {
+          "text": "Lina and Adams snuggle in their warm beds."
+        },
+        {
+          "who": "lina",
+          "text": "Good night, snowman. Good night, Milo."
+        },
+        {
+          "who": "adams",
+          "text": "Good night, everyone!"
+        }
+      ]
+    }
+  ]
+}
