@@ -1,0 +1,4 @@
+pipeline/tts
+__pycache__/
+*.mp4
+out/

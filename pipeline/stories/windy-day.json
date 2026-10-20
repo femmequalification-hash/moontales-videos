@@ -1,0 +1,424 @@
+{
+  "slug": "windy-day",
+  "story_title": "Lina and Adams and the Windy Day",
+  "lesson": "Learn weather words in English!",
+  "title": "Lina and Adams and the Windy Day 🪁 | Learn Weather Words in English for Kids | Moon Tales Kids",
+  "thumbnail_title": "The Windy Day",
+  "thumbnail_word": "Weather words",
+  "thumbnail_scene": {
+    "setting": "park",
+    "time": "day",
+    "weather": "windy",
+    "props": [
+      "kite"
+    ],
+    "chars": [
+      "lina",
+      "adams"
+    ]
+  },
+  "description": "Join Lina and Adams on a windy day full of surprises! 🪁☀️🌧️\nIn this English story for kids, children learn 8 new words: sunny, kite, cloudy, windy, rainy, puddle, wet and sunset. Listen, repeat, and learn English with Lina, Adams and Milo the cat.\n\n📚 New words in this story:\n☀️ sunny — مشمس — ensoleillé\n☁️ cloudy — غائم — nuageux\n🌬️ windy — عاصف / فيه الريح — venteux\n🪁 kite — طائرة ورقية — cerf-volant\n🌧️ rainy — ممطر — pluvieux\n💧 puddle — بركة ماء — flaque d'eau\n💦 wet — مبلل — mouillé\n🌇 sunset — غروب الشمس — coucher de soleil\n\n👨‍👩‍👧 For parents: play the story, pause after each new word, and ask your child to say it out loud. Perfect for ages 3 to 8 and for children learning English as a second language.\n\n🇲🇦 قصص باللغة الإنجليزية للأطفال لتعلم كلمات جديدة بطريقة ممتعة.\n🇫🇷 Histoires en anglais pour enfants : apprendre de nouveaux mots en s'amusant.\n\n🌙 Subscribe to Moon Tales Kids for a new English story every week!\n\n#EnglishForKids #KidsStories #LearnEnglish #MoonTalesKids",
+  "tags": [
+    "english stories for kids",
+    "learn english for kids",
+    "weather words for kids",
+    "kids stories in english",
+    "bedtime stories",
+    "Lina and Adams",
+    "Moon Tales Kids",
+    "english vocabulary for kids",
+    "ESL kids",
+    "قصص اطفال بالانجليزي",
+    "تعلم الانجليزية للاطفال",
+    "قصص للاطفال",
+    "كلمات انجليزية للاطفال",
+    "الطقس بالانجليزي للاطفال",
+    "histoire en anglais pour enfant",
+    "apprendre l'anglais enfant",
+    "vocabulaire anglais enfant",
+    "dessin animé en anglais"
+  ],
+  "scenes": [
+    {
+      "setting": "kitchen",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "cup",
+        "apple"
+      ],
+      "word": "sunny",
+      "lines": [
+        {
+          "text": "It is morning. Lina and Adams are eating breakfast in the kitchen."
+        },
+        {
+          "text": "Milo the cat is sitting on the floor. Meow!"
+        },
+        {
+          "who": "lina",
+          "text": "Look, Adams! The sun is shining. It is a sunny day!"
+        },
+        {
+          "who": "adams",
+          "text": "Sunny! Hooray! Can we play outside?"
+        },
+        {
+          "text": "When the sun is shining, we say: it is sunny."
+        },
+        {
+          "text": "Can you say it with me? Sunny!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "ball"
+      ],
+      "word": "kite",
+      "lines": [
+        {
+          "text": "Lina and Adams run into the garden."
+        },
+        {
+          "who": "adams",
+          "text": "I have my new kite! It is red and yellow."
+        },
+        {
+          "who": "lina",
+          "text": "Let's take the kite to the park!"
+        },
+        {
+          "text": "A kite is a toy that flies in the sky."
+        },
+        {
+          "text": "Say it with me: kite!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Milo wants to come too. Meow, meow!"
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "day",
+      "weather": "cloudy",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "word": "cloudy",
+      "lines": [
+        {
+          "text": "At the park, Lina looks up at the sky."
+        },
+        {
+          "who": "lina",
+          "text": "Oh! Where is the sun? I can see many big, white clouds."
+        },
+        {
+          "who": "adams",
+          "text": "The sun is hiding behind the clouds!"
+        },
+        {
+          "text": "When there are many clouds in the sky, we say: it is cloudy."
+        },
+        {
+          "text": "Let's say it together: cloudy!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "lina",
+          "text": "Cloudy is okay. We can still play!"
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "day",
+      "weather": "windy",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        "kite"
+      ],
+      "word": "windy",
+      "lines": [
+        {
+          "text": "Whoosh! Suddenly, the wind starts to blow."
+        },
+        {
+          "text": "The leaves fly, and the trees dance."
+        },
+        {
+          "who": "adams",
+          "text": "It is windy! This is perfect for my kite!"
+        },
+        {
+          "text": "Adams runs, and runs, and the kite goes up, up, up into the sky!"
+        },
+        {
+          "who": "lina",
+          "text": "Look! The kite is flying so high!"
+        },
+        {
+          "text": "When the wind blows strongly, we say: it is windy."
+        },
+        {
+          "text": "Can you say it? Windy!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "day",
+      "weather": "windy",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        "kite"
+      ],
+      "lines": [
+        {
+          "text": "But the wind is very, very strong."
+        },
+        {
+          "who": "adams",
+          "text": "Oh no! The kite is pulling me!"
+        },
+        {
+          "who": "lina",
+          "text": "Hold on, Adams! I will help you."
+        },
+        {
+          "text": "Lina holds the string with Adams. They pull together, slowly, slowly."
+        },
+        {
+          "text": "And the kite comes down safely. Hooray!"
+        },
+        {
+          "who": "adams",
+          "text": "Thank you, Lina! You are a great friend."
+        },
+        {
+          "who": "lina",
+          "text": "We are a good team!"
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "day",
+      "weather": "rain",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        "umbrella_over"
+      ],
+      "word": "rainy",
+      "lines": [
+        {
+          "text": "Drip, drop. Drip, drop. What is that sound?"
+        },
+        {
+          "who": "lina",
+          "text": "It is raining! Water is falling from the clouds."
+        },
+        {
+          "who": "adams",
+          "text": "I have an umbrella! Come under, Lina!"
+        },
+        {
+          "text": "When rain is falling, we say: it is rainy."
+        },
+        {
+          "text": "Say it with me: rainy!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "day",
+      "weather": "rain",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "puddle"
+      ],
+      "word": "puddle",
+      "lines": [
+        {
+          "text": "Lina and Adams walk home in the rain."
+        },
+        {
+          "text": "In the garden, there is a big puddle of water."
+        },
+        {
+          "who": "adams",
+          "text": "Look, a puddle! Can we jump in it?"
+        },
+        {
+          "who": "lina",
+          "text": "Yes! We are wearing our boots. One, two, three, jump!"
+        },
+        {
+          "text": "Splash! Splash! Lina and Adams laugh and laugh."
+        },
+        {
+          "text": "Milo the cat does not like the water. Meow!"
+        },
+        {
+          "text": "A puddle is a little pool of rain water on the ground. Say it: puddle!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "day",
+      "weather": "rain",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "cup"
+      ],
+      "word": "wet",
+      "lines": [
+        {
+          "text": "Lina and Adams come inside the house."
+        },
+        {
+          "who": "adams",
+          "text": "Oh! My shirt is wet. My hair is wet too!"
+        },
+        {
+          "who": "lina",
+          "text": "We are wet, wet, wet! Let's dry with a towel."
+        },
+        {
+          "text": "When something has water on it, we say it is wet."
+        },
+        {
+          "text": "Say it with me: wet!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Now they drink a warm cup of milk. Mmm, yummy!"
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "word": "sunset",
+      "lines": [
+        {
+          "text": "Later, the rain stops. Lina looks out the door."
+        },
+        {
+          "who": "lina",
+          "text": "Adams, come and see! The sky is orange and pink!"
+        },
+        {
+          "who": "adams",
+          "text": "The sun is going down. It is so pretty!"
+        },
+        {
+          "text": "In the evening, when the sun goes down, we call it a sunset."
+        },
+        {
+          "text": "Can you say it? Sunset!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Milo comes out too. He is happy that the rain is gone. Meow!"
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "lines": [
+        {
+          "text": "At night, Lina and Adams are warm and dry in their bedroom."
+        },
+        {
+          "who": "adams",
+          "text": "Today was sunny, then cloudy, then windy, then rainy!"
+        },
+        {
+          "who": "lina",
+          "text": "We jumped in a puddle, we got wet, and we saw the sunset. What a fun day!"
+        },
+        {
+          "text": "Outside the window, the rain stops, and the moon smiles at them."
+        },
+        {
+          "who": "lina",
+          "text": "Good night, moon. Good night, Milo."
+        },
+        {
+          "who": "adams",
+          "text": "Good night, everyone!"
+        }
+      ]
+    }
+  ]
+}
