@@ -16,7 +16,7 @@ into a ~5-minute video. Look at `stories/windy-day.json` as the reference.
   new words, different settings / times of day. Check the existing files first.
 
 ## Length
-About 5 minutes = **9–10 scenes**, each with **6–8 lines**, plus the automatic
+About 5 minutes = **11–12 scenes**, each with **7–8 lines** (9 scenes gave only ~4 minutes), plus the automatic
 intro, word recap and goodbye. Each new word gets its own scene with the pattern:
 characters use the word → narrator explains it → "Say it with me: WORD!" →
 `{"pause": 1.8}`.

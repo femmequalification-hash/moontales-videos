@@ -810,7 +810,7 @@ def thumbnail(story_title, big_word, setting, time, weather, props, chars):
         im = CHARACTERS[name]()
         im = im.resize((int(im.width * 0.9), int(im.height * 0.9)), Image.LANCZOS)
         c.paste(im, x - im.width / 2, 720 - im.height + 40)
-    spots = [(1160, 600), (1160, 380), (560, 610)]
+    spots = [(1095, 590), (1150, 370), (560, 610)]
     for p, (px, py) in zip(props, spots):
         name = p["name"] if isinstance(p, dict) else p
         if name in ("bed", "table", "lamp", "puddle", "umbrella_over"):
