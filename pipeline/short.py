@@ -1,9 +1,10 @@
 """Make a vertical "Word of the day" YouTube Short (2–3 new words, 45–58 s) from a built story.
 
-Usage:  python3 short.py stories/<slug>.json OUT_DIR
+Usage:  python3 short.py stories/<slug>.json OUT_DIR [PART]
+PART 1 (default) uses the first new words; PART 2 the next ones (no repeats).
 Needs the story to be built first (uses OUT_DIR/work_<slug>/segNN.mp4).
-Output: OUT_DIR/<slug>_short.mp4 (1080x1920, under 60 s) and
-        OUT_DIR/<slug>_short_meta.json (title, description, tags).
+Output: OUT_DIR/<slug>_short.mp4 (part 1) or <slug>_short2.mp4 (part 2),
+        1080x1920, under 60 s, plus a matching _meta.json (title, description, tags).
 
 Layout: big "Word of the day" header + word on top, the story scene in the
 middle, "Full story on Moon Tales Kids" at the bottom. Background is a blurred,
@@ -53,22 +54,33 @@ def main():
     slug = story["slug"]
     work = os.path.join(out_dir, "work_" + slug)
     scenes = story["scenes"]
-    # segment numbering in build.py: 0 = title, scene k = segment k + 1
-    parts = []  # (segment path, word, duration)
-    total = 0.0
-    for i, sc in enumerate(scenes):
-        if not sc.get("word"):
-            continue
-        seg = os.path.join(work, f"seg{i + 1:02d}.mp4")
-        if not os.path.exists(seg):
-            raise SystemExit("build the story first: missing " + seg)
-        d = dur(seg)
-        if parts and total + d > 58.5 and total >= 40:
-            break
-        parts.append((seg, sc["word"], d))
-        total += d
-        if total >= 45 or len(parts) == 3:
-            break
+    part = int(sys.argv[3]) if len(sys.argv) > 3 else 1
+    word_scenes = [i for i, sc in enumerate(scenes) if sc.get("word")]
+
+    def pick(start):
+        # segment numbering in build.py: 0 = title, scene k = segment k + 1
+        chosen, tot, last = [], 0.0, start
+        for i in word_scenes:
+            if i <= start:
+                continue
+            seg = os.path.join(work, f"seg{i + 1:02d}.mp4")
+            if not os.path.exists(seg):
+                raise SystemExit("build the story first: missing " + seg)
+            d = dur(seg)
+            if chosen and tot + d > 58.5 and tot >= 40:
+                break
+            chosen.append((seg, scenes[i]["word"], d))
+            tot += d
+            last = i
+            if tot >= 45 or len(chosen) == 3:
+                break
+        return chosen, tot, last
+
+    start = -1
+    for _ in range(part):
+        parts, total, start = pick(start)
+    if not parts:
+        raise SystemExit(f"not enough new words left for Short part {part}")
     total = min(total, 58.5)
     inputs, fc, t = [], [], 0.0
     for k, (seg, w, d) in enumerate(parts):
@@ -91,7 +103,8 @@ def main():
     fc.append(f"[{cur}]format=yuv420p[v]")
     fc.append(f"[{2 * n}:a]volume=0.12,atrim=0:{total:.2f}[mu]")
     fc.append("[ca][mu]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.95[au]")
-    out = os.path.join(out_dir, slug + "_short.mp4")
+    suffix = "_short" if part == 1 else f"_short{part}"
+    out = os.path.join(out_dir, slug + suffix + ".mp4")
     run(["ffmpeg", "-y", "-loglevel", "error", *inputs, "-filter_complex", ";".join(fc),
          "-map", "[v]", "-map", "[au]", "-t", f"{total:.2f}",
          "-c:v", "libx264", "-preset", "veryfast", "-crf", "21", "-r", "30",
@@ -122,7 +135,7 @@ def main():
         "Lina and Adams", "كلمات انجليزية للاطفال", "تعلم الانجليزية", "mots anglais enfant", "apprendre l'anglais"]
     json.dump({"title": title, "description": desc, "tags": tags, "words": words,
                "duration_seconds": round(d, 1)},
-              open(os.path.join(out_dir, slug + "_short_meta.json"), "w"), ensure_ascii=False, indent=2)
+              open(os.path.join(out_dir, slug + suffix + "_meta.json"), "w"), ensure_ascii=False, indent=2)
     print(f"short done: {out} ({d:.0f} s, words: {words})")
 
 

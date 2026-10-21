@@ -1,4 +1,4 @@
-# Daily run — 2 new Moon Tales Kids videos + 2 Shorts
+# Daily run — 2 new Moon Tales Kids videos + 4 Shorts
 
 This is what the daily scheduled task does, start to finish, with no one watching.
 Do not ask questions; if something fails, skip that item, finish the others, and
@@ -23,25 +23,29 @@ report what happened at the end.
 ## 2. Build
 For each story, one after another:
 1. `python3 pipeline/build.py pipeline/stories/<slug>.json OUT` (OUT in the scratchpad), ~10 min.
-2. `python3 pipeline/short.py pipeline/stories/<slug>.json OUT` → `OUT/<slug>_short.mp4`
-   (vertical 1080x1920, 40–58 s, 2–3 new words) and `OUT/<slug>_short_meta.json`
-   (title, description, tags). Needs step 1 first (it reuses the scene clips).
+2. Two Shorts per story (vertical 1080x1920, 40–58 s, 2–3 new words each, different words):
+   `python3 pipeline/short.py pipeline/stories/<slug>.json OUT 1` → `OUT/<slug>_short.mp4` + `_short_meta.json`
+   `python3 pipeline/short.py pipeline/stories/<slug>.json OUT 2` → `OUT/<slug>_short2.mp4` + `_short2_meta.json`
+   Needs step 1 first (it reuses the scene clips). Stories need at least 5 new words
+   so part 2 has words left.
 3. Check one frame of each: `ffmpeg -ss 30 -i OUT/<file>.mp4 -frames:v 1 OUT/check.png`
    and look at it.
 
 ## 3. Pick the day, then the publish times (Morocco time)
-**Never post more than 2 long videos + 2 Shorts on one day.** First call Metricool
+**Never post more than 2 long videos + 4 Shorts on one day.** First call Metricool
 `getScheduledPosts(brandId=7530657, fromDate=<today>T00:00:00+00:00,
 toDate=<today+10 days>T00:00:00+00:00, timezone="UTC")` and find the **first day,
 from today on, that has no long video (youtubeData.type "video") scheduled**. Use that
-day for the 4 slots below. If today already has posts, today is not free — move on.
+day for the 6 slots below. If today already has posts, today is not free — move on.
 
 | Morocco time | What |
 |---|---|
 | 10:00 | story 1 — long video |
-| 13:00 | story 1 — Short |
+| 12:00 | story 1 — Short part 1 |
+| 15:00 | story 1 — Short part 2 |
 | 17:00 | story 2 — long video |
-| 20:00 | story 2 — Short |
+| 19:00 | story 2 — Short part 1 |
+| 21:00 | story 2 — Short part 2 |
 
 If the chosen day is today and a slot is already past (or less than 15 minutes
 away), use the next free day instead.
@@ -51,9 +55,9 @@ Morocco went back to plain GMT (= UTC) on 20 Sept 2026, but Metricool still thin
 
 ## 4. Upload + schedule
 1. Upload all files at once:
-   `bash pipeline/upload.sh push OUT/<s1>.mp4 OUT/<s1>_thumb.jpg OUT/<s1>_short.mp4 OUT/<s2>.mp4 OUT/<s2>_thumb.jpg OUT/<s2>_short.mp4`
+   `bash pipeline/upload.sh push OUT/<s1>.mp4 OUT/<s1>_thumb.jpg OUT/<s1>_short.mp4 OUT/<s1>_short2.mp4 OUT/<s2>.mp4 OUT/<s2>_thumb.jpg OUT/<s2>_short.mp4 OUT/<s2>_short2.mp4`
    → prints one public URL per file.
-2. For each of the 4 posts call Metricool `createScheduledPost` with `blogId=7530657`,
+2. For each of the 6 posts call Metricool `createScheduledPost` with `blogId=7530657`,
    `date=<YYYY-MM-DDTHH:MM:00+00:00>`, and `info`:
 
    Long video (title/description/tags from the story JSON):
@@ -66,7 +70,7 @@ Morocco went back to plain GMT (= UTC) on 20 Sept 2026, but Metricool still thin
  "youtubeData": {"title": "<title>", "type": "video", "privacy": "public", "tags": [<tags>],
    "category": "EDUCATION", "madeForKids": true, "isAiGeneratedContent": true}}
 ```
-   Short (title/description/tags from `<slug>_short_meta.json`; **no videoThumbnailUrl**
+   Short (title/description/tags from `<slug>_short_meta.json` / `_short2_meta.json`; **no videoThumbnailUrl**
    for Shorts — Metricool rejects the whole post if the channel can't use Shorts thumbnails):
 ```json
 {"autoPublish": true, "descendants": [], "draft": false, "firstCommentText": "",
@@ -84,4 +88,4 @@ Morocco went back to plain GMT (= UTC) on 20 Sept 2026, but Metricool still thin
 - Commit the 2 new story files to `main` and push (end the commit message with the
   attribution lines from the session's instructions).
 - Send the owner a short message (SendUserMessage + PushNotification if available):
-  the 2 video titles and 2 Shorts with their publish times, and anything that failed.
+  the 2 video titles and 4 Shorts with their publish times, and anything that failed.

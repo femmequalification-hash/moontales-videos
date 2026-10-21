@@ -4,7 +4,7 @@ Each video is one JSON file in `pipeline/stories/<slug>.json`. `build.py` turns 
 into a ~5-minute video. Look at `stories/windy-day.json` as the reference.
 
 ## Channel rules (from the owner — always follow)
-- Simple English stories for children aged 3–8, teaching **6–8 new English words**.
+- Simple English stories for children aged 3–8, teaching **6–8 new English words** (at least 5 — each story gives two Shorts).
 - Main characters: **Lina** (girl, purple dress) and **Adams** (boy, blue star shirt),
   friends, plus **Milo** the orange cat. Kind, gentle, safe stories; a small problem
   solved with kindness or teamwork; a clear happy ending.
