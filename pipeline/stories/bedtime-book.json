@@ -1,0 +1,540 @@
+{
+  "slug": "bedtime-book",
+  "story_title": "Lina and Adams and the Bedtime Book",
+  "lesson": "Learn bedtime words in English!",
+  "title": "Lina and Adams and the Bedtime Book 🌙 | Learn Bedtime Words in English for Kids | Moon Tales Kids",
+  "thumbnail_title": "The Bedtime Book",
+  "thumbnail_word": "Bedtime words",
+  "thumbnail_scene": {
+    "setting": "bedroom",
+    "time": "night",
+    "weather": "sunny",
+    "props": [
+      "bed",
+      {
+        "name": "lamp",
+        "x": 1750,
+        "y": 940
+      },
+      {
+        "name": "book",
+        "x": 350,
+        "y": 980
+      }
+    ],
+    "chars": [
+      "lina",
+      "adams",
+      "milo"
+    ]
+  },
+  "description": "Milo the cat can't sleep! Lina and Adams find a cosy way to help him. 🌙📖🛏️\nIn this English story for kids, children learn 8 new words: moon, pajamas, lamp, pillow, blanket, book, quiet and dream. Listen, repeat, and learn English with Lina, Adams and Milo the cat.\n\n📚 New words in this story:\n🌙 moon — القمر — la lune\n👕 pajamas — البيجامة — le pyjama\n💡 lamp — المصباح — la lampe\n🛏️ pillow — الوسادة — l'oreiller\n🧸 blanket — البطانية / الغطاء — la couverture\n📖 book — الكتاب — le livre\n🤫 quiet — هادئ — calme / silencieux\n💭 dream — حلم — le rêve\n\n👨‍👩‍👧 For parents: a calm story for bedtime. Pause after each new word and say it softly together. Perfect for ages 3 to 8 and for children learning English as a second language.\n\n🇲🇦 قصة هادئة قبل النوم باللغة الإنجليزية لتعلم كلمات جديدة.\n🇫🇷 Une histoire douce en anglais pour le coucher, pour apprendre de nouveaux mots.\n\n🌙 Subscribe to Moon Tales Kids for a new English story every day!\n\n#EnglishForKids #KidsStories #LearnEnglish #MoonTalesKids",
+  "tags": [
+    "english stories for kids",
+    "learn english for kids",
+    "kids stories in english",
+    "Lina and Adams",
+    "Moon Tales Kids",
+    "ESL kids",
+    "bedtime words for kids",
+    "bedtime story in english",
+    "calm story for kids",
+    "sleep story for children",
+    "قصص اطفال بالانجليزي",
+    "تعلم الانجليزية للاطفال",
+    "قصة قبل النوم بالانجليزي",
+    "كلمات النوم بالانجليزي",
+    "histoire en anglais pour enfant",
+    "apprendre l'anglais enfant",
+    "histoire du soir en anglais",
+    "le coucher en anglais"
+  ],
+  "scenes": [
+    {
+      "setting": "garden",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "ball",
+          "x": 1750,
+          "y": 980
+        }
+      ],
+      "lines": [
+        {
+          "text": "It is the end of a long, happy day."
+        },
+        {
+          "text": "Lina, Adams and Milo are playing in the garden."
+        },
+        {
+          "who": "lina",
+          "text": "Look, Adams! The sky is orange and pink."
+        },
+        {
+          "who": "adams",
+          "text": "The day is almost finished. Soon it will be night."
+        },
+        {
+          "text": "Milo yawns a big yawn. Mmm-yaaaw!"
+        },
+        {
+          "who": "lina",
+          "text": "Milo is tired. We are tired too!"
+        },
+        {
+          "who": "adams",
+          "text": "Let's go inside and get ready for bed."
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "star",
+          "x": 1750,
+          "y": 400
+        }
+      ],
+      "word": "moon",
+      "lines": [
+        {
+          "text": "Now it is dark outside. Lina points up at the sky."
+        },
+        {
+          "who": "lina",
+          "text": "Adams, look! A big, round, white light in the sky!"
+        },
+        {
+          "who": "adams",
+          "text": "That is the moon! It shines at night."
+        },
+        {
+          "text": "The moon is the big light we see in the night sky."
+        },
+        {
+          "text": "Say it with me: moon!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "milo",
+          "text": "Meow! Hello, moon!"
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        "bed"
+      ],
+      "word": "pajamas",
+      "lines": [
+        {
+          "text": "Inside, Lina and Adams take off their day clothes."
+        },
+        {
+          "who": "adams",
+          "text": "I put on my blue pajamas with little stars."
+        },
+        {
+          "who": "lina",
+          "text": "And I put on my purple pajamas. They are so soft!"
+        },
+        {
+          "text": "Pajamas are soft clothes we wear to sleep."
+        },
+        {
+          "text": "Can you say it? Pajamas!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Then they brush their teeth. Now they are ready."
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "bed",
+        {
+          "name": "lamp",
+          "x": 1750,
+          "y": 940
+        }
+      ],
+      "word": "lamp",
+      "lines": [
+        {
+          "text": "Lina turns off the big light. Click!"
+        },
+        {
+          "text": "But Milo runs under the bed. Meow, meow!"
+        },
+        {
+          "who": "adams",
+          "text": "Oh, Milo is scared of the dark!"
+        },
+        {
+          "who": "lina",
+          "text": "Don't worry, Milo. I will turn on the little lamp."
+        },
+        {
+          "text": "Click! A soft, yellow light fills the room."
+        },
+        {
+          "text": "A lamp is a small light we can put next to the bed. Say it: lamp!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "milo",
+          "text": "Meow. That is better."
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "bed",
+        {
+          "name": "lamp",
+          "x": 1750,
+          "y": 940
+        }
+      ],
+      "word": "pillow",
+      "lines": [
+        {
+          "text": "But Milo still cannot sleep. He walks round and round."
+        },
+        {
+          "who": "adams",
+          "text": "Milo, are you okay? What do you need?"
+        },
+        {
+          "who": "lina",
+          "text": "Maybe he wants a soft place for his head."
+        },
+        {
+          "text": "Adams gives Milo a little pillow. It is soft, like a cloud."
+        },
+        {
+          "text": "A pillow is a soft thing for your head in bed."
+        },
+        {
+          "text": "Say it with me: pillow!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "milo",
+          "text": "Meow! So soft!"
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "night",
+      "weather": "snow",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "bed",
+        {
+          "name": "lamp",
+          "x": 1750,
+          "y": 940
+        }
+      ],
+      "word": "blanket",
+      "lines": [
+        {
+          "text": "Brrr. The night is a little cold."
+        },
+        {
+          "who": "lina",
+          "text": "Milo is shaking. He needs something warm."
+        },
+        {
+          "who": "adams",
+          "text": "Here, Milo. You can share my blanket."
+        },
+        {
+          "text": "Adams puts the blanket over Milo. Now he is cosy."
+        },
+        {
+          "text": "A blanket is big and warm. We put it on us in bed."
+        },
+        {
+          "text": "Can you say it? Blanket!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "bed",
+        {
+          "name": "book",
+          "x": 1700,
+          "y": 980
+        }
+      ],
+      "word": "book",
+      "lines": [
+        {
+          "text": "Milo is warm now, but his eyes are still open."
+        },
+        {
+          "who": "lina",
+          "text": "I know! Let's read a story from our book."
+        },
+        {
+          "who": "adams",
+          "text": "Yes! The book about the little boat on the sea."
+        },
+        {
+          "text": "A book has pages with words and pictures inside."
+        },
+        {
+          "text": "Let's say it together: book!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Lina opens the book. Milo looks at the pictures."
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "bed",
+        {
+          "name": "book",
+          "x": 1700,
+          "y": 980
+        },
+        {
+          "name": "lamp",
+          "x": 300,
+          "y": 940
+        }
+      ],
+      "word": "quiet",
+      "lines": [
+        {
+          "text": "Lina reads in a soft voice. Adams listens."
+        },
+        {
+          "who": "lina",
+          "text": "Once upon a time, a little boat sailed on the calm sea."
+        },
+        {
+          "who": "adams",
+          "text": "Shh. Let's be quiet now. Milo is getting sleepy."
+        },
+        {
+          "text": "Quiet means no loud sounds. Just soft and calm."
+        },
+        {
+          "text": "Say it softly with me: quiet."
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "The room is quiet. Only the clock says tick, tock."
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "bed",
+        {
+          "name": "lamp",
+          "x": 1750,
+          "y": 940
+        }
+      ],
+      "word": "dream",
+      "lines": [
+        {
+          "text": "Milo closes his eyes. He purrs. Purrr, purrr."
+        },
+        {
+          "who": "adams",
+          "text": "Look, Milo is smiling in his sleep!"
+        },
+        {
+          "who": "lina",
+          "text": "He is having a dream. Maybe he dreams about fish!"
+        },
+        {
+          "text": "A dream is a little story we see in our sleep."
+        },
+        {
+          "text": "Can you say it? Dream!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "adams",
+          "text": "I want to dream about riding the little boat."
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        "bed",
+        {
+          "name": "lamp",
+          "x": 1750,
+          "y": 940
+        }
+      ],
+      "lines": [
+        {
+          "text": "Now Lina and Adams lie down too."
+        },
+        {
+          "who": "lina",
+          "text": "Adams, thank you for sharing your blanket with Milo."
+        },
+        {
+          "who": "adams",
+          "text": "And thank you for the lamp and the book, Lina."
+        },
+        {
+          "who": "lina",
+          "text": "When we help each other, everyone feels safe."
+        },
+        {
+          "text": "They put their heads on their pillows."
+        },
+        {
+          "text": "They pull up their warm blankets."
+        },
+        {
+          "who": "adams",
+          "text": "Our pajamas are cosy, and the room is quiet."
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "star",
+          "x": 1750,
+          "y": 400
+        }
+      ],
+      "lines": [
+        {
+          "text": "Outside the window, the moon shines on the garden."
+        },
+        {
+          "text": "The stars twinkle, one by one."
+        },
+        {
+          "text": "Inside, the little lamp glows softly."
+        },
+        {
+          "text": "Milo, Lina and Adams are fast asleep."
+        },
+        {
+          "text": "Sweet dreams, Milo. Sweet dreams, Lina and Adams."
+        },
+        {
+          "text": "And sweet dreams to you too, little friend."
+        },
+        {
+          "text": "Good night!"
+        }
+      ]
+    }
+  ]
+}

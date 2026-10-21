@@ -1,0 +1,533 @@
+{
+  "slug": "busy-street",
+  "story_title": "Lina and Adams and the Busy Street",
+  "lesson": "Learn street words in English!",
+  "title": "Lina and Adams and the Busy Street 🚲 | Learn Street Words in English for Kids | Moon Tales Kids",
+  "thumbnail_title": "The Busy Street",
+  "thumbnail_word": "Street words",
+  "thumbnail_scene": {
+    "setting": "street",
+    "time": "day",
+    "weather": "sunny",
+    "props": [
+      "bike"
+    ],
+    "chars": [
+      "lina",
+      "adams"
+    ]
+  },
+  "description": "Walk down the busy street with Lina, Adams and Milo, and learn to stay safe! 🚗🚌🚲\nIn this English story for kids, children learn 8 new words: street, car, bus, bike, helmet, stop, go and slow. Listen, repeat, and learn English with Lina, Adams and Milo the cat.\n\n📚 New words in this story:\n🏙️ street — الشارع — la rue\n🚗 car — السيارة — la voiture\n🚌 bus — الحافلة — le bus\n🚲 bike — الدراجة — le vélo\n⛑️ helmet — الخوذة — le casque\n🛑 stop — قف / توقف — stop / arrête-toi\n🟢 go — انطلق / اذهب — vas-y / avance\n🐢 slow — ببطء — lentement\n\n👨‍👩‍👧 For parents: talk with your child about holding hands and stopping at the street. Pause after each new word and say it together. Perfect for ages 3 to 8 and for children learning English as a second language.\n\n🇲🇦 قصص باللغة الإنجليزية للأطفال لتعلم كلمات جديدة بطريقة ممتعة.\n🇫🇷 Histoires en anglais pour enfants : apprendre de nouveaux mots en s'amusant.\n\n🌙 Subscribe to Moon Tales Kids for a new English story every day!\n\n#EnglishForKids #KidsStories #LearnEnglish #MoonTalesKids",
+  "tags": [
+    "english stories for kids",
+    "learn english for kids",
+    "kids stories in english",
+    "Lina and Adams",
+    "Moon Tales Kids",
+    "ESL kids",
+    "street words for kids",
+    "road safety for kids",
+    "transport words for kids",
+    "car bus bike for kids",
+    "قصص اطفال بالانجليزي",
+    "تعلم الانجليزية للاطفال",
+    "وسائل النقل بالانجليزي",
+    "السلامة في الطريق للاطفال",
+    "histoire en anglais pour enfant",
+    "apprendre l'anglais enfant",
+    "les transports en anglais",
+    "sécurité routière enfant"
+  ],
+  "scenes": [
+    {
+      "setting": "kitchen",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "cup",
+        "banana"
+      ],
+      "lines": [
+        {
+          "text": "It is a bright morning. Lina and Adams are eating breakfast."
+        },
+        {
+          "who": "adams",
+          "text": "Lina, today we go to the park with Mama!"
+        },
+        {
+          "who": "lina",
+          "text": "Hooray! We will walk down the big street."
+        },
+        {
+          "text": "Milo the cat jumps on the chair. Meow!"
+        },
+        {
+          "text": "Mama says: put on your shoes, and hold my hand outside."
+        },
+        {
+          "who": "lina",
+          "text": "Yes, Mama. We always hold hands near the street."
+        },
+        {
+          "who": "milo",
+          "text": "Meow! Me too!"
+        }
+      ]
+    },
+    {
+      "setting": "street",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "shoes",
+          "x": 1700,
+          "y": 980
+        }
+      ],
+      "word": "street",
+      "lines": [
+        {
+          "text": "Lina, Adams and Milo go outside with Mama."
+        },
+        {
+          "who": "lina",
+          "text": "Look, Adams! This is our street. It is long and busy."
+        },
+        {
+          "who": "adams",
+          "text": "I can see houses, and shops, and trees!"
+        },
+        {
+          "text": "A street is a road in a town, with houses and shops next to it."
+        },
+        {
+          "text": "Say it with me: street!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Milo walks close to Lina's feet. He is a good cat."
+        }
+      ]
+    },
+    {
+      "setting": "street",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "car",
+          "x": 1750,
+          "y": 960
+        }
+      ],
+      "word": "car",
+      "lines": [
+        {
+          "text": "Vroom, vroom! What is that sound?"
+        },
+        {
+          "who": "adams",
+          "text": "Look, a red car! It has four round wheels."
+        },
+        {
+          "who": "lina",
+          "text": "The car goes on the road. We walk on the side."
+        },
+        {
+          "text": "A car takes people from one place to another."
+        },
+        {
+          "text": "Can you say it? Car!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "adams",
+          "text": "Beep, beep! Bye bye, red car!"
+        }
+      ]
+    },
+    {
+      "setting": "street",
+      "time": "day",
+      "weather": "cloudy",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "car",
+          "x": 300,
+          "y": 960
+        }
+      ],
+      "word": "bus",
+      "lines": [
+        {
+          "text": "Then, a very big, yellow car comes down the street."
+        },
+        {
+          "who": "lina",
+          "text": "Adams, what is that? It is so long!"
+        },
+        {
+          "who": "adams",
+          "text": "It is a bus! Many people ride on the bus."
+        },
+        {
+          "text": "The bus stops, and the doors open. Ding, ding!"
+        },
+        {
+          "text": "A bus is a big car that carries many people."
+        },
+        {
+          "text": "Say it with me: bus!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "lina",
+          "text": "Hello, bus driver! Have a nice day!"
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "bike",
+          "x": 1700,
+          "y": 960
+        }
+      ],
+      "word": "bike",
+      "lines": [
+        {
+          "text": "At the park, Adams sees his bike next to a tree."
+        },
+        {
+          "who": "adams",
+          "text": "My bike! Papa brought it for me this morning."
+        },
+        {
+          "who": "lina",
+          "text": "Your bike is blue, like your shirt!"
+        },
+        {
+          "text": "A bike has two wheels. You push the pedals with your feet."
+        },
+        {
+          "text": "Let's say it together: bike!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "adams",
+          "text": "Lina, you can ride my bike too. Let's share!"
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "bike",
+          "x": 1700,
+          "y": 960
+        },
+        {
+          "name": "hat",
+          "x": 350,
+          "y": 980
+        }
+      ],
+      "word": "helmet",
+      "lines": [
+        {
+          "text": "Adams wants to ride right now. But wait!"
+        },
+        {
+          "who": "lina",
+          "text": "Adams! Where is your helmet?"
+        },
+        {
+          "who": "adams",
+          "text": "Oh! I forgot. Here it is. I put it on my head."
+        },
+        {
+          "text": "A helmet is a strong hat. It keeps your head safe."
+        },
+        {
+          "text": "Say it with me: helmet!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "adams",
+          "text": "Click! Now my helmet is on. I am ready!"
+        },
+        {
+          "who": "milo",
+          "text": "Meow! Safe and ready!"
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "day",
+      "weather": "windy",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "ball",
+          "x": 1800,
+          "y": 980
+        }
+      ],
+      "word": "stop",
+      "lines": [
+        {
+          "text": "Lina and Adams play with a ball on the grass."
+        },
+        {
+          "text": "Lina kicks the ball. Whoosh! It rolls and rolls."
+        },
+        {
+          "text": "The ball rolls to the edge of the street!"
+        },
+        {
+          "who": "adams",
+          "text": "Oh no! The ball! Let's run and get it!"
+        },
+        {
+          "who": "lina",
+          "text": "No, Adams! Stop! We never run into the street."
+        },
+        {
+          "text": "Adams stops. Lina stops. Milo stops too."
+        },
+        {
+          "text": "Stop means do not move. Stay where you are. Say it: stop!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "street",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "ball",
+          "x": 1750,
+          "y": 990
+        }
+      ],
+      "word": "go",
+      "lines": [
+        {
+          "text": "Lina and Adams wait, and they call Mama."
+        },
+        {
+          "who": "lina",
+          "text": "Mama, our ball is near the street. Can you help us, please?"
+        },
+        {
+          "text": "Mama looks left, and she looks right. No cars are coming."
+        },
+        {
+          "text": "The little man on the light turns green."
+        },
+        {
+          "text": "Green means go. Now it is safe to walk. Say it with me: go!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Mama gets the ball and comes back. Hooray!"
+        },
+        {
+          "who": "adams",
+          "text": "Thank you, Mama! Thank you, Lina, for saying stop."
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "bike",
+          "x": 1650,
+          "y": 960
+        }
+      ],
+      "word": "slow",
+      "lines": [
+        {
+          "text": "Now Adams rides his bike on the park path."
+        },
+        {
+          "who": "lina",
+          "text": "Go slow, Adams! There are little children here."
+        },
+        {
+          "who": "adams",
+          "text": "Okay! Slow, slow, slow. Like a little turtle!"
+        },
+        {
+          "text": "Slow means not fast. Slow is careful and safe."
+        },
+        {
+          "text": "Can you say it? Slow!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Then Lina rides the bike, slowly too. They take turns."
+        },
+        {
+          "who": "milo",
+          "text": "Meow! I am slow too. I like to walk."
+        }
+      ]
+    },
+    {
+      "setting": "street",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [],
+      "lines": [
+        {
+          "text": "The sun is going down. It is time to go home."
+        },
+        {
+          "text": "Lina and Adams hold Mama's hands on the street."
+        },
+        {
+          "who": "adams",
+          "text": "I see a car, and a bus, and a bike!"
+        },
+        {
+          "who": "lina",
+          "text": "At the corner, we stop. When the light is green, we go."
+        },
+        {
+          "text": "They walk slowly and carefully. Step, step, step."
+        },
+        {
+          "who": "adams",
+          "text": "We are safe on the street!"
+        },
+        {
+          "text": "Milo walks with them all the way home. Meow!"
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "bed",
+        "lamp"
+      ],
+      "lines": [
+        {
+          "text": "At night, Lina and Adams are in the bedroom."
+        },
+        {
+          "who": "adams",
+          "text": "Today I saw a red car and a long yellow bus!"
+        },
+        {
+          "who": "lina",
+          "text": "And you rode your bike with your helmet on."
+        },
+        {
+          "who": "adams",
+          "text": "You said stop, and you saved our day. Thank you, Lina."
+        },
+        {
+          "who": "lina",
+          "text": "Friends help friends to stay safe."
+        },
+        {
+          "text": "Milo curls up on the bed and closes his eyes."
+        },
+        {
+          "who": "lina",
+          "text": "Good night, Milo. Good night, Adams."
+        },
+        {
+          "who": "adams",
+          "text": "Good night, everyone!"
+        }
+      ]
+    }
+  ]
+}
