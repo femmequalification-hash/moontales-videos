@@ -1,0 +1,551 @@
+{
+  "slug": "kind-words",
+  "story_title": "Lina and Adams and the Kind Words",
+  "lesson": "Learn polite words in English!",
+  "title": "Lina and Adams and the Kind Words 💐 | Learn Polite Words in English for Kids | Moon Tales Kids",
+  "thumbnail_title": "Kind Words",
+  "thumbnail_word": "Polite words",
+  "thumbnail_scene": {
+    "setting": "classroom",
+    "time": "day",
+    "weather": "sunny",
+    "board": "Please",
+    "props": [
+      {
+        "name": "heart",
+        "x": 1750,
+        "y": 900
+      }
+    ],
+    "chars": [
+      "lina",
+      "adams"
+    ]
+  },
+  "description": "Lina and Adams learn the magic of kind words at school and at home! 🙏💐🤗\nIn this English story for kids, children learn 7 new words: please, thank you, sorry, kind, friend, smile and hug. Listen, repeat, and learn English with Lina, Adams and Milo the cat.\n\n📚 New words in this story:\n🙏 please — من فضلك — s'il te plaît\n💐 thank you — شكرا — merci\n😔 sorry — آسف — pardon / désolé\n🧡 kind — لطيف — gentil\n👫 friend — صديق — ami / amie\n😊 smile — ابتسامة — sourire\n🤗 hug — عناق — câlin\n\n👨‍👩‍👧 For parents: practise saying please, thank you and sorry together every day. Pause after each new word and say it out loud. Perfect for ages 3 to 8 and for children learning English as a second language.\n\n🇲🇦 قصة باللغة الإنجليزية للأطفال لتعلم الكلمات اللطيفة والأخلاق الحميدة.\n🇫🇷 Une histoire en anglais pour enfants pour apprendre les mots gentils et la politesse.\n\n🌙 Subscribe to Moon Tales Kids for a new English story every day!\n\n#EnglishForKids #KidsStories #LearnEnglish #MoonTalesKids",
+  "tags": [
+    "english stories for kids",
+    "learn english for kids",
+    "polite words for kids",
+    "good manners for kids",
+    "please and thank you",
+    "Lina and Adams",
+    "Moon Tales Kids",
+    "ESL kids",
+    "قصص اطفال بالانجليزي",
+    "تعلم الانجليزية للاطفال",
+    "الكلمات اللطيفة بالانجليزي",
+    "الاخلاق للاطفال",
+    "histoire en anglais pour enfant",
+    "apprendre l'anglais enfant",
+    "la politesse en anglais",
+    "mots gentils en anglais"
+  ],
+  "scenes": [
+    {
+      "setting": "classroom",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "book",
+          "x": 1750,
+          "y": 950
+        }
+      ],
+      "board": "Please",
+      "word": "please",
+      "lines": [
+        {
+          "text": "Good morning! Lina and Adams are at school today."
+        },
+        {
+          "text": "On the board, the teacher wrote a word: please."
+        },
+        {
+          "who": "adams",
+          "text": "Lina, I want to draw a picture. Can I have the red crayon, please?"
+        },
+        {
+          "who": "lina",
+          "text": "Yes, of course! Here you are."
+        },
+        {
+          "text": "When we ask for something nicely, we say please."
+        },
+        {
+          "text": "Say it with me: please!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Please is a magic word. It makes people happy to help."
+        }
+      ]
+    },
+    {
+      "setting": "classroom",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "book",
+          "x": 1750,
+          "y": 950
+        }
+      ],
+      "board": "Thank you",
+      "word": "thank you",
+      "lines": [
+        {
+          "text": "Adams takes the red crayon from Lina."
+        },
+        {
+          "who": "adams",
+          "text": "Thank you, Lina!"
+        },
+        {
+          "who": "lina",
+          "text": "You are welcome, Adams!"
+        },
+        {
+          "text": "When someone gives us something or helps us, we say thank you."
+        },
+        {
+          "text": "Can you say it? Thank you!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Now Adams draws a big red apple."
+        },
+        {
+          "who": "adams",
+          "text": "Look, Lina! My apple is round and red."
+        }
+      ]
+    },
+    {
+      "setting": "classroom",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "cup",
+          "x": 1700,
+          "y": 980
+        }
+      ],
+      "board": "Sorry",
+      "word": "sorry",
+      "lines": [
+        {
+          "text": "Oops! Adams moves his arm, and his cup of water falls."
+        },
+        {
+          "text": "Splash! Water goes on Lina's drawing."
+        },
+        {
+          "who": "lina",
+          "text": "Oh no! My flower picture is wet."
+        },
+        {
+          "who": "adams",
+          "text": "Oh, Lina, I am so sorry. It was an accident."
+        },
+        {
+          "text": "When we make a mistake or hurt someone, we say sorry."
+        },
+        {
+          "text": "Say it with me: sorry!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "lina",
+          "text": "It's okay, Adams. Thank you for saying sorry."
+        }
+      ]
+    },
+    {
+      "setting": "classroom",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "flower",
+          "x": 1750,
+          "y": 980
+        }
+      ],
+      "board": "Kind",
+      "word": "kind",
+      "lines": [
+        {
+          "who": "adams",
+          "text": "Lina, can I help you make a new picture, please?"
+        },
+        {
+          "who": "lina",
+          "text": "Yes, please! Let's draw together."
+        },
+        {
+          "text": "Adams gives Lina his best paper. They draw a new flower together."
+        },
+        {
+          "text": "Adams is kind. Kind means you are nice and gentle with others."
+        },
+        {
+          "text": "Can you say it? Kind!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "lina",
+          "text": "Adams, you are so kind!"
+        },
+        {
+          "who": "adams",
+          "text": "And you are kind too, Lina!"
+        }
+      ]
+    },
+    {
+      "setting": "classroom",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "heart",
+          "x": 1750,
+          "y": 900
+        }
+      ],
+      "board": "Friend",
+      "word": "friend",
+      "lines": [
+        {
+          "text": "The new picture is beautiful. It has a flower and a big heart."
+        },
+        {
+          "who": "lina",
+          "text": "This is the best picture! We made it together."
+        },
+        {
+          "who": "adams",
+          "text": "Because we are friends!"
+        },
+        {
+          "text": "A friend is someone you like, and you play and share with."
+        },
+        {
+          "text": "Say it with me: friend!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "lina",
+          "text": "You are my best friend, Adams."
+        },
+        {
+          "who": "adams",
+          "text": "You are my best friend too, Lina!"
+        }
+      ]
+    },
+    {
+      "setting": "street",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "bike",
+          "x": 1750,
+          "y": 960
+        }
+      ],
+      "word": "smile",
+      "lines": [
+        {
+          "text": "After school, Lina and Adams walk home with their families."
+        },
+        {
+          "text": "The sun is going down. The sky is orange and gold."
+        },
+        {
+          "text": "An old neighbour is sitting outside his house."
+        },
+        {
+          "who": "lina",
+          "text": "Good evening! How are you today?"
+        },
+        {
+          "text": "The neighbour looks very happy. He has a big smile on his face."
+        },
+        {
+          "text": "A smile is when your mouth goes up, like this, because you are happy."
+        },
+        {
+          "text": "Can you smile? Say it with me: smile!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "street",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "flower",
+          "x": 350,
+          "y": 990
+        }
+      ],
+      "lines": [
+        {
+          "who": "adams",
+          "text": "Lina, your smile is so big today!"
+        },
+        {
+          "who": "lina",
+          "text": "Kind words make me smile."
+        },
+        {
+          "text": "Lina and Adams smile at everyone they see on the street."
+        },
+        {
+          "text": "And everyone smiles back at them!"
+        },
+        {
+          "who": "adams",
+          "text": "Smiles are like little gifts. We can give one to everybody!"
+        },
+        {
+          "who": "lina",
+          "text": "And they don't cost anything!"
+        },
+        {
+          "text": "Smile, smile, smile. Everybody is happy."
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "table",
+          "x": 1700,
+          "y": 980
+        },
+        {
+          "name": "sandwich",
+          "x": 1700,
+          "y": 880
+        }
+      ],
+      "lines": [
+        {
+          "text": "At home, Lina and Adams are hungry after school."
+        },
+        {
+          "text": "Milo the cat is waiting for them in the kitchen. Meow!"
+        },
+        {
+          "who": "adams",
+          "text": "Can we have a sandwich, please?"
+        },
+        {
+          "text": "A sandwich is ready on the table. Yummy!"
+        },
+        {
+          "who": "lina",
+          "text": "Thank you! It looks delicious."
+        },
+        {
+          "text": "Milo looks at the sandwich too. Meow, meow!"
+        },
+        {
+          "who": "adams",
+          "text": "Sorry, Milo. Sandwiches are not for cats. Here is your fish food!"
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "cup",
+          "x": 1700,
+          "y": 980
+        }
+      ],
+      "word": "hug",
+      "lines": [
+        {
+          "text": "After dinner, Milo is sitting alone in the corner."
+        },
+        {
+          "who": "lina",
+          "text": "Milo looks a little bit lonely."
+        },
+        {
+          "who": "adams",
+          "text": "Let's give him a hug!"
+        },
+        {
+          "text": "Lina and Adams wrap their arms around Milo, softly and gently."
+        },
+        {
+          "text": "When we put our arms around someone we love, it is a hug."
+        },
+        {
+          "text": "Can you hug yourself? Say it with me: hug!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "milo",
+          "text": "Purr, purr, purr. Meow!"
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "heart",
+          "x": 1750,
+          "y": 900
+        }
+      ],
+      "lines": [
+        {
+          "who": "adams",
+          "text": "Lina, let's remember all our kind words!"
+        },
+        {
+          "who": "lina",
+          "text": "Please, when we ask for something."
+        },
+        {
+          "who": "adams",
+          "text": "Thank you, when someone helps us."
+        },
+        {
+          "who": "lina",
+          "text": "Sorry, when we make a mistake."
+        },
+        {
+          "who": "adams",
+          "text": "And kind, friend, smile and hug!"
+        },
+        {
+          "text": "Milo jumps on the chair. Meow! He knows kind words too."
+        },
+        {
+          "who": "lina",
+          "text": "Kind words make every day a happy day."
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "bed",
+        "lamp"
+      ],
+      "lines": [
+        {
+          "text": "It is bedtime. The moon is shining in the window."
+        },
+        {
+          "who": "lina",
+          "text": "Thank you for a wonderful day, Adams."
+        },
+        {
+          "who": "adams",
+          "text": "Thank you, Lina. And thank you, Milo!"
+        },
+        {
+          "text": "Milo gives a little purr and closes his eyes."
+        },
+        {
+          "who": "lina",
+          "text": "Good night, my friend."
+        },
+        {
+          "who": "adams",
+          "text": "Good night! Sweet dreams!"
+        },
+        {
+          "text": "Tomorrow, they will use their kind words again. Good night!"
+        }
+      ]
+    }
+  ]
+}

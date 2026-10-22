@@ -1,0 +1,565 @@
+{
+  "slug": "big-and-small",
+  "story_title": "Lina and Adams and the Big and Small Walk",
+  "lesson": "Learn opposite words in English!",
+  "title": "Lina and Adams and the Big and Small Walk 🌳 | English Opposites for Kids | Moon Tales Kids",
+  "thumbnail_title": "Big and Small",
+  "thumbnail_word": "Opposites",
+  "thumbnail_scene": {
+    "setting": "forest",
+    "time": "day",
+    "weather": "sunny",
+    "props": [
+      {
+        "name": "balloon",
+        "x": 1700,
+        "y": 800
+      }
+    ],
+    "chars": [
+      "lina",
+      "adams",
+      "milo"
+    ]
+  },
+  "description": "Go on a forest walk with Lina, Adams and Milo and discover big and small things! 🌳🐜🎈\nIn this English story for kids, children learn 7 new words — opposites: big, small, tall, short, fast, up and down. Listen, repeat, and learn English with Lina, Adams and Milo the cat.\n\n📚 New words in this story:\n📏 big — كبير — grand\n🐜 small — صغير — petit\n🌳 tall — طويل — grand / haut\n🌱 short — قصير — court / petit\n🐇 fast — سريع — rapide\n⬆️ up — فوق / إلى الأعلى — en haut\n⬇️ down — تحت / إلى الأسفل — en bas\n\n👨‍👩‍👧 For parents: find big and small things at home and play the opposites game together. Pause after each new word and say it out loud. Perfect for ages 3 to 8 and for children learning English as a second language.\n\n🇲🇦 قصة باللغة الإنجليزية للأطفال لتعلم الأضداد: كبير وصغير، طويل وقصير.\n🇫🇷 Une histoire en anglais pour enfants pour apprendre les contraires : grand et petit, en haut et en bas.\n\n🌙 Subscribe to Moon Tales Kids for a new English story every day!\n\n#EnglishForKids #KidsStories #LearnEnglish #MoonTalesKids",
+  "tags": [
+    "english stories for kids",
+    "learn english for kids",
+    "opposites for kids",
+    "big and small for kids",
+    "kids stories in english",
+    "Lina and Adams",
+    "Moon Tales Kids",
+    "ESL kids",
+    "قصص اطفال بالانجليزي",
+    "تعلم الانجليزية للاطفال",
+    "الاضداد بالانجليزي للاطفال",
+    "كبير وصغير بالانجليزي",
+    "histoire en anglais pour enfant",
+    "apprendre l'anglais enfant",
+    "les contraires en anglais",
+    "grand et petit en anglais"
+  ],
+  "scenes": [
+    {
+      "setting": "garden",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "balloon",
+          "x": 1700,
+          "y": 800
+        },
+        {
+          "name": "ball",
+          "x": 350,
+          "y": 980
+        }
+      ],
+      "word": "big",
+      "lines": [
+        {
+          "text": "It is a bright morning. Lina and Adams are in the garden."
+        },
+        {
+          "who": "lina",
+          "text": "Look, Adams! I have a balloon. It is so big!"
+        },
+        {
+          "who": "adams",
+          "text": "Wow! Your balloon is bigger than my head!"
+        },
+        {
+          "text": "Milo the cat looks up at the balloon. Meow!"
+        },
+        {
+          "text": "When something is very large, we say it is big."
+        },
+        {
+          "text": "Say it with me: big!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "adams",
+          "text": "Let's go for a walk in the forest and find more big things!"
+        }
+      ]
+    },
+    {
+      "setting": "forest",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "flower",
+          "x": 1700,
+          "y": 980
+        }
+      ],
+      "word": "small",
+      "lines": [
+        {
+          "text": "Lina, Adams and Milo walk into the green forest."
+        },
+        {
+          "who": "adams",
+          "text": "Lina, come here! Look at this tiny little ant."
+        },
+        {
+          "who": "lina",
+          "text": "Oh, it is so small! It is carrying a crumb."
+        },
+        {
+          "text": "When something is very little, we say it is small."
+        },
+        {
+          "text": "Can you say it? Small!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "lina",
+          "text": "The balloon is big. The ant is small. Big and small!"
+        },
+        {
+          "text": "Big and small are opposites. They are very different."
+        }
+      ]
+    },
+    {
+      "setting": "forest",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "bird",
+          "x": 1750,
+          "y": 600
+        }
+      ],
+      "word": "tall",
+      "lines": [
+        {
+          "text": "Now Lina and Adams look up, up, up."
+        },
+        {
+          "who": "lina",
+          "text": "This tree is so tall! It touches the clouds!"
+        },
+        {
+          "who": "adams",
+          "text": "I can see a bird at the top. Tweet, tweet!"
+        },
+        {
+          "text": "When something goes very high from the ground, we say it is tall."
+        },
+        {
+          "text": "Say it with me: tall!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "adams",
+          "text": "I want to be tall like this tree one day!"
+        },
+        {
+          "who": "lina",
+          "text": "You are growing every day, Adams!"
+        }
+      ]
+    },
+    {
+      "setting": "forest",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "flower",
+          "x": 1650,
+          "y": 990
+        },
+        {
+          "name": "flower",
+          "x": 1850,
+          "y": 990
+        }
+      ],
+      "word": "short",
+      "lines": [
+        {
+          "text": "Next to the tall tree, there is a little bush."
+        },
+        {
+          "who": "adams",
+          "text": "This bush is short. It only comes to my knee!"
+        },
+        {
+          "who": "lina",
+          "text": "Milo is short too. He is the same size as the bush!"
+        },
+        {
+          "text": "Milo hides in the bush. Meow! Can you see me?"
+        },
+        {
+          "text": "When something is not tall, we say it is short."
+        },
+        {
+          "text": "Can you say it? Short!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "adams",
+          "text": "Tall tree, short bush. Tall and short!"
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "dog",
+          "x": 1750,
+          "y": 980
+        }
+      ],
+      "word": "fast",
+      "lines": [
+        {
+          "text": "They walk out of the forest and into the park."
+        },
+        {
+          "text": "A little dog runs past them. Zoom!"
+        },
+        {
+          "who": "adams",
+          "text": "Look at that dog! He runs so fast!"
+        },
+        {
+          "who": "lina",
+          "text": "Milo, can you run fast too?"
+        },
+        {
+          "text": "Milo runs after the dog. Zoom, zoom! He is very fast."
+        },
+        {
+          "text": "When something moves very quickly, we say it is fast."
+        },
+        {
+          "text": "Say it with me: fast!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "day",
+      "weather": "windy",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "balloon",
+          "x": 1650,
+          "y": 500
+        }
+      ],
+      "word": "up",
+      "lines": [
+        {
+          "text": "Whoosh! The wind blows, and Lina's balloon slips from her hand."
+        },
+        {
+          "who": "lina",
+          "text": "Oh no! My balloon is going up!"
+        },
+        {
+          "who": "adams",
+          "text": "It is going up, up, up into the sky!"
+        },
+        {
+          "text": "When something goes higher and higher, we say it goes up."
+        },
+        {
+          "text": "Let's point to the sky and say: up!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "lina",
+          "text": "My big balloon. I am a little bit sad."
+        },
+        {
+          "who": "adams",
+          "text": "Don't worry, Lina. Let's look for it together."
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "balloon",
+          "x": 1700,
+          "y": 620
+        }
+      ],
+      "lines": [
+        {
+          "text": "Lina and Adams walk and look. Where is the balloon?"
+        },
+        {
+          "who": "adams",
+          "text": "There it is! It is stuck in a tall tree!"
+        },
+        {
+          "who": "lina",
+          "text": "It is too high. We are too short to reach it."
+        },
+        {
+          "text": "Milo looks at the tree. He has an idea. Meow!"
+        },
+        {
+          "text": "Milo climbs up the tree, slowly and carefully."
+        },
+        {
+          "who": "lina",
+          "text": "Be careful, Milo!"
+        },
+        {
+          "text": "Milo gently taps the balloon string with his paw."
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "balloon",
+          "x": 1500,
+          "y": 850
+        }
+      ],
+      "word": "down",
+      "lines": [
+        {
+          "text": "The balloon floats down, down, down, into Lina's hands."
+        },
+        {
+          "who": "lina",
+          "text": "Hooray! My balloon came down!"
+        },
+        {
+          "text": "When something goes lower and lower, we say it goes down."
+        },
+        {
+          "text": "Let's point to the ground and say: down!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Then Milo climbs down the tree too. Down, down, down."
+        },
+        {
+          "who": "adams",
+          "text": "Thank you, Milo! You are small, but you are very brave!"
+        },
+        {
+          "who": "milo",
+          "text": "Meow! Purr, purr."
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "balloon",
+          "x": 1700,
+          "y": 800
+        }
+      ],
+      "lines": [
+        {
+          "text": "Now Lina ties the balloon string around her wrist."
+        },
+        {
+          "who": "lina",
+          "text": "Now my balloon cannot fly away."
+        },
+        {
+          "who": "adams",
+          "text": "Let's play the opposites game, Lina!"
+        },
+        {
+          "who": "adams",
+          "text": "I say big, and you say..."
+        },
+        {
+          "who": "lina",
+          "text": "Small! Now I say tall, and you say..."
+        },
+        {
+          "who": "adams",
+          "text": "Short! I say up, and you say..."
+        },
+        {
+          "who": "lina",
+          "text": "Down! I say fast, and Milo says... Meow!"
+        },
+        {
+          "text": "Lina and Adams laugh and laugh."
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "balloon",
+          "x": 1700,
+          "y": 800
+        },
+        {
+          "name": "cup",
+          "x": 350,
+          "y": 980
+        }
+      ],
+      "lines": [
+        {
+          "text": "In the evening, they walk back home to the garden."
+        },
+        {
+          "text": "The sun goes down, and the sky turns orange and pink."
+        },
+        {
+          "who": "adams",
+          "text": "Today we saw a big balloon and a small ant."
+        },
+        {
+          "who": "lina",
+          "text": "We saw a tall tree and a short bush."
+        },
+        {
+          "who": "adams",
+          "text": "We saw a fast dog. And the balloon went up and down!"
+        },
+        {
+          "text": "Milo drinks some milk from his cup. Lap, lap, lap."
+        },
+        {
+          "who": "lina",
+          "text": "Milo, you were our hero today!"
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "bed",
+        "lamp"
+      ],
+      "lines": [
+        {
+          "text": "At night, the balloon is tied to Lina's bed."
+        },
+        {
+          "text": "The moon is up in the sky, and the stars are shining."
+        },
+        {
+          "who": "lina",
+          "text": "Good night, big balloon."
+        },
+        {
+          "who": "adams",
+          "text": "Good night, small Milo."
+        },
+        {
+          "text": "Milo curls up on the bed. Purr, purr."
+        },
+        {
+          "who": "lina",
+          "text": "Good night, everyone! See you tomorrow!"
+        },
+        {
+          "text": "And Lina and Adams close their eyes. Good night!"
+        }
+      ]
+    }
+  ]
+}
