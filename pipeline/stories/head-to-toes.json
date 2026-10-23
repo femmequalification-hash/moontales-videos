@@ -1,0 +1,542 @@
+{
+  "slug": "head-to-toes",
+  "story_title": "Lina and Adams and the Head to Toes Game",
+  "lesson": "Learn body words in English!",
+  "title": "Lina and Adams and the Head to Toes Game 👋 | Body Parts in English for Kids | Moon Tales Kids",
+  "thumbnail_title": "Head to Toes!",
+  "thumbnail_word": "Body words",
+  "thumbnail_scene": {
+    "setting": "park",
+    "time": "day",
+    "weather": "sunny",
+    "props": [
+      "hat",
+      "ball"
+    ],
+    "chars": [
+      "lina",
+      "adams",
+      "milo"
+    ]
+  },
+  "description": "Play a fun game with Lina, Adams and Milo, and help find Adams's lost hat! 👋👀👂\nIn this English story for kids, children learn 7 new words — body parts: head, eyes, ears, nose, mouth, hands and feet. Listen, repeat, and learn English with Lina, Adams and Milo the cat.\n\n📚 New words in this story:\n🧢 head — الرأس — la tête\n👀 eyes — العينان — les yeux\n👂 ears — الأذنان — les oreilles\n👃 nose — الأنف — le nez\n👄 mouth — الفم — la bouche\n👐 hands — اليدان — les mains\n🦶 feet — القدمان — les pieds\n\n👨‍👩‍👧 For parents: play \"touch your nose, touch your head\" with your child after the story. Pause after each new word and say it out loud. Perfect for ages 3 to 8 and for children learning English as a second language.\n\n🇲🇦 قصة باللغة الإنجليزية للأطفال لتعلم أعضاء الجسم بطريقة ممتعة.\n🇫🇷 Une histoire en anglais pour enfants pour apprendre les parties du corps en s'amusant.\n\n🌙 Subscribe to Moon Tales Kids for a new English story every day!\n\n#EnglishForKids #KidsStories #LearnEnglish #MoonTalesKids",
+  "tags": [
+    "english stories for kids",
+    "learn english for kids",
+    "body parts for kids",
+    "head shoulders knees and toes",
+    "kids stories in english",
+    "Lina and Adams",
+    "Moon Tales Kids",
+    "ESL kids",
+    "قصص اطفال بالانجليزي",
+    "تعلم الانجليزية للاطفال",
+    "اعضاء الجسم بالانجليزي",
+    "اجزاء الجسم للاطفال",
+    "histoire en anglais pour enfant",
+    "apprendre l'anglais enfant",
+    "les parties du corps en anglais",
+    "vocabulaire anglais enfant"
+  ],
+  "scenes": [
+    {
+      "setting": "classroom",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [],
+      "board": "Head to Toes",
+      "lines": [
+        {
+          "text": "It is a bright morning at school."
+        },
+        {
+          "text": "Lina and Adams sit in the classroom. Milo the cat peeks in. Meow!"
+        },
+        {
+          "who": "lina",
+          "text": "Look at the board! It says: Head to Toes!"
+        },
+        {
+          "who": "adams",
+          "text": "What does it mean?"
+        },
+        {
+          "text": "Today, the children will play a fun game about the body."
+        },
+        {
+          "text": "When I say a body word, you touch it. Ready?"
+        },
+        {
+          "who": "lina",
+          "text": "Ready!"
+        },
+        {
+          "who": "adams",
+          "text": "Ready! This will be fun!"
+        }
+      ]
+    },
+    {
+      "setting": "classroom",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "hat"
+      ],
+      "word": "head",
+      "board": "head",
+      "lines": [
+        {
+          "text": "The first word is: head!"
+        },
+        {
+          "text": "Lina and Adams put their hands on top of their heads."
+        },
+        {
+          "who": "adams",
+          "text": "My hat goes on my head. Look!"
+        },
+        {
+          "who": "lina",
+          "text": "My hair is on my head too!"
+        },
+        {
+          "text": "Your head is at the top of your body."
+        },
+        {
+          "text": "Say it with me: head!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Milo touches his head with his paw. Meow!"
+        }
+      ]
+    },
+    {
+      "setting": "classroom",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "book"
+      ],
+      "word": "eyes",
+      "board": "eyes",
+      "lines": [
+        {
+          "text": "The next word is: eyes!"
+        },
+        {
+          "who": "lina",
+          "text": "I see with my eyes. I can see a book!"
+        },
+        {
+          "who": "adams",
+          "text": "I can see Milo! He is blinking at me."
+        },
+        {
+          "text": "We have two eyes. We use our eyes to see."
+        },
+        {
+          "text": "Open your eyes. Close your eyes. Open them again!"
+        },
+        {
+          "text": "Can you say it? Eyes!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "classroom",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "bird"
+      ],
+      "word": "ears",
+      "board": "ears",
+      "lines": [
+        {
+          "text": "Tweet, tweet! What is that sound?"
+        },
+        {
+          "who": "adams",
+          "text": "I hear a bird! It is singing at the window."
+        },
+        {
+          "who": "lina",
+          "text": "I hear it with my ears!"
+        },
+        {
+          "text": "We have two ears. We use our ears to hear."
+        },
+        {
+          "text": "Touch your ears. Can you hear the little bird?"
+        },
+        {
+          "text": "Say it with me: ears!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Milo moves his pointy ears. He hears the bird too."
+        }
+      ]
+    },
+    {
+      "setting": "classroom",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "flower"
+      ],
+      "word": "nose",
+      "board": "nose",
+      "lines": [
+        {
+          "text": "Now the word is: nose!"
+        },
+        {
+          "who": "lina",
+          "text": "Mmm! I smell a flower with my nose."
+        },
+        {
+          "who": "adams",
+          "text": "It smells sweet. Like honey!"
+        },
+        {
+          "text": "Your nose is in the middle of your face. We smell with our nose."
+        },
+        {
+          "text": "Touch your nose. Boop!"
+        },
+        {
+          "text": "Let's say it together: nose!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Milo sniffs the flower. Achoo! Everybody laughs."
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "sandwich",
+        "apple",
+        "cup"
+      ],
+      "word": "mouth",
+      "lines": [
+        {
+          "text": "At lunch time, Lina and Adams go home to eat."
+        },
+        {
+          "who": "adams",
+          "text": "I am hungry! I open my mouth. Big bite!"
+        },
+        {
+          "who": "lina",
+          "text": "I eat my apple with my mouth. Crunch, crunch!"
+        },
+        {
+          "text": "We eat, we talk, and we smile with our mouth."
+        },
+        {
+          "text": "Can you open your mouth wide? Now close it."
+        },
+        {
+          "text": "Say it with me: mouth!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Milo licks his little mouth. Yum!"
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "ball"
+      ],
+      "word": "hands",
+      "lines": [
+        {
+          "text": "After lunch, the friends go to the park."
+        },
+        {
+          "who": "lina",
+          "text": "Catch the ball, Adams! Use your hands!"
+        },
+        {
+          "who": "adams",
+          "text": "I caught it! Now I will throw it back."
+        },
+        {
+          "text": "We have two hands. We catch, we clap and we wave with our hands."
+        },
+        {
+          "text": "Clap your hands with Lina and Adams. Clap, clap, clap!"
+        },
+        {
+          "text": "Can you say it? Hands!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "shoes"
+      ],
+      "word": "feet",
+      "lines": [
+        {
+          "text": "Now it is time to run."
+        },
+        {
+          "who": "adams",
+          "text": "I put on my shoes. Shoes go on my feet!"
+        },
+        {
+          "who": "lina",
+          "text": "Let's run with our feet. One, two, three, go!"
+        },
+        {
+          "text": "Lina and Adams run on the grass. Milo runs too, on four little paws."
+        },
+        {
+          "text": "We stand, walk, run and jump with our feet."
+        },
+        {
+          "text": "Stamp your feet! Stamp, stamp! Say it: feet!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "day",
+      "weather": "windy",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "hat",
+          "x": 1850,
+          "y": 420
+        }
+      ],
+      "lines": [
+        {
+          "text": "Whoosh! A big wind blows in the park."
+        },
+        {
+          "who": "adams",
+          "text": "Oh no! My hat! It flew off my head!"
+        },
+        {
+          "text": "The hat flies up, up, and far away."
+        },
+        {
+          "who": "adams",
+          "text": "I can't see it. Where is my hat?"
+        },
+        {
+          "who": "lina",
+          "text": "Don't be sad, Adams. We will find it together."
+        },
+        {
+          "who": "lina",
+          "text": "Let's use our eyes, our ears and our hands!"
+        },
+        {
+          "who": "adams",
+          "text": "Okay! Let's look!"
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "bird",
+        {
+          "name": "hat",
+          "x": 1650,
+          "y": 960
+        }
+      ],
+      "lines": [
+        {
+          "text": "Lina uses her eyes. She looks high and low."
+        },
+        {
+          "text": "Adams uses his ears. Tweet, tweet! The bird is singing near the bench."
+        },
+        {
+          "who": "adams",
+          "text": "Listen! The bird is over there."
+        },
+        {
+          "text": "Milo sniffs with his nose. Sniff, sniff. Meow!"
+        },
+        {
+          "who": "lina",
+          "text": "Look! Milo found it! The hat is next to the bench!"
+        },
+        {
+          "text": "Adams picks up the hat with his hands and puts it on his head."
+        },
+        {
+          "who": "adams",
+          "text": "Thank you, Lina! Thank you, Milo! We are a great team!"
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "hat"
+      ],
+      "lines": [
+        {
+          "text": "Now Adams has his hat again. Let's play the game one more time!"
+        },
+        {
+          "who": "lina",
+          "text": "Touch your head! Touch your eyes!"
+        },
+        {
+          "who": "adams",
+          "text": "Touch your ears! Touch your nose!"
+        },
+        {
+          "who": "lina",
+          "text": "Open your mouth! Clap your hands!"
+        },
+        {
+          "who": "adams",
+          "text": "Stamp your feet! Stamp, stamp!"
+        },
+        {
+          "text": "Well done! You know so many body words!"
+        },
+        {
+          "text": "Milo rolls on the grass. He is happy too. Meow!"
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [],
+      "lines": [
+        {
+          "text": "At night, Lina and Adams are ready for bed."
+        },
+        {
+          "who": "adams",
+          "text": "Today my hat flew away, but we found it together."
+        },
+        {
+          "who": "lina",
+          "text": "We used our eyes, our ears, our nose and our hands!"
+        },
+        {
+          "text": "Milo curls up at their feet. Purr, purr."
+        },
+        {
+          "text": "Close your eyes now. It is time to sleep."
+        },
+        {
+          "who": "lina",
+          "text": "Good night, Milo."
+        },
+        {
+          "who": "adams",
+          "text": "Good night, everyone!"
+        }
+      ]
+    }
+  ]
+}

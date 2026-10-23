@@ -1,0 +1,562 @@
+{
+  "slug": "counting-beach",
+  "story_title": "Lina and Adams Count at the Beach",
+  "lesson": "Learn to count in English!",
+  "title": "Lina and Adams Count at the Beach 🔢 | Learn Numbers 1 to 6 in English for Kids | Moon Tales Kids",
+  "thumbnail_title": "Let's Count!",
+  "thumbnail_word": "Number words",
+  "thumbnail_scene": {
+    "setting": "beach",
+    "time": "sunset",
+    "weather": "sunny",
+    "props": [
+      "boat",
+      {
+        "name": "ball",
+        "x": 1750,
+        "y": 1000
+      }
+    ],
+    "chars": [
+      "lina",
+      "adams",
+      "milo"
+    ]
+  },
+  "description": "Count boats, birds and stars with Lina, Adams and Milo on an evening at the beach! 🔢⛵🌟\nIn this English story for kids, children learn 7 new words: count, one, two, three, four, five and six. Listen, repeat, and count in English with Lina, Adams and Milo the cat.\n\n📚 New words in this story:\n🔢 count — يعد / العد — compter\n1️⃣ one — واحد — un\n2️⃣ two — اثنان — deux\n3️⃣ three — ثلاثة — trois\n4️⃣ four — أربعة — quatre\n5️⃣ five — خمسة — cinq\n6️⃣ six — ستة — six\n\n👨‍👩‍👧 For parents: count things at home with your child — spoons, shoes, toys. Pause after each number and say it out loud with your fingers. Perfect for ages 3 to 8 and for children learning English as a second language.\n\n🇲🇦 قصة باللغة الإنجليزية للأطفال لتعلم الأرقام من واحد إلى ستة.\n🇫🇷 Une histoire en anglais pour enfants pour apprendre à compter de un à six.\n\n🌙 Subscribe to Moon Tales Kids for a new English story every day!\n\n#EnglishForKids #KidsStories #LearnEnglish #MoonTalesKids",
+  "tags": [
+    "english stories for kids",
+    "learn english for kids",
+    "numbers for kids",
+    "counting for kids",
+    "numbers 1 to 6 in english",
+    "Lina and Adams",
+    "Moon Tales Kids",
+    "ESL kids",
+    "قصص اطفال بالانجليزي",
+    "تعلم الانجليزية للاطفال",
+    "الارقام بالانجليزي للاطفال",
+    "العد بالانجليزي",
+    "histoire en anglais pour enfant",
+    "apprendre l'anglais enfant",
+    "les chiffres en anglais",
+    "compter en anglais enfant"
+  ],
+  "scenes": [
+    {
+      "setting": "beach",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [],
+      "lines": [
+        {
+          "text": "It is the evening. The sun is going down over the sea."
+        },
+        {
+          "text": "Lina, Adams and Milo the cat take a walk on the beach."
+        },
+        {
+          "who": "lina",
+          "text": "The sand is soft and warm."
+        },
+        {
+          "who": "adams",
+          "text": "Listen to the sea. Swish, swish!"
+        },
+        {
+          "who": "milo",
+          "text": "Meow!"
+        },
+        {
+          "text": "Lina has a fun idea for a game."
+        },
+        {
+          "who": "lina",
+          "text": "Adams, let's play a counting game!"
+        }
+      ]
+    },
+    {
+      "setting": "beach",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [],
+      "word": "count",
+      "lines": [
+        {
+          "who": "adams",
+          "text": "A counting game? What is count?"
+        },
+        {
+          "who": "lina",
+          "text": "When we count, we say numbers, one by one."
+        },
+        {
+          "who": "lina",
+          "text": "Let's count things we see on the beach!"
+        },
+        {
+          "text": "When we say numbers in order, we count."
+        },
+        {
+          "text": "Say it with me: count!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "adams",
+          "text": "Yes! I love to count!"
+        }
+      ]
+    },
+    {
+      "setting": "beach",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "boat"
+      ],
+      "word": "one",
+      "lines": [
+        {
+          "text": "Look at the water. What can you see?"
+        },
+        {
+          "who": "adams",
+          "text": "I see a boat! One boat on the sea."
+        },
+        {
+          "who": "lina",
+          "text": "One! Let's hold up one finger."
+        },
+        {
+          "text": "One is the very first number. Hold up one finger, like Lina."
+        },
+        {
+          "text": "Can you say it? One!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "The little boat rocks on the waves. Milo watches it. Meow!"
+        }
+      ]
+    },
+    {
+      "setting": "beach",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "bird",
+          "x": 1450,
+          "y": 280
+        },
+        {
+          "name": "bird",
+          "x": 1750,
+          "y": 340
+        }
+      ],
+      "word": "two",
+      "lines": [
+        {
+          "text": "Up in the sky, something is flying."
+        },
+        {
+          "who": "lina",
+          "text": "Look, birds! One, two. Two birds!"
+        },
+        {
+          "who": "adams",
+          "text": "Two birds are flying home to sleep."
+        },
+        {
+          "text": "Two is one and one more. Hold up two fingers."
+        },
+        {
+          "text": "Let's say it together: two!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Milo looks up at the two birds. Meow, meow!"
+        }
+      ]
+    },
+    {
+      "setting": "beach",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "ball",
+          "x": 1450,
+          "y": 990
+        },
+        {
+          "name": "ball",
+          "x": 1650,
+          "y": 1000
+        },
+        {
+          "name": "ball",
+          "x": 1850,
+          "y": 990
+        }
+      ],
+      "word": "three",
+      "lines": [
+        {
+          "text": "Adams finds some balls next to the sand."
+        },
+        {
+          "who": "adams",
+          "text": "One, two, three. Three balls!"
+        },
+        {
+          "who": "lina",
+          "text": "Let's each take one ball. One for you, one for me, and one for Milo!"
+        },
+        {
+          "text": "Three is two and one more. Hold up three fingers."
+        },
+        {
+          "text": "Say it with me: three!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Milo pushes his ball with his paw. Roll, roll!"
+        }
+      ]
+    },
+    {
+      "setting": "beach",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "shoes",
+          "x": 1500,
+          "y": 1010
+        },
+        {
+          "name": "shoes",
+          "x": 1750,
+          "y": 1010
+        }
+      ],
+      "word": "four",
+      "lines": [
+        {
+          "text": "Lina and Adams take off their shoes to walk on the sand."
+        },
+        {
+          "who": "lina",
+          "text": "I have two shoes. You have two shoes."
+        },
+        {
+          "who": "adams",
+          "text": "Let's count them all. One, two, three, four. Four shoes!"
+        },
+        {
+          "text": "Four is three and one more. Hold up four fingers."
+        },
+        {
+          "text": "Can you say it? Four!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "adams",
+          "text": "Wait. Where is Milo?"
+        }
+      ]
+    },
+    {
+      "setting": "beach",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        "boat"
+      ],
+      "lines": [
+        {
+          "text": "Milo is not there! Lina and Adams look around."
+        },
+        {
+          "who": "lina",
+          "text": "Don't worry, Adams. We will look together."
+        },
+        {
+          "who": "adams",
+          "text": "Let's count our friends. One, Lina. Two, Adams. And three should be Milo!"
+        },
+        {
+          "text": "They walk slowly by the sea. They look and they listen."
+        },
+        {
+          "text": "Meow! The sound comes from the little boat on the sand."
+        },
+        {
+          "who": "lina",
+          "text": "There he is! Milo is sitting in the boat!"
+        },
+        {
+          "who": "adams",
+          "text": "Hooray! Now we are three again!"
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "star",
+          "x": 300,
+          "y": 180
+        },
+        {
+          "name": "star",
+          "x": 620,
+          "y": 120
+        },
+        {
+          "name": "star",
+          "x": 950,
+          "y": 200
+        },
+        {
+          "name": "star",
+          "x": 1300,
+          "y": 110
+        },
+        {
+          "name": "star",
+          "x": 1560,
+          "y": 220
+        }
+      ],
+      "word": "five",
+      "lines": [
+        {
+          "text": "Now it is night. The friends are home in the garden."
+        },
+        {
+          "who": "lina",
+          "text": "Look at the sky. The stars are shining!"
+        },
+        {
+          "who": "adams",
+          "text": "Let's count the big stars. One, two, three, four, five!"
+        },
+        {
+          "text": "Five is four and one more. Hold up one whole hand. Five fingers!"
+        },
+        {
+          "text": "Say it with me: five!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Milo looks up at the sky with his big eyes."
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "star",
+          "x": 300,
+          "y": 180
+        },
+        {
+          "name": "star",
+          "x": 620,
+          "y": 120
+        },
+        {
+          "name": "star",
+          "x": 950,
+          "y": 200
+        },
+        {
+          "name": "star",
+          "x": 1300,
+          "y": 110
+        },
+        {
+          "name": "star",
+          "x": 1560,
+          "y": 220
+        },
+        {
+          "name": "star",
+          "x": 1900,
+          "y": 140
+        }
+      ],
+      "word": "six",
+      "lines": [
+        {
+          "who": "lina",
+          "text": "Wait! I see one more star over there!"
+        },
+        {
+          "who": "adams",
+          "text": "One, two, three, four, five, six. Six stars!"
+        },
+        {
+          "text": "Six is five and one more. Hold up one hand and one more finger."
+        },
+        {
+          "text": "Let's say it together: six!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "lina",
+          "text": "Six stars for six wishes!"
+        },
+        {
+          "who": "adams",
+          "text": "My wish is to play the counting game again tomorrow!"
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "cup",
+        "apple"
+      ],
+      "lines": [
+        {
+          "text": "Inside the house, it is time for a little snack."
+        },
+        {
+          "text": "Lina puts some apples on the plate."
+        },
+        {
+          "who": "lina",
+          "text": "Let's count the apples. Can you count with us?"
+        },
+        {
+          "who": "adams",
+          "text": "One, two, three, four, five, six! Six apples!"
+        },
+        {
+          "text": "Lina and Adams share the apples. Crunch, crunch!"
+        },
+        {
+          "text": "Milo drinks some milk from his bowl. Lap, lap!"
+        },
+        {
+          "who": "adams",
+          "text": "Thank you, Lina. Counting is so much fun!"
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [],
+      "lines": [
+        {
+          "text": "Now Lina and Adams are in bed. Milo is sleepy too."
+        },
+        {
+          "who": "adams",
+          "text": "Today we counted one boat, two birds and three balls!"
+        },
+        {
+          "who": "lina",
+          "text": "And four shoes, five stars, and then six stars!"
+        },
+        {
+          "text": "Let's count one last time, very softly. One, two, three, four, five, six."
+        },
+        {
+          "text": "Outside the window, the moon smiles at them."
+        },
+        {
+          "who": "lina",
+          "text": "Good night, Milo."
+        },
+        {
+          "who": "adams",
+          "text": "Good night, everyone!"
+        }
+      ]
+    }
+  ]
+}
