@@ -77,7 +77,7 @@ fc = [
     f"[{bg}:v]scale=2112:1188,crop=1920:1080:x='96-60*t/{total:.2f}':y='54-30*t/{total:.2f}',setsar=1[b0]",
 ]
 cur = "b0"
-y = "-10*abs(sin(2*PI*t*0.9))"
+y = "30-10*abs(sin(2*PI*t*0.9))"
 for name, cond in (("idle", show_idle), ("talk", show_talk), ("blink", show_blink), ("wave", show_wave)):
     fc.append(f"[{poses[name]}:v]scale=1920:1080[c_{name}]")
     fc.append(f"[{cur}][c_{name}]overlay=x=0:y='{y}':eval=frame:enable='{cond}'[o_{name}]")
