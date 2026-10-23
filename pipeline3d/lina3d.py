@@ -119,16 +119,15 @@ def lina():
     capsule((-0.26, 0, 0.6), (-0.36, -0.02, 0.3), 0.07, skin, 0.065)
     sphere((-0.37, -0.03, 0.25), 0.085, skin)
     if pose == "wave":
-        capsule((0.26, 0, 0.6), (0.5, -0.05, 0.92), 0.07, skin, 0.065)
-        sphere((0.53, -0.06, 0.98), 0.09, skin, scale=(0.8, 0.6, 1.1))
+        capsule((0.26, 0, 0.62), (0.62, -0.12, 0.95), 0.07, skin, 0.065)
+        sphere((0.66, -0.14, 1.02), 0.095, skin, scale=(0.85, 0.6, 1.15))
     else:
         capsule((0.26, 0, 0.6), (0.36, -0.02, 0.3), 0.07, skin, 0.065)
         sphere((0.37, -0.03, 0.25), 0.085, skin)
     # hair: back cap, fringe locks
     sphere((0, 0.06, H0 + 0.1), 0.565, hair, scale=(1.02, 0.97, 0.92))
-    for k, dx in enumerate((-0.3, -0.12, 0.08, 0.26)):
-        sphere((dx, -0.36, H0 + 0.36 - abs(dx) * 0.25), 0.17, hair, scale=(1.1, 0.7, 0.75),
-               rot=(0, 0, 0))
+    sphere((0, -0.3, H0 + 0.33), 0.4, hair, scale=(1.12, 0.6, 0.42))
+    sphere((-0.2, -0.38, H0 + 0.26), 0.16, hair, scale=(1.2, 0.6, 0.6))
     sphere((0, -0.505, H0 - 0.08), 0.032, skin)
     if pose == "talk":
         sphere((0, -0.49, H0 - 0.22), 0.075, mouth_m, scale=(1, 0.4, 0.85))
@@ -144,7 +143,7 @@ def lina():
         bpy.ops.mesh.select_all(action="DESELECT")
         bpy.ops.object.mode_set(mode="OBJECT")
         for v in mo.data.vertices:
-            v.select = v.co.y < -0.005
+            v.select = v.co.y > 0.005
         bpy.ops.object.mode_set(mode="EDIT")
         bpy.ops.mesh.delete(type="VERT")
         bpy.ops.object.mode_set(mode="OBJECT")
@@ -231,10 +230,10 @@ R = bpy.context.object
 R.data.energy = 80
 R.data.size = 2
 R.rotation_euler = (math.radians(-60), 0, 0)
-bpy.ops.object.camera_add(location=(0, -5.6, 1.05))
+bpy.ops.object.camera_add(location=(0, -4.6, 1.0))
 C = bpy.context.object
 S.camera = C
-C.rotation_euler = (math.radians(87), 0, 0)
+C.rotation_euler = (math.radians(86), 0, 0)
 C.data.lens = 40
 S.render.engine = "CYCLES"
 S.cycles.device = "CPU"
