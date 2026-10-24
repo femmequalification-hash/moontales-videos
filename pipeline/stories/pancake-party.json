@@ -1,0 +1,623 @@
+{
+  "slug": "pancake-party",
+  "story_title": "Lina and Adams Make Pancakes",
+  "lesson": "Learn cooking words in English!",
+  "title": "Lina and Adams Make Pancakes 🥞 | Learn Cooking Words in English for Kids | Moon Tales Kids",
+  "thumbnail_title": "Pancake Time!",
+  "thumbnail_word": "Cooking words",
+  "thumbnail_scene": {
+    "setting": "kitchen",
+    "time": "sunset",
+    "weather": "sunny",
+    "props": [
+      {
+        "name": "table",
+        "x": 1700,
+        "y": 950
+      },
+      {
+        "name": "cup",
+        "x": 1700,
+        "y": 840
+      }
+    ],
+    "chars": [
+      "lina",
+      "adams"
+    ]
+  },
+  "description": "Lina, Adams and Milo make yummy pancakes with Mama in the kitchen! 🥞🍯🥄\nIn this English story for kids, children learn 8 new words: pancake, flour, milk, bowl, spoon, mix, honey and yummy. Listen, repeat, and learn English with Lina, Adams and Milo the cat.\n\n📚 New words in this story:\n🥞 pancake — فطيرة / بغرير — la crêpe épaisse (pancake)\n🌾 flour — دقيق / طحين — la farine\n🥛 milk — حليب — le lait\n🥣 bowl — زلافة / وعاء — le bol\n🥄 spoon — ملعقة — la cuillère\n🔄 mix — نخلط — mélanger\n🍯 honey — عسل — le miel\n😋 yummy — لذيذ — miam, délicieux\n\n👨‍👩‍👧 For parents: cook something simple with your child and name each thing in English. Only grown-ups touch the hot pan! Pause after each new word and say it out loud. Perfect for ages 3 to 8 and for children learning English as a second language.\n\n🇲🇦 قصة باللغة الإنجليزية للأطفال لتعلم كلمات المطبخ والطبخ.\n🇫🇷 Une histoire en anglais pour enfants pour apprendre les mots de la cuisine.\n\n🌙 Subscribe to Moon Tales Kids for a new English story every day!\n\n#EnglishForKids #KidsStories #LearnEnglish #MoonTalesKids",
+  "tags": [
+    "english stories for kids",
+    "learn english for kids",
+    "cooking words for kids",
+    "kitchen words in english",
+    "pancakes for kids",
+    "Lina and Adams",
+    "Moon Tales Kids",
+    "ESL kids",
+    "قصص اطفال بالانجليزي",
+    "تعلم الانجليزية للاطفال",
+    "كلمات المطبخ بالانجليزي",
+    "الطبخ للاطفال",
+    "histoire en anglais pour enfant",
+    "apprendre l'anglais enfant",
+    "la cuisine en anglais",
+    "vocabulaire anglais enfant"
+  ],
+  "scenes": [
+    {
+      "setting": "garden",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "flower",
+          "x": 1650,
+          "y": 950
+        },
+        {
+          "name": "ball",
+          "x": 350,
+          "y": 960
+        }
+      ],
+      "lines": [
+        {
+          "text": "It is late in the afternoon. The sun is going down."
+        },
+        {
+          "text": "Lina, Adams and Milo are playing in the garden."
+        },
+        {
+          "who": "adams",
+          "text": "Lina, my tummy is rumbling. I am hungry!"
+        },
+        {
+          "who": "lina",
+          "text": "Me too! Let's make a snack."
+        },
+        {
+          "who": "milo",
+          "text": "Meow!"
+        },
+        {
+          "who": "adams",
+          "text": "I know! Let's ask Mama to help us make pancakes!"
+        },
+        {
+          "who": "lina",
+          "text": "Yes! Let's go to the kitchen."
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "table",
+          "x": 1700,
+          "y": 950
+        }
+      ],
+      "word": "pancake",
+      "lines": [
+        {
+          "text": "In the kitchen, Mama smiles. Pancakes? What a good idea!"
+        },
+        {
+          "text": "A pancake is round, flat and soft. We cook it in a pan."
+        },
+        {
+          "who": "lina",
+          "text": "I love pancakes! They are round like the moon."
+        },
+        {
+          "who": "adams",
+          "text": "Let's make lots of pancakes!"
+        },
+        {
+          "who": "milo",
+          "text": "Meow, meow!"
+        },
+        {
+          "text": "Can you say it with me? Pancake!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "table",
+          "x": 1700,
+          "y": 950
+        }
+      ],
+      "word": "flour",
+      "lines": [
+        {
+          "text": "First, we need flour."
+        },
+        {
+          "text": "Flour is a soft white powder. We use it to make bread and cakes."
+        },
+        {
+          "who": "lina",
+          "text": "I put the flour in. Slowly, slowly."
+        },
+        {
+          "text": "Oh! Some flour lands on Milo's nose. Achoo!"
+        },
+        {
+          "who": "adams",
+          "text": "Ha ha! Milo has a white nose!"
+        },
+        {
+          "who": "milo",
+          "text": "Meow! Achoo!"
+        },
+        {
+          "text": "Can you say it with me? Flour!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "cup",
+          "x": 1700,
+          "y": 900
+        },
+        {
+          "name": "table",
+          "x": 1700,
+          "y": 960
+        }
+      ],
+      "word": "milk",
+      "lines": [
+        {
+          "who": "adams",
+          "text": "Next, we need milk. Here is a cup of milk."
+        },
+        {
+          "text": "Milk is a white drink. It helps us grow strong."
+        },
+        {
+          "text": "Adams pours the milk. Glug, glug, glug."
+        },
+        {
+          "who": "milo",
+          "text": "Meow? Meow?"
+        },
+        {
+          "who": "lina",
+          "text": "Milo wants some milk too!"
+        },
+        {
+          "text": "Mama gives Milo a little milk in his dish. Lap, lap, lap."
+        },
+        {
+          "text": "Can you say it with me? Milk!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "table",
+          "x": 1700,
+          "y": 950
+        }
+      ],
+      "word": "bowl",
+      "lines": [
+        {
+          "text": "We put the flour and the milk in a big bowl."
+        },
+        {
+          "text": "A bowl is round and deep. It holds food, like soup or cereal."
+        },
+        {
+          "who": "lina",
+          "text": "This bowl is very big!"
+        },
+        {
+          "who": "adams",
+          "text": "Is it big enough for all the pancakes?"
+        },
+        {
+          "who": "lina",
+          "text": "Yes! It is the biggest bowl in the kitchen."
+        },
+        {
+          "text": "Can you say it with me? Bowl!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "cup",
+          "x": 1700,
+          "y": 900
+        },
+        {
+          "name": "table",
+          "x": 1700,
+          "y": 960
+        }
+      ],
+      "word": "spoon",
+      "lines": [
+        {
+          "who": "adams",
+          "text": "Now we need a spoon."
+        },
+        {
+          "text": "A spoon is long, with a little round end. We eat and cook with it."
+        },
+        {
+          "who": "lina",
+          "text": "Here is a big wooden spoon."
+        },
+        {
+          "who": "adams",
+          "text": "And here is a small spoon for the honey!"
+        },
+        {
+          "who": "milo",
+          "text": "Meow!"
+        },
+        {
+          "text": "Milo does not need a spoon. He has a little pink tongue!"
+        },
+        {
+          "text": "Can you say it with me? Spoon!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "table",
+          "x": 1700,
+          "y": 950
+        }
+      ],
+      "word": "mix",
+      "lines": [
+        {
+          "text": "Now we mix everything together."
+        },
+        {
+          "text": "When we mix, we stir round and round so it all goes together."
+        },
+        {
+          "who": "lina",
+          "text": "My turn! Round and round and round."
+        },
+        {
+          "who": "adams",
+          "text": "My turn now! Mix, mix, mix!"
+        },
+        {
+          "text": "They take turns. Soon the mix is smooth and creamy."
+        },
+        {
+          "who": "lina",
+          "text": "Teamwork makes it easy!"
+        },
+        {
+          "text": "Can you say it with me? Mix!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "table",
+          "x": 1700,
+          "y": 950
+        }
+      ],
+      "lines": [
+        {
+          "text": "Now Mama cooks the pancakes in a pan."
+        },
+        {
+          "text": "The pan is very hot. Only grown-ups touch the hot pan."
+        },
+        {
+          "who": "lina",
+          "text": "We stand back and watch. Safety first!"
+        },
+        {
+          "text": "Sizzle, sizzle! The pancakes puff up."
+        },
+        {
+          "who": "adams",
+          "text": "Look! Mama flips one in the air. Flip!"
+        },
+        {
+          "who": "milo",
+          "text": "Meow!"
+        },
+        {
+          "text": "Milo sits and waits like a good cat."
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "table",
+          "x": 1700,
+          "y": 950
+        }
+      ],
+      "word": "honey",
+      "lines": [
+        {
+          "text": "The pancakes are ready! What can we put on top?"
+        },
+        {
+          "who": "lina",
+          "text": "Honey, please!"
+        },
+        {
+          "text": "Honey is sweet and golden. Busy bees make it from flowers."
+        },
+        {
+          "who": "adams",
+          "text": "Drip, drip, drip. The honey is so shiny!"
+        },
+        {
+          "who": "lina",
+          "text": "Thank you, little bees!"
+        },
+        {
+          "text": "Can you say it with me? Honey!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "table",
+          "x": 1700,
+          "y": 950
+        },
+        {
+          "name": "banana",
+          "x": 1600,
+          "y": 860
+        }
+      ],
+      "word": "yummy",
+      "lines": [
+        {
+          "text": "Lina and Adams take a bite."
+        },
+        {
+          "who": "adams",
+          "text": "Mmm! This is yummy!"
+        },
+        {
+          "text": "When food tastes very, very good, we say: yummy!"
+        },
+        {
+          "who": "lina",
+          "text": "Yummy, yummy, in my tummy!"
+        },
+        {
+          "who": "milo",
+          "text": "Meow! Purr, purr."
+        },
+        {
+          "text": "Milo has a tiny piece of pancake, with no honey. Yummy for Milo too!"
+        },
+        {
+          "text": "Can you say it with me? Yummy!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "table",
+          "x": 1650,
+          "y": 950
+        },
+        {
+          "name": "flower",
+          "x": 350,
+          "y": 960
+        }
+      ],
+      "lines": [
+        {
+          "text": "There are many pancakes. Too many for two children!"
+        },
+        {
+          "who": "lina",
+          "text": "Let's share them with our neighbours."
+        },
+        {
+          "who": "adams",
+          "text": "Yes! Sharing makes everyone happy."
+        },
+        {
+          "text": "They carry a plate of pancakes into the garden."
+        },
+        {
+          "text": "The neighbours smile. Thank you, Lina! Thank you, Adams!"
+        },
+        {
+          "who": "lina",
+          "text": "You are welcome!"
+        },
+        {
+          "who": "adams",
+          "text": "Sharing is the best part!"
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "star",
+          "x": 1700,
+          "y": 500
+        },
+        {
+          "name": "flower",
+          "x": 350,
+          "y": 960
+        }
+      ],
+      "lines": [
+        {
+          "text": "Now the stars are out. It is time to say goodbye."
+        },
+        {
+          "text": "Lina and Adams help Mama wash the bowl and the spoons."
+        },
+        {
+          "who": "lina",
+          "text": "Thank you, Mama, for helping us cook."
+        },
+        {
+          "who": "adams",
+          "text": "Today we made pancakes together. It was so much fun!"
+        },
+        {
+          "who": "milo",
+          "text": "Meow!"
+        },
+        {
+          "text": "Milo licks his paws. He is happy and full."
+        },
+        {
+          "text": "Goodnight, Lina. Goodnight, Adams. Goodnight, Milo."
+        }
+      ]
+    }
+  ]
+}

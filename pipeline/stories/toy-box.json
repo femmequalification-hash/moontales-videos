@@ -1,0 +1,635 @@
+{
+  "slug": "toy-box",
+  "story_title": "Lina and Adams and the Toy Box",
+  "lesson": "Learn toy words in English!",
+  "title": "Lina and Adams and the Toy Box 🧸 | Learn Toy Words in English for Kids | Moon Tales Kids",
+  "thumbnail_title": "The Toy Box",
+  "thumbnail_word": "Toy words",
+  "thumbnail_scene": {
+    "setting": "bedroom",
+    "time": "day",
+    "weather": "rain",
+    "props": [
+      {
+        "name": "ball",
+        "x": 1650,
+        "y": 950
+      },
+      {
+        "name": "car",
+        "x": 300,
+        "y": 960
+      }
+    ],
+    "chars": [
+      "lina",
+      "adams"
+    ]
+  },
+  "description": "It is a rainy day, so Lina, Adams and Milo play with the toy box inside! 🧸🚂🥁\nIn this English story for kids, children learn 7 new words: toys, teddy, blocks, puzzle, drum, train and tidy. Listen, repeat, and learn English with Lina, Adams and Milo the cat.\n\n📚 New words in this story:\n🧸 toys — ألعاب — les jouets\n🐻 teddy — دبدوب — le nounours\n🧱 blocks — مكعبات — les cubes\n🧩 puzzle — لغز / بازل — le puzzle\n🥁 drum — طبل — le tambour\n🚂 train — قطار — le train\n🧹 tidy — مرتب / نرتب — ranger\n\n👨‍👩‍👧 For parents: after the story, name your child's toys in English and tidy them up together. Pause after each new word and say it out loud. Perfect for ages 3 to 8 and for children learning English as a second language.\n\n🇲🇦 قصة باللغة الإنجليزية للأطفال لتعلم أسماء الألعاب وترتيب الغرفة.\n🇫🇷 Une histoire en anglais pour enfants pour apprendre les jouets et ranger sa chambre.\n\n🌙 Subscribe to Moon Tales Kids for a new English story every day!\n\n#EnglishForKids #KidsStories #LearnEnglish #MoonTalesKids",
+  "tags": [
+    "english stories for kids",
+    "learn english for kids",
+    "toys for kids",
+    "toy words in english",
+    "kids stories in english",
+    "Lina and Adams",
+    "Moon Tales Kids",
+    "ESL kids",
+    "قصص اطفال بالانجليزي",
+    "تعلم الانجليزية للاطفال",
+    "الالعاب بالانجليزي",
+    "قصص للاطفال",
+    "histoire en anglais pour enfant",
+    "apprendre l'anglais enfant",
+    "les jouets en anglais",
+    "vocabulaire anglais enfant"
+  ],
+  "scenes": [
+    {
+      "setting": "bedroom",
+      "time": "day",
+      "weather": "rain",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "bed",
+          "x": 1700,
+          "y": 930
+        }
+      ],
+      "lines": [
+        {
+          "text": "It is a rainy morning. Pitter, patter, pitter, patter."
+        },
+        {
+          "text": "Lina and Adams look out of the window. Milo looks too."
+        },
+        {
+          "who": "adams",
+          "text": "Oh no! It is raining. We cannot play in the park."
+        },
+        {
+          "who": "lina",
+          "text": "Don't be sad, Adams. I have an idea!"
+        },
+        {
+          "who": "milo",
+          "text": "Meow?"
+        },
+        {
+          "who": "lina",
+          "text": "Let's open the big toy box!"
+        },
+        {
+          "who": "adams",
+          "text": "Yes! What a good idea, Lina!"
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "day",
+      "weather": "rain",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "ball",
+          "x": 1600,
+          "y": 960
+        },
+        {
+          "name": "car",
+          "x": 1850,
+          "y": 960
+        },
+        {
+          "name": "boat",
+          "x": 300,
+          "y": 960
+        }
+      ],
+      "word": "toys",
+      "lines": [
+        {
+          "text": "Lina opens the toy box. It is full of fun things!"
+        },
+        {
+          "who": "adams",
+          "text": "Look! A ball, a car and a little boat!"
+        },
+        {
+          "who": "lina",
+          "text": "We have so many toys!"
+        },
+        {
+          "text": "Toys are things we play with. A ball is a toy. A car is a toy."
+        },
+        {
+          "who": "milo",
+          "text": "Meow! Meow!"
+        },
+        {
+          "text": "Can you say it with me? Toys!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "day",
+      "weather": "rain",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "bed",
+          "x": 1700,
+          "y": 930
+        }
+      ],
+      "word": "teddy",
+      "lines": [
+        {
+          "text": "At the bottom of the box, there is a soft brown bear."
+        },
+        {
+          "who": "lina",
+          "text": "This is my teddy! His name is Mr. Honey."
+        },
+        {
+          "who": "adams",
+          "text": "Hello, Mr. Honey! He is so soft."
+        },
+        {
+          "text": "A teddy is a soft toy bear. You can hug it at night."
+        },
+        {
+          "who": "lina",
+          "text": "I love my teddy. Hug, hug!"
+        },
+        {
+          "text": "Can you say it with me? Teddy!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "day",
+      "weather": "rain",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "square",
+          "x": 1650,
+          "y": 950
+        },
+        {
+          "name": "triangle",
+          "x": 1850,
+          "y": 950
+        }
+      ],
+      "word": "blocks",
+      "lines": [
+        {
+          "who": "adams",
+          "text": "Now let's build a tall tower with the blocks!"
+        },
+        {
+          "text": "Adams puts one block on top. Then two, then three."
+        },
+        {
+          "text": "Blocks are toys you stack up to build things."
+        },
+        {
+          "text": "Oh! Milo jumps. The tower falls down. Crash!"
+        },
+        {
+          "who": "lina",
+          "text": "It's okay, Milo. We can build it again, together!"
+        },
+        {
+          "who": "adams",
+          "text": "Teamwork! One, two, three, four blocks!"
+        },
+        {
+          "text": "Can you say it with me? Blocks!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "day",
+      "weather": "rain",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "table",
+          "x": 1700,
+          "y": 950
+        }
+      ],
+      "word": "puzzle",
+      "lines": [
+        {
+          "who": "lina",
+          "text": "Let's do a puzzle! It is a picture of a big fish."
+        },
+        {
+          "text": "A puzzle has many small pieces. You put them together to make a picture."
+        },
+        {
+          "who": "adams",
+          "text": "This piece goes here. And this one goes there!"
+        },
+        {
+          "who": "lina",
+          "text": "Oh no! One piece is missing."
+        },
+        {
+          "text": "Milo looks under the bed. He finds the piece! Meow!"
+        },
+        {
+          "who": "adams",
+          "text": "Thank you, Milo! Now the puzzle is finished."
+        },
+        {
+          "text": "Can you say it with me? Puzzle!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "day",
+      "weather": "rain",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "star",
+          "x": 1700,
+          "y": 900
+        }
+      ],
+      "word": "drum",
+      "lines": [
+        {
+          "who": "adams",
+          "text": "Look what I found! A little red drum!"
+        },
+        {
+          "text": "Adams taps the drum. Boom! Boom! Boom!"
+        },
+        {
+          "text": "A drum is a toy you hit softly to make music."
+        },
+        {
+          "who": "lina",
+          "text": "Boom, boom! Let's play a song!"
+        },
+        {
+          "who": "milo",
+          "text": "Meow, meow, meow!"
+        },
+        {
+          "text": "Milo is singing too. What a funny band!"
+        },
+        {
+          "text": "Can you say it with me? Drum!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "day",
+      "weather": "rain",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "bed",
+          "x": 1700,
+          "y": 930
+        }
+      ],
+      "word": "train",
+      "lines": [
+        {
+          "who": "lina",
+          "text": "And here is my toy train!"
+        },
+        {
+          "text": "The train goes round and round the bed. Choo, choo!"
+        },
+        {
+          "text": "A train is long. It has many cars and it goes on tracks."
+        },
+        {
+          "who": "adams",
+          "text": "Choo, choo! All aboard, Mr. Honey!"
+        },
+        {
+          "text": "The teddy rides in the train. Milo runs after it."
+        },
+        {
+          "who": "lina",
+          "text": "Choo, choo! The train is so fast!"
+        },
+        {
+          "text": "Can you say it with me? Train!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "day",
+      "weather": "rain",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "ball",
+          "x": 1600,
+          "y": 960
+        },
+        {
+          "name": "book",
+          "x": 1850,
+          "y": 960
+        },
+        {
+          "name": "car",
+          "x": 300,
+          "y": 960
+        },
+        {
+          "name": "boat",
+          "x": 450,
+          "y": 960
+        }
+      ],
+      "lines": [
+        {
+          "text": "Oh my! Look at the room."
+        },
+        {
+          "text": "There are toys everywhere. On the floor, on the bed, under the table!"
+        },
+        {
+          "who": "adams",
+          "text": "Oops! What a big mess."
+        },
+        {
+          "who": "lina",
+          "text": "Mama says we must put our toys away."
+        },
+        {
+          "who": "milo",
+          "text": "Meow..."
+        },
+        {
+          "who": "adams",
+          "text": "There are so many. Can we do it?"
+        },
+        {
+          "who": "lina",
+          "text": "Yes, we can! If we help each other."
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "day",
+      "weather": "rain",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "bed",
+          "x": 1700,
+          "y": 930
+        }
+      ],
+      "word": "tidy",
+      "lines": [
+        {
+          "text": "Lina and Adams pick up the toys, one by one."
+        },
+        {
+          "who": "lina",
+          "text": "The blocks go in the box. The puzzle goes on the shelf."
+        },
+        {
+          "who": "adams",
+          "text": "The drum and the train go in the box too!"
+        },
+        {
+          "text": "When everything is in its place, the room is tidy."
+        },
+        {
+          "text": "Milo carries the ball. Good job, Milo!"
+        },
+        {
+          "who": "lina",
+          "text": "Hooray! Our room is tidy!"
+        },
+        {
+          "text": "Can you say it with me? Tidy!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "bed",
+          "x": 1700,
+          "y": 930
+        }
+      ],
+      "lines": [
+        {
+          "text": "Look! The rain has stopped. The sun is coming out."
+        },
+        {
+          "who": "adams",
+          "text": "Lina! It is sunny now!"
+        },
+        {
+          "who": "lina",
+          "text": "Can we take one toy to the park?"
+        },
+        {
+          "who": "adams",
+          "text": "Let's take the ball. We can share it."
+        },
+        {
+          "who": "milo",
+          "text": "Meow! Meow!"
+        },
+        {
+          "text": "They put on their shoes and go outside."
+        },
+        {
+          "text": "Milo comes too."
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "ball",
+          "x": 1650,
+          "y": 960
+        },
+        {
+          "name": "puddle",
+          "x": 400,
+          "y": 980
+        }
+      ],
+      "lines": [
+        {
+          "text": "In the park, Lina throws the ball to Adams."
+        },
+        {
+          "who": "adams",
+          "text": "I catch it! Now it is your turn, Lina!"
+        },
+        {
+          "text": "They take turns. Throw and catch. Throw and catch."
+        },
+        {
+          "who": "lina",
+          "text": "Sharing is fun!"
+        },
+        {
+          "text": "Milo runs after the ball. He is very fast."
+        },
+        {
+          "who": "adams",
+          "text": "Milo wants a turn too!"
+        },
+        {
+          "who": "lina",
+          "text": "You are a good friend, Milo."
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "bed",
+          "x": 1700,
+          "y": 930
+        },
+        {
+          "name": "lamp",
+          "x": 300,
+          "y": 930
+        }
+      ],
+      "lines": [
+        {
+          "text": "Now it is night. The moon is in the sky."
+        },
+        {
+          "text": "Lina is in bed with her teddy, Mr. Honey."
+        },
+        {
+          "who": "lina",
+          "text": "Today was a great day. Thank you for playing with me, Adams."
+        },
+        {
+          "who": "adams",
+          "text": "Thank you, Lina! Our toys are happy and tidy."
+        },
+        {
+          "who": "milo",
+          "text": "Meow... purr, purr."
+        },
+        {
+          "text": "Milo curls up next to the toy box."
+        },
+        {
+          "text": "Goodnight, Lina. Goodnight, Adams. Goodnight, Milo."
+        }
+      ]
+    }
+  ]
+}
