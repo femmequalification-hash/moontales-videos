@@ -231,7 +231,7 @@ def build_level(out_dir, voice, lk):
     c = art.Canvas(1280, 720)
     c.rect(0, 0, 1280, 720, H("#2B2350"))
     c.rect(60, 60, 620, 210, H(col), r=40)
-    c.text(340, 135, name.upper(), art.font(84, "Bold"), H("#FFFFFF"), anchor="mm")
+    c.text(340, 135, name.upper(), art.font(84 if len(name) <= 8 else 62, "Bold"), H("#FFFFFF"), anchor="mm")
     c.text(340, 300, "ENGLISH", art.font(120, "Bold"), H("#FFFFFF"), anchor="mm")
     c.text(340, 430, "QUIZ", art.font(150, "Bold"), H("#FFE680"), anchor="mm", stroke=6, stroke_fill=H("#000000"))
     c.text(340, 590, f"{nq} questions · {cefr}", art.font(54, "SemiBold"), H("#CFC6E8"), anchor="mm")
