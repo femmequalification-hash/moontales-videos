@@ -283,8 +283,8 @@ def build_shorts(out_dir, voice, only=None):
         for s in range(quiz.THINK, 0, -1):
             tl.add_sound(quiz.TICK, tl.t)
             tl.show(frame(key, "ask", s, True, "BONUS!", 4, 4), 1.0)
-        tease = title_frame(["The answer is in our", f"{bname} English Quiz", "on the channel!", SUB_LINE], True,
-                            "Answer? 👀".replace(" 👀", ""), chars=False)
+        tease = title_frame(["The answer is in our", f"{bname} English Quiz", "on the channel!",
+                             "Want more? Subscribe", "for a new quiz every week!"], True, "Answer?", chars=False)
         d = tl.say(f"Want the answer? Find it in our {bname} English Quiz on the channel! "
                    "And subscribe to get a new quiz every week!")
         tl.show(tease, d + 1.0)

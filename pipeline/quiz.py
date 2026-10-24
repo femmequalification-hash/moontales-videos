@@ -428,7 +428,10 @@ def frame(key, state, timer, vertical, header, number=None, total=None, footer=N
         c.rect(W / 2 - 560, 1022, W / 2 + 560, 1072, H("#2B2350", 220), r=25)
         c.text(W / 2, 1047, footer, art.font(36, "SemiBold"), H("#FFE680"), anchor="mm")
     if timer is None and vertical:
-        c.text(W / 2, 1810, "Think... then say it out loud!" if state == "ask" else "Great job!",
+        kid = Q[key][0] != "text"
+        note = ("Think... then say it out loud!" if kid else "Comment your answer below!") if state == "ask" \
+            else ("Great job!" if kid else "Did you get it right?")
+        c.text(W / 2, 1810, note,
                art.font(56, "SemiBold"), H("#7A6A9A"), anchor="mm")
     return c.final().convert("RGB")
 
