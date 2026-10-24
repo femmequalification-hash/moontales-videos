@@ -3,6 +3,7 @@
 Usage:  python3 quiz.py OUT_DIR long      -> OUT_DIR/big-quiz.mp4 (+ _thumb.jpg, _meta.json)
         python3 quiz.py OUT_DIR shorts    -> OUT_DIR/quiz-short1..4.mp4 (+ _meta.json)
         python3 quiz.py OUT_DIR adult     -> OUT_DIR/english-test1..2.mp4 (spelling / grammar, for adults)
+        python3 quiz.py OUT_DIR adult2    -> OUT_DIR/english-test3..4.mp4 (confusing words / idioms)
         python3 quiz.py OUT_DIR adultlong -> OUT_DIR/english-level-test.mp4 (30 questions, 5 levels, adults)
 
 Each question: the question is read, a 5-second countdown ticks while the child
@@ -83,6 +84,33 @@ Q.update({
                  ["less people", "little people", "fewer people"], "fewer people",
                  "Use fewer with things you can count."),
 })
+Q.update({
+    "ad_youre": ("text", "___ welcome!", "Blank, welcome!", ["Your", "You're", "Youre"], "You're",
+                 "You're = you are. You are welcome!"),
+    "ad_theyre": ("text", "___ going to the party tonight.", "Blank, going to the party tonight.",
+                  ["Their", "There", "They're"], "They're", "They're = they are."),
+    "ad_its": ("text", "The dog is wagging ___ tail.", "The dog is wagging, blank, tail.",
+               ["it's", "its", "its'"], "its", "Its shows ownership. It's = it is."),
+    "ad_cake": ("text", "\"It's a piece of cake\" means...", "It's a piece of cake means...",
+                ["it's very easy", "it's delicious", "it's very small"], "it's very easy",
+                "A piece of cake = something very easy."),
+    "ad_weather": ("text", "\"I'm under the weather\" means...", "I'm under the weather means...",
+                   ["I feel sick", "it's raining", "I'm outside"], "I feel sick",
+                   "Under the weather = a little ill."),
+    "ad_books": ("text", "\"Hit the books\" means...", "Hit the books means...",
+                 ["to study hard", "to throw books", "to buy books"], "to study hard",
+                 "Hit the books = start studying seriously."),
+})
+ADULT_SHORTS_2 = [
+    ("Confusing words", ["ad_youre", "ad_theyre", "ad_its"],
+     "Most people mix up these words, even native speakers! Can you get all three right?",
+     ["Even native speakers", "mix these up!"], "WORD TEST",
+     "Even Native Speakers Mix Up These Words 😱 English Test #shorts"),
+    ("Idioms test", ["ad_cake", "ad_weather", "ad_books"],
+     "Do you know these three English idioms? Let's see!",
+     ["Do you know these", "3 English idioms?"], "IDIOM TEST",
+     "Do You Know These 3 English Idioms? 🤔 English Test #shorts"),
+]
 ADULT_SHORTS = [
     ("Spelling test", ["ad_receive", "ad_definitely", "ad_accommodate"],
      "Only one in ten people can spell all three words. Let's test your English!",
@@ -588,8 +616,8 @@ def build_shorts(out_dir, voice):
         print(f"short {n}: {out} ({tl.t:.0f} s)")
 
 
-def build_adult_shorts(out_dir, voice):
-    for n, (name, keys, hook_say, hook_lines, big, title) in enumerate(ADULT_SHORTS, 1):
+def build_adult_shorts(out_dir, voice, sets=None, first=1):
+    for n, (name, keys, hook_say, hook_lines, big, title) in enumerate(sets or ADULT_SHORTS, first):
         work = os.path.join(out_dir, f"work_english-test{n}")
         os.makedirs(work, exist_ok=True)
         tl = Timeline(work, voice)
@@ -730,6 +758,8 @@ if __name__ == "__main__":
         build_long(out_dir, v)
     elif what == "adult":
         build_adult_shorts(out_dir, v)
+    elif what == "adult2":
+        build_adult_shorts(out_dir, v, ADULT_SHORTS_2, first=3)
     elif what == "adultlong":
         build_adult_long(out_dir, v)
     else:
