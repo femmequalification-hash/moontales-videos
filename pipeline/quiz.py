@@ -372,11 +372,11 @@ def frame(key, state, timer, vertical, header, number=None, total=None, footer=N
             boxes.append((x, y, x + box_w, y + box_h))
     else:
         if vertical:
-            box_w, box_h = W - 180, 150
-            boxes = [(90, 1060 + i * 185, 90 + box_w, 1060 + i * 185 + box_h) for i in range(n)]
+            box_w, box_h, step = (W - 180, 150, 185) if n <= 3 else (W - 180, 130, 160)
+            boxes = [(90, 1060 + i * step, 90 + box_w, 1060 + i * step + box_h) for i in range(n)]
         else:
-            box_w, box_h = 860, 170
-            boxes = [(980, 300 + i * 240, 980 + box_w, 300 + i * 240 + box_h) for i in range(n)]
+            box_w, box_h, step = (860, 170, 240) if n <= 3 else (860, 150, 180)
+            boxes = [(980, 300 + i * step, 980 + box_w, 300 + i * step + box_h) for i in range(n)]
     for i, (x0, y0, x1, y1) in enumerate(boxes):
         right = i == ans
         if state == "reveal":
@@ -407,7 +407,10 @@ def frame(key, state, timer, vertical, header, number=None, total=None, footer=N
             if extra.get("swatch"):
                 c.circle(x0 + 160, (y0 + y1) / 2, 38, H(COLOR_SWATCH[opts[i]]), outline=H("#2B2350", 80), width=3)
                 tx = x0 + 220
-            c.text(tx, (y0 + y1) / 2, label, art.font(76, "Bold"), tcol, anchor="lm")
+            fs = 76
+            while fs > 40 and art.font(fs, "Bold").getlength(label) > (x1 - tx - 110):
+                fs -= 4
+            c.text(tx, (y0 + y1) / 2, label, art.font(fs, "Bold"), tcol, anchor="lm")
             if state == "reveal" and right:
                 check(c, x1 - 75, (y0 + y1) / 2, 60, H("#FFFFFF"))
     # timer
