@@ -2,6 +2,7 @@
 
 Usage:  python3 quiz.py OUT_DIR long      -> OUT_DIR/big-quiz.mp4 (+ _thumb.jpg, _meta.json)
         python3 quiz.py OUT_DIR shorts    -> OUT_DIR/quiz-short1..4.mp4 (+ _meta.json)
+        python3 quiz.py OUT_DIR adult     -> OUT_DIR/english-test1..2.mp4 (spelling / grammar, for adults)
 
 Each question: the question is read, a 5-second countdown ticks while the child
 thinks, then the right answer lights up green and is said out loud.
@@ -65,6 +66,33 @@ Q = {
     "sw_m": ("starts", "M", ["moon", "egg", "kite"], "moon"),
     "sw_t": ("starts", "T", ["fish", "dog", "tree"], "tree"),
 }
+# adult text questions: (display question, spoken question, options, answer, explanation)
+Q.update({
+    "ad_receive": ("text", "Which word is spelled correctly?", "Which word is spelled correctly?",
+                   ["Recieve", "Receive", "Receeve"], "Receive", "Remember: i before e, except after c!"),
+    "ad_definitely": ("text", "Which word is spelled correctly?", "And this one?",
+                      ["Definately", "Definitly", "Definitely"], "Definitely", "There is no A in definitely!"),
+    "ad_accommodate": ("text", "Which word is spelled correctly?", "The hardest one!",
+                       ["Accomodate", "Accommodate", "Acommodate"], "Accommodate", "Double C and double M!"),
+    "ad_were": ("text", "If I ___ you, I would study more.", "If I, blank, you, I would study more.",
+                ["was", "were", "am"], "were", "After if I, use were for imaginary situations."),
+    "ad_since": ("text", "I have lived here ___ 2019.", "I have lived here, blank, twenty nineteen.",
+                 ["for", "since", "from"], "since", "Use since with a starting point in time."),
+    "ad_fewer": ("text", "Which one is correct?", "Which one is correct?",
+                 ["less people", "little people", "fewer people"], "fewer people",
+                 "Use fewer with things you can count."),
+})
+ADULT_SHORTS = [
+    ("Spelling test", ["ad_receive", "ad_definitely", "ad_accommodate"],
+     "Only one in ten people can spell all three words. Let's test your English!",
+     ["Only 1 in 10 people", "spell all 3 right!"], "SPELLING TEST",
+     "Only 1 in 10 Can Spell These 3 Words 🤯 English Spelling Test #shorts"),
+    ("Grammar test", ["ad_were", "ad_since", "ad_fewer"],
+     "Most people get at least one of these wrong. Are you better? Let's see!",
+     ["Most people get", "this wrong!"], "GRAMMAR TEST",
+     "Most People Get This English Grammar Wrong 😳 Can You? #shorts"),
+]
+
 ROUNDS = [
     ("Missing letter!", ["ml_apple", "ml_dog", "ml_fish", "ml_sun", "ml_ball", "ml_zebra"]),
     ("What is this?", ["wi_banana", "wi_carrot", "wi_moon", "wi_robot"]),
@@ -114,6 +142,9 @@ def ask(key):
         _, letter, pics, ans = q
         return (f"Which one starts with the letter {letter}?", f"{ans.capitalize()}! {letter} is for {ans}!",
                 pics, pics.index(ans), pics, {"pictures_are_options": True, "letter": letter})
+    if t == "text":
+        _, shown, spoken, opts, ans, why = q
+        return (spoken, f"The answer is: {ans}! {why}", opts, opts.index(ans), [], {"text": shown, "why": why})
     raise ValueError(key)
 
 
@@ -169,7 +200,7 @@ def frame(key, state, timer, vertical, header, number=None, total=None):
     c.text(W / 2, (hb[1] + hb[3]) / 2, hdr, art.font(64 if vertical else 66, "Bold"), H("#FFE680"), anchor="mm")
     # question text
     qy = 270 if vertical else 215
-    qtext = spoken if Q[key][0] != "missing" else "Which letter is missing?"
+    qtext = {"missing": "Which letter is missing?", "text": "Think fast!"}.get(Q[key][0], spoken)
     fsize = 58 if len(qtext) < 34 else 46
     c.text(W / 2, qy, qtext, art.font(fsize, "Bold"), H("#2D2A3E"), anchor="mm")
     # picture area
@@ -178,7 +209,27 @@ def frame(key, state, timer, vertical, header, number=None, total=None):
         pa = (90, 340, W - 90, 1000)
     else:
         pa = (80, 290, 900, 1010)
-    if show_pics:
+    if extra.get("text"):
+        c.rect(*pa, H("#FFFFFF"), r=60)
+        px = (pa[0] + pa[2]) / 2
+        words, lines, cur_l = extra["text"].split(), [], ""
+        f = art.font(84, "Bold")
+        for w_ in words:
+            trial = (cur_l + " " + w_).strip()
+            if f.getlength(trial) > (pa[2] - pa[0]) - 100 and cur_l:
+                lines.append(cur_l)
+                cur_l = w_
+            else:
+                cur_l = trial
+        lines.append(cur_l)
+        y0 = (pa[1] + pa[3]) / 2 - (len(lines) - 1) * 55 - (60 if state == "reveal" else 0)
+        for ln in lines:
+            c.text(px, y0, ln, f, H("#2D2A3E"), anchor="mm")
+            y0 += 110
+        if state == "reveal":
+            fw = art.font(46, "SemiBold")
+            c.text(px, pa[3] - 90, extra["why"], fw, H("#2FA84F"), anchor="mm")
+    elif show_pics:
         c.rect(*pa, H("#FFFFFF"), r=60)
         px, py = (pa[0] + pa[2]) / 2, (pa[1] + pa[3]) / 2
         if extra.get("count"):
@@ -263,6 +314,8 @@ def frame(key, state, timer, vertical, header, number=None, total=None):
                 c.text((x0 + x1) / 2, y1 - 50, opts[i], art.font(60, "Bold"), H("#FFFFFF"), anchor="mm")
         else:
             label = opts[i] if Q[key][0] != "missing" else opts[i].upper() + "  " + opts[i]
+            if Q[key][0] == "text" and len(label) > 10:
+                tcol = tcol
             tx = x0 + 130
             if extra.get("swatch"):
                 c.circle(x0 + 160, (y0 + y1) / 2, 38, H(COLOR_SWATCH[opts[i]]), outline=H("#2B2350", 80), width=3)
@@ -287,7 +340,7 @@ def frame(key, state, timer, vertical, header, number=None, total=None):
     return c.final().convert("RGB")
 
 
-def title_frame(lines, vertical, big=None):
+def title_frame(lines, vertical, big=None, chars=True):
     W, Hh = (1080, 1920) if vertical else (1920, 1080)
     c = art.Canvas(W, Hh)
     art.sky(c, "night", "sunny")
@@ -301,7 +354,7 @@ def title_frame(lines, vertical, big=None):
     for ln in lines:
         c.text(W / 2, y, ln, art.font(70, "Bold"), H("#FFFFFF"), anchor="mm", stroke=5, stroke_fill=H("#2B2350"))
         y += 160 if vertical else 130
-    for name, x in (("lina", 0.18), ("adams", 0.82)):
+    for name, x in ((("lina", 0.18), ("adams", 0.82)) if chars else ()):
         im = art.CHARACTERS[name]()
         sc = 0.75 if vertical else 0.7
         im = im.resize((int(im.width * sc), int(im.height * sc)), Image.LANCZOS)
@@ -345,7 +398,7 @@ class Timeline:
         self.frames.append((p, dur))
         self.t += dur
 
-    def question(self, key, vertical, header, number=None, total=None):
+    def question(self, key, vertical, header, number=None, total=None, answer_voice=None):
         spoken, answer, *_ = ask(key)
         img_ask = frame(key, "ask", None, vertical, header, number, total)
         d = self.say(spoken)
@@ -354,7 +407,7 @@ class Timeline:
             self.add_sound(TICK, self.t)
             self.show(frame(key, "ask", s, vertical, header, number, total), 1.0)
         self.add_sound(DING, self.t)
-        who = "lina" if (number or 0) % 2 else "adams"
+        who = answer_voice or ("lina" if (number or 0) % 2 else "adams")
         d = self.say(answer, who)
         self.show(frame(key, "reveal", None, vertical, header, number, total), d + 0.9)
 
@@ -473,6 +526,38 @@ def build_shorts(out_dir, voice):
         print(f"short {n}: {out} ({tl.t:.0f} s)")
 
 
+def build_adult_shorts(out_dir, voice):
+    for n, (name, keys, hook_say, hook_lines, big, title) in enumerate(ADULT_SHORTS, 1):
+        work = os.path.join(out_dir, f"work_english-test{n}")
+        os.makedirs(work, exist_ok=True)
+        tl = Timeline(work, voice)
+        hook = title_frame(hook_lines, True, big, chars=False)
+        d = tl.say(hook_say)
+        tl.show(hook, d + 0.3)
+        for i, k in enumerate(keys, 1):
+            tl.question(k, True, name, i, len(keys), answer_voice="narrator")
+        end = title_frame(["How many did you get?", "3/3 = English expert!", "Subscribe for more tests"], True,
+                          "Score?", chars=False)
+        d = tl.say("How many did you get? Three out of three means you are an English expert! "
+                   "Subscribe for more English tests.")
+        tl.show(end, d + 0.8)
+        out = os.path.join(out_dir, f"english-test{n}.mp4")
+        tl.render(out, music_vol=0.07, vertical=True)
+        meta = {
+            "title": title,
+            "description": (f"{name}: 3 questions, 5 seconds each. Can you get 3/3? 🧠\n"
+                            "Pause and check your answer before the timer ends!\n\n"
+                            "🇲🇦 اختبر مستواك في اللغة الإنجليزية — هل تعرف الجواب؟\n"
+                            "🇫🇷 Teste ton niveau d'anglais — tu connais la réponse ?\n\n"
+                            "#shorts #EnglishTest #LearnEnglish #EnglishGrammar #Spelling"),
+            "tags": ["english test", "english quiz", "spelling test", "english grammar quiz", "learn english",
+                     "english vocabulary", "ielts", "toefl", "اختبار اللغة الانجليزية", "تعلم الانجليزية",
+                     "قواعد اللغة الانجليزية", "test d'anglais", "quiz anglais", "grammaire anglaise"],
+        }
+        json.dump(meta, open(os.path.join(out_dir, f"english-test{n}_meta.json"), "w"), ensure_ascii=False, indent=2)
+        print(f"adult short {n}: {out} ({tl.t:.0f} s)")
+
+
 if __name__ == "__main__":
     out_dir, what = sys.argv[1], sys.argv[2]
     tts = os.environ.get("MT_TTS_DIR", os.path.join(os.path.dirname(os.path.abspath(__file__)), "tts"))
@@ -487,5 +572,7 @@ if __name__ == "__main__":
     v = build.Voice(tts)
     if what == "long":
         build_long(out_dir, v)
+    elif what == "adult":
+        build_adult_shorts(out_dir, v)
     else:
         build_shorts(out_dir, v)
