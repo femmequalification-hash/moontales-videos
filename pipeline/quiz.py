@@ -598,17 +598,18 @@ def build_adult_shorts(out_dir, voice):
         tl.show(hook, d + 0.3)
         for i, k in enumerate(keys, 1):
             tl.question(k, True, name, i, len(keys), answer_voice="narrator")
-        end = title_frame(["How many did you get?", "3/3 = English expert!", "Subscribe for more tests"], True,
+        end = title_frame(["How many did you get?", "Comment your score!", "3/3 = English expert!"], True,
                           "Score?", chars=False)
-        d = tl.say("How many did you get? Three out of three means you are an English expert! "
-                   "Subscribe for more English tests.")
+        d = tl.say("How many did you get? Share your score in the comments! Three out of three means you are "
+                   "an English expert. Subscribe for more English tests.")
         tl.show(end, d + 0.8)
         out = os.path.join(out_dir, f"english-test{n}.mp4")
         tl.render(out, music_vol=0.07, vertical=True)
         meta = {
             "title": title,
             "description": (f"{name}: 3 questions, 5 seconds each. Can you get 3/3? 🧠\n"
-                            "Pause and check your answer before the timer ends!\n\n"
+                            "Pause and check your answer before the timer ends!\n"
+                            "💬 Comment your score: 1/3, 2/3 or 3/3?\n\n"
                             "🇲🇦 اختبر مستواك في اللغة الإنجليزية — هل تعرف الجواب؟\n"
                             "🇫🇷 Teste ton niveau d'anglais — tu connais la réponse ?\n\n"
                             "#shorts #EnglishTest #LearnEnglish #EnglishGrammar #Spelling"),
@@ -631,7 +632,8 @@ def build_adult_long(out_dir, voice):
     for text in ("What is your real English level? Let's find out with thirty questions, in five levels.",
                  "Each level is harder than the one before. Only three percent of people get a perfect score.",
                  "Take a paper and keep your score. And stay until the end: the last question is the hardest, "
-                 "and we will tell you your real English level!"):
+                 "and we will tell you your real English level!",
+                 "Then share your score and your level with us in the comments!"):
         d = tl.say(text)
         tl.show(img, d + 0.3)
     footers = {1: "Keep your score! Your English level is at the end",
@@ -655,7 +657,8 @@ def build_adult_long(out_dir, voice):
                         footer=footers[li])
         if li < len(LEVELS):
             done = li * 6
-            sc = tf([f"Your score so far: ? / {done}", "Write it down!"], f"{lnum} complete!")
+            sc = tf([f"Your score so far: ? / {done}", "Write it down, and share it in the comments at the end!"],
+                    f"{lnum} complete!")
             msg = {1: "Level one complete! That was the easy part. Write down your score.",
                    2: "Level two complete! If you have ten or more, you are doing great.",
                    3: "Level three complete! You are halfway. The next levels are much harder. Don't stop now!",
@@ -663,11 +666,13 @@ def build_adult_long(out_dir, voice):
             d = tl.say(msg)
             tl.show(sc, d + 0.8)
     table = tf(["0–10: A1 Beginner      11–17: A2 Elementary", "18–23: B1 Intermediate      24–27: B2 Upper",
-                "28–30: C1 Expert"], "Your English level")
+                "28–30: C1 Expert", "Share your score and level in the comments!"], "Your English level")
     for text in ("Finished! Count your points. Here is your English level.",
                  "Zero to ten: A one, beginner. Eleven to seventeen: A two, elementary. "
                  "Eighteen to twenty three: B one, intermediate. Twenty four to twenty seven: B two, upper intermediate. "
                  "Twenty eight to thirty: C one, expert. Congratulations!",
+                 "What is your score? Share your score and your English level with us in the comments! "
+                 "We read every comment.",
                  "This is a fun test, not an official exam. Subscribe for more English tests, and see you next time!"):
         d = tl.say(text)
         tl.show(table, d + 0.8)
@@ -696,6 +701,7 @@ def build_adult_long(out_dir, voice):
             "📊 Levels:\n1️⃣ Beginner\n2️⃣ Elementary\n3️⃣ Intermediate\n4️⃣ Advanced\n5️⃣ Expert\n\n"
             "🏆 Your level: 0–10 A1 · 11–17 A2 · 18–23 B1 · 24–27 B2 · 28–30 C1\n"
             "(A fun test, not an official exam.)\n\n"
+            "💬 Share your score and your level with us in the comments! Example: 24/30 — B2 🎉\n\n"
             "🇲🇦 ما هو مستواك في اللغة الإنجليزية؟ اختبر نفسك في 30 سؤالاً من المبتدئ إلى الخبير!\n"
             "🇫🇷 Quel est ton niveau d'anglais ? Teste-toi en 30 questions, du débutant à l'expert !\n\n"
             "#EnglishTest #EnglishLevel #LearnEnglish #EnglishGrammar #IELTS"),
