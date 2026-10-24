@@ -3,6 +3,7 @@
 Usage:  python3 quiz.py OUT_DIR long      -> OUT_DIR/big-quiz.mp4 (+ _thumb.jpg, _meta.json)
         python3 quiz.py OUT_DIR shorts    -> OUT_DIR/quiz-short1..4.mp4 (+ _meta.json)
         python3 quiz.py OUT_DIR adult     -> OUT_DIR/english-test1..2.mp4 (spelling / grammar, for adults)
+        python3 quiz.py OUT_DIR adultlong -> OUT_DIR/english-level-test.mp4 (30 questions, 5 levels, adults)
 
 Each question: the question is read, a 5-second countdown ticks while the child
 thinks, then the right answer lights up green and is said out loud.
@@ -92,6 +93,53 @@ ADULT_SHORTS = [
      ["Most people get", "this wrong!"], "GRAMMAR TEST",
      "Most People Get This English Grammar Wrong 😳 Can You? #shorts"),
 ]
+
+# adult level test: (question shown, options, answer, explanation)
+LEVELS = [
+    ("Level 1", "Beginner", [
+        ("She ___ a teacher.", ["is", "are", "am"], "is", "Use is with he, she and it."),
+        ("What is the opposite of hot?", ["warm", "cold", "wet"], "cold", "Hot and cold are opposites."),
+        ("I ___ coffee every morning.", ["drink", "drinks", "drinking"], "drink", "With I, the verb has no -s."),
+        ("What is the plural of child?", ["childs", "children", "childes"], "children", "Child is irregular: children."),
+        ("There ___ two cats in the garden.", ["is", "are", "be"], "are", "Use there are with plural nouns."),
+        ("What ___ your name?", ["is", "are", "do"], "is", "Name is singular, so we use is."),
+    ]),
+    ("Level 2", "Elementary", [
+        ("Yesterday I ___ to the market.", ["go", "went", "gone"], "went", "Past simple of go is went."),
+        ("He is ___ than me.", ["tall", "taller", "tallest"], "taller", "Use -er with than to compare two things."),
+        ("I am good ___ math.", ["in", "on", "at"], "at", "We say good at something."),
+        ("What is the past of buy?", ["buyed", "bought", "brought"], "bought", "Buy, bought. Brought is the past of bring!"),
+        ("How ___ money do you have?", ["many", "much", "more"], "much", "Money is uncountable, so we use much."),
+        ("She can ___ three languages.", ["speak", "speaks", "speaking"], "speak", "After can, use the base verb."),
+    ]),
+    ("Level 3", "Intermediate", [
+        ("I have lived here ___ 2019.", ["for", "since", "from"], "since", "Since is used with a starting point in time."),
+        ("If it rains, we ___ at home.", ["stay", "will stay", "would stay"], "will stay", "First conditional: if + present, will + verb."),
+        ("I'm looking forward to ___ you.", ["see", "seeing", "saw"], "seeing", "Look forward to is followed by -ing."),
+        ("She ___ TV when I called her.", ["watched", "was watching", "has watched"], "was watching", "Past continuous for an action in progress."),
+        ("Which word means very tired?", ["exhausted", "excited", "exciting"], "exhausted", "Exhausted means extremely tired."),
+        ("I ___ never been to London.", ["have", "has", "am"], "have", "Present perfect with I: I have been."),
+    ]),
+    ("Level 4", "Advanced", [
+        ("If I ___ you, I would study more.", ["was", "were", "am"], "were", "In formal English: if I were you."),
+        ("There are ___ people here than yesterday.", ["less", "fewer", "little"], "fewer", "Use fewer with things you can count."),
+        ("By next June, I ___ my degree.", ["finish", "will have finished", "finished"], "will have finished", "Future perfect: finished before a future time."),
+        ("Which word is spelled correctly?", ["Recieve", "Receive", "Receeve"], "Receive", "I before E, except after C!"),
+        ("She is used to ___ up early.", ["wake", "waking", "woke"], "waking", "Be used to is followed by -ing."),
+        ("To give up means to...", ["start", "stop trying", "give a gift"], "stop trying", "Give up means to stop trying or quit."),
+    ]),
+    ("Level 5", "Expert", [
+        ("Which word is spelled correctly?", ["Accomodate", "Accommodate", "Acommodate"], "Accommodate", "Double C and double M!"),
+        ("Hardly ___ arrived when it started to rain.", ["I had", "had I", "I have"], "had I", "After hardly at the start, the order is inverted."),
+        ("It's high time we ___ home.", ["go", "went", "will go"], "went", "It's high time + past simple."),
+        ("The weather can ___ your mood.", ["affect", "effect", "effects"], "affect", "Affect is the verb, effect is the noun."),
+        ("Which word is spelled correctly?", ["Definately", "Definitely", "Definitly"], "Definitely", "There is no A in definitely!"),
+        ("To break the ice means to...", ["start a conversation", "break something", "feel cold"], "start a conversation", "It means to make people feel relaxed and start talking."),
+    ]),
+]
+for _li, (_ln, _lname, _qs) in enumerate(LEVELS, 1):
+    for _qi, (_shown, _opts, _ans, _why) in enumerate(_qs, 1):
+        Q[f"lv{_li}_{_qi}"] = ("text", _shown, _shown.replace("___", ", blank,"), _opts, _ans, _why)
 
 ROUNDS = [
     ("Missing letter!", ["ml_apple", "ml_dog", "ml_fish", "ml_sun", "ml_ball", "ml_zebra"]),
@@ -184,7 +232,7 @@ def check(c, x, y, s, col):
 
 
 # ---------------------------------------------------------------- frames
-def frame(key, state, timer, vertical, header, number=None, total=None):
+def frame(key, state, timer, vertical, header, number=None, total=None, footer=None):
     """state: 'ask' (no answer yet) or 'reveal'. timer: seconds left or None."""
     spoken, _, opts, ans, pics, extra = ask(key)
     W, Hh = (1080, 1920) if vertical else (1920, 1080)
@@ -227,8 +275,19 @@ def frame(key, state, timer, vertical, header, number=None, total=None):
             c.text(px, y0, ln, f, H("#2D2A3E"), anchor="mm")
             y0 += 110
         if state == "reveal":
-            fw = art.font(46, "SemiBold")
-            c.text(px, pa[3] - 90, extra["why"], fw, H("#2FA84F"), anchor="mm")
+            maxw = (pa[2] - pa[0]) - 70
+            why = extra["why"]
+            size = 46
+            while size > 30 and art.font(size, "SemiBold").getlength(why) > maxw:
+                size -= 2
+            fw = art.font(size, "SemiBold")
+            if fw.getlength(why) > maxw:
+                ws = why.split()
+                half = len(ws) // 2
+                c.text(px, pa[3] - 115, " ".join(ws[:half]), fw, H("#2FA84F"), anchor="mm")
+                c.text(px, pa[3] - 70, " ".join(ws[half:]), fw, H("#2FA84F"), anchor="mm")
+            else:
+                c.text(px, pa[3] - 90, why, fw, H("#2FA84F"), anchor="mm")
     elif show_pics:
         c.rect(*pa, H("#FFFFFF"), r=60)
         px, py = (pa[0] + pa[2]) / 2, (pa[1] + pa[3]) / 2
@@ -334,7 +393,10 @@ def frame(key, state, timer, vertical, header, number=None, total=None):
         c.pie(tx, ty, tr, tr, -90, -90 + 360 * timer / THINK, H("#FF7A30"))
         c.circle(tx, ty, tr - 18, H("#FFFFFF"))
         c.text(tx, ty, str(timer), art.font(int(tr * 1.1), "Bold"), H("#2B2350"), anchor="mm")
-    elif vertical:
+    if footer and not vertical:
+        c.rect(W / 2 - 560, 1022, W / 2 + 560, 1072, H("#2B2350", 220), r=25)
+        c.text(W / 2, 1047, footer, art.font(36, "SemiBold"), H("#FFE680"), anchor="mm")
+    if timer is None and vertical:
         c.text(W / 2, 1810, "Think... then say it out loud!" if state == "ask" else "Great job!",
                art.font(56, "SemiBold"), H("#7A6A9A"), anchor="mm")
     return c.final().convert("RGB")
@@ -398,18 +460,18 @@ class Timeline:
         self.frames.append((p, dur))
         self.t += dur
 
-    def question(self, key, vertical, header, number=None, total=None, answer_voice=None):
+    def question(self, key, vertical, header, number=None, total=None, answer_voice=None, footer=None):
         spoken, answer, *_ = ask(key)
-        img_ask = frame(key, "ask", None, vertical, header, number, total)
+        img_ask = frame(key, "ask", None, vertical, header, number, total, footer)
         d = self.say(spoken)
         self.show(img_ask, d + 0.4)
         for s in range(THINK, 0, -1):
             self.add_sound(TICK, self.t)
-            self.show(frame(key, "ask", s, vertical, header, number, total), 1.0)
+            self.show(frame(key, "ask", s, vertical, header, number, total, footer), 1.0)
         self.add_sound(DING, self.t)
         who = answer_voice or ("lina" if (number or 0) % 2 else "adams")
         d = self.say(answer, who)
-        self.show(frame(key, "reveal", None, vertical, header, number, total), d + 0.9)
+        self.show(frame(key, "reveal", None, vertical, header, number, total, footer), d + 0.9)
 
     def render(self, out, music_vol=0.10, vertical=False):
         total = self.t
@@ -558,6 +620,94 @@ def build_adult_shorts(out_dir, voice):
         print(f"adult short {n}: {out} ({tl.t:.0f} s)")
 
 
+def build_adult_long(out_dir, voice):
+    work = os.path.join(out_dir, "work_english-level-test")
+    os.makedirs(work, exist_ok=True)
+    tl = Timeline(work, voice)
+    nq = sum(len(l[2]) for l in LEVELS)
+    tf = lambda lines, big: title_frame(lines, False, big, chars=False)  # noqa: E731
+    img = tf(["30 questions  ·  5 levels  ·  5 seconds each", "Only 3% get a perfect score!"],
+             "What's your English level?")
+    for text in ("What is your real English level? Let's find out with thirty questions, in five levels.",
+                 "Each level is harder than the one before. Only three percent of people get a perfect score.",
+                 "Take a paper and keep your score. And stay until the end: the last question is the hardest, "
+                 "and we will tell you your real English level!"):
+        d = tl.say(text)
+        tl.show(img, d + 0.3)
+    footers = {1: "Keep your score! Your English level is at the end",
+               2: "Most people get 10/12 so far... and you?",
+               3: "Halfway! Stay until the end to get your real level",
+               4: "Only 20% of people reach Level 5...",
+               5: "Final level: the last question is the hardest!"}
+    level_intro = {1: "Let's start easy. Level one: beginner.",
+                   2: "Level two: elementary. Still easy?",
+                   3: "Level three: intermediate. This is where most people start making mistakes!",
+                   4: "Level four: advanced. Only a few people get all six right.",
+                   5: "Level five: expert. This is the hardest level. Good luck!"}
+    num = 0
+    for li, (lnum, lname, qs) in enumerate(LEVELS, 1):
+        card = tf([lname, f"{len(qs)} questions"], lnum)
+        d = tl.say(level_intro[li])
+        tl.show(card, d + 0.6)
+        for qi in range(1, len(qs) + 1):
+            num += 1
+            tl.question(f"lv{li}_{qi}", False, f"{lnum} · {lname}", num, nq, answer_voice="narrator",
+                        footer=footers[li])
+        if li < len(LEVELS):
+            done = li * 6
+            sc = tf([f"Your score so far: ? / {done}", "Write it down!"], f"{lnum} complete!")
+            msg = {1: "Level one complete! That was the easy part. Write down your score.",
+                   2: "Level two complete! If you have ten or more, you are doing great.",
+                   3: "Level three complete! You are halfway. The next levels are much harder. Don't stop now!",
+                   4: "Level four complete! Only one level left: the expert level. Ready?"}[li]
+            d = tl.say(msg)
+            tl.show(sc, d + 0.8)
+    table = tf(["0–10: A1 Beginner      11–17: A2 Elementary", "18–23: B1 Intermediate      24–27: B2 Upper",
+                "28–30: C1 Expert"], "Your English level")
+    for text in ("Finished! Count your points. Here is your English level.",
+                 "Zero to ten: A one, beginner. Eleven to seventeen: A two, elementary. "
+                 "Eighteen to twenty three: B one, intermediate. Twenty four to twenty seven: B two, upper intermediate. "
+                 "Twenty eight to thirty: C one, expert. Congratulations!",
+                 "This is a fun test, not an official exam. Subscribe for more English tests, and see you next time!"):
+        d = tl.say(text)
+        tl.show(table, d + 0.8)
+    out = os.path.join(out_dir, "english-level-test.mp4")
+    tl.render(out, music_vol=0.06)
+    c = art.Canvas(1280, 720)
+    c.rect(0, 0, 1280, 720, H("#2B2350"))
+    c.text(640, 110, "WHAT'S YOUR", art.font(96, "Bold"), H("#FFFFFF"), anchor="mm")
+    c.text(640, 225, "ENGLISH LEVEL?", art.font(120, "Bold"), H("#FFE680"), anchor="mm", stroke=6,
+           stroke_fill=H("#000000"))
+    cols = ["#7CCB5A", "#B8D94A", "#FFD23F", "#FF9A2E", "#E84A4A"]
+    for k, (lab, col) in enumerate(zip(["A1", "A2", "B1", "B2", "C1"], cols)):
+        x = 150 + k * 205
+        hgt = 90 + k * 55
+        c.rect(x, 640 - hgt, x + 170, 640, H(col), r=18)
+        c.text(x + 85, 640 - hgt / 2, lab, art.font(64, "Bold"), H("#2B2350"), anchor="mm")
+    c.rect(870, 300, 1240, 400, H("#FFFFFF"), r=30)
+    c.text(1055, 350, "Only 3% get 30/30", art.font(40, "Bold"), H("#E84A4A"), anchor="mm")
+    c.final().convert("RGB").save(os.path.join(out_dir, "english-level-test_thumb.jpg"), quality=92)
+    meta = {
+        "title": "What's Your English Level? 🧠 30-Question English Test (A1 to C1) | Only 3% Get 30/30",
+        "description": (
+            "Test your English in 5 levels, from Beginner to Expert! 🧠\n"
+            "30 questions on grammar, vocabulary and spelling. 5 seconds per question. Keep your score "
+            "and find your English level at the end!\n\n"
+            "📊 Levels:\n1️⃣ Beginner\n2️⃣ Elementary\n3️⃣ Intermediate\n4️⃣ Advanced\n5️⃣ Expert\n\n"
+            "🏆 Your level: 0–10 A1 · 11–17 A2 · 18–23 B1 · 24–27 B2 · 28–30 C1\n"
+            "(A fun test, not an official exam.)\n\n"
+            "🇲🇦 ما هو مستواك في اللغة الإنجليزية؟ اختبر نفسك في 30 سؤالاً من المبتدئ إلى الخبير!\n"
+            "🇫🇷 Quel est ton niveau d'anglais ? Teste-toi en 30 questions, du débutant à l'expert !\n\n"
+            "#EnglishTest #EnglishLevel #LearnEnglish #EnglishGrammar #IELTS"),
+        "tags": ["english level test", "english test", "what is your english level", "english quiz",
+                 "english grammar test", "a1 a2 b1 b2 c1", "ielts", "toefl", "learn english",
+                 "اختبار تحديد المستوى انجليزي", "اختبار اللغة الانجليزية", "تعلم الانجليزية",
+                 "test de niveau anglais", "quiz anglais", "niveau d'anglais"],
+    }
+    json.dump(meta, open(os.path.join(out_dir, "english-level-test_meta.json"), "w"), ensure_ascii=False, indent=2)
+    print(f"done: {out} ({tl.t / 60:.1f} min)")
+
+
 if __name__ == "__main__":
     out_dir, what = sys.argv[1], sys.argv[2]
     tts = os.environ.get("MT_TTS_DIR", os.path.join(os.path.dirname(os.path.abspath(__file__)), "tts"))
@@ -574,5 +724,7 @@ if __name__ == "__main__":
         build_long(out_dir, v)
     elif what == "adult":
         build_adult_shorts(out_dir, v)
+    elif what == "adultlong":
+        build_adult_long(out_dir, v)
     else:
         build_shorts(out_dir, v)
