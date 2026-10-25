@@ -1,0 +1,608 @@
+{
+  "slug": "hide-and-seek",
+  "story_title": "Lina and Adams Play Hide and Seek",
+  "lesson": "Learn where words in English!",
+  "title": "Lina and Adams Play Hide and Seek 🙈 | Learn Position Words in English for Kids | Moon Tales Kids",
+  "thumbnail_title": "Hide and Seek",
+  "thumbnail_word": "Where words",
+  "thumbnail_scene": {
+    "setting": "kitchen",
+    "time": "day",
+    "weather": "sunny",
+    "props": [
+      "table",
+      "gift"
+    ],
+    "chars": [
+      "lina",
+      "adams",
+      "milo"
+    ]
+  },
+  "description": "Where is Milo the cat? Play hide and seek with Lina, Adams and Milo at home and in the garden! 🙈🐱🏡\nIn this English story for kids, children learn 8 new words: hide, under, behind, inside, found, near, between and on. Listen, repeat, and learn English with Lina, Adams and Milo the cat.\n\n📚 New words in this story:\n🙈 hide — يختبئ / تخبّى — se cacher\n⬇️ under — تحت — sous\n🚪 behind — وراء / خلف — derrière\n📦 inside — داخل / فالداخل — dedans / à l'intérieur\n🎉 found — وجدنا / لقيناه — trouvé\n🌼 near — قريب من — près de\n↔️ between — بين — entre\n🍽️ on — على / فوق — sur\n\n👨‍👩‍👧 For parents: hide a toy at home and give clues in English: \"under the table\", \"behind the door\". Pause after each new word and say it out loud. Perfect for ages 3 to 8 and for children learning English as a second language.\n\n🇲🇦 قصة باللغة الإنجليزية للأطفال لتعلم كلمات المكان: تحت، وراء، داخل، بين.\n🇫🇷 Une histoire en anglais pour enfants pour apprendre les mots de position : sous, derrière, dedans, entre.\n\n🌙 Subscribe to Moon Tales Kids for a new English story every day!\n\n#EnglishForKids #KidsStories #LearnEnglish #MoonTalesKids",
+  "tags": [
+    "english stories for kids",
+    "learn english for kids",
+    "position words for kids",
+    "prepositions for kids",
+    "hide and seek story",
+    "Lina and Adams",
+    "Moon Tales Kids",
+    "ESL kids",
+    "قصص اطفال بالانجليزي",
+    "تعلم الانجليزية للاطفال",
+    "حروف الجر بالانجليزي",
+    "كلمات المكان للاطفال",
+    "histoire en anglais pour enfant",
+    "apprendre l'anglais enfant",
+    "les prépositions en anglais",
+    "vocabulaire anglais enfant"
+  ],
+  "scenes": [
+    {
+      "setting": "bedroom",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "bed",
+          "x": 1700,
+          "y": 950
+        }
+      ],
+      "word": "hide",
+      "lines": [
+        {
+          "text": "It is a quiet Saturday morning. Lina and Adams are in the bedroom."
+        },
+        {
+          "text": "Milo the cat is stretching. Meow!"
+        },
+        {
+          "who": "adams",
+          "text": "Let's play a game. Let's play hide and seek!"
+        },
+        {
+          "who": "lina",
+          "text": "Yes! Milo, you hide first. We will look for you."
+        },
+        {
+          "text": "When you hide, you go to a secret place, so nobody can see you."
+        },
+        {
+          "text": "Say it with me: hide!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Milo wiggles his tail. He is ready to hide."
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "bed",
+          "x": 1700,
+          "y": 950
+        }
+      ],
+      "lines": [
+        {
+          "text": "Lina and Adams close their eyes."
+        },
+        {
+          "who": "lina",
+          "text": "One, two, three, four, five."
+        },
+        {
+          "who": "adams",
+          "text": "Six, seven, eight, nine, ten!"
+        },
+        {
+          "text": "Pitter, patter. Milo runs away on his soft little paws."
+        },
+        {
+          "who": "lina",
+          "text": "Ready or not, here we come!"
+        },
+        {
+          "text": "Lina and Adams open their eyes. Milo is gone!"
+        },
+        {
+          "who": "adams",
+          "text": "Where is Milo? Let's look everywhere."
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "bed",
+          "x": 1700,
+          "y": 950
+        },
+        {
+          "name": "ball",
+          "x": 1850,
+          "y": 1000
+        }
+      ],
+      "word": "under",
+      "lines": [
+        {
+          "text": "Adams gets down on his hands and knees."
+        },
+        {
+          "who": "adams",
+          "text": "Is Milo under the bed?"
+        },
+        {
+          "text": "He looks under the bed. There is a ball under the bed. But no Milo!"
+        },
+        {
+          "who": "lina",
+          "text": "Silly ball! Milo is not under the bed."
+        },
+        {
+          "text": "Under means below something. The ball is under the bed."
+        },
+        {
+          "text": "Can you say it? Under!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "adams",
+          "text": "Let's look in the kitchen!"
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "table",
+          "x": 1700,
+          "y": 960
+        },
+        "cup"
+      ],
+      "word": "behind",
+      "lines": [
+        {
+          "text": "Lina and Adams tiptoe into the kitchen. Shh!"
+        },
+        {
+          "who": "lina",
+          "text": "Maybe Milo is behind the door."
+        },
+        {
+          "text": "Lina peeks behind the kitchen door. Nobody is there."
+        },
+        {
+          "who": "adams",
+          "text": "Maybe he is behind the table!"
+        },
+        {
+          "text": "Behind means at the back of something, where it is hard to see."
+        },
+        {
+          "text": "Say it with me: behind!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Then they hear a tiny sound. Meow!"
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "gift",
+          "x": 1700,
+          "y": 960
+        }
+      ],
+      "word": "inside",
+      "lines": [
+        {
+          "text": "There is a big box on the kitchen floor. The box is moving!"
+        },
+        {
+          "who": "lina",
+          "text": "Wiggle, wiggle! What is in the box?"
+        },
+        {
+          "text": "Adams slowly opens the box. Two green eyes look up at him."
+        },
+        {
+          "who": "adams",
+          "text": "Milo is inside the box!"
+        },
+        {
+          "text": "Inside means in the middle of something, like a box or a bag."
+        },
+        {
+          "text": "Can you say it? Inside!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Milo jumps out of the box. Meow, meow!"
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "gift",
+          "x": 1700,
+          "y": 960
+        }
+      ],
+      "word": "found",
+      "lines": [
+        {
+          "who": "lina",
+          "text": "We found you, Milo! We found you!"
+        },
+        {
+          "text": "Lina gives Milo a gentle pat. Milo purrs. Purr, purr."
+        },
+        {
+          "who": "adams",
+          "text": "Milo, you are very good at hiding!"
+        },
+        {
+          "text": "When you look for something and then you see it, you say: I found it!"
+        },
+        {
+          "text": "Say it with me: found!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "lina",
+          "text": "Now it is our turn to hide. Milo, you look for us!"
+        },
+        {
+          "text": "Milo sits and waits. He is a very clever cat."
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "flower",
+          "x": 1650,
+          "y": 960
+        },
+        {
+          "name": "flower",
+          "x": 1800,
+          "y": 980
+        }
+      ],
+      "word": "near",
+      "lines": [
+        {
+          "text": "Lina and Adams run into the sunny garden."
+        },
+        {
+          "who": "adams",
+          "text": "I will hide near the flowers."
+        },
+        {
+          "text": "Adams crouches down near the pretty pink flowers."
+        },
+        {
+          "text": "Near means close to something. Adams is near the flowers."
+        },
+        {
+          "text": "Can you say it? Near!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "A butterfly lands on his nose. Adams tries not to giggle!"
+        },
+        {
+          "text": "Sniff, sniff. Milo finds Adams very quickly. Meow!"
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina"
+      ],
+      "props": [
+        {
+          "name": "bike",
+          "x": 300,
+          "y": 960
+        },
+        {
+          "name": "ball",
+          "x": 1750,
+          "y": 990
+        }
+      ],
+      "word": "between",
+      "lines": [
+        {
+          "text": "Now, where is Lina?"
+        },
+        {
+          "text": "Lina is hiding between the bike and the big tree."
+        },
+        {
+          "who": "lina",
+          "text": "Shh. Nobody can see me here."
+        },
+        {
+          "text": "Between means in the middle of two things."
+        },
+        {
+          "text": "Lina is between the bike and the tree."
+        },
+        {
+          "text": "Say it with me: between!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "lina",
+          "text": "I am a very good hider!"
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "ball",
+          "x": 1750,
+          "y": 990
+        }
+      ],
+      "lines": [
+        {
+          "text": "Adams and Milo look and look. But they cannot find Lina."
+        },
+        {
+          "who": "adams",
+          "text": "Lina, where are you? I can't find you."
+        },
+        {
+          "text": "Adams feels a little worried. Lina is hiding for a long time."
+        },
+        {
+          "who": "adams",
+          "text": "Milo, can you help me? Let's look together."
+        },
+        {
+          "text": "Milo puts his nose to the grass. Sniff, sniff, sniff."
+        },
+        {
+          "text": "Milo walks to the bike, and stops. Meow!"
+        },
+        {
+          "who": "adams",
+          "text": "Good job, Milo! We are a team!"
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "bike",
+          "x": 300,
+          "y": 960
+        }
+      ],
+      "lines": [
+        {
+          "who": "adams",
+          "text": "Peekaboo! We found you, Lina!"
+        },
+        {
+          "who": "lina",
+          "text": "Hooray! You found me! Milo is a super helper."
+        },
+        {
+          "who": "adams",
+          "text": "I was a little worried, Lina."
+        },
+        {
+          "who": "lina",
+          "text": "I am sorry, Adams. Next time, I will give you a clue."
+        },
+        {
+          "text": "Lina gives Adams a big hug. Friends always take care of each other."
+        },
+        {
+          "text": "Milo rubs his head on their legs. Purr, purr."
+        },
+        {
+          "who": "adams",
+          "text": "Hide and seek is more fun when we play together!"
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "table",
+          "x": 1700,
+          "y": 960
+        },
+        {
+          "name": "sandwich",
+          "x": 1700,
+          "y": 820
+        },
+        {
+          "name": "cup",
+          "x": 1820,
+          "y": 820
+        }
+      ],
+      "word": "on",
+      "lines": [
+        {
+          "text": "After the game, everyone is hungry."
+        },
+        {
+          "who": "lina",
+          "text": "Look! The sandwiches are on the table."
+        },
+        {
+          "who": "adams",
+          "text": "And the cups of milk are on the table too. Yummy!"
+        },
+        {
+          "text": "On means on the top of something. The sandwich is on the table."
+        },
+        {
+          "text": "Can you say it? On!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Milo is not on the table. Good cat, Milo!"
+        },
+        {
+          "text": "He waits nicely for his own little snack."
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "bed",
+          "x": 1700,
+          "y": 950
+        },
+        "book"
+      ],
+      "lines": [
+        {
+          "text": "Later, Lina and Adams rest in the bedroom."
+        },
+        {
+          "who": "lina",
+          "text": "Today we played hide and seek. We looked under the bed and behind the door."
+        },
+        {
+          "who": "adams",
+          "text": "Milo was inside the box! And we found him!"
+        },
+        {
+          "who": "lina",
+          "text": "I was near the flowers. No, that was you! I was between the bike and the tree!"
+        },
+        {
+          "text": "Lina and Adams laugh and laugh."
+        },
+        {
+          "text": "And where is Milo now? He is on the bed, fast asleep. Shh!"
+        },
+        {
+          "who": "adams",
+          "text": "Bye-bye, friends! Let's play again soon!"
+        }
+      ]
+    }
+  ]
+}

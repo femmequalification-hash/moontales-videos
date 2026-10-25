@@ -1,0 +1,602 @@
+{
+  "slug": "big-feelings",
+  "story_title": "Lina and Adams and the Big Feelings",
+  "lesson": "Learn feeling words in English!",
+  "title": "Lina and Adams and the Big Feelings 🚲 | Learn Feelings in English for Kids | Moon Tales Kids",
+  "thumbnail_title": "Big Feelings",
+  "thumbnail_word": "Feeling words",
+  "thumbnail_scene": {
+    "setting": "park",
+    "time": "sunset",
+    "weather": "sunny",
+    "props": [
+      {
+        "name": "bike",
+        "x": 1650,
+        "y": 960
+      }
+    ],
+    "chars": [
+      "lina",
+      "adams"
+    ]
+  },
+  "description": "Adams learns to ride his new bike in the park, and Lina and Adams learn about big feelings! 🚲🌇💛\nIn this English story for kids, children learn 8 new words: excited, scared, brave, proud, angry, calm, tired and feelings. Listen, repeat, and learn English with Lina, Adams and Milo the cat.\n\n📚 New words in this story:\n🤩 excited — متحمس / فرحان بزاف — excité / impatient\n😨 scared — خائف / خايف — avoir peur\n🦁 brave — شجاع — courageux\n🏅 proud — فخور — fier\n😠 angry — غاضب / معصّب — en colère\n😌 calm — هادئ / هادي — calme\n🥱 tired — متعب / عيّان — fatigué\n💛 feelings — المشاعر — les sentiments\n\n👨‍👩‍👧 For parents: ask your child \"How do you feel today?\" and help them name the feeling in English. Take three slow breaths together to feel calm. Perfect for ages 3 to 8 and for children learning English as a second language.\n\n🇲🇦 قصة باللغة الإنجليزية للأطفال لتعلم أسماء المشاعر بطريقة لطيفة.\n🇫🇷 Une histoire en anglais pour enfants pour apprendre à nommer ses émotions.\n\n🌙 Subscribe to Moon Tales Kids for a new English story every day!\n\n#EnglishForKids #KidsStories #LearnEnglish #MoonTalesKids",
+  "tags": [
+    "english stories for kids",
+    "learn english for kids",
+    "feelings for kids",
+    "emotions in english",
+    "kids stories in english",
+    "Lina and Adams",
+    "Moon Tales Kids",
+    "ESL kids",
+    "قصص اطفال بالانجليزي",
+    "تعلم الانجليزية للاطفال",
+    "المشاعر بالانجليزي للاطفال",
+    "قصص للاطفال",
+    "histoire en anglais pour enfant",
+    "apprendre l'anglais enfant",
+    "les émotions en anglais",
+    "vocabulaire anglais enfant"
+  ],
+  "scenes": [
+    {
+      "setting": "street",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "bike",
+          "x": 1650,
+          "y": 960
+        }
+      ],
+      "word": "excited",
+      "lines": [
+        {
+          "text": "It is a warm evening. The sky is orange and pink."
+        },
+        {
+          "who": "adams",
+          "text": "Lina, look! I have a new bike! And a new helmet too!"
+        },
+        {
+          "who": "lina",
+          "text": "Wow, Adams! Let's go to the park!"
+        },
+        {
+          "text": "Adams jumps up and down. He can't wait to ride his bike!"
+        },
+        {
+          "text": "When you feel very, very happy about something, you feel excited."
+        },
+        {
+          "text": "Say it with me: excited!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "adams",
+          "text": "I am so excited!"
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "bike",
+          "x": 1650,
+          "y": 960
+        }
+      ],
+      "word": "scared",
+      "lines": [
+        {
+          "text": "At the park, Adams puts on his helmet. Click!"
+        },
+        {
+          "text": "He looks at his bike. His tummy feels wobbly."
+        },
+        {
+          "who": "adams",
+          "text": "Lina, I never rode a bike before. What if I fall?"
+        },
+        {
+          "who": "lina",
+          "text": "Oh, Adams. Are you scared?"
+        },
+        {
+          "text": "When you think something bad can happen, you feel scared."
+        },
+        {
+          "text": "Can you say it? Scared!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "lina",
+          "text": "It is okay to feel scared. I will help you."
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "bike",
+          "x": 1650,
+          "y": 960
+        }
+      ],
+      "lines": [
+        {
+          "who": "lina",
+          "text": "I will hold the back of your bike. You hold the handles."
+        },
+        {
+          "who": "adams",
+          "text": "Okay. Don't let go yet!"
+        },
+        {
+          "who": "lina",
+          "text": "I am right here. You can do it!"
+        },
+        {
+          "text": "Adams sits on the bike. He puts his feet on the pedals."
+        },
+        {
+          "text": "Push, push. The bike rolls slowly. Lina walks next to him."
+        },
+        {
+          "who": "adams",
+          "text": "Wobble, wobble! Oh! I am riding!"
+        },
+        {
+          "who": "lina",
+          "text": "Look ahead, Adams. Keep going!"
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "bike",
+          "x": 1650,
+          "y": 960
+        }
+      ],
+      "word": "brave",
+      "lines": [
+        {
+          "text": "Adams takes a big breath."
+        },
+        {
+          "who": "adams",
+          "text": "Lina, you can let go now. I want to try by myself."
+        },
+        {
+          "text": "Lina lets go. Adams pedals, and pedals, all by himself!"
+        },
+        {
+          "text": "He was scared, but he tried anyway. Adams is brave!"
+        },
+        {
+          "text": "When you do something even when you feel scared, you are brave."
+        },
+        {
+          "text": "Say it with me: brave!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "adams",
+          "text": "Whee! I am doing it!"
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "bike",
+          "x": 1650,
+          "y": 960
+        }
+      ],
+      "word": "proud",
+      "lines": [
+        {
+          "text": "Adams stops his bike carefully and jumps off."
+        },
+        {
+          "who": "adams",
+          "text": "Lina! I did it! I rode my bike!"
+        },
+        {
+          "who": "lina",
+          "text": "Hooray! You did it, Adams! Give me five!"
+        },
+        {
+          "text": "Adams smiles a big, big smile. He feels proud."
+        },
+        {
+          "text": "When you feel good because you did something hard, you feel proud."
+        },
+        {
+          "text": "Can you say it? Proud!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "lina",
+          "text": "I am proud of you too, Adams!"
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "balloon",
+          "x": 1750,
+          "y": 420
+        }
+      ],
+      "word": "angry",
+      "lines": [
+        {
+          "text": "Lina has a yellow balloon. She holds the string."
+        },
+        {
+          "text": "Whoosh! A big wind blows. The balloon flies away!"
+        },
+        {
+          "who": "lina",
+          "text": "No! My balloon! That is not fair!"
+        },
+        {
+          "text": "Lina stamps her feet. Her face is red. Grr!"
+        },
+        {
+          "text": "When something goes wrong and you feel hot and grumpy inside, you feel angry."
+        },
+        {
+          "text": "Say it with me: angry!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "adams",
+          "text": "Oh, Lina. I am sorry about your balloon."
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "flower",
+          "x": 1650,
+          "y": 960
+        }
+      ],
+      "word": "calm",
+      "lines": [
+        {
+          "who": "adams",
+          "text": "Lina, let's breathe together, like smelling a flower."
+        },
+        {
+          "text": "Breathe in slowly, smell the flower. Breathe out slowly, blow the candle."
+        },
+        {
+          "text": "One more time. In. And out."
+        },
+        {
+          "who": "lina",
+          "text": "Oh. I feel better now. My body is soft and slow."
+        },
+        {
+          "text": "When your body is quiet and peaceful, you feel calm."
+        },
+        {
+          "text": "Can you say it? Calm!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "lina",
+          "text": "Thank you, Adams. Being angry is okay. Now I am calm."
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "ball",
+          "x": 1700,
+          "y": 990
+        }
+      ],
+      "lines": [
+        {
+          "text": "Just then, Milo the cat comes walking across the grass. Meow!"
+        },
+        {
+          "who": "adams",
+          "text": "Milo! Did you come to see me ride my bike?"
+        },
+        {
+          "text": "Milo pushes a little red ball with his paw."
+        },
+        {
+          "who": "lina",
+          "text": "Look, Milo found a ball. Let's play together!"
+        },
+        {
+          "text": "Lina throws the ball. Adams catches it. Milo runs after it!"
+        },
+        {
+          "text": "Lina laughs. She forgets all about the balloon."
+        },
+        {
+          "who": "lina",
+          "text": "Friends make everything better!"
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "star",
+          "x": 1750,
+          "y": 300
+        }
+      ],
+      "lines": [
+        {
+          "text": "Now the sun is gone. The sky is dark blue."
+        },
+        {
+          "text": "The first little star is shining up high. Twinkle, twinkle."
+        },
+        {
+          "who": "adams",
+          "text": "It is getting late. Let's walk home."
+        },
+        {
+          "who": "lina",
+          "text": "Adams, you push your bike. I will carry Milo."
+        },
+        {
+          "text": "Milo snuggles in Lina's arms. Purr, purr."
+        },
+        {
+          "text": "They walk slowly, side by side."
+        },
+        {
+          "who": "adams",
+          "text": "What a busy day!"
+        }
+      ]
+    },
+    {
+      "setting": "street",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "bike",
+          "x": 1650,
+          "y": 960
+        },
+        {
+          "name": "star",
+          "x": 1800,
+          "y": 280
+        }
+      ],
+      "word": "tired",
+      "lines": [
+        {
+          "text": "On the street, Adams yawns. Yaaawn!"
+        },
+        {
+          "who": "adams",
+          "text": "My legs are so heavy. I rode my bike so much!"
+        },
+        {
+          "who": "lina",
+          "text": "My eyes want to close too. Yaaawn!"
+        },
+        {
+          "text": "When your body needs rest and sleep, you feel tired."
+        },
+        {
+          "text": "Say it with me: tired!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Milo is tired too. He is already sleeping in Lina's arms."
+        },
+        {
+          "who": "lina",
+          "text": "Shh. Let's go home and rest."
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "bed",
+          "x": 1700,
+          "y": 950
+        },
+        {
+          "name": "lamp",
+          "x": 300,
+          "y": 900
+        }
+      ],
+      "word": "feelings",
+      "lines": [
+        {
+          "text": "At home, Lina and Adams sit on the bed. The lamp is warm and soft."
+        },
+        {
+          "who": "adams",
+          "text": "Today I felt so many things!"
+        },
+        {
+          "who": "lina",
+          "text": "Happy, sad, angry, calm. Those are all feelings."
+        },
+        {
+          "text": "Feelings are what we feel inside, like happy, scared or proud."
+        },
+        {
+          "text": "All feelings are okay. We can talk about them with someone we love."
+        },
+        {
+          "text": "Can you say it? Feelings!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "adams",
+          "text": "How do you feel now, Lina?"
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "bed",
+          "x": 1700,
+          "y": 950
+        },
+        {
+          "name": "lamp",
+          "x": 300,
+          "y": 900
+        }
+      ],
+      "lines": [
+        {
+          "who": "lina",
+          "text": "I feel calm and happy, because you are my friend."
+        },
+        {
+          "who": "adams",
+          "text": "I was excited, then scared, then brave, and then proud!"
+        },
+        {
+          "who": "lina",
+          "text": "And I was angry, but then I felt calm."
+        },
+        {
+          "text": "And now everyone feels tired. Yaaawn!"
+        },
+        {
+          "text": "Milo curls up on the soft blanket. Purr, purr."
+        },
+        {
+          "who": "lina",
+          "text": "Good night, Adams. Good night, Milo."
+        },
+        {
+          "who": "adams",
+          "text": "Good night, friends. Sweet dreams!"
+        }
+      ]
+    }
+  ]
+}
