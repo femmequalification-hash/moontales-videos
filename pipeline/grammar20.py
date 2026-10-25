@@ -203,15 +203,13 @@ def main(out_dir):
     c.text(640, 95, "20 TRICKY", art.font(110, "Bold"), H("#E8312F"), anchor="mm")
     c.text(640, 205, "GRAMMAR QUESTIONS", art.font(84, "Bold"), H("#1C1C24"), anchor="mm")
     marker(c, 250, 1030, 255, seed=7)
-    for k, (txt, ok) in enumerate((("Me and him went home.", False), ("He and I went home.", True))):
-        y = 360 + k * 120
-        c.rect(150, y - 45, 240, y + 45, H("#FFFFFF"), r=12, outline=H("#1C1C24"), width=6)
-        stext(c, 280, y, txt, 60, H("#1FA34A") if ok else H("#141420"), anchor="lm")
-        if ok:
-            tick(c, 195, y - 4, 1.3)
-        else:
-            c.line([(170, y - 25), (220, y + 25)], H("#E8312F"), 12)
-            c.line([(170, y + 25), (220, y - 25)], H("#E8312F"), 12)
+    c.text(640, 320, "Which one is correct?", art.font(58, "Bold"), H("#1F5FD6"), anchor="mm")
+    for k, txt in enumerate(("Me and him went home.", "He and I went home.")):
+        y = 420 + k * 105
+        c.rect(150, y - 42, 234, y + 42, H("#FFFFFF"), r=12, outline=H("#1C1C24"), width=6)
+        stext(c, 270, y, txt, 58, H("#141420"), anchor="lm")
+    c.circle(1110, 470, 90, H("#E8312F"))
+    c.text(1110, 470, "?", art.font(130, "Bold"), H("#FFFFFF"), anchor="mm")
     c.rect(290, 590, 990, 690, H("#1F5FD6"), r=40)
     c.text(640, 640, "Can you score 100%?", art.font(60, "Bold"), H("#FFFFFF"), anchor="mm")
     c.final().convert("RGB").save(os.path.join(out_dir, slug + "_thumb.jpg"), quality=92)
