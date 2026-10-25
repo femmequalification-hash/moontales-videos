@@ -1,0 +1,417 @@
+{
+ "name": "Common English Mistakes",
+ "header": "Which is correct?",
+ "noun": "questions",
+ "read_options": true,
+ "spoken_cycle": [
+  "Which one is correct?",
+  "Which sentence is correct?",
+  "And this one?",
+  "Which one is right?"
+ ],
+ "title": "Common English Mistakes: Easy to Impossible ❌ 32 Questions | Which One Is Correct?",
+ "about": "32 common English mistakes, from easy to impossible. Which sentence is correct?",
+ "thumb": {
+  "top": "ENGLISH MISTAKES",
+  "card": [
+   "\"I've been knowing him\"",
+   "or",
+   "\"I've known him\"?"
+  ]
+ },
+ "ar": "أخطاء شائعة في اللغة الإنجليزية من السهل إلى المستحيل — أي جملة صحيحة؟",
+ "fr": "Les erreurs d'anglais les plus courantes, du plus facile à l'impossible — quelle phrase est correcte ?",
+ "hashtags": "#EnglishMistakes #EnglishTest #LearnEnglish #EnglishGrammar",
+ "tags": [
+  "common english mistakes",
+  "english mistakes",
+  "which one is correct",
+  "english grammar test",
+  "easy to impossible",
+  "english test",
+  "learn english",
+  "speak english",
+  "أخطاء شائعة في الانجليزية",
+  "اختبار اللغة الانجليزية",
+  "تعلم الانجليزية",
+  "erreurs en anglais",
+  "test d'anglais",
+  "grammaire anglaise"
+ ],
+ "levels": [
+  [
+   [
+    "Which one is correct?",
+    [
+     "I go to home.",
+     "I go home.",
+     "I go at home."
+    ],
+    "I go home.",
+    "With go, home needs no 'to'."
+   ],
+   [
+    "Which one is correct?",
+    [
+     "He is a engineer.",
+     "He is an engineer.",
+     "He is engineer."
+    ],
+    "He is an engineer.",
+    "AN before a vowel sound, and a/an with jobs."
+   ],
+   [
+    "Which one is correct?",
+    [
+     "I have two brother.",
+     "I have two brothers.",
+     "I have two brothers's."
+    ],
+    "I have two brothers.",
+    "Two = plural: brothers."
+   ],
+   [
+    "Which one is correct?",
+    [
+     "What time it is?",
+     "What time is it?",
+     "What time is?"
+    ],
+    "What time is it?",
+    "Question order: what time IS IT?"
+   ],
+   [
+    "Which one is correct?",
+    [
+     "The people is nice.",
+     "The people are nice.",
+     "The peoples is nice."
+    ],
+    "The people are nice.",
+    "People is plural: people are."
+   ],
+   [
+    "Which one is correct?",
+    [
+     "Where you live?",
+     "Where do you live?",
+     "Where you do live?"
+    ],
+    "Where do you live?",
+    "Questions need do: where DO you live?"
+   ],
+   [
+    "Which one is correct?",
+    [
+     "I didn't went.",
+     "I didn't go.",
+     "I don't went."
+    ],
+    "I didn't go.",
+    "After didn't, use the base verb: go."
+   ],
+   [
+    "Which one is correct?",
+    [
+     "She is more tall than me.",
+     "She is taller than me.",
+     "She is tallest than me."
+    ],
+    "She is taller than me.",
+    "Short adjectives: tall, taller."
+   ]
+  ],
+  [
+   [
+    "Which one is correct?",
+    [
+     "I'm boring in class.",
+     "I'm bored in class.",
+     "I'm bore in class."
+    ],
+    "I'm bored in class.",
+    "Bored = how you feel. Boring = what makes you feel it."
+   ],
+   [
+    "Which one is correct?",
+    [
+     "Explain me the problem.",
+     "Explain the problem to me.",
+     "Explain to me problem."
+    ],
+    "Explain the problem to me.",
+    "Explain something TO someone."
+   ],
+   [
+    "Which one is correct?",
+    [
+     "I have been to Paris last year.",
+     "I went to Paris last year.",
+     "I go to Paris last year."
+    ],
+    "I went to Paris last year.",
+    "Last year = finished time: past simple."
+   ],
+   [
+    "Which one is correct?",
+    [
+     "Can you say me the time?",
+     "Can you tell me the time?",
+     "Can you speak me the time?"
+    ],
+    "Can you tell me the time?",
+    "Tell someone something."
+   ],
+   [
+    "Which one is correct?",
+    [
+     "She said me she was tired.",
+     "She said she was tired.",
+     "She told she was tired."
+    ],
+    "She said she was tired.",
+    "Say something. Tell SOMEONE something."
+   ],
+   [
+    "Which one is correct?",
+    [
+     "I want that you come.",
+     "I want you to come.",
+     "I want you come."
+    ],
+    "I want you to come.",
+    "Want + someone + to + verb."
+   ],
+   [
+    "Which one is correct?",
+    [
+     "I don't know nothing.",
+     "I don't know anything.",
+     "I know not anything."
+    ],
+    "I don't know anything.",
+    "No double negatives in English!"
+   ],
+   [
+    "Which one is correct?",
+    [
+     "Although it rained, but we went out.",
+     "Although it rained, we went out.",
+     "Although raining, but we went out."
+    ],
+    "Although it rained, we went out.",
+    "Never use although and but together."
+   ]
+  ],
+  [
+   [
+    "Which one is correct?",
+    [
+     "Let's discuss about it.",
+     "Let's discuss it.",
+     "Let's discuss on it."
+    ],
+    "Let's discuss it.",
+    "Discuss has no preposition."
+   ],
+   [
+    "Which one is correct?",
+    [
+     "I came here since two weeks.",
+     "I came here two weeks ago.",
+     "I came here for two weeks ago."
+    ],
+    "I came here two weeks ago.",
+    "Finished time: two weeks AGO."
+   ],
+   [
+    "Which one is correct?",
+    [
+     "Please enter in the room.",
+     "Please enter the room.",
+     "Please enter to the room."
+    ],
+    "Please enter the room.",
+    "Enter has no preposition."
+   ],
+   [
+    "Which one is correct?",
+    [
+     "I'm waiting you.",
+     "I'm waiting for you.",
+     "I'm waiting to you."
+    ],
+    "I'm waiting for you.",
+    "Wait FOR someone."
+   ],
+   [
+    "Which one is correct?",
+    [
+     "The furniture are new.",
+     "The furniture is new.",
+     "The furnitures are new."
+    ],
+    "The furniture is new.",
+    "Furniture is uncountable: the furniture is."
+   ],
+   [
+    "Which one is correct?",
+    [
+     "Who did call you?",
+     "Who called you?",
+     "Who did you called?"
+    ],
+    "Who called you?",
+    "Who is the subject, so no did."
+   ],
+   [
+    "Which one is correct?",
+    [
+     "I prefer tea than coffee.",
+     "I prefer tea to coffee.",
+     "I prefer tea of coffee."
+    ],
+    "I prefer tea to coffee.",
+    "Prefer something TO something."
+   ],
+   [
+    "Which one is correct?",
+    [
+     "Despite of the rain, we played.",
+     "Despite the rain, we played.",
+     "Despite it rains, we played."
+    ],
+    "Despite the rain, we played.",
+    "Despite has no 'of'. In spite OF, but just despite."
+   ]
+  ],
+  [
+   [
+    "Which one is correct?",
+    [
+     "I could of helped you.",
+     "I could have helped you.",
+     "I could helped you."
+    ],
+    "I could have helped you.",
+    "Could've sounds like could of, but we write could have."
+   ],
+   [
+    "Which one is correct?",
+    [
+     "Irregardless, it's fine.",
+     "Regardless, it's fine.",
+     "Irregardlessly, it's fine."
+    ],
+    "Regardless, it's fine.",
+    "Irregardless is not standard English."
+   ],
+   [
+    "Which one is correct?",
+    [
+     "I feel badly about it.",
+     "I feel bad about it.",
+     "I feel bads about it."
+    ],
+    "I feel bad about it.",
+    "Feel + adjective: I feel bad."
+   ],
+   [
+    "Which one is correct?",
+    [
+     "If I would have known, I'd have come.",
+     "If I had known, I'd have come.",
+     "If I knew, I'd have come."
+    ],
+    "If I had known, I'd have come.",
+    "Third conditional: if + had + past participle."
+   ],
+   [
+    "\"Do you mind if I sit here?\" Which answer means: please sit!",
+    [
+     "Yes, go ahead.",
+     "No, go ahead.",
+     "Yes, I mind."
+    ],
+    "No, go ahead.",
+    "Do you mind? NO = I don't mind, so go ahead!",
+    "Do you mind if I sit here? Which answer means: please, sit down?"
+   ],
+   [
+    "Which one is correct?",
+    [
+     "It's the first time I see this.",
+     "It's the first time I've seen this.",
+     "It's the first time I saw this."
+    ],
+    "It's the first time I've seen this.",
+    "It's the first time + present perfect."
+   ],
+   [
+    "Which one is correct?",
+    [
+     "No sooner I arrived than it rained.",
+     "No sooner had I arrived than it rained.",
+     "No sooner had I arrived when it rained."
+    ],
+    "No sooner had I arrived than it rained.",
+    "No sooner + had I + past participle + THAN."
+   ],
+   [
+    "Which one is correct?",
+    [
+     "I've been knowing him for years.",
+     "I've known him for years.",
+     "I know him for years."
+    ],
+    "I've known him for years.",
+    "Know is a state verb: no -ing."
+   ]
+  ]
+ ],
+ "shorts": [
+  {
+   "picks": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     4
+    ]
+   ],
+   "title": "Do You Make These English Mistakes? ❌ Question 4 Is a Trap #shorts"
+  },
+  {
+   "picks": [
+    [
+     0,
+     6
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     5
+    ]
+   ],
+   "title": "Which One Is Correct? 🤔 English Mistakes: Easy to Impossible #shorts"
+  }
+ ],
+ "slug": "mistakes-easy-impossible"
+}

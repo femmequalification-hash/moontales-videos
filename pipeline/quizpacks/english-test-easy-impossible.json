@@ -1,0 +1,411 @@
+{
+ "name": "English Test",
+ "header": "English test",
+ "noun": "questions",
+ "read_options": true,
+ "title": "English Test: Easy to Impossible 🧠 32 Questions | How Far Can You Go?",
+ "about": "Grammar and vocabulary questions that get harder and harder, from easy to impossible!",
+ "thumb": {
+  "top": "ENGLISH TEST",
+  "card": [
+   "\"I hardly slept\"",
+   "means...?"
+  ]
+ },
+ "ar": "اختبار اللغة الإنجليزية من السهل إلى المستحيل — إلى أين ستصل؟",
+ "fr": "Test d'anglais du plus facile à l'impossible — jusqu'où iras-tu ?",
+ "hashtags": "#EnglishTest #EnglishQuiz #LearnEnglish #EnglishGrammar",
+ "tags": [
+  "english test",
+  "english quiz",
+  "easy to impossible",
+  "english grammar test",
+  "english vocabulary quiz",
+  "learn english",
+  "ielts",
+  "toefl",
+  "اختبار اللغة الانجليزية",
+  "تعلم الانجليزية",
+  "قواعد اللغة الانجليزية",
+  "test d'anglais",
+  "quiz anglais",
+  "niveau d'anglais"
+ ],
+ "levels": [
+  [
+   [
+    "One sheep, two ___",
+    [
+     "sheeps",
+     "sheep",
+     "sheepes"
+    ],
+    "sheep",
+    "Sheep stays the same: one sheep, two sheep.",
+    "One sheep, two...?"
+   ],
+   [
+    "My brother ___ two cats.",
+    [
+     "have",
+     "has",
+     "haves"
+    ],
+    "has",
+    "He, she, it: has."
+   ],
+   [
+    "A baby dog is called a...",
+    [
+     "kitten",
+     "puppy",
+     "calf"
+    ],
+    "puppy",
+    "A baby dog is a puppy. A kitten is a baby cat."
+   ],
+   [
+    "The opposite of early is...",
+    [
+     "late",
+     "slow",
+     "soon"
+    ],
+    "late",
+    "Early and late are opposites."
+   ],
+   [
+    "I ___ hungry. Can we eat?",
+    [
+     "have",
+     "am",
+     "do"
+    ],
+    "am",
+    "In English you ARE hungry. Never: I have hungry."
+   ],
+   [
+    "How many is a dozen?",
+    [
+     "10",
+     "12",
+     "20"
+    ],
+    "12",
+    "A dozen = 12, like a dozen eggs."
+   ],
+   [
+    "The meal you eat in the morning is...",
+    [
+     "breakfast",
+     "lunch",
+     "dinner"
+    ],
+    "breakfast",
+    "Breakfast in the morning, lunch at midday."
+   ],
+   [
+    "The opposite of always is...",
+    [
+     "sometimes",
+     "never",
+     "often"
+    ],
+    "never",
+    "Always and never are opposites."
+   ]
+  ],
+  [
+   [
+    "I'm looking ___ my keys. Have you seen them?",
+    [
+     "at",
+     "for",
+     "after"
+    ],
+    "for",
+    "Look for = try to find."
+   ],
+   [
+    "Can you ___ me your pen, please?",
+    [
+     "borrow",
+     "lend",
+     "rent"
+    ],
+    "lend",
+    "You lend TO someone. You borrow FROM someone."
+   ],
+   [
+    "I ___ my homework yesterday.",
+    [
+     "did",
+     "made",
+     "done"
+    ],
+    "did",
+    "We DO homework. We don't make it."
+   ],
+   [
+    "Which word is uncountable?",
+    [
+     "information",
+     "chair",
+     "apple"
+    ],
+    "information",
+    "No 'informations' in English!"
+   ],
+   [
+    "\"I'm fed up\" means...",
+    [
+     "I'm full",
+     "I'm annoyed",
+     "I'm hungry"
+    ],
+    "I'm annoyed",
+    "Fed up = tired of something and annoyed."
+   ],
+   [
+    "She is married ___ a doctor.",
+    [
+     "with",
+     "to",
+     "at"
+    ],
+    "to",
+    "Married TO someone. Never married with."
+   ],
+   [
+    "It depends ___ the weather.",
+    [
+     "of",
+     "on",
+     "from"
+    ],
+    "on",
+    "Depend ON. Never depend of."
+   ],
+   [
+    "Look! It ___ outside.",
+    [
+     "snows",
+     "is snowing",
+     "snow"
+    ],
+    "is snowing",
+    "Look! = right now: present continuous."
+   ]
+  ],
+  [
+   [
+    "He stopped ___. He doesn't smoke now.",
+    [
+     "to smoke",
+     "smoking",
+     "smoke"
+    ],
+    "smoking",
+    "Stop + -ing = quit. Stop + to = pause to do it."
+   ],
+   [
+    "The police ___ coming!",
+    [
+     "is",
+     "are",
+     "was"
+    ],
+    "are",
+    "Police is always plural: the police are."
+   ],
+   [
+    "\"I don't like coffee.\" You agree. You say...",
+    [
+     "Me too.",
+     "Me neither.",
+     "Me also."
+    ],
+    "Me neither.",
+    "To agree with a negative: me neither."
+   ],
+   [
+    "The sun ___ in the east.",
+    [
+     "raises",
+     "rises",
+     "rise"
+    ],
+    "rises",
+    "Rise has no object. You raise something."
+   ],
+   [
+    "The plural of cactus is...",
+    [
+     "cactuses",
+     "cacti",
+     "both are correct"
+    ],
+    "both are correct",
+    "Cacti and cactuses: both are in the dictionary!"
+   ],
+   [
+    "I've never seen ___ beautiful view.",
+    [
+     "such a",
+     "so",
+     "such"
+    ],
+    "such a",
+    "Such a + adjective + noun."
+   ],
+   [
+    "Which one is correct?",
+    [
+     "a hour",
+     "an hour",
+     "an hours"
+    ],
+    "an hour",
+    "The H is silent, so we say: an hour."
+   ],
+   [
+    "The number of students ___ growing.",
+    [
+     "is",
+     "are",
+     "were"
+    ],
+    "is",
+    "THE number of = singular. A number of = plural."
+   ]
+  ],
+  [
+   [
+    "The past participle of swim is...",
+    [
+     "swam",
+     "swum",
+     "swimmed"
+    ],
+    "swum",
+    "Swim, swam, swum: I have swum."
+   ],
+   [
+    "Yesterday I ___ on the sofa all day. (lie = rest)",
+    [
+     "lied",
+     "laid",
+     "lay"
+    ],
+    "lay",
+    "Lie (rest): lie, lay, lain. Lied = said something false!",
+    "Yesterday I, blank, on the sofa all day. Lie, as in rest."
+   ],
+   [
+    "\"Biennial\" means...",
+    [
+     "twice a year",
+     "every two years",
+     "every year"
+    ],
+    "every two years",
+    "Biennial = every 2 years. Biannual = twice a year."
+   ],
+   [
+    "Which word has a silent B?",
+    [
+     "debt",
+     "bubble",
+     "about"
+    ],
+    "debt",
+    "We say 'det'. The B is silent!"
+   ],
+   [
+    "\"I hardly slept\" means...",
+    [
+     "I slept a lot",
+     "I almost didn't sleep",
+     "I slept on a hard bed"
+    ],
+    "I almost didn't sleep",
+    "Hardly = almost not. Nothing to do with hard!"
+   ],
+   [
+    "\"In a fortnight\" means in...",
+    [
+     "4 days",
+     "2 weeks",
+     "2 months"
+    ],
+    "2 weeks",
+    "A fortnight = two weeks (British English)."
+   ],
+   [
+    "I want to ___ weight.",
+    [
+     "loose",
+     "lose",
+     "lost"
+    ],
+    "lose",
+    "Lose = have less. Loose = not tight."
+   ],
+   [
+    "Which word has 3 double letters in a row?",
+    [
+     "committee",
+     "bookkeeper",
+     "balloon"
+    ],
+    "bookkeeper",
+    "B-OO-KK-EE-per: three double letters in a row!"
+   ]
+  ]
+ ],
+ "shorts": [
+  {
+   "picks": [
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ]
+   ],
+   "title": "Question 4 Is a Trap 😈 English Test: Easy to Impossible #shorts"
+  },
+  {
+   "picks": [
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     5
+    ]
+   ],
+   "title": "From Easy to Impossible 🧠 Can You Get 4/4? English Test #shorts"
+  }
+ ],
+ "slug": "english-test-easy-impossible"
+}

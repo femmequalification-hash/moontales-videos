@@ -1,0 +1,411 @@
+{
+ "name": "Vocabulary Test",
+ "header": "Vocabulary test",
+ "noun": "words",
+ "read_options": true,
+ "title": "English Vocabulary Test: Easy to Impossible 📚 32 Words | How Many Do You Know?",
+ "about": "32 English words, from easy to impossible. Do you know what they mean?",
+ "thumb": {
+  "top": "VOCABULARY TEST",
+  "card": [
+   "What does",
+   "\"petrichor\"",
+   "mean?"
+  ]
+ },
+ "ar": "اختبار المفردات الإنجليزية من السهل إلى المستحيل — كم كلمة تعرف؟",
+ "fr": "Test de vocabulaire anglais du plus facile à l'impossible — combien de mots connais-tu ?",
+ "hashtags": "#EnglishVocabulary #EnglishTest #LearnEnglish #EnglishQuiz",
+ "tags": [
+  "english vocabulary test",
+  "english vocabulary",
+  "easy to impossible",
+  "english words",
+  "false friends english",
+  "english test",
+  "english quiz",
+  "learn english",
+  "ielts",
+  "مفردات انجليزية",
+  "اختبار اللغة الانجليزية",
+  "تعلم الانجليزية",
+  "vocabulaire anglais",
+  "faux amis anglais",
+  "quiz anglais"
+ ],
+ "levels": [
+  [
+   [
+    "The opposite of heavy is...",
+    [
+     "light",
+     "strong",
+     "big"
+    ],
+    "light",
+    "Heavy and light are opposites."
+   ],
+   [
+    "A person who flies a plane is a...",
+    [
+     "pilot",
+     "driver",
+     "sailor"
+    ],
+    "pilot",
+    "A pilot flies planes."
+   ],
+   [
+    "Same meaning as small?",
+    [
+     "little",
+     "large",
+     "wide"
+    ],
+    "little",
+    "Small = little."
+   ],
+   [
+    "You use them to cut paper.",
+    [
+     "scissors",
+     "glue",
+     "a ruler"
+    ],
+    "scissors",
+    "Scissors cut paper."
+   ],
+   [
+    "The opposite of empty is...",
+    [
+     "full",
+     "open",
+     "clean"
+    ],
+    "full",
+    "Empty and full are opposites."
+   ],
+   [
+    "Which one is a vegetable?",
+    [
+     "an onion",
+     "a banana",
+     "a cherry"
+    ],
+    "an onion",
+    "An onion is a vegetable."
+   ],
+   [
+    "Your mother's sister is your...",
+    [
+     "aunt",
+     "cousin",
+     "niece"
+    ],
+    "aunt",
+    "Your mother's sister is your aunt."
+   ],
+   [
+    "You watch films at the...",
+    [
+     "cinema",
+     "museum",
+     "bank"
+    ],
+    "cinema",
+    "We watch films at the cinema."
+   ]
+  ],
+  [
+   [
+    "\"Actually\" means...",
+    [
+     "in fact",
+     "right now",
+     "currently"
+    ],
+    "in fact",
+    "False friend! Actually = in fact. Actuellement = currently."
+   ],
+   [
+    "A library is where you...",
+    [
+     "borrow books",
+     "buy books",
+     "buy bread"
+    ],
+    "borrow books",
+    "False friend! You BUY books in a bookshop."
+   ],
+   [
+    "\"Chilly\" means...",
+    [
+     "a bit cold",
+     "very spicy",
+     "very hot"
+    ],
+    "a bit cold",
+    "Chilly = a bit cold. A chilli is spicy!"
+   ],
+   [
+    "Same meaning as very angry?",
+    [
+     "furious",
+     "calm",
+     "tired"
+    ],
+    "furious",
+    "Furious = very angry."
+   ],
+   [
+    "\"Gorgeous\" means...",
+    [
+     "very beautiful",
+     "very big",
+     "very angry"
+    ],
+    "very beautiful",
+    "Gorgeous = very beautiful."
+   ],
+   [
+    "A \"journey\" is...",
+    [
+     "a trip",
+     "a day",
+     "a newspaper"
+    ],
+    "a trip",
+    "False friend! Journey = trip. Journée = day."
+   ],
+   [
+    "\"I realised I was late\" means I...",
+    [
+     "understood",
+     "decided",
+     "forgot"
+    ],
+    "understood",
+    "Realise = suddenly understand."
+   ],
+   [
+    "A \"coin\" is...",
+    [
+     "money made of metal",
+     "a corner",
+     "a bank card"
+    ],
+    "money made of metal",
+    "False friend! In French, coin = corner."
+   ]
+  ],
+  [
+   [
+    "\"Sensible\" means...",
+    [
+     "reasonable",
+     "sensitive",
+     "emotional"
+    ],
+    "reasonable",
+    "False friend! Sensible = reasonable, not sensitive."
+   ],
+   [
+    "\"Eventually\" means...",
+    [
+     "in the end",
+     "maybe",
+     "possibly"
+    ],
+    "in the end",
+    "False friend! Eventually = finally, in the end."
+   ],
+   [
+    "\"Stingy\" means...",
+    [
+     "not generous",
+     "very angry",
+     "very smelly"
+    ],
+    "not generous",
+    "A stingy person hates spending money."
+   ],
+   [
+    "\"Gullible\" means...",
+    [
+     "easy to trick",
+     "very hungry",
+     "very clever"
+    ],
+    "easy to trick",
+    "A gullible person believes everything."
+   ],
+   [
+    "\"To procrastinate\" means...",
+    [
+     "to delay things",
+     "to work hard",
+     "to plan"
+    ],
+    "to delay things",
+    "Procrastinate = leave things until later."
+   ],
+   [
+    "\"Hilarious\" means...",
+    [
+     "very funny",
+     "very sad",
+     "very loud"
+    ],
+    "very funny",
+    "Hilarious = extremely funny."
+   ],
+   [
+    "A \"bargain\" is...",
+    [
+     "something cheap and good",
+     "a fight",
+     "a type of boat"
+    ],
+    "something cheap and good",
+    "A bargain = a great price!"
+   ],
+   [
+    "\"Thrilled\" means...",
+    [
+     "very happy",
+     "very cold",
+     "very scared"
+    ],
+    "very happy",
+    "Thrilled = very excited and happy."
+   ]
+  ],
+  [
+   [
+    "\"Serendipity\" means...",
+    [
+     "a happy accident",
+     "a sad story",
+     "a calm sea"
+    ],
+    "a happy accident",
+    "Finding something good by chance."
+   ],
+   [
+    "\"Ephemeral\" means...",
+    [
+     "lasting a very short time",
+     "very old",
+     "very large"
+    ],
+    "lasting a very short time",
+    "Ephemeral = short-lived."
+   ],
+   [
+    "\"Mellifluous\" means...",
+    [
+     "sweet and smooth to hear",
+     "very loud",
+     "full of honey"
+    ],
+    "sweet and smooth to hear",
+    "A mellifluous voice is sweet and smooth."
+   ],
+   [
+    "\"Pandemonium\" means...",
+    [
+     "wild chaos",
+     "a big party",
+     "a disease"
+    ],
+    "wild chaos",
+    "Pandemonium = noisy chaos."
+   ],
+   [
+    "\"Quintessential\" means...",
+    [
+     "the perfect example",
+     "the fifth one",
+     "very rare"
+    ],
+    "the perfect example",
+    "Quintessential = the most typical example."
+   ],
+   [
+    "\"Laconic\" means...",
+    [
+     "using very few words",
+     "very lazy",
+     "very sad"
+    ],
+    "using very few words",
+    "A laconic person says very little."
+   ],
+   [
+    "\"Gregarious\" means...",
+    [
+     "loves being with people",
+     "very greedy",
+     "very serious"
+    ],
+    "loves being with people",
+    "Gregarious = sociable."
+   ],
+   [
+    "\"Petrichor\" is...",
+    [
+     "the smell of rain",
+     "a type of stone",
+     "a fear of water"
+    ],
+    "the smell of rain",
+    "Petrichor = the smell of the earth after rain."
+   ]
+  ]
+ ],
+ "shorts": [
+  {
+   "picks": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     0
+    ]
+   ],
+   "title": "Do You Really Know These Words? 😳 English Vocabulary #shorts"
+  },
+  {
+   "picks": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     1
+    ]
+   ],
+   "title": "English Vocabulary: Easy to Impossible 🧠 Can You Get 4/4? #shorts"
+  }
+ ],
+ "slug": "vocabulary-easy-impossible"
+}

@@ -1,0 +1,411 @@
+{
+ "name": "English Riddles",
+ "header": "Riddles",
+ "noun": "riddles",
+ "read_options": true,
+ "title": "English Riddles: Easy to Impossible 🧩 32 Riddles | Can You Solve Them All?",
+ "about": "32 English riddles and trick questions, from easy to impossible. Think fast!",
+ "thumb": {
+  "top": "ENGLISH RIDDLES",
+  "card": [
+   "What can fill a room",
+   "but takes up",
+   "no space?"
+  ]
+ },
+ "ar": "ألغاز باللغة الإنجليزية من السهل إلى المستحيل — هل تستطيع حلها كلها؟",
+ "fr": "Devinettes en anglais du plus facile à l'impossible — sauras-tu toutes les résoudre ?",
+ "hashtags": "#Riddles #EnglishRiddles #BrainTeasers #LearnEnglish",
+ "tags": [
+  "english riddles",
+  "riddles",
+  "brain teasers",
+  "trick questions",
+  "riddles with answers",
+  "easy to impossible",
+  "english quiz",
+  "learn english",
+  "ألغاز بالانجليزي",
+  "الغاز وحلولها",
+  "تعلم الانجليزية",
+  "devinettes en anglais",
+  "énigmes",
+  "quiz anglais"
+ ],
+ "levels": [
+  [
+   [
+    "What has hands but can't clap?",
+    [
+     "a clock",
+     "a robot",
+     "a tree"
+    ],
+    "a clock",
+    "A clock has hands that show the time!"
+   ],
+   [
+    "What has legs but can't walk?",
+    [
+     "a table",
+     "a snake",
+     "a fish"
+    ],
+    "a table",
+    "A table has four legs!"
+   ],
+   [
+    "What has one eye but can't see?",
+    [
+     "a needle",
+     "a pirate",
+     "a cat"
+    ],
+    "a needle",
+    "A needle has an eye for the thread!"
+   ],
+   [
+    "What can you catch but not throw?",
+    [
+     "a cold",
+     "a ball",
+     "a frisbee"
+    ],
+    "a cold",
+    "You catch a cold when you get sick!"
+   ],
+   [
+    "What goes up but never comes down?",
+    [
+     "your age",
+     "a balloon",
+     "a bird"
+    ],
+    "your age",
+    "Your age only goes up!"
+   ],
+   [
+    "What has teeth but can't bite?",
+    [
+     "a comb",
+     "a shark",
+     "a lion"
+    ],
+    "a comb",
+    "A comb has teeth for your hair!"
+   ],
+   [
+    "What has words but never speaks?",
+    [
+     "a book",
+     "a parrot",
+     "a radio"
+    ],
+    "a book",
+    "A book is full of words!"
+   ],
+   [
+    "What is full of holes but still holds water?",
+    [
+     "a sponge",
+     "a bucket",
+     "a cup"
+    ],
+    "a sponge",
+    "A sponge is full of holes!"
+   ]
+  ],
+  [
+   [
+    "Which month has 28 days?",
+    [
+     "February",
+     "all of them",
+     "none"
+    ],
+    "all of them",
+    "Every month has at least 28 days!"
+   ],
+   [
+    "What word is always spelled wrong?",
+    [
+     "wrong",
+     "right",
+     "never"
+    ],
+    "wrong",
+    "The word 'wrong' is always spelled W-R-O-N-G!"
+   ],
+   [
+    "What comes once in a minute, twice in a moment, but never in a thousand years?",
+    [
+     "the letter M",
+     "a second",
+     "the time"
+    ],
+    "the letter M",
+    "Minute has one M. Moment has two!"
+   ],
+   [
+    "What gets bigger the more you take away?",
+    [
+     "a hole",
+     "a cake",
+     "a box"
+    ],
+    "a hole",
+    "The more you dig, the bigger the hole!"
+   ],
+   [
+    "What can you break without touching it?",
+    [
+     "a promise",
+     "a glass",
+     "an egg"
+    ],
+    "a promise",
+    "You break a promise with words!"
+   ],
+   [
+    "What has a head and a tail but no body?",
+    [
+     "a coin",
+     "a snake",
+     "a fish"
+    ],
+    "a coin",
+    "Heads or tails? A coin!"
+   ],
+   [
+    "What starts with T, ends with T, and has T in it?",
+    [
+     "a teapot",
+     "a tiger",
+     "a table"
+    ],
+    "a teapot",
+    "T-eapo-T, with tea inside!"
+   ],
+   [
+    "What runs but never walks?",
+    [
+     "a river",
+     "a horse",
+     "a child"
+    ],
+    "a river",
+    "A river runs, but it can't walk!"
+   ]
+  ],
+  [
+   [
+    "How many letters are in \"the alphabet\"?",
+    [
+     "26",
+     "11",
+     "8"
+    ],
+    "11",
+    "T-H-E A-L-P-H-A-B-E-T: 11 letters!",
+    "How many letters are in the words, the alphabet?"
+   ],
+   [
+    "If you share me, you don't have me anymore. What am I?",
+    [
+     "a secret",
+     "money",
+     "a cake"
+    ],
+    "a secret",
+    "Once you share a secret, it's not a secret!"
+   ],
+   [
+    "What can travel around the world but stays in a corner?",
+    [
+     "a stamp",
+     "a plane",
+     "a map"
+    ],
+    "a stamp",
+    "A stamp stays in the corner of a letter!"
+   ],
+   [
+    "Mary's father has 5 daughters: Nana, Nene, Nini, Nono and...?",
+    [
+     "Nunu",
+     "Mary",
+     "Nina"
+    ],
+    "Mary",
+    "It's Mary's father! The 5th daughter is Mary."
+   ],
+   [
+    "What 5-letter word becomes shorter when you add 2 letters?",
+    [
+     "short",
+     "small",
+     "long"
+    ],
+    "short",
+    "Short + ER = shorter!"
+   ],
+   [
+    "It's black when you buy it, red when you use it, and gray when you throw it away. What is it?",
+    [
+     "charcoal",
+     "a tomato",
+     "paper"
+    ],
+    "charcoal",
+    "Charcoal for the barbecue!"
+   ],
+   [
+    "A man walks in the rain with no umbrella and no hat, but not one hair gets wet. How?",
+    [
+     "he is bald",
+     "he runs fast",
+     "the rain is light"
+    ],
+    "he is bald",
+    "He has no hair!"
+   ],
+   [
+    "Forward I'm heavy, backward I'm not. What am I?",
+    [
+     "a ton",
+     "a rock",
+     "a stone"
+    ],
+    "a ton",
+    "TON backwards is NOT!"
+   ]
+  ],
+  [
+   [
+    "I speak without a mouth and hear without ears. What am I?",
+    [
+     "an echo",
+     "a phone",
+     "the wind"
+    ],
+    "an echo",
+    "An echo repeats what you say!"
+   ],
+   [
+    "The more you take, the more you leave behind. What are they?",
+    [
+     "footsteps",
+     "photos",
+     "memories"
+    ],
+    "footsteps",
+    "Every step leaves a footstep behind!"
+   ],
+   [
+    "Which is heavier: a kilo of feathers or a kilo of stones?",
+    [
+     "the stones",
+     "the feathers",
+     "they're the same"
+    ],
+    "they're the same",
+    "A kilo is a kilo!"
+   ],
+   [
+    "I'm tall when I'm young and short when I'm old. What am I?",
+    [
+     "a candle",
+     "a tree",
+     "a mountain"
+    ],
+    "a candle",
+    "A candle gets shorter as it burns!"
+   ],
+   [
+    "What has cities but no houses, forests but no trees, and water but no fish?",
+    [
+     "a map",
+     "a desert",
+     "a dream"
+    ],
+    "a map",
+    "A map shows cities, forests and water!"
+   ],
+   [
+    "What begins with E, ends with E, and has only one letter?",
+    [
+     "an envelope",
+     "an eye",
+     "an eagle"
+    ],
+    "an envelope",
+    "An envelope holds one letter!"
+   ],
+   [
+    "What is so fragile that saying its name breaks it?",
+    [
+     "glass",
+     "ice",
+     "silence"
+    ],
+    "silence",
+    "Say 'silence' and the silence is broken!"
+   ],
+   [
+    "What can fill a room but takes up no space?",
+    [
+     "light",
+     "air",
+     "water"
+    ],
+    "light",
+    "Light fills a room, but it takes no space!"
+   ]
+  ]
+ ],
+ "shorts": [
+  {
+   "picks": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     0
+    ]
+   ],
+   "title": "4 English Riddles 🧩 The Last One Is Impossible! #shorts"
+  },
+  {
+   "picks": [
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     2
+    ]
+   ],
+   "title": "Only Geniuses Solve All 4 🧠 English Riddles #shorts"
+  }
+ ],
+ "slug": "riddles-easy-impossible"
+}

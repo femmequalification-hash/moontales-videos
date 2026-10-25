@@ -1,0 +1,415 @@
+{
+ "name": "Spelling Test",
+ "header": "Spelling test",
+ "noun": "words",
+ "read_options": false,
+ "spoken_cycle": [
+  "Which word is spelled correctly?",
+  "Which spelling is right?",
+  "And this one?",
+  "Which one is correct?"
+ ],
+ "title": "Spelling Test: Easy to Impossible 😳 32 Words | Can You Spell Them All?",
+ "about": "32 English words, from easy to impossible. Which spelling is correct?",
+ "thumb": {
+  "top": "SPELLING TEST",
+  "card": [
+   "mischievious?",
+   "mischievous?"
+  ]
+ },
+ "ar": "اختبار الإملاء الإنجليزي من السهل إلى المستحيل — هل تعرف كتابة كل الكلمات؟",
+ "fr": "Test d'orthographe anglaise du plus facile à l'impossible — sauras-tu tout écrire ?",
+ "hashtags": "#SpellingTest #EnglishTest #LearnEnglish #EnglishQuiz",
+ "tags": [
+  "spelling test",
+  "english spelling",
+  "easy to impossible",
+  "commonly misspelled words",
+  "english test",
+  "english quiz",
+  "learn english",
+  "ielts",
+  "الاملاء بالانجليزي",
+  "اختبار اللغة الانجليزية",
+  "تعلم الانجليزية",
+  "orthographe anglaise",
+  "test d'anglais",
+  "quiz anglais"
+ ],
+ "levels": [
+  [
+   [
+    "Which word is spelled correctly?",
+    [
+     "Wensday",
+     "Wednesday",
+     "Wednsday"
+    ],
+    "Wednesday",
+    "The first D is silent: WENZ-day."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "scool",
+     "school",
+     "skool"
+    ],
+    "school",
+    "S-C-H-O-O-L: don't forget the H!"
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "poeple",
+     "people",
+     "peaple"
+    ],
+    "people",
+    "P-E-O-P-L-E."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "becuase",
+     "because",
+     "becouse"
+    ],
+    "because",
+    "B-E-C-A-U-S-E."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "orenge",
+     "orange",
+     "oringe"
+    ],
+    "orange",
+    "O-R-A-N-G-E."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "hospitel",
+     "hospital",
+     "hospitle"
+    ],
+    "hospital",
+    "It ends with -AL: hospit-AL."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "anser",
+     "answer",
+     "ansewr"
+    ],
+    "answer",
+    "The W is silent: ans-W-er."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "chocolat",
+     "chocolate",
+     "choclate"
+    ],
+    "chocolate",
+    "In English, chocolate ends with an E!"
+   ]
+  ],
+  [
+   [
+    "Which word is spelled correctly?",
+    [
+     "diffrent",
+     "different",
+     "diferent"
+    ],
+    "different",
+    "Double F: dif-FER-ent."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "untill",
+     "until",
+     "untile"
+    ],
+    "until",
+    "Until has only one L!"
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "dissapear",
+     "disappear",
+     "disapear"
+    ],
+    "disappear",
+    "One S, double P."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "begining",
+     "beginning",
+     "beggining"
+    ],
+    "beginning",
+    "Double N before -ing."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "probaly",
+     "probably",
+     "probabley"
+    ],
+    "probably",
+    "P-R-O-B-A-B-L-Y."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "intresting",
+     "interesting",
+     "interressting"
+    ],
+    "interesting",
+    "In-TER-esting: don't skip the first E."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "suprise",
+     "surprise",
+     "surprice"
+    ],
+    "surprise",
+    "SUR-prise: don't forget the first R!"
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "arguement",
+     "argument",
+     "argumant"
+    ],
+    "argument",
+    "Argue loses its E: argument."
+   ]
+  ],
+  [
+   [
+    "Which word is spelled correctly?",
+    [
+     "concious",
+     "conscious",
+     "consious"
+    ],
+    "conscious",
+    "Con-SCI-ous: S-C-I in the middle."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "maintainance",
+     "maintenance",
+     "maintenence"
+    ],
+    "maintenance",
+    "Main-TEN-ance."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "garantee",
+     "guarantee",
+     "guarentee"
+    ],
+    "guarantee",
+    "There's a U after the G: GU-arantee."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "independant",
+     "independent",
+     "indepandent"
+    ],
+    "independent",
+    "It ends with -ENT."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "collegue",
+     "colleague",
+     "colleage"
+    ],
+    "colleague",
+    "Col-LEAGUE: L-E-A-G-U-E."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "exagerate",
+     "exaggerate",
+     "exxagerate"
+    ],
+    "exaggerate",
+    "Double G: exa-GG-erate."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "apparantly",
+     "apparently",
+     "aparently"
+    ],
+    "apparently",
+    "Double P, then -ENT-ly."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "aquire",
+     "acquire",
+     "acquier"
+    ],
+    "acquire",
+    "There's a C before the Q: AC-quire."
+   ]
+  ],
+  [
+   [
+    "Which word is spelled correctly?",
+    [
+     "mischievious",
+     "mischievous",
+     "mischevous"
+    ],
+    "mischievous",
+    "No I after the V: mis-chie-VOUS."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "liason",
+     "liaison",
+     "liasion"
+    ],
+    "liaison",
+    "Two I's: L-I-A-I-S-O-N."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "beaurocracy",
+     "bureaucracy",
+     "bureacracy"
+    ],
+    "bureaucracy",
+    "Bureau + cracy: B-U-R-E-A-U."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "pharoah",
+     "pharaoh",
+     "farao"
+    ],
+    "pharaoh",
+    "P-H-A-R-A-O-H: A before O."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "onomatopeia",
+     "onomatopoeia",
+     "onomatopoiea"
+    ],
+    "onomatopoeia",
+    "O-NO-MA-TO-POE-IA."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "Farenheit",
+     "Fahrenheit",
+     "Fahrenhiet"
+    ],
+    "Fahrenheit",
+    "The H comes after the A: Fa-H-renheit."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "conoisseur",
+     "connoisseur",
+     "connaisseur"
+    ],
+    "connoisseur",
+    "Double N, double S."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "hankerchief",
+     "handkerchief",
+     "handkercheif"
+    ],
+    "handkerchief",
+    "HAND-ker-CHIEF: there's a D in hand!"
+   ]
+  ]
+ ],
+ "shorts": [
+  {
+   "picks": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     5
+    ]
+   ],
+   "title": "Spelling Test: Easy to Impossible 😳 Can You Spell All 4? #shorts"
+  },
+  {
+   "picks": [
+    [
+     0,
+     6
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     0
+    ]
+   ],
+   "title": "The Last Word Is Impossible to Spell 🤯 Spelling Test #shorts"
+  }
+ ],
+ "slug": "spelling-test-easy-impossible"
+}

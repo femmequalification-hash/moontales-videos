@@ -260,8 +260,9 @@ def check(c, x, y, s, col):
 
 
 # ---------------------------------------------------------------- frames
-def frame(key, state, timer, vertical, header, number=None, total=None, footer=None):
-    """state: 'ask' (no answer yet) or 'reveal'. timer: seconds left or None."""
+def frame(key, state, timer, vertical, header, number=None, total=None, footer=None, level=None, note=None):
+    """state: 'ask' (no answer yet) or 'reveal'. timer: seconds left or None.
+    level: optional (label, colour) pill shown instead of "Think fast!"; note: bottom text override."""
     spoken, _, opts, ans, pics, extra = ask(key)
     W, Hh = (1080, 1920) if vertical else (1920, 1080)
     c = art.Canvas(W, Hh)
@@ -278,7 +279,13 @@ def frame(key, state, timer, vertical, header, number=None, total=None, footer=N
     qy = 270 if vertical else 215
     qtext = {"missing": "Which letter is missing?", "text": "Think fast!"}.get(Q[key][0], spoken)
     fsize = 58 if len(qtext) < 34 else 46
-    c.text(W / 2, qy, qtext, art.font(fsize, "Bold"), H("#2D2A3E"), anchor="mm")
+    if level:
+        lf = art.font(50 if vertical else 48, "Bold")
+        lw = lf.getlength(level[0]) + 90
+        c.rect(W / 2 - lw / 2, qy - 40, W / 2 + lw / 2, qy + 40, H(level[1]), r=40)
+        c.text(W / 2, qy, level[0], lf, H("#FFFFFF"), anchor="mm")
+    else:
+        c.text(W / 2, qy, qtext, art.font(fsize, "Bold"), H("#2D2A3E"), anchor="mm")
     # picture area
     show_pics = not extra.get("pictures_are_options")
     if vertical:
@@ -288,20 +295,24 @@ def frame(key, state, timer, vertical, header, number=None, total=None, footer=N
     if extra.get("text"):
         c.rect(*pa, H("#FFFFFF"), r=60)
         px = (pa[0] + pa[2]) / 2
-        words, lines, cur_l = extra["text"].split(), [], ""
-        f = art.font(84, "Bold")
-        for w_ in words:
-            trial = (cur_l + " " + w_).strip()
-            if f.getlength(trial) > (pa[2] - pa[0]) - 100 and cur_l:
-                lines.append(cur_l)
-                cur_l = w_
-            else:
-                cur_l = trial
-        lines.append(cur_l)
-        y0 = (pa[1] + pa[3]) / 2 - (len(lines) - 1) * 55 - (60 if state == "reveal" else 0)
+        for qsize in (84, 74, 66, 58, 52):
+            words, lines, cur_l = extra["text"].split(), [], ""
+            f = art.font(qsize, "Bold")
+            for w_ in words:
+                trial = (cur_l + " " + w_).strip()
+                if f.getlength(trial) > (pa[2] - pa[0]) - 100 and cur_l:
+                    lines.append(cur_l)
+                    cur_l = w_
+                else:
+                    cur_l = trial
+            lines.append(cur_l)
+            if len(lines) <= 3 or (len(lines) <= 4 and qsize <= 66):
+                break
+        lh = int(qsize * 1.3)
+        y0 = (pa[1] + pa[3]) / 2 - (len(lines) - 1) * lh / 2 - (60 if state == "reveal" else 0)
         for ln in lines:
             c.text(px, y0, ln, f, H("#2D2A3E"), anchor="mm")
-            y0 += 110
+            y0 += lh
         if state == "reveal":
             maxw = (pa[2] - pa[0]) - 70
             why = extra["why"]
@@ -408,9 +419,21 @@ def frame(key, state, timer, vertical, header, number=None, total=None, footer=N
                 c.circle(x0 + 160, (y0 + y1) / 2, 38, H(COLOR_SWATCH[opts[i]]), outline=H("#2B2350", 80), width=3)
                 tx = x0 + 220
             fs = 76
-            while fs > 40 and art.font(fs, "Bold").getlength(label) > (x1 - tx - 110):
+            avail = x1 - tx - 110
+            while fs > 48 and art.font(fs, "Bold").getlength(label) > avail:
                 fs -= 4
-            c.text(tx, (y0 + y1) / 2, label, art.font(fs, "Bold"), tcol, anchor="lm")
+            if art.font(fs, "Bold").getlength(label) <= avail:
+                c.text(tx, (y0 + y1) / 2, label, art.font(fs, "Bold"), tcol, anchor="lm")
+            else:  # two lines
+                ws = label.split()
+                cut = min(range(1, len(ws)), key=lambda k: abs(len(" ".join(ws[:k])) - len(" ".join(ws[k:]))))
+                l1, l2 = " ".join(ws[:cut]), " ".join(ws[cut:])
+                fs = 54
+                while fs > 30 and max(art.font(fs, "Bold").getlength(l1), art.font(fs, "Bold").getlength(l2)) > avail:
+                    fs -= 2
+                ff = art.font(fs, "Bold")
+                c.text(tx, (y0 + y1) / 2 - fs * 0.58, l1, ff, tcol, anchor="lm")
+                c.text(tx, (y0 + y1) / 2 + fs * 0.58, l2, ff, tcol, anchor="lm")
             if state == "reveal" and right:
                 check(c, x1 - 75, (y0 + y1) / 2, 60, H("#FFFFFF"))
     # timer
@@ -429,10 +452,13 @@ def frame(key, state, timer, vertical, header, number=None, total=None, footer=N
         c.text(W / 2, 1047, footer, art.font(36, "SemiBold"), H("#FFE680"), anchor="mm")
     if timer is None and vertical:
         kid = Q[key][0] != "text"
-        note = ("Think... then say it out loud!" if kid else "Comment your answer below!") if state == "ask" \
-            else ("Great job!" if kid else "Did you get it right?")
+        note = note or (("Think... then say it out loud!" if kid else "Comment your answer below!") if state == "ask"
+                        else ("Great job!" if kid else "Did you get it right?"))
+        nf = 56
+        while nf > 36 and art.font(nf, "SemiBold").getlength(note) > W - 100:
+            nf -= 2
         c.text(W / 2, 1810, note,
-               art.font(56, "SemiBold"), H("#7A6A9A"), anchor="mm")
+               art.font(nf, "SemiBold"), H("#7A6A9A"), anchor="mm")
     return c.final().convert("RGB")
 
 
@@ -471,7 +497,7 @@ DING = tone(880, 0.6, 0.22, 4) + tone(1320, 0.6, 0.14, 4) + tone(1760, 0.6, 0.08
 class Timeline:
     def __init__(self, work, voice):
         self.work, self.voice = work, voice
-        self.audio = np.zeros(SR * 600, dtype=np.float32)
+        self.audio = np.zeros(SR * 1500, dtype=np.float32)
         self.t = 0.0
         self.frames = []  # (png path, duration)
         self.n = 0
