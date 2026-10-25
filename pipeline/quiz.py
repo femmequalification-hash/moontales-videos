@@ -29,6 +29,29 @@ H = art.hexc
 SR = build.SR
 THINK = 5  # seconds of countdown
 LETTERS = "ABCD"
+BRAND = None  # {"logo": RGBA image, "name": "QuizNado"} -> logo in header + mark inside the question card
+
+
+def paste_logo(c, cx, cy, d):
+    """Paste the brand logo (circle) centred at cx, cy with diameter d, at full canvas resolution."""
+    im = BRAND["logo"].resize((int(d * art.SS), int(d * art.SS)), Image.LANCZOS)
+    c.img.alpha_composite(im, (int((cx - d / 2) * art.SS), int((cy - d / 2) * art.SS)))
+
+
+def brand_header(c, W, hb, vertical, text, fs):
+    """Header text; with a brand, the logo sits on the left and the text moves right."""
+    if not BRAND:
+        c.text(W / 2, (hb[1] + hb[3]) / 2, text, art.font(fs, "Bold"), H("#FFE680"), anchor="mm")
+        return
+    d = (hb[3] - hb[1]) + 30
+    paste_logo(c, hb[0] + d / 2 - 8, (hb[1] + hb[3]) / 2, d)
+    x0 = hb[0] + d + 10
+    cx, maxw = (x0 + hb[2]) / 2, hb[2] - x0 - 40
+    if not vertical:
+        cx, maxw = W / 2, W - 2 * (x0 + 20)
+    while fs > 38 and art.font(fs, "Bold").getlength(text) > maxw:
+        fs -= 2
+    c.text(cx, (hb[1] + hb[3]) / 2, text, art.font(fs, "Bold"), H("#FFE680"), anchor="mm")
 
 # ---------------------------------------------------------------- question bank
 Q = {
@@ -274,7 +297,7 @@ def frame(key, state, timer, vertical, header, number=None, total=None, footer=N
     hb = (40, 40, W - 40, 190) if vertical else (40, 30, W - 40, 150)
     c.rect(*hb, H("#2B2350"), r=50)
     hdr = header + (f"  {number}/{total}" if number else "")
-    c.text(W / 2, (hb[1] + hb[3]) / 2, hdr, art.font(64 if vertical else 66, "Bold"), H("#FFE680"), anchor="mm")
+    brand_header(c, W, hb, vertical, hdr, 64 if vertical else 66)
     # question text
     qy = 270 if vertical else 215
     qtext = {"missing": "Which letter is missing?", "text": "Think fast!"}.get(Q[key][0], spoken)
@@ -294,6 +317,8 @@ def frame(key, state, timer, vertical, header, number=None, total=None, footer=N
         pa = (80, 290, 900, 1010)
     if extra.get("text"):
         c.rect(*pa, H("#FFFFFF"), r=60)
+        if BRAND:
+            c.text(pa[2] - 30, pa[1] + 34, BRAND["name"], art.font(36, "Bold"), H("#8E5BD6", 150), anchor="rm")
         px = (pa[0] + pa[2]) / 2
         for qsize in (84, 74, 66, 58, 52):
             words, lines, cur_l = extra["text"].split(), [], ""

@@ -1,0 +1,415 @@
+{
+ "name": "Capital Cities Quiz",
+ "header": "Capitals",
+ "noun": "countries",
+ "read_options": true,
+ "title": "Capital Cities Quiz: Easy to Impossible 🗺️ 32 Countries | Can You Name Them All?",
+ "about": "Do you know the capital cities of the world? 32 countries from easy to impossible!",
+ "thumb": {
+  "top": "CAPITALS QUIZ",
+  "card": [
+   "Capital of",
+   "Australia?"
+  ]
+ },
+ "ar": "مسابقة عواصم العالم من السهل إلى المستحيل — هل تعرفها كلها؟",
+ "fr": "Quiz des capitales du monde du plus facile à l'impossible — les connais-tu toutes ?",
+ "hashtags": "#CapitalCities #GeographyQuiz #Quiz #Geography",
+ "tags": [
+  "capital cities quiz",
+  "geography quiz",
+  "capitals of the world",
+  "countries and capitals",
+  "world quiz",
+  "عواصم العالم",
+  "مسابقة جغرافيا",
+  "capitales du monde",
+  "quiz géographie",
+  "quiz",
+  "quiz with answers",
+  "easy to impossible",
+  "brain test",
+  "trivia",
+  "اختبار ذكاء",
+  "مسابقة ثقافية",
+  "أسئلة وأجوبة",
+  "quiz culture générale",
+  "test de logique",
+  "QuizNado"
+ ],
+ "levels": [
+  [
+   [
+    "What is the capital of France?",
+    [
+     "Paris",
+     "Lyon",
+     "Nice"
+    ],
+    "Paris",
+    "Paris is the capital of France."
+   ],
+   [
+    "What is the capital of Spain?",
+    [
+     "Madrid",
+     "Barcelona",
+     "Seville"
+    ],
+    "Madrid",
+    "Madrid, not Barcelona!"
+   ],
+   [
+    "What is the capital of Italy?",
+    [
+     "Rome",
+     "Milan",
+     "Venice"
+    ],
+    "Rome",
+    "Rome is the capital of Italy."
+   ],
+   [
+    "What is the capital of Japan?",
+    [
+     "Tokyo",
+     "Osaka",
+     "Kyoto"
+    ],
+    "Tokyo",
+    "Tokyo is the capital of Japan."
+   ],
+   [
+    "What is the capital of Morocco?",
+    [
+     "Rabat",
+     "Casablanca",
+     "Marrakech"
+    ],
+    "Rabat",
+    "Rabat! Casablanca is the biggest city."
+   ],
+   [
+    "What is the capital of the United Kingdom?",
+    [
+     "London",
+     "Manchester",
+     "Edinburgh"
+    ],
+    "London",
+    "London is the capital of the UK."
+   ],
+   [
+    "What is the capital of Germany?",
+    [
+     "Berlin",
+     "Munich",
+     "Frankfurt"
+    ],
+    "Berlin",
+    "Berlin is the capital of Germany."
+   ],
+   [
+    "What is the capital of Saudi Arabia?",
+    [
+     "Riyadh",
+     "Jeddah",
+     "Dammam"
+    ],
+    "Riyadh",
+    "Riyadh is the capital of Saudi Arabia."
+   ]
+  ],
+  [
+   [
+    "What is the capital of the USA?",
+    [
+     "Washington, D.C.",
+     "New York",
+     "Los Angeles"
+    ],
+    "Washington, D.C.",
+    "Not New York: Washington, D.C.!"
+   ],
+   [
+    "What is the capital of Canada?",
+    [
+     "Ottawa",
+     "Toronto",
+     "Montreal"
+    ],
+    "Ottawa",
+    "Ottawa, not Toronto!"
+   ],
+   [
+    "What is the capital of Turkey?",
+    [
+     "Ankara",
+     "Istanbul",
+     "Izmir"
+    ],
+    "Ankara",
+    "Ankara! Istanbul is the biggest city."
+   ],
+   [
+    "What is the capital of Portugal?",
+    [
+     "Lisbon",
+     "Porto",
+     "Faro"
+    ],
+    "Lisbon",
+    "Lisbon is the capital of Portugal."
+   ],
+   [
+    "What is the capital of Algeria?",
+    [
+     "Algiers",
+     "Oran",
+     "Constantine"
+    ],
+    "Algiers",
+    "Algiers is the capital of Algeria."
+   ],
+   [
+    "What is the capital of Senegal?",
+    [
+     "Dakar",
+     "Thiès",
+     "Saint-Louis"
+    ],
+    "Dakar",
+    "Dakar is the capital of Senegal."
+   ],
+   [
+    "What is the capital of South Korea?",
+    [
+     "Seoul",
+     "Busan",
+     "Incheon"
+    ],
+    "Seoul",
+    "Seoul is the capital of South Korea."
+   ],
+   [
+    "What is the capital of Russia?",
+    [
+     "Moscow",
+     "Saint Petersburg",
+     "Kazan"
+    ],
+    "Moscow",
+    "Moscow is the capital of Russia."
+   ]
+  ],
+  [
+   [
+    "What is the capital of Australia?",
+    [
+     "Canberra",
+     "Sydney",
+     "Melbourne"
+    ],
+    "Canberra",
+    "Canberra! Not Sydney, not Melbourne."
+   ],
+   [
+    "What is the capital of Brazil?",
+    [
+     "Brasília",
+     "Rio de Janeiro",
+     "São Paulo"
+    ],
+    "Brasília",
+    "Brasília, not Rio!"
+   ],
+   [
+    "What is the capital of New Zealand?",
+    [
+     "Wellington",
+     "Auckland",
+     "Christchurch"
+    ],
+    "Wellington",
+    "Wellington, not Auckland!"
+   ],
+   [
+    "What is the capital of Nigeria?",
+    [
+     "Abuja",
+     "Lagos",
+     "Kano"
+    ],
+    "Abuja",
+    "Abuja! Lagos is the biggest city."
+   ],
+   [
+    "What is the capital of Pakistan?",
+    [
+     "Islamabad",
+     "Karachi",
+     "Lahore"
+    ],
+    "Islamabad",
+    "Islamabad, not Karachi!"
+   ],
+   [
+    "What is the capital of Vietnam?",
+    [
+     "Hanoi",
+     "Ho Chi Minh City",
+     "Da Nang"
+    ],
+    "Hanoi",
+    "Hanoi is the capital of Vietnam."
+   ],
+   [
+    "What is the capital of the United Arab Emirates?",
+    [
+     "Abu Dhabi",
+     "Dubai",
+     "Sharjah"
+    ],
+    "Abu Dhabi",
+    "Abu Dhabi, not Dubai!"
+   ],
+   [
+    "What is the capital of Mauritania?",
+    [
+     "Nouakchott",
+     "Nouadhibou",
+     "Atar"
+    ],
+    "Nouakchott",
+    "Nouakchott is the capital of Mauritania."
+   ]
+  ],
+  [
+   [
+    "What is the capital of Myanmar?",
+    [
+     "Naypyidaw",
+     "Yangon",
+     "Mandalay"
+    ],
+    "Naypyidaw",
+    "Naypyidaw since 2006, not Yangon!"
+   ],
+   [
+    "What is the capital of Kazakhstan?",
+    [
+     "Astana",
+     "Almaty",
+     "Shymkent"
+    ],
+    "Astana",
+    "Astana, not Almaty!"
+   ],
+   [
+    "What is the capital of Iceland?",
+    [
+     "Reykjavík",
+     "Akureyri",
+     "Oslo"
+    ],
+    "Reykjavík",
+    "Reykjavík is the capital of Iceland."
+   ],
+   [
+    "What is the capital of Mongolia?",
+    [
+     "Ulaanbaatar",
+     "Erdenet",
+     "Darkhan"
+    ],
+    "Ulaanbaatar",
+    "Ulaanbaatar is the capital of Mongolia."
+   ],
+   [
+    "What is the capital of Bhutan?",
+    [
+     "Thimphu",
+     "Paro",
+     "Kathmandu"
+    ],
+    "Thimphu",
+    "Thimphu! Kathmandu is in Nepal."
+   ],
+   [
+    "What is the capital of Burkina Faso?",
+    [
+     "Ouagadougou",
+     "Bamako",
+     "Niamey"
+    ],
+    "Ouagadougou",
+    "Ouagadougou! Bamako is Mali, Niamey is Niger."
+   ],
+   [
+    "What is the capital of Madagascar?",
+    [
+     "Antananarivo",
+     "Toamasina",
+     "Mahajanga"
+    ],
+    "Antananarivo",
+    "Antananarivo is the capital of Madagascar."
+   ],
+   [
+    "What is the capital of Côte d'Ivoire?",
+    [
+     "Yamoussoukro",
+     "Abidjan",
+     "Bouaké"
+    ],
+    "Yamoussoukro",
+    "Yamoussoukro! Abidjan is the biggest city."
+   ]
+  ]
+ ],
+ "shorts": [
+  {
+   "picks": [
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     7
+    ]
+   ],
+   "title": "Capital Cities: Easy to Impossible 🗺️ Can You Get 4/4? #shorts"
+  },
+  {
+   "picks": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     3,
+     0
+    ]
+   ],
+   "title": "The Last Capital Is Impossible 🤯 Geography Quiz #shorts"
+  }
+ ],
+ "slug": "capitals-easy-impossible"
+}

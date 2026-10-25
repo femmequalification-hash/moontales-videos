@@ -21,6 +21,12 @@ import art  # noqa: E402
 import build  # noqa: E402
 import quiz  # noqa: E402
 from quiz import Q, Timeline, frame  # noqa: E402
+from PIL import Image  # noqa: E402
+
+LOGO = os.path.join(os.path.dirname(os.path.abspath(__file__)), "brand", "quiznado_logo.png")
+CHANNEL = "QuizNado"
+if os.path.exists(LOGO):
+    quiz.BRAND = {"logo": Image.open(LOGO).convert("RGBA"), "name": CHANNEL}
 
 H = art.hexc
 LEVELS = [("EASY", "#2FA84F"), ("MEDIUM", "#E39A00"), ("HARD", "#FF6A1F"), ("IMPOSSIBLE", "#E23B3B")]
@@ -42,6 +48,25 @@ def shuffled(shown, opts, ans):
     return o
 
 
+SAY = (("°C", " degrees Celsius"), ("km/h", " kilometres per hour"), ("$1.10", "one dollar ten"),
+       ("$1.05", "one dollar five"), ("$1", "one dollar"), (" × ", " times "), ("×", " times "),
+       (" ÷ ", " divided by "), (" + ", " plus "), (" − ", " minus "), (" = ", " equals "), ("%", " percent"),
+       ("²", " squared"), ("½", "one half"), ("CO2", "C O 2"), ("H2O", "H 2 O"), ("...", ", "))
+
+
+def speakable(t):
+    for a, b in SAY:
+        t = t.replace(a, b)
+    return t
+
+
+def mathspeak(t):
+    for a, b in (("× ", "times "), ("÷ ", "divided by "), ("+ ", "plus "), ("− ", "minus "), ("= ?", ""),
+                 ("²", " squared"), ("√", "the square root of "), ("%", " percent")):
+        t = t.replace(a, b)
+    return t.strip()
+
+
 class Pack:
     def __init__(self, path):
         self.p = json.load(open(path))
@@ -55,6 +80,8 @@ class Pack:
                 shown, opts, ans, why = item[:4]
                 spoken = item[4] if len(item) > 4 else (cyc[n % len(cyc)] if cyc else
                                                         shown.replace("___", ", blank,").replace("\"", ""))
+                if self.p.get("math") and len(item) <= 4:
+                    spoken = mathspeak(shown) + "?"
                 opts = shuffled(shown, opts, ans)
                 key = f"{self.slug}|{li}|{qi}"
                 Q[key] = ("text", shown, spoken, opts, ans, why)
@@ -70,7 +97,7 @@ class Pack:
 
 
 # ---------------------------------------------------------------- cards in the quiz design
-def card(title, lines, vertical=False, highlight=None, sub=None):
+def card(title, lines, vertical=False, highlight=None, sub=None, logo=False):
     W, Hh = (1080, 1920) if vertical else (1920, 1080)
     c = art.Canvas(W, Hh)
     c.rect(0, 0, W, Hh, H("#F1E8FF"))
@@ -79,16 +106,20 @@ def card(title, lines, vertical=False, highlight=None, sub=None):
         c.circle((r * 7) % W, (r * 11) % Hh, 12 + r % 24, H("#8E5BD6", 22))
     hb = (40, 40, W - 40, 190) if vertical else (40, 30, W - 40, 150)
     c.rect(*hb, H("#2B2350"), r=50)
-    fs = 66
-    while fs > 40 and art.font(fs, "Bold").getlength(title) > hb[2] - hb[0] - 60:
-        fs -= 2
-    c.text(W / 2, (hb[1] + hb[3]) / 2, title, art.font(fs, "Bold"), H("#FFE680"), anchor="mm")
+    quiz.brand_header(c, W, hb, vertical, title, 66)
+    if logo and quiz.BRAND:
+        if vertical:
+            quiz.paste_logo(c, W / 2, 520, 600)
+        else:
+            quiz.paste_logo(c, 520, 610, 700)
     # level staircase
-    if vertical:
+    if logo and quiz.BRAND:
+        pass
+    elif vertical:
         x0, y0, step, ph, base_w, grow = 140, 260, 125, 100, 520, 90
     else:
         x0, y0, step, ph, base_w, grow = 90, 230, 175, 140, 520, 90
-    for li, (name, col) in enumerate(LEVELS):
+    for li, (name, col) in enumerate(LEVELS if not (logo and quiz.BRAND) else []):
         y = y0 + li * step
         w = base_w + li * grow
         if vertical:
@@ -137,10 +168,13 @@ def thumbnail(pack, path):
         r = (k * 71 + 7) % 997
         c.circle((r * 7) % 1280, (r * 11) % 720, 10 + r % 20, H("#8E5BD6", 26))
     c.rect(30, 22, 1250, 170, H("#2B2350"), r=44)
-    fs = 104
-    while art.font(fs, "Bold").getlength(p["thumb"]["top"]) > 1150:
+    fs, tx, tw = 104, 640, 1150
+    if quiz.BRAND:
+        quiz.paste_logo(c, 112, 96, 176)
+        tx, tw = 715, 1010
+    while art.font(fs, "Bold").getlength(p["thumb"]["top"]) > tw:
         fs -= 4
-    c.text(640, 96, p["thumb"]["top"], art.font(fs, "Bold"), H("#FFE680"), anchor="mm")
+    c.text(tx, 96, p["thumb"]["top"], art.font(fs, "Bold"), H("#FFE680"), anchor="mm")
     for li, (name, col) in enumerate(LEVELS):
         y = 205 + li * 124
         w = 330 + li * 62
@@ -170,17 +204,17 @@ def thumbnail(pack, path):
 def ask_question(tl, d, vertical, header, number, total, level, footer=None, spoken=None):
     key = d["key"]
     img = frame(key, "ask", None, vertical, header, number, total, footer, level=level)
-    dur = tl.say(spoken or d["spoken"])
+    dur = tl.say(speakable(spoken or d["spoken"]))
     tl.show(img, dur + 0.4)
     for s in range(quiz.THINK, 0, -1):
         tl.add_sound(quiz.TICK, tl.t)
         tl.show(frame(key, "ask", s, vertical, header, number, total, footer, level=level), 1.0)
     tl.add_sound(quiz.DING, tl.t)
-    dur = tl.say(f"The answer is {d['letter']}: {d['ans'].rstrip('.')}. {d['why']}")
+    dur = tl.say(speakable(f"The answer is {d['letter']}: {d['ans'].rstrip('.')}. {d['why']}"))
     tl.show(frame(key, "reveal", None, vertical, header, number, total, footer, level=level), dur + 0.9)
 
 
-SETTINGS = ("SETTINGS:\n- Audience: No, it's not made for kids (English test for teens and adults:"
+SETTINGS = ("SETTINGS:\n- Audience: No, it's not made for kids (quiz for teens and adults:"
             " this keeps comments ON for \"comment your score\")\n- Altered or synthetic content: Yes\n"
             "- Category: Education\n- Visibility: Public\n")
 
@@ -214,8 +248,8 @@ def build_long(pack, out_dir, voice):
     tl.show(img, d + 0.6)
     # 2. intro
     intro = card(f"{p['name']}: Easy to Impossible", [f"{nq} {noun}", "4 levels", "5 seconds each",
-                                                       "Keep your score!"])
-    for text in (f"Welcome to the {p['name']}, from easy to impossible!",
+                                                       "Keep your score!"], logo=True)
+    for text in (f"Welcome to {CHANNEL}! This is the {p['name']}, from easy to impossible!",
                  f"{nq} {noun} in four levels: easy, medium, hard, and impossible. "
                  "You have five seconds for each one. Take a paper and keep your score!",
                  "At the end, share your score in the comments. Ready? Let's go!"):
@@ -247,6 +281,12 @@ def build_long(pack, out_dir, voice):
             d = tl.say(check_say[li])
             tl.show(card(f"Level {li + 1} complete!", ["Your score so far:", f"? / {done}", "Write it down!"],
                          highlight=li), d + 0.8)
+            if li == 1:  # halfway: like & subscribe
+                cta = card(f"Enjoying {CHANNEL}?", ["Like & subscribe!", "It helps us make", "more quizzes",
+                                                    "!Then: level 3..."], logo=True)
+                d = tl.say(f"If you like it until now, hit like and subscribe to {CHANNEL}! "
+                           "It really helps us make more quizzes. Now, let's go to level three!")
+                tl.show(cta, d + 0.6)
     hi, mid = round(nq * 0.8), round(nq * 0.55)
     res = card("Your score?", [f"{nq}/{nq}: Genius!", f"{hi}–{nq - 1}: Excellent", f"{mid}–{hi - 1}: Good",
                                f"0–{mid - 1}: Keep practising", "!Comment your score!"])
@@ -255,10 +295,10 @@ def build_long(pack, out_dir, voice):
                  "Share your score with us in the comments! We read every comment."):
         d = tl.say(text)
         tl.show(res, d + 0.8)
-    end = card("Thank you!", ["Like & subscribe", "A new test every week!", "More Easy to Impossible",
-                              "tests on our channel"])
-    d = tl.say("If you enjoyed this test, like and subscribe. There's a new easy to impossible test every week. "
-               "See you next time!")
+    end = card("Thank you!", [f"Subscribe to {CHANNEL}", "& hit like!", "A new quiz every week",
+                              "!Easy to Impossible"], logo=True)
+    d = tl.say(f"If you enjoyed this quiz, hit like and subscribe to {CHANNEL}. "
+               "There's a new easy to impossible quiz every week. See you next time!")
     tl.show(end, d + 1.2)
     out = os.path.join(out_dir, slug + ".mp4")
     tl.render(out, music_vol=0.06)
@@ -291,10 +331,14 @@ def build_short(pack, out_dir, voice, si):
     for i, (q, (li, _)) in enumerate(zip(picks, s["picks"]), 1):
         sp = f"{WORDS[li]}! {q['spoken']}"
         ask_question(tl, q, True, p["header"], i, len(picks), pill(li), None, sp)
-    end = card("Score?", ["Comment your score!", "Want the full test?", f"{nq} {p['noun']}", "on our channel!",
-                          "!Like & subscribe!"], vertical=True)
+        if i == 2:
+            d = tl.say("Got it right? Hit like!")
+            tl.show(frame(q["key"], "reveal", None, True, p["header"], i, len(picks), level=pill(li),
+                          note="Got it right? Hit LIKE!"), d + 0.2)
+    end = card("Score?", ["Comment your score!", f"Full test: {nq} {p['noun']}", "on our channel!",
+                          f"!Subscribe to {CHANNEL}!"], vertical=True, logo=True)
     d = tl.say(f"How many did you get? Comment your score! The full test, with {nq} {p['noun']}, is on our channel. "
-               "Like and subscribe!")
+               f"Subscribe to {CHANNEL} for more!")
     tl.show(end, d + 1.0)
     out = os.path.join(out_dir, name + ".mp4")
     tl.render(out, music_vol=0.07, vertical=True)

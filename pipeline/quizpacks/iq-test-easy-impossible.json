@@ -1,0 +1,419 @@
+{
+ "name": "IQ Test",
+ "header": "IQ test",
+ "noun": "questions",
+ "read_options": true,
+ "title": "IQ Test: Easy to Impossible 🧠 32 Logic Questions | How Smart Are You?",
+ "about": "Logic puzzles, number patterns and brain teasers, from easy to impossible. How smart are you?",
+ "thumb": {
+  "top": "IQ TEST",
+  "card": [
+   "A bat and a ball",
+   "cost $1.10..."
+  ]
+ },
+ "ar": "اختبار ذكاء من السهل إلى المستحيل — هل أنت ذكي بما يكفي؟",
+ "fr": "Test de QI du plus facile à l'impossible — es-tu vraiment intelligent ?",
+ "hashtags": "#IQTest #BrainTest #Logic #Riddles",
+ "tags": [
+  "iq test",
+  "logic test",
+  "brain teasers",
+  "number patterns",
+  "tricky questions",
+  "how smart are you",
+  "اختبار ذكاء",
+  "ألغاز منطقية",
+  "test de QI",
+  "énigmes logiques",
+  "quiz",
+  "quiz with answers",
+  "easy to impossible",
+  "brain test",
+  "trivia",
+  "اختبار ذكاء",
+  "مسابقة ثقافية",
+  "أسئلة وأجوبة",
+  "quiz culture générale",
+  "test de logique",
+  "QuizNado"
+ ],
+ "levels": [
+  [
+   [
+    "What comes next? 2, 4, 6, 8, ?",
+    [
+     "10",
+     "12",
+     "9"
+    ],
+    "10",
+    "Add 2 each time."
+   ],
+   [
+    "What comes next? 5, 10, 15, 20, ?",
+    [
+     "25",
+     "30",
+     "21"
+    ],
+    "25",
+    "Add 5 each time."
+   ],
+   [
+    "Today is Monday. What day is it in 2 days?",
+    [
+     "Wednesday",
+     "Tuesday",
+     "Thursday"
+    ],
+    "Wednesday",
+    "Monday, Tuesday, Wednesday!"
+   ],
+   [
+    "Which is bigger?",
+    [
+     "0.5",
+     "0.45",
+     "they're the same"
+    ],
+    "0.5",
+    "0.5 = 0.50, and 0.50 is more than 0.45."
+   ],
+   [
+    "Tom is taller than Sam. Sam is taller than Ben. Who is the shortest?",
+    [
+     "Ben",
+     "Sam",
+     "Tom"
+    ],
+    "Ben",
+    "Tom > Sam > Ben."
+   ],
+   [
+    "What comes next? 1, 3, 5, 7, ?",
+    [
+     "9",
+     "8",
+     "10"
+    ],
+    "9",
+    "Odd numbers: add 2."
+   ],
+   [
+    "How many sides do 2 triangles have in total?",
+    [
+     "6",
+     "3",
+     "5"
+    ],
+    "6",
+    "3 + 3 = 6."
+   ],
+   [
+    "Odd one out: red, blue, apple, green",
+    [
+     "apple",
+     "blue",
+     "green"
+    ],
+    "apple",
+    "Apple is a fruit, not a color."
+   ]
+  ],
+  [
+   [
+    "What comes next? 2, 4, 8, 16, ?",
+    [
+     "32",
+     "24",
+     "20"
+    ],
+    "32",
+    "Double it each time."
+   ],
+   [
+    "What comes next? 1, 4, 9, 16, ?",
+    [
+     "25",
+     "20",
+     "36"
+    ],
+    "25",
+    "1×1, 2×2, 3×3, 4×4, 5×5!"
+   ],
+   [
+    "You pass the person in 2nd place in a race. What place are you in?",
+    [
+     "1st",
+     "2nd",
+     "3rd"
+    ],
+    "2nd",
+    "You take their place: 2nd!"
+   ],
+   [
+    "A farmer has 17 sheep. All but 9 run away. How many are left?",
+    [
+     "9",
+     "8",
+     "17"
+    ],
+    "9",
+    "All BUT 9 run away, so 9 stay."
+   ],
+   [
+    "You get 3 pills, one every half hour. How long do they last?",
+    [
+     "1 hour",
+     "1.5 hours",
+     "2 hours"
+    ],
+    "1 hour",
+    "Now, after 30 min, after 60 min."
+   ],
+   [
+    "A red house is made of red bricks. What is a greenhouse made of?",
+    [
+     "glass",
+     "green bricks",
+     "wood"
+    ],
+    "glass",
+    "A greenhouse is made of glass!"
+   ],
+   [
+    "What comes next? J, F, M, A, M, J, J, ?",
+    [
+     "A",
+     "S",
+     "O"
+    ],
+    "A",
+    "The months: ... June, July, August!"
+   ],
+   [
+    "What comes next? 3, 6, 12, 24, ?",
+    [
+     "48",
+     "36",
+     "30"
+    ],
+    "48",
+    "Double it each time."
+   ]
+  ],
+  [
+   [
+    "What comes next? 1, 1, 2, 3, 5, 8, ?",
+    [
+     "13",
+     "11",
+     "12"
+    ],
+    "13",
+    "Add the last two numbers: 5 + 8 = 13."
+   ],
+   [
+    "5 machines make 5 toys in 5 minutes. How long do 100 machines take to make 100 toys?",
+    [
+     "5 minutes",
+     "100 minutes",
+     "20 minutes"
+    ],
+    "5 minutes",
+    "Each machine makes 1 toy in 5 minutes."
+   ],
+   [
+    "What comes next? 2, 6, 12, 20, 30, ?",
+    [
+     "42",
+     "40",
+     "36"
+    ],
+    "42",
+    "Add 4, 6, 8, 10, then 12."
+   ],
+   [
+    "What comes next? O, T, T, F, F, S, S, ?",
+    [
+     "E",
+     "N",
+     "T"
+    ],
+    "E",
+    "One, Two, Three... Seven, Eight!"
+   ],
+   [
+    "Odd one out: 3, 5, 7, 9, 11",
+    [
+     "9",
+     "5",
+     "11"
+    ],
+    "9",
+    "9 is the only one that is not a prime number."
+   ],
+   [
+    "A brick weighs 1 kg plus half a brick. How much does one brick weigh?",
+    [
+     "2 kg",
+     "1.5 kg",
+     "1 kg"
+    ],
+    "2 kg",
+    "Half a brick = 1 kg, so a brick = 2 kg."
+   ],
+   [
+    "Water lilies double every day and cover a lake in 48 days. When is the lake half covered?",
+    [
+     "day 47",
+     "day 24",
+     "day 46"
+    ],
+    "day 47",
+    "One day before: they double on day 48!"
+   ],
+   [
+    "What comes next? 2, 3, 5, 7, 11, ?",
+    [
+     "13",
+     "12",
+     "15"
+    ],
+    "13",
+    "Prime numbers!"
+   ]
+  ],
+  [
+   [
+    "What comes next? 1, 11, 21, 1211, 111221, ?",
+    [
+     "312211",
+     "1112221",
+     "221111"
+    ],
+    "312211",
+    "Read it out loud: three 1s, two 2s, one 1!",
+    "What comes next? 1. 11. 21. 1211. 111221."
+   ],
+   [
+    "It's 3:15. What is the angle between the clock hands?",
+    [
+     "7.5 degrees",
+     "0 degrees",
+     "15 degrees"
+    ],
+    "7.5 degrees",
+    "The hour hand has moved a quarter of the way to 4."
+   ],
+   [
+    "A dad is 4 times as old as his son. In 20 years, he'll be twice as old. How old is the son now?",
+    [
+     "10",
+     "20",
+     "5"
+    ],
+    "10",
+    "Dad 40, son 10. In 20 years: 60 and 30!"
+   ],
+   [
+    "Rearrange CIFAIPC to get an ocean.",
+    [
+     "Pacific",
+     "Atlantic",
+     "Arctic"
+    ],
+    "Pacific",
+    "C-I-F-A-I-P-C = PACIFIC!",
+    "Rearrange the letters C, I, F, A, I, P, C to get the name of an ocean."
+   ],
+   [
+    "How many times does the digit 9 appear from 1 to 100?",
+    [
+     "20",
+     "10",
+     "11"
+    ],
+    "20",
+    "9, 19... 89 and 90 to 99: 20 times!"
+   ],
+   [
+    "How many squares are on a chessboard (all sizes)?",
+    [
+     "204",
+     "64",
+     "100"
+    ],
+    "204",
+    "64 + 49 + 36 + 25 + 16 + 9 + 4 + 1 = 204!"
+   ],
+   [
+    "Sally has 3 brothers. Each brother has 2 sisters. How many sisters does Sally have?",
+    [
+     "1",
+     "2",
+     "6"
+    ],
+    "1",
+    "The 2 sisters are Sally and one more girl!"
+   ],
+   [
+    "A bat and a ball cost $1.10. The bat costs $1 more than the ball. How much is the ball?",
+    [
+     "5 cents",
+     "10 cents",
+     "1 cent"
+    ],
+    "5 cents",
+    "Ball 5 cents + bat $1.05 = $1.10!",
+    "A bat and a ball cost one dollar and ten cents. The bat costs one dollar more than the ball. How much is the ball?"
+   ]
+  ]
+ ],
+ "shorts": [
+  {
+   "picks": [
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     7
+    ]
+   ],
+   "title": "Can You Solve All 4? 🧠 IQ Test: Easy to Impossible #shorts"
+  },
+  {
+   "picks": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     6
+    ]
+   ],
+   "title": "Only Smart People Get 4/4 🤯 IQ Test #shorts"
+  }
+ ],
+ "slug": "iq-test-easy-impossible"
+}

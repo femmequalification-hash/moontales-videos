@@ -1,0 +1,417 @@
+{
+ "name": "General Knowledge Quiz",
+ "header": "General knowledge",
+ "noun": "questions",
+ "read_options": true,
+ "title": "General Knowledge Quiz: Easy to Impossible 🌍 32 Questions | How Much Do You Know?",
+ "about": "Animals, space, science, the world: 32 general knowledge questions from easy to impossible!",
+ "thumb": {
+  "top": "GENERAL KNOWLEDGE",
+  "card": [
+   "What color is a",
+   "polar bear's skin?"
+  ]
+ },
+ "ar": "مسابقة ثقافة عامة من السهل إلى المستحيل — كم تعرف؟",
+ "fr": "Quiz de culture générale du plus facile à l'impossible — que sais-tu vraiment ?",
+ "hashtags": "#GeneralKnowledge #Quiz #Trivia #FunFacts",
+ "tags": [
+  "general knowledge quiz",
+  "trivia quiz",
+  "fun facts",
+  "science quiz",
+  "animal quiz",
+  "space quiz",
+  "ثقافة عامة",
+  "معلومات عامة",
+  "culture générale",
+  "quiz de culture",
+  "quiz",
+  "quiz with answers",
+  "easy to impossible",
+  "brain test",
+  "trivia",
+  "اختبار ذكاء",
+  "مسابقة ثقافية",
+  "أسئلة وأجوبة",
+  "quiz culture générale",
+  "test de logique",
+  "QuizNado"
+ ],
+ "levels": [
+  [
+   [
+    "How many legs does a spider have?",
+    [
+     "8",
+     "6",
+     "10"
+    ],
+    "8",
+    "Spiders have 8 legs. Insects have 6."
+   ],
+   [
+    "What do bees make?",
+    [
+     "honey",
+     "milk",
+     "silk"
+    ],
+    "honey",
+    "Bees make honey!"
+   ],
+   [
+    "Mix blue and yellow. What color do you get?",
+    [
+     "green",
+     "purple",
+     "orange"
+    ],
+    "green",
+    "Blue + yellow = green."
+   ],
+   [
+    "How many days are in a leap year?",
+    [
+     "366",
+     "365",
+     "364"
+    ],
+    "366",
+    "A leap year has February 29th."
+   ],
+   [
+    "What is the largest ocean?",
+    [
+     "the Pacific",
+     "the Atlantic",
+     "the Indian"
+    ],
+    "the Pacific",
+    "The Pacific is the biggest ocean."
+   ],
+   [
+    "What is the fastest land animal?",
+    [
+     "the cheetah",
+     "the lion",
+     "the horse"
+    ],
+    "the cheetah",
+    "A cheetah can run about 100 km/h!"
+   ],
+   [
+    "How many sides does a hexagon have?",
+    [
+     "6",
+     "5",
+     "8"
+    ],
+    "6",
+    "Hexa = six."
+   ],
+   [
+    "Which planet is called the Red Planet?",
+    [
+     "Mars",
+     "Venus",
+     "Jupiter"
+    ],
+    "Mars",
+    "Mars looks red because of rusty dust."
+   ]
+  ],
+  [
+   [
+    "What is the largest planet in our solar system?",
+    [
+     "Jupiter",
+     "Saturn",
+     "Earth"
+    ],
+    "Jupiter",
+    "Jupiter is the giant of the solar system."
+   ],
+   [
+    "What is H2O?",
+    [
+     "water",
+     "salt",
+     "oxygen"
+    ],
+    "water",
+    "H2O = 2 hydrogen + 1 oxygen = water.",
+    "What is H. 2. O?"
+   ],
+   [
+    "What is the hardest natural material?",
+    [
+     "diamond",
+     "gold",
+     "iron"
+    ],
+    "diamond",
+    "Diamond is the hardest natural material."
+   ],
+   [
+    "How many players does a football team have on the pitch?",
+    [
+     "11",
+     "10",
+     "12"
+    ],
+    "11",
+    "11 players, including the goalkeeper."
+   ],
+   [
+    "Who painted the Mona Lisa?",
+    [
+     "Leonardo da Vinci",
+     "Picasso",
+     "Van Gogh"
+    ],
+    "Leonardo da Vinci",
+    "Leonardo da Vinci painted it."
+   ],
+   [
+    "Which gas do plants take in from the air?",
+    [
+     "carbon dioxide",
+     "oxygen",
+     "helium"
+    ],
+    "carbon dioxide",
+    "Plants take in CO2 and give out oxygen."
+   ],
+   [
+    "At sea level, water boils at...",
+    [
+     "100 °C",
+     "90 °C",
+     "120 °C"
+    ],
+    "100 °C",
+    "Water boils at 100 degrees Celsius."
+   ],
+   [
+    "What is the smallest country in the world?",
+    [
+     "Vatican City",
+     "Monaco",
+     "Malta"
+    ],
+    "Vatican City",
+    "Vatican City is the smallest country."
+   ]
+  ],
+  [
+   [
+    "How many bones are in the adult human body?",
+    [
+     "206",
+     "186",
+     "306"
+    ],
+    "206",
+    "An adult has 206 bones."
+   ],
+   [
+    "What is the chemical symbol for gold?",
+    [
+     "Au",
+     "Go",
+     "Gd"
+    ],
+    "Au",
+    "Au comes from the Latin word aurum."
+   ],
+   [
+    "How long does sunlight take to reach Earth?",
+    [
+     "about 8 minutes",
+     "about 8 seconds",
+     "about 8 hours"
+    ],
+    "about 8 minutes",
+    "Light from the Sun takes about 8 minutes."
+   ],
+   [
+    "Which planet has the most moons?",
+    [
+     "Saturn",
+     "Jupiter",
+     "Mars"
+    ],
+    "Saturn",
+    "Saturn has the most known moons."
+   ],
+   [
+    "Which language has the most native speakers?",
+    [
+     "Mandarin Chinese",
+     "English",
+     "Spanish"
+    ],
+    "Mandarin Chinese",
+    "Mandarin has the most native speakers."
+   ],
+   [
+    "How many hearts does an octopus have?",
+    [
+     "3",
+     "1",
+     "8"
+    ],
+    "3",
+    "An octopus has 3 hearts!"
+   ],
+   [
+    "Which is the only mammal that can really fly?",
+    [
+     "the bat",
+     "the flying squirrel",
+     "the penguin"
+    ],
+    "the bat",
+    "Flying squirrels only glide. Bats fly!"
+   ],
+   [
+    "What is the highest mountain above sea level?",
+    [
+     "Everest",
+     "K2",
+     "Kilimanjaro"
+    ],
+    "Everest",
+    "Mount Everest: about 8,849 metres."
+   ]
+  ],
+  [
+   [
+    "What is the largest desert in the world?",
+    [
+     "Antarctica",
+     "the Sahara",
+     "the Gobi"
+    ],
+    "Antarctica",
+    "A desert = very little rain. Antarctica is the biggest!"
+   ],
+   [
+    "Which one is a berry?",
+    [
+     "a banana",
+     "a strawberry",
+     "a raspberry"
+    ],
+    "a banana",
+    "For botanists, bananas are berries and strawberries are not!"
+   ],
+   [
+    "How many time zones does Russia have?",
+    [
+     "11",
+     "7",
+     "15"
+    ],
+    "11",
+    "Russia has 11 time zones."
+   ],
+   [
+    "Which planet spins the opposite way to most others?",
+    [
+     "Venus",
+     "Mars",
+     "Mercury"
+    ],
+    "Venus",
+    "On Venus, the Sun rises in the west!"
+   ],
+   [
+    "Which letter is not in the name of any US state?",
+    [
+     "Q",
+     "Z",
+     "X"
+    ],
+    "Q",
+    "Z is in Arizona, X in Texas, but no Q!"
+   ],
+   [
+    "What is the national animal of Scotland?",
+    [
+     "the unicorn",
+     "the lion",
+     "the eagle"
+    ],
+    "the unicorn",
+    "Yes, Scotland's national animal is the unicorn!"
+   ],
+   [
+    "How many minutes are in a week?",
+    [
+     "10,080",
+     "1,440",
+     "8,760"
+    ],
+    "10,080",
+    "60 × 24 × 7 = 10,080."
+   ],
+   [
+    "What color is a polar bear's skin?",
+    [
+     "black",
+     "white",
+     "pink"
+    ],
+    "black",
+    "Under the white fur, the skin is black!"
+   ]
+  ]
+ ],
+ "shorts": [
+  {
+   "picks": [
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     7
+    ]
+   ],
+   "title": "The Last One Will Surprise You 😳 General Knowledge Quiz #shorts"
+  },
+  {
+   "picks": [
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     3,
+     0
+    ]
+   ],
+   "title": "Can You Get 4/4? 🌍 General Knowledge: Easy to Impossible #shorts"
+  }
+ ],
+ "slug": "general-knowledge-easy-impossible"
+}

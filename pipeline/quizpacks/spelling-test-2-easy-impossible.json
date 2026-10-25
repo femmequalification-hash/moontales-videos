@@ -1,0 +1,422 @@
+{
+ "name": "Spelling Test 2",
+ "header": "Spelling test",
+ "noun": "words",
+ "read_options": false,
+ "spoken_cycle": [
+  "Which word is spelled correctly?",
+  "Which spelling is right?",
+  "And this one?",
+  "Which one is correct?"
+ ],
+ "title": "Spelling Test 2: Easy to Impossible 😳 32 New Words | Can You Spell Them All?",
+ "about": "32 NEW English words, from easy to impossible. Which spelling is correct?",
+ "thumb": {
+  "top": "SPELLING TEST 2",
+  "card": [
+   "mispell?",
+   "misspell?"
+  ]
+ },
+ "ar": "اختبار الإملاء الإنجليزي 2 من السهل إلى المستحيل — 32 كلمة جديدة!",
+ "fr": "Test d'orthographe anglaise 2 du plus facile à l'impossible — 32 nouveaux mots !",
+ "hashtags": "#SpellingTest #EnglishTest #LearnEnglish #EnglishQuiz",
+ "tags": [
+  "spelling test",
+  "english spelling",
+  "spelling test 2",
+  "commonly misspelled words",
+  "english test",
+  "learn english",
+  "الاملاء بالانجليزي",
+  "اختبار اللغة الانجليزية",
+  "orthographe anglaise",
+  "test d'anglais",
+  "quiz",
+  "quiz with answers",
+  "easy to impossible",
+  "brain test",
+  "trivia",
+  "اختبار ذكاء",
+  "مسابقة ثقافية",
+  "أسئلة وأجوبة",
+  "quiz culture générale",
+  "test de logique",
+  "QuizNado"
+ ],
+ "levels": [
+  [
+   [
+    "Which word is spelled correctly?",
+    [
+     "Saterday",
+     "Saturday",
+     "Satarday"
+    ],
+    "Saturday",
+    "S-A-T-U-R-D-A-Y."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "yelow",
+     "yellow",
+     "yello"
+    ],
+    "yellow",
+    "Double L, and W at the end."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "minit",
+     "minute",
+     "minnute"
+    ],
+    "minute",
+    "M-I-N-U-T-E."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "lisen",
+     "listen",
+     "lissen"
+    ],
+    "listen",
+    "The T is silent: lis-T-en."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "eigth",
+     "eight",
+     "eaght"
+    ],
+    "eight",
+    "E-I-G-H-T."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "brather",
+     "brother",
+     "brothur"
+    ],
+    "brother",
+    "B-R-O-T-H-E-R."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "wach",
+     "watch",
+     "wotch"
+    ],
+    "watch",
+    "Don't forget the T: wa-T-ch."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "gardin",
+     "garden",
+     "gardan"
+    ],
+    "garden",
+    "G-A-R-D-E-N."
+   ]
+  ],
+  [
+   [
+    "Which word is spelled correctly?",
+    [
+     "tomatoe",
+     "tomato",
+     "tommato"
+    ],
+    "tomato",
+    "One tomato, no E. Two tomatoes!"
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "foriegn",
+     "foreign",
+     "forein"
+    ],
+    "foreign",
+    "F-O-R-E-I-G-N: E before I here!"
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "truely",
+     "truly",
+     "truley"
+    ],
+    "truly",
+    "True loses its E: truly."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "fourty",
+     "forty",
+     "fortey"
+    ],
+    "forty",
+    "Four, but FORTY: no U!"
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "grammer",
+     "grammar",
+     "gramar"
+    ],
+    "grammar",
+    "It ends with -AR: gramm-AR."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "peice",
+     "piece",
+     "pece"
+    ],
+    "piece",
+    "A PIEce of PIE!"
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "acident",
+     "accident",
+     "accidant"
+    ],
+    "accident",
+    "Double C: a-CC-ident."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "vilage",
+     "village",
+     "villege"
+    ],
+    "village",
+    "Double L: vi-LL-age."
+   ]
+  ],
+  [
+   [
+    "Which word is spelled correctly?",
+    [
+     "paralel",
+     "parallel",
+     "parralel"
+    ],
+    "parallel",
+    "One R, double L in the middle, one L at the end."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "priviledge",
+     "privilege",
+     "privilage"
+    ],
+    "privilege",
+    "No D: privi-LEGE."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "tounge",
+     "tongue",
+     "tung"
+    ],
+    "tongue",
+    "T-O-N-G-U-E."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "vaccum",
+     "vacuum",
+     "vacume"
+    ],
+    "vacuum",
+    "One C, double U."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "harrass",
+     "harass",
+     "haras"
+    ],
+    "harass",
+    "One R, double S."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "noticable",
+     "noticeable",
+     "noticeabel"
+    ],
+    "noticeable",
+    "Keep the E: notice-ABLE."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "cemetary",
+     "cemetery",
+     "cematery"
+    ],
+    "cemetery",
+    "Three E's: c-E-m-E-t-E-ry."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "existance",
+     "existence",
+     "exsistence"
+    ],
+    "existence",
+    "It ends with -ENCE."
+   ]
+  ],
+  [
+   [
+    "Which word is spelled correctly?",
+    [
+     "chrysanthemum",
+     "crysanthemum",
+     "chrysanthemun"
+    ],
+    "chrysanthemum",
+    "C-H-R-Y-S-A-N-T-H-E-M-U-M."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "opthalmologist",
+     "ophthalmologist",
+     "ophthamologist"
+    ],
+    "ophthalmologist",
+    "O-P-H-T-H-A-L: two H's!"
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "silhouette",
+     "silouette",
+     "silhouete"
+    ],
+    "silhouette",
+    "Sil-H-ou-e-TTE."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "Worcestershire",
+     "Worchestershire",
+     "Worcestshire"
+    ],
+    "Worcestershire",
+    "Worcester + shire."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "neumonia",
+     "pneumonia",
+     "pnuemonia"
+    ],
+    "pneumonia",
+    "The P is silent: P-N-E-U."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "rendezvous",
+     "rondevous",
+     "rendevous"
+    ],
+    "rendezvous",
+    "From French: rendez-vous!"
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "sacreligious",
+     "sacrilegious",
+     "sacriligious"
+    ],
+    "sacrilegious",
+    "Sacri-LEG-ious, not religious!"
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "mispell",
+     "misspell",
+     "misspel"
+    ],
+    "misspell",
+    "Mis + spell = double S!"
+   ]
+  ]
+ ],
+ "shorts": [
+  {
+   "picks": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     7
+    ]
+   ],
+   "title": "Can You Spell \"Misspell\"? 😳 Spelling Test 2 #shorts"
+  },
+  {
+   "picks": [
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     3,
+     4
+    ]
+   ],
+   "title": "The Last Word Is Impossible 🤯 Spelling Test: Easy to Impossible #shorts"
+  }
+ ],
+ "slug": "spelling-test-2-easy-impossible"
+}
