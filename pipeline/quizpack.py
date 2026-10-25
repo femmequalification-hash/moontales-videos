@@ -220,6 +220,7 @@ SETTINGS = ("SETTINGS:\n- Audience: No, it's not made for kids (quiz for teens a
 
 
 def write_kit(out_dir, name, meta, short):
+    meta = dict(meta, tags=list(dict.fromkeys(meta["tags"])))
     extra = ("- Cover: in the YouTube app choose the FIRST frame (the question without the answer)\n"
              "- Related video: choose the full test (long video) so viewers can tap to it\n" if short else
              f"- Thumbnail: {name}_thumb.jpg\n- Pinned comment: What's your score out of 32? 👇 "
