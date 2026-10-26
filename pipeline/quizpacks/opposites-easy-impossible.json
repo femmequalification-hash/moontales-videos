@@ -1,0 +1,483 @@
+{
+ "slug": "opposites-easy-impossible",
+ "name": "Opposites Test",
+ "header": "Opposites",
+ "noun": "words",
+ "read_options": true,
+ "title": "Opposites Test: Easy to Impossible 🔄 32 Words | Can You Find Them All?",
+ "about": "Find the opposite! 32 English words from easy to impossible.",
+ "thumb": {
+  "top": "OPPOSITES TEST",
+  "card": [
+   "The opposite of",
+   "\"synonym\" is...?"
+  ]
+ },
+ "ar": "اختبار الأضداد بالإنجليزية من السهل إلى المستحيل — هل تعرف عكس كل كلمة؟",
+ "fr": "Test des contraires en anglais du plus facile à l'impossible — trouveras-tu tous les contraires ?",
+ "hashtags": "#Opposites #Antonyms #EnglishQuiz #LearnEnglish",
+ "tags": [
+  "opposites",
+  "antonyms",
+  "english opposites",
+  "opposite words",
+  "english vocabulary",
+  "english quiz",
+  "easy to impossible",
+  "الأضداد بالانجليزي",
+  "كلمات وعكسها",
+  "تعلم الانجليزية",
+  "les contraires en anglais",
+  "antonymes anglais",
+  "quiz anglais",
+  "QuizNado"
+ ],
+ "levels": [
+  [
+   [
+    "The opposite of \"up\" is...",
+    [
+     "down",
+     "over",
+     "top"
+    ],
+    "down",
+    "Up and down are opposites.",
+    "The opposite of up is"
+   ],
+   [
+    "The opposite of \"day\" is...",
+    [
+     "night",
+     "week",
+     "morning"
+    ],
+    "night",
+    "Day and night are opposites.",
+    "The opposite of day is"
+   ],
+   [
+    "The opposite of \"happy\" is...",
+    [
+     "sad",
+     "glad",
+     "funny"
+    ],
+    "sad",
+    "Happy and sad are opposites.",
+    "The opposite of happy is"
+   ],
+   [
+    "The opposite of \"fast\" is...",
+    [
+     "slow",
+     "quick",
+     "late"
+    ],
+    "slow",
+    "Fast and slow are opposites. Quick = fast!",
+    "The opposite of fast is"
+   ],
+   [
+    "The opposite of \"clean\" is...",
+    [
+     "dirty",
+     "tidy",
+     "wet"
+    ],
+    "dirty",
+    "Clean and dirty are opposites.",
+    "The opposite of clean is"
+   ],
+   [
+    "The opposite of \"push\" is...",
+    [
+     "pull",
+     "press",
+     "kick"
+    ],
+    "pull",
+    "You push or pull a door.",
+    "The opposite of push is"
+   ],
+   [
+    "The opposite of \"inside\" is...",
+    [
+     "outside",
+     "under",
+     "behind"
+    ],
+    "outside",
+    "Inside and outside are opposites.",
+    "The opposite of inside is"
+   ],
+   [
+    "The opposite of \"buy\" is...",
+    [
+     "sell",
+     "pay",
+     "spend"
+    ],
+    "sell",
+    "Shops sell, customers buy.",
+    "The opposite of buy is"
+   ]
+  ],
+  [
+   [
+    "The opposite of \"remember\" is...",
+    [
+     "forget",
+     "remind",
+     "learn"
+    ],
+    "forget",
+    "Remember and forget are opposites.",
+    "The opposite of remember is"
+   ],
+   [
+    "The opposite of \"arrive\" is...",
+    [
+     "leave",
+     "come",
+     "reach"
+    ],
+    "leave",
+    "You arrive, then you leave.",
+    "The opposite of arrive is"
+   ],
+   [
+    "The opposite of \"accept\" is...",
+    [
+     "refuse",
+     "agree",
+     "allow"
+    ],
+    "refuse",
+    "Accept and refuse are opposites.",
+    "The opposite of accept is"
+   ],
+   [
+    "The opposite of \"increase\" is...",
+    [
+     "decrease",
+     "grow",
+     "raise"
+    ],
+    "decrease",
+    "Increase = go up. Decrease = go down.",
+    "The opposite of increase is"
+   ],
+   [
+    "The opposite of \"polite\" is...",
+    [
+     "rude",
+     "kind",
+     "quiet"
+    ],
+    "rude",
+    "Polite and rude are opposites.",
+    "The opposite of polite is"
+   ],
+   [
+    "The opposite of \"deep\" is...",
+    [
+     "shallow",
+     "wide",
+     "low"
+    ],
+    "shallow",
+    "Deep water and shallow water.",
+    "The opposite of deep is"
+   ],
+   [
+    "The opposite of \"rough\" is...",
+    [
+     "smooth",
+     "hard",
+     "sharp"
+    ],
+    "smooth",
+    "Rough and smooth are opposites.",
+    "The opposite of rough is"
+   ],
+   [
+    "The opposite of \"maximum\" is...",
+    [
+     "minimum",
+     "medium",
+     "average"
+    ],
+    "minimum",
+    "Maximum = the most. Minimum = the least.",
+    "The opposite of maximum is"
+   ]
+  ],
+  [
+   [
+    "The opposite of \"guilty\" is...",
+    [
+     "innocent",
+     "sorry",
+     "honest"
+    ],
+    "innocent",
+    "Guilty and innocent are opposites.",
+    "The opposite of guilty is"
+   ],
+   [
+    "The opposite of \"temporary\" is...",
+    [
+     "permanent",
+     "short",
+     "modern"
+    ],
+    "permanent",
+    "Temporary = for a short time. Permanent = forever.",
+    "The opposite of temporary is"
+   ],
+   [
+    "The opposite of \"optimistic\" is...",
+    [
+     "pessimistic",
+     "realistic",
+     "happy"
+    ],
+    "pessimistic",
+    "Optimistic and pessimistic are opposites.",
+    "The opposite of optimistic is"
+   ],
+   [
+    "The opposite of \"victory\" is...",
+    [
+     "defeat",
+     "success",
+     "battle"
+    ],
+    "defeat",
+    "Victory and defeat are opposites.",
+    "The opposite of victory is"
+   ],
+   [
+    "The opposite of \"humble\" is...",
+    [
+     "arrogant",
+     "shy",
+     "poor"
+    ],
+    "arrogant",
+    "Humble and arrogant are opposites.",
+    "The opposite of humble is"
+   ],
+   [
+    "The opposite of \"transparent\" is...",
+    [
+     "opaque",
+     "clear",
+     "bright"
+    ],
+    "opaque",
+    "You can see through transparent, not through opaque.",
+    "The opposite of transparent is"
+   ],
+   [
+    "The opposite of \"voluntary\" is...",
+    [
+     "compulsory",
+     "optional",
+     "free"
+    ],
+    "compulsory",
+    "Voluntary = you choose. Compulsory = you must.",
+    "The opposite of voluntary is"
+   ],
+   [
+    "The opposite of \"scarce\" is...",
+    [
+     "abundant",
+     "rare",
+     "expensive"
+    ],
+    "abundant",
+    "Scarce = very little. Abundant = a lot.",
+    "The opposite of scarce is"
+   ]
+  ],
+  [
+   [
+    "The opposite of \"verbose\" is...",
+    [
+     "concise",
+     "loud",
+     "wordy"
+    ],
+    "concise",
+    "Verbose = too many words. Concise = short and clear.",
+    "The opposite of verbose is"
+   ],
+   [
+    "The opposite of \"benevolent\" is...",
+    [
+     "malevolent",
+     "generous",
+     "violent"
+    ],
+    "malevolent",
+    "Benevolent = kind. Malevolent = wanting to harm.",
+    "The opposite of benevolent is"
+   ],
+   [
+    "The opposite of \"frugal\" is...",
+    [
+     "extravagant",
+     "careful",
+     "cheap"
+    ],
+    "extravagant",
+    "Frugal = saves money. Extravagant = spends a lot.",
+    "The opposite of frugal is"
+   ],
+   [
+    "The opposite of \"zenith\" is...",
+    [
+     "nadir",
+     "summit",
+     "peak"
+    ],
+    "nadir",
+    "Zenith = the highest point. Nadir = the lowest.",
+    "The opposite of zenith is"
+   ],
+   [
+    "The opposite of \"lethargic\" is...",
+    [
+     "energetic",
+     "sleepy",
+     "lazy"
+    ],
+    "energetic",
+    "Lethargic = no energy. Energetic = full of energy.",
+    "The opposite of lethargic is"
+   ],
+   [
+    "The opposite of \"nocturnal\" is...",
+    [
+     "diurnal",
+     "nightly",
+     "lunar"
+    ],
+    "diurnal",
+    "Nocturnal = active at night. Diurnal = active in the day.",
+    "The opposite of nocturnal is"
+   ],
+   [
+    "The opposite of \"affluent\" is...",
+    [
+     "impoverished",
+     "wealthy",
+     "fluent"
+    ],
+    "impoverished",
+    "Affluent = rich. Impoverished = very poor.",
+    "The opposite of affluent is"
+   ],
+   [
+    "The opposite of \"synonym\" is...",
+    [
+     "antonym",
+     "homonym",
+     "acronym"
+    ],
+    "antonym",
+    "Synonym = same meaning. Antonym = opposite!",
+    "The opposite of synonym is"
+   ]
+  ]
+ ],
+ "shorts": [
+  {
+   "picks": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "title": "Opposites Test: Easy to Impossible 🔄 Can You Get 4/4? #shorts"
+  },
+  {
+   "picks": [
+    [
+     0,
+     7
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     7
+    ]
+   ],
+   "title": "What's the Opposite? 🤔 The Last One Is Impossible! #shorts"
+  },
+  {
+   "picks": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ]
+   ],
+   "title": "Only Word Experts Get 4/4 🧠 Opposites Quiz #shorts"
+  },
+  {
+   "picks": [
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     3,
+     2
+    ]
+   ],
+   "title": "Find the Opposite in 5 Seconds ⏱️ English Quiz #shorts"
+  }
+ ]
+}

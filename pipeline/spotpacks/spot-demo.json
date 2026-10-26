@@ -1,0 +1,79 @@
+{
+ "slug": "spot-demo",
+ "title": "Spot the Difference: Find 5 in 20 Seconds 👀 #shorts",
+ "name": "Spot",
+ "tags": [
+  "spot the difference"
+ ],
+ "ar": "ابحث عن 5 اختلافات",
+ "fr": "Trouve les 5 différences",
+ "hashtags": "#SpotTheDifference",
+ "thumb_top": "SPOT THE DIFFERENCE",
+ "thumb_bottom": "FIND ALL 5!",
+ "about": "Spot the difference",
+ "puzzles": [
+  {
+   "image": "test/garden.png",
+   "level": 1,
+   "edits": [
+    {
+     "type": "recolor",
+     "box": [
+      460,
+      199,
+      591,
+      514
+     ],
+     "hue": 150
+    },
+    {
+     "type": "remove",
+     "box": [
+      823,
+      123,
+      1013,
+      234
+     ]
+    },
+    {
+     "type": "flip",
+     "box": [
+      616,
+      698,
+      920,
+      911
+     ]
+    },
+    {
+     "type": "scale",
+     "box": [
+      263,
+      823,
+      381,
+      941
+     ],
+     "factor": 1.4
+    },
+    {
+     "type": "copy",
+     "box": [
+      920,
+      336,
+      1081,
+      452
+     ],
+     "to": [
+      150,
+      150
+     ]
+    }
+   ]
+  }
+ ],
+ "shorts": [
+  {
+   "puzzle": 0,
+   "title": "Find 5 Differences in 20 Seconds 👀 Spot the Difference #shorts"
+  }
+ ]
+}
