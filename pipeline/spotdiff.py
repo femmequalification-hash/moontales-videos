@@ -181,7 +181,7 @@ def sd_frame(pz, vertical, header, number, total, timer, found, note=None, foote
     # found counter: 5 dots
     dy = 1665 if vertical else 860
     dx0 = W / 2 - 2 * 92 if vertical else 1260
-    if not vertical:
+    if not vertical and not note:
         c.text(560, dy, "Find 5 differences!", art.font(54, "Bold"), H("#2B2350"), anchor="mm")
     for i in range(5):
         x = dx0 + i * 92
@@ -203,7 +203,7 @@ def sd_frame(pz, vertical, header, number, total, timer, found, note=None, foote
                 nf -= 2
             c.text(W / 2, 1800, note, art.font(nf, "Bold"), H("#7A4FC0"), anchor="mm")
         else:
-            c.text(960, 860, note, art.font(44, "Bold"), H("#7A4FC0"), anchor="mm")
+            c.text(640, 860, note, art.font(54, "Bold"), H("#7A4FC0"), anchor="mm")
     if footer and not vertical:
         c.rect(W / 2 - 560, 1000, W / 2 + 560, 1056, H("#2B2350", 220), r=28)
         c.text(W / 2, 1028, footer, art.font(36, "SemiBold"), H("#FFE680"), anchor="mm")
