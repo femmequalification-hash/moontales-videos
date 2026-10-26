@@ -1,0 +1,622 @@
+{
+ "slug": "spot-the-difference-2",
+ "name": "Spot the Difference",
+ "title": "Spot the Difference 2: Easy to Impossible 🔎 10 New Puzzles | Find All 50 Differences!",
+ "about": "10 NEW spot the difference puzzles, from easy to impossible! Find the 5 differences between the two pictures.",
+ "thumb_top": "SPOT THE DIFFERENCE 2",
+ "thumb_bottom": "10 PUZZLES · EASY TO IMPOSSIBLE",
+ "ar": "ابحث عن الاختلافات الخمسة بين الصورتين — من السهل إلى المستحيل!",
+ "fr": "Trouve les 5 différences entre les deux images — du plus facile à l'impossible !",
+ "hashtags": "#SpotTheDifference #FindTheDifference #Puzzle #BrainGames",
+ "tags": [
+  "spot the difference",
+  "find the difference",
+  "spot 5 differences",
+  "picture puzzle",
+  "brain games",
+  "visual puzzle",
+  "easy to impossible",
+  "QuizNado",
+  "ابحث عن الاختلاف",
+  "أوجد الفرق",
+  "ألغاز الصور",
+  "trouve les différences",
+  "jeu des 7 erreurs",
+  "jeu des différences"
+ ],
+ "puzzles": [
+  {
+   "image": "/tmp/claude-0/-home-claude/f418c92f-a6bc-526a-a66e-bf67e173a53b/scratchpad/spotimg/spot-the-difference-2_p01.png",
+   "level": 0,
+   "edits": [
+    {
+     "type": "remove",
+     "box": [
+      1302,
+      149,
+      1463,
+      266
+     ]
+    },
+    {
+     "type": "recolor",
+     "box": [
+      1302,
+      820,
+      1440,
+      950
+     ],
+     "hue": -150
+    },
+    {
+     "type": "copy",
+     "box": [
+      426,
+      23,
+      617,
+      134
+     ],
+     "to": [
+      159,
+      119
+     ]
+    },
+    {
+     "type": "scale",
+     "box": [
+      874,
+      718,
+      1179,
+      931
+     ],
+     "factor": 1.55
+    },
+    {
+     "type": "remove",
+     "box": [
+      528,
+      786,
+      655,
+      923
+     ]
+    }
+   ],
+   "scene": "forest/day/snow"
+  },
+  {
+   "image": "/tmp/claude-0/-home-claude/f418c92f-a6bc-526a-a66e-bf67e173a53b/scratchpad/spotimg/spot-the-difference-2_p02.png",
+   "level": 0,
+   "edits": [
+    {
+     "type": "remove",
+     "box": [
+      1178,
+      68,
+      1369,
+      179
+     ]
+    },
+    {
+     "type": "recolor",
+     "box": [
+      1579,
+      735,
+      1655,
+      948
+     ],
+     "hue": -136
+    },
+    {
+     "type": "copy",
+     "box": [
+      287,
+      752,
+      516,
+      875
+     ],
+     "to": [
+      1308,
+      770
+     ]
+    },
+    {
+     "type": "scale",
+     "box": [
+      191,
+      212,
+      352,
+      329
+     ],
+     "factor": 1.55
+    },
+    {
+     "type": "remove",
+     "box": [
+      914,
+      790,
+      1124,
+      908
+     ]
+    }
+   ],
+   "scene": "park/day/sunny"
+  },
+  {
+   "image": "/tmp/claude-0/-home-claude/f418c92f-a6bc-526a-a66e-bf67e173a53b/scratchpad/spotimg/spot-the-difference-2_p03.png",
+   "level": 0,
+   "edits": [
+    {
+     "type": "remove",
+     "box": [
+      1031,
+      860,
+      1170,
+      990
+     ]
+    },
+    {
+     "type": "recolor",
+     "box": [
+      1251,
+      839,
+      1378,
+      976
+     ],
+     "hue": -174
+    },
+    {
+     "type": "copy",
+     "box": [
+      549,
+      151,
+      704,
+      297
+     ],
+     "to": [
+      663,
+      384
+     ]
+    },
+    {
+     "type": "scale",
+     "box": [
+      1069,
+      310,
+      1230,
+      427
+     ],
+     "factor": 1.55
+    },
+    {
+     "type": "remove",
+     "box": [
+      1424,
+      781,
+      1635,
+      898
+     ]
+    }
+   ],
+   "scene": "garden/day/cloudy"
+  },
+  {
+   "image": "/tmp/claude-0/-home-claude/f418c92f-a6bc-526a-a66e-bf67e173a53b/scratchpad/spotimg/spot-the-difference-2_p04.png",
+   "level": 1,
+   "edits": [
+    {
+     "type": "remove",
+     "box": [
+      140,
+      789,
+      350,
+      907
+     ]
+    },
+    {
+     "type": "recolor",
+     "box": [
+      403,
+      680,
+      615,
+      880
+     ],
+     "hue": -146
+    },
+    {
+     "type": "copy",
+     "box": [
+      620,
+      201,
+      774,
+      347
+     ],
+     "to": [
+      743,
+      16
+     ]
+    },
+    {
+     "type": "flip",
+     "box": [
+      1250,
+      118,
+      1441,
+      230
+     ]
+    },
+    {
+     "type": "scale",
+     "box": [
+      1258,
+      849,
+      1487,
+      973
+     ],
+     "factor": 1.4
+    }
+   ],
+   "scene": "forest/day/cloudy"
+  },
+  {
+   "image": "/tmp/claude-0/-home-claude/f418c92f-a6bc-526a-a66e-bf67e173a53b/scratchpad/spotimg/spot-the-difference-2_p05.png",
+   "level": 1,
+   "edits": [
+    {
+     "type": "remove",
+     "box": [
+      206,
+      151,
+      397,
+      263
+     ]
+    },
+    {
+     "type": "recolor",
+     "box": [
+      951,
+      863,
+      1167,
+      934
+     ],
+     "hue": -146
+    },
+    {
+     "type": "copy",
+     "box": [
+      1439,
+      138,
+      1593,
+      284
+     ],
+     "to": [
+      718,
+      205
+     ]
+    },
+    {
+     "type": "recolor",
+     "box": [
+      1547,
+      800,
+      1763,
+      871
+     ],
+     "hue": -135
+    },
+    {
+     "type": "scale",
+     "box": [
+      1053,
+      47,
+      1214,
+      163
+     ],
+     "factor": 1.4
+    }
+   ],
+   "scene": "forest/sunset/sunny"
+  },
+  {
+   "image": "/tmp/claude-0/-home-claude/f418c92f-a6bc-526a-a66e-bf67e173a53b/scratchpad/spotimg/spot-the-difference-2_p06.png",
+   "level": 1,
+   "edits": [
+    {
+     "type": "remove",
+     "box": [
+      825,
+      241,
+      979,
+      386
+     ]
+    },
+    {
+     "type": "recolor",
+     "box": [
+      684,
+      788,
+      802,
+      906
+     ],
+     "hue": -137
+    },
+    {
+     "type": "copy",
+     "box": [
+      654,
+      522,
+      865,
+      737
+     ],
+     "to": [
+      175,
+      533
+     ]
+    },
+    {
+     "type": "recolor",
+     "box": [
+      58,
+      368,
+      219,
+      485
+     ],
+     "hue": -117
+    },
+    {
+     "type": "scale",
+     "box": [
+      168,
+      826,
+      307,
+      956
+     ],
+     "factor": 1.4
+    }
+   ],
+   "scene": "beach/day/cloudy"
+  },
+  {
+   "image": "/tmp/claude-0/-home-claude/f418c92f-a6bc-526a-a66e-bf67e173a53b/scratchpad/spotimg/spot-the-difference-2_p07.png",
+   "level": 2,
+   "edits": [
+    {
+     "type": "recolor",
+     "box": [
+      252,
+      484,
+      463,
+      699
+     ],
+     "hue": 72
+    },
+    {
+     "type": "flip",
+     "box": [
+      829,
+      817,
+      1108,
+      998
+     ]
+    },
+    {
+     "type": "scale",
+     "box": [
+      590,
+      700,
+      666,
+      914
+     ],
+     "factor": 1.27
+    },
+    {
+     "type": "remove",
+     "box": [
+      898,
+      240,
+      1029,
+      555
+     ]
+    },
+    {
+     "type": "copy",
+     "box": [
+      438,
+      252,
+      599,
+      368
+     ],
+     "to": [
+      1377,
+      45
+     ]
+    }
+   ],
+   "scene": "beach/day/cloudy"
+  },
+  {
+   "image": "/tmp/claude-0/-home-claude/f418c92f-a6bc-526a-a66e-bf67e173a53b/scratchpad/spotimg/spot-the-difference-2_p08.png",
+   "level": 2,
+   "edits": [
+    {
+     "type": "recolor",
+     "box": [
+      83,
+      877,
+      287,
+      966
+     ],
+     "hue": 66
+    },
+    {
+     "type": "recolor",
+     "box": [
+      338,
+      762,
+      440,
+      907
+     ],
+     "hue": 94
+    },
+    {
+     "type": "scale",
+     "box": [
+      273,
+      427,
+      434,
+      544
+     ],
+     "factor": 1.27
+    },
+    {
+     "type": "remove",
+     "box": [
+      963,
+      793,
+      1082,
+      911
+     ]
+    },
+    {
+     "type": "recolor",
+     "box": [
+      1234,
+      775,
+      1446,
+      975
+     ],
+     "hue": -69
+    }
+   ],
+   "scene": "classroom/sunset/sunny"
+  },
+  {
+   "image": "/tmp/claude-0/-home-claude/f418c92f-a6bc-526a-a66e-bf67e173a53b/scratchpad/spotimg/spot-the-difference-2_p09.png",
+   "level": 3,
+   "edits": [
+    {
+     "type": "recolor",
+     "box": [
+      560,
+      59,
+      751,
+      171
+     ],
+     "hue": -39
+    },
+    {
+     "type": "recolor",
+     "box": [
+      423,
+      760,
+      610,
+      943
+     ],
+     "hue": -47
+    },
+    {
+     "type": "scale",
+     "box": [
+      168,
+      786,
+      346,
+      913
+     ],
+     "factor": 1.18
+    },
+    {
+     "type": "remove",
+     "box": [
+      876,
+      410,
+      1036,
+      527
+     ]
+    },
+    {
+     "type": "recolor",
+     "box": [
+      1182,
+      850,
+      1393,
+      967
+     ],
+     "hue": -48
+    }
+   ],
+   "scene": "street/sunset/sunny"
+  },
+  {
+   "image": "/tmp/claude-0/-home-claude/f418c92f-a6bc-526a-a66e-bf67e173a53b/scratchpad/spotimg/spot-the-difference-2_p10.png",
+   "level": 3,
+   "edits": [
+    {
+     "type": "recolor",
+     "box": [
+      273,
+      813,
+      375,
+      958
+     ],
+     "hue": -42
+    },
+    {
+     "type": "flip",
+     "box": [
+      531,
+      236,
+      721,
+      347
+     ]
+    },
+    {
+     "type": "scale",
+     "box": [
+      1328,
+      824,
+      1506,
+      951
+     ],
+     "factor": 1.18
+    },
+    {
+     "type": "remove",
+     "box": [
+      1539,
+      346,
+      1694,
+      492
+     ]
+    },
+    {
+     "type": "recolor",
+     "box": [
+      1000,
+      846,
+      1228,
+      970
+     ],
+     "hue": 54
+    }
+   ],
+   "scene": "beach/day/sunny"
+  }
+ ],
+ "shorts": [
+  {
+   "puzzle": 0,
+   "title": "Can You Find 5 Differences? 👀 Easy Level #shorts"
+  },
+  {
+   "puzzle": 5,
+   "title": "Spot 5 Differences in 20 Seconds 🔎 #shorts"
+  },
+  {
+   "puzzle": 7,
+   "title": "Only 25 Seconds to Find All 5 😳 Spot the Difference #shorts"
+  },
+  {
+   "puzzle": 8,
+   "title": "Impossible Spot the Difference 🤯 Did You Find All 5? #shorts"
+  }
+ ]
+}
