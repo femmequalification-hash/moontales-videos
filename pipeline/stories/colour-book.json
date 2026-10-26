@@ -1,0 +1,639 @@
+{
+  "slug": "colour-book",
+  "story_title": "Lina and Adams and the Colour Book",
+  "lesson": "Learn colour words in English!",
+  "title": "Lina and Adams and the Colour Book 🎨 | Learn Colours in English for Kids | Moon Tales Kids",
+  "thumbnail_title": "The Colour Book",
+  "thumbnail_word": "Colour words",
+  "thumbnail_scene": {
+    "setting": "garden",
+    "time": "day",
+    "weather": "sunny",
+    "props": [
+      {
+        "name": "apple",
+        "x": 1550,
+        "y": 950
+      },
+      {
+        "name": "banana",
+        "x": 1750,
+        "y": 950
+      },
+      {
+        "name": "flower",
+        "x": 1950,
+        "y": 950
+      }
+    ],
+    "chars": [
+      "lina",
+      "adams",
+      "milo"
+    ]
+  },
+  "description": "Lina, Adams and Milo make a colour book as a present for Grandma! 🎨🍎🐦\nIn this English story for kids, children learn 7 new words: colours, red, blue, yellow, green, pink and purple. Listen, repeat, and learn English with Lina, Adams and Milo the cat.\n\n📚 New words in this story:\n🎨 colours — الألوان — les couleurs\n🍎 red — أحمر — rouge\n🐦 blue — أزرق — bleu\n🍌 yellow — أصفر — jaune\n🌿 green — أخضر — vert\n🌸 pink — وردي — rose\n🦋 purple — بنفسجي / موف — violet\n\n👨‍👩‍👧 For parents: play a colour game at home — point to things and ask \"What colour is it?\" in English. Pause after each new word and say it out loud. Perfect for ages 3 to 8 and for children learning English as a second language.\n\n🇲🇦 قصة باللغة الإنجليزية للأطفال لتعلم أسماء الألوان: أحمر، أزرق، أصفر، أخضر.\n🇫🇷 Une histoire en anglais pour enfants pour apprendre les couleurs : rouge, bleu, jaune, vert.\n\n🌙 Subscribe to Moon Tales Kids for a new English story every day!\n\n#EnglishForKids #KidsStories #LearnEnglish #MoonTalesKids",
+  "tags": [
+    "english stories for kids",
+    "learn english for kids",
+    "colours for kids",
+    "colors in english",
+    "learn colors for toddlers",
+    "Lina and Adams",
+    "Moon Tales Kids",
+    "ESL kids",
+    "قصص اطفال بالانجليزي",
+    "تعلم الانجليزية للاطفال",
+    "الالوان بالانجليزي للاطفال",
+    "تعليم الالوان",
+    "histoire en anglais pour enfant",
+    "apprendre l'anglais enfant",
+    "les couleurs en anglais",
+    "vocabulaire anglais enfant"
+  ],
+  "scenes": [
+    {
+      "setting": "kitchen",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "book",
+          "x": 1650,
+          "y": 950
+        },
+        {
+          "name": "cup",
+          "x": 1850,
+          "y": 950
+        }
+      ],
+      "word": "colours",
+      "lines": [
+        {
+          "text": "It is a sunny morning. Lina and Adams are in the kitchen."
+        },
+        {
+          "who": "lina",
+          "text": "Adams, Grandma is coming to visit today!"
+        },
+        {
+          "who": "adams",
+          "text": "Let's make a present for her. A book full of colours!"
+        },
+        {
+          "text": "Colours are red, blue, yellow, green, and many more."
+        },
+        {
+          "text": "Everything we see has colours. Say it with me: colours!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Milo the cat jumps up. Meow! He wants to help too."
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "apple",
+          "x": 1650,
+          "y": 950
+        },
+        {
+          "name": "ball",
+          "x": 1850,
+          "y": 950
+        }
+      ],
+      "word": "red",
+      "lines": [
+        {
+          "text": "Lina, Adams and Milo go into the garden."
+        },
+        {
+          "who": "lina",
+          "text": "Look! This apple is red."
+        },
+        {
+          "who": "adams",
+          "text": "And my ball is red too. Red, red, red!"
+        },
+        {
+          "text": "Red is the colour of apples and strawberries."
+        },
+        {
+          "text": "Can you say it? Red!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "lina",
+          "text": "Let's draw a red apple in our book."
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "bird",
+          "x": 1700,
+          "y": 800
+        },
+        {
+          "name": "hat",
+          "x": 300,
+          "y": 950
+        }
+      ],
+      "word": "blue",
+      "lines": [
+        {
+          "text": "Next, Lina and Adams walk to the park."
+        },
+        {
+          "who": "adams",
+          "text": "Tweet, tweet! Look at that little bird."
+        },
+        {
+          "who": "lina",
+          "text": "The bird is blue. And the sky is blue too!"
+        },
+        {
+          "text": "Blue is the colour of the sky and the sea."
+        },
+        {
+          "text": "Say it with me: blue!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "adams",
+          "text": "I will draw a blue bird. Hello, little bird!"
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "banana",
+          "x": 1700,
+          "y": 950
+        },
+        {
+          "name": "umbrella",
+          "x": 300,
+          "y": 880
+        }
+      ],
+      "word": "yellow",
+      "lines": [
+        {
+          "text": "Back in the garden, Milo finds something on the grass."
+        },
+        {
+          "who": "milo",
+          "text": "Meow!"
+        },
+        {
+          "who": "adams",
+          "text": "It is a banana! Milo found a yellow banana."
+        },
+        {
+          "who": "lina",
+          "text": "And the sun is yellow. It is warm and bright."
+        },
+        {
+          "text": "Yellow is the colour of bananas and the sun."
+        },
+        {
+          "text": "Can you say it? Yellow!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "lina",
+          "text": "Thank you, Milo. You are a good helper!"
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "carrot",
+          "x": 1700,
+          "y": 950
+        }
+      ],
+      "word": "green",
+      "lines": [
+        {
+          "text": "Lina and Adams sit down under a big tree."
+        },
+        {
+          "who": "lina",
+          "text": "Look at the grass. The grass is green."
+        },
+        {
+          "who": "adams",
+          "text": "The leaves on the tree are green too!"
+        },
+        {
+          "text": "This carrot has green leaves on top. Crunch, crunch!"
+        },
+        {
+          "text": "Green is the colour of grass and leaves."
+        },
+        {
+          "text": "Say it with me: green!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "hat",
+          "x": 1700,
+          "y": 950
+        },
+        {
+          "name": "ball",
+          "x": 300,
+          "y": 950
+        }
+      ],
+      "lines": [
+        {
+          "text": "Oh no! Where is Adams' blue hat?"
+        },
+        {
+          "text": "Milo has the hat! He is running away with it."
+        },
+        {
+          "who": "adams",
+          "text": "Milo, come back! That is my hat!"
+        },
+        {
+          "who": "lina",
+          "text": "Don't worry, Adams. Let's ask him nicely."
+        },
+        {
+          "who": "lina",
+          "text": "Milo, can we have the hat, please?"
+        },
+        {
+          "text": "Milo stops. He brings the hat back. Meow!"
+        },
+        {
+          "who": "adams",
+          "text": "Thank you, Milo. You can play with my ball instead."
+        },
+        {
+          "text": "Lina and Adams smile. Kind words work!"
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "flower",
+          "x": 1650,
+          "y": 950
+        },
+        {
+          "name": "balloon",
+          "x": 1880,
+          "y": 650
+        }
+      ],
+      "word": "pink",
+      "lines": [
+        {
+          "text": "In the garden, there are pretty flowers."
+        },
+        {
+          "who": "lina",
+          "text": "This flower is pink. It is my favourite!"
+        },
+        {
+          "who": "adams",
+          "text": "And look, a pink balloon is stuck in the tree."
+        },
+        {
+          "text": "Adams gently pulls the string. Now Lina has a pink balloon."
+        },
+        {
+          "text": "Pink is the colour of this flower and this balloon."
+        },
+        {
+          "text": "Can you say it? Pink!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "butterfly",
+          "x": 1650,
+          "y": 700
+        },
+        {
+          "name": "gift",
+          "x": 1850,
+          "y": 950
+        }
+      ],
+      "word": "purple",
+      "lines": [
+        {
+          "text": "A butterfly flies near the flowers. Flap, flap!"
+        },
+        {
+          "who": "adams",
+          "text": "The butterfly has purple wings!"
+        },
+        {
+          "who": "lina",
+          "text": "And look, here is a purple box. We can put Grandma's book in it!"
+        },
+        {
+          "text": "Purple is a colour like grapes and like Lina's dress."
+        },
+        {
+          "text": "Say it with me: purple!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "lina",
+          "text": "Purple is a beautiful colour."
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "book",
+          "x": 1650,
+          "y": 950
+        },
+        {
+          "name": "apple",
+          "x": 1850,
+          "y": 950
+        }
+      ],
+      "lines": [
+        {
+          "text": "Lina and Adams go back to the kitchen."
+        },
+        {
+          "text": "They draw and draw in the colour book."
+        },
+        {
+          "who": "lina",
+          "text": "A red apple, a blue bird, and a yellow banana."
+        },
+        {
+          "who": "adams",
+          "text": "Green grass, a pink flower, and a purple butterfly!"
+        },
+        {
+          "text": "Milo sits on a chair and watches. Meow!"
+        },
+        {
+          "who": "adams",
+          "text": "Our book is finished. It is so colourful!"
+        },
+        {
+          "who": "lina",
+          "text": "Grandma will love it."
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "gift",
+          "x": 1650,
+          "y": 950
+        },
+        {
+          "name": "flower",
+          "x": 1880,
+          "y": 950
+        }
+      ],
+      "lines": [
+        {
+          "text": "Ding dong! Grandma is here!"
+        },
+        {
+          "who": "lina",
+          "text": "Hello, Grandma! This present is for you."
+        },
+        {
+          "text": "Grandma opens the purple box. She finds the colour book."
+        },
+        {
+          "who": "adams",
+          "text": "We made it! It has all the colours we found today."
+        },
+        {
+          "text": "Grandma smiles a big smile. She gives them a warm hug."
+        },
+        {
+          "text": "Grandma says: thank you, my dears. It is wonderful!"
+        },
+        {
+          "who": "lina",
+          "text": "You are welcome, Grandma!"
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "cup",
+          "x": 1650,
+          "y": 950
+        },
+        {
+          "name": "ball",
+          "x": 1850,
+          "y": 950
+        }
+      ],
+      "lines": [
+        {
+          "text": "Now Grandma, Lina and Adams drink warm milk together."
+        },
+        {
+          "who": "adams",
+          "text": "Lina, what is your favourite colour?"
+        },
+        {
+          "who": "lina",
+          "text": "My favourite colour is purple, like my dress!"
+        },
+        {
+          "who": "adams",
+          "text": "My favourite colour is blue, like my shirt!"
+        },
+        {
+          "text": "And Milo? Milo likes his red ball best. Meow!"
+        },
+        {
+          "text": "What is your favourite colour? Say it out loud!"
+        },
+        {
+          "pause": 2.0
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "ball",
+          "x": 1700,
+          "y": 950
+        },
+        {
+          "name": "flower",
+          "x": 300,
+          "y": 950
+        }
+      ],
+      "lines": [
+        {
+          "text": "In the afternoon, everyone plays in the park."
+        },
+        {
+          "text": "They see red, blue, yellow, green, pink and purple everywhere."
+        },
+        {
+          "who": "adams",
+          "text": "Colours make the world so happy!"
+        },
+        {
+          "who": "lina",
+          "text": "Let's find more colours tomorrow!"
+        },
+        {
+          "text": "Lina, Adams and Milo run and laugh in the sunshine."
+        },
+        {
+          "who": "lina",
+          "text": "Goodbye, colours! See you tomorrow!"
+        },
+        {
+          "who": "adams",
+          "text": "Bye-bye, everyone!"
+        }
+      ]
+    }
+  ]
+}

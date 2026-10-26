@@ -1,0 +1,562 @@
+{
+  "slug": "busy-week",
+  "story_title": "Lina and Adams and the Busy Week",
+  "lesson": "Learn the days of the week in English!",
+  "title": "Lina and Adams and the Busy Week 📅 | Days of the Week in English for Kids | Moon Tales Kids",
+  "thumbnail_title": "The Busy Week",
+  "thumbnail_word": "Days of the week",
+  "thumbnail_scene": {
+    "setting": "classroom",
+    "time": "day",
+    "weather": "sunny",
+    "board": "Monday",
+    "props": [
+      {
+        "name": "balloon",
+        "x": 1750,
+        "y": 650
+      }
+    ],
+    "chars": [
+      "lina",
+      "adams"
+    ]
+  },
+  "description": "Lina and Adams count the days until the big balloon party! 📅🎈🚲\nIn this English story for kids, children learn 8 new words: week, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday and Sunday. Listen, repeat, and learn English with Lina, Adams and Milo the cat.\n\n📚 New words in this story:\n📅 week — أسبوع / سيمانة — la semaine\n📖 Monday — الإثنين / الاثنين — lundi\n🚲 Tuesday — الثلاثاء / التلات — mardi\n🥪 Wednesday — الأربعاء / الاربع — mercredi\n🌼 Thursday — الخميس — jeudi\n⭐ Friday — الجمعة — vendredi\n🎈 Saturday — السبت — samedi\n⛵ Sunday — الأحد / الحد — dimanche\n\n👨‍👩‍👧 For parents: every morning, ask your child \"What day is it today?\" in English and sing the seven days together. Pause after each new word and say it out loud. Perfect for ages 3 to 8 and for children learning English as a second language.\n\n🇲🇦 قصة باللغة الإنجليزية للأطفال لتعلم أيام الأسبوع.\n🇫🇷 Une histoire en anglais pour enfants pour apprendre les jours de la semaine.\n\n🌙 Subscribe to Moon Tales Kids for a new English story every day!\n\n#EnglishForKids #KidsStories #LearnEnglish #MoonTalesKids",
+  "tags": [
+    "english stories for kids",
+    "learn english for kids",
+    "days of the week for kids",
+    "days of the week in english",
+    "kids stories in english",
+    "Lina and Adams",
+    "Moon Tales Kids",
+    "ESL kids",
+    "قصص اطفال بالانجليزي",
+    "تعلم الانجليزية للاطفال",
+    "ايام الاسبوع بالانجليزي",
+    "قصص للاطفال",
+    "histoire en anglais pour enfant",
+    "apprendre l'anglais enfant",
+    "les jours de la semaine en anglais",
+    "vocabulaire anglais enfant"
+  ],
+  "scenes": [
+    {
+      "setting": "classroom",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "board": "7 days",
+      "word": "week",
+      "lines": [
+        {
+          "text": "It is Monday morning. Lina and Adams are at school."
+        },
+        {
+          "text": "The teacher writes on the board: seven days."
+        },
+        {
+          "who": "lina",
+          "text": "Seven days make one week!"
+        },
+        {
+          "who": "adams",
+          "text": "A week is Monday, Tuesday, Wednesday, Thursday, Friday, Saturday and Sunday."
+        },
+        {
+          "text": "A week has seven days. Say it with me: week!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "The teacher says: on Saturday, we will have a big balloon party in the park!"
+        },
+        {
+          "who": "adams",
+          "text": "Hooray! I can't wait for Saturday!"
+        }
+      ]
+    },
+    {
+      "setting": "classroom",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "board": "Monday",
+      "props": [
+        {
+          "name": "book",
+          "x": 1700,
+          "y": 950
+        }
+      ],
+      "word": "Monday",
+      "lines": [
+        {
+          "text": "Today is the first day of the week. Today is Monday."
+        },
+        {
+          "who": "lina",
+          "text": "On Monday, we read a new book at school."
+        },
+        {
+          "who": "adams",
+          "text": "This book is about a little blue boat."
+        },
+        {
+          "text": "Monday comes after Sunday. It starts the week."
+        },
+        {
+          "text": "Can you say it? Monday!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "adams",
+          "text": "Lina, how many days until Saturday?"
+        },
+        {
+          "who": "lina",
+          "text": "Let's count them together, day by day!"
+        }
+      ]
+    },
+    {
+      "setting": "street",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "bike",
+          "x": 1700,
+          "y": 950
+        }
+      ],
+      "word": "Tuesday",
+      "lines": [
+        {
+          "text": "The next day is Tuesday. The sun is going down."
+        },
+        {
+          "text": "Lina and Adams walk home from school on the street."
+        },
+        {
+          "who": "adams",
+          "text": "On Tuesday, I ride my bike with my helmet on."
+        },
+        {
+          "who": "lina",
+          "text": "Ride slowly and carefully, Adams!"
+        },
+        {
+          "text": "Tuesday comes after Monday."
+        },
+        {
+          "text": "Say it with me: Tuesday!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "sandwich",
+          "x": 1700,
+          "y": 950
+        },
+        {
+          "name": "cup",
+          "x": 1900,
+          "y": 950
+        }
+      ],
+      "word": "Wednesday",
+      "lines": [
+        {
+          "text": "Now it is Wednesday. It is evening in the kitchen."
+        },
+        {
+          "who": "lina",
+          "text": "On Wednesday, we help Mama make sandwiches."
+        },
+        {
+          "who": "adams",
+          "text": "I wash my hands first. Clean hands!"
+        },
+        {
+          "text": "Milo wants a sandwich too. Meow, meow!"
+        },
+        {
+          "text": "Wednesday is the middle of the week."
+        },
+        {
+          "text": "Can you say it? Wednesday!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "lina",
+          "text": "Sorry, Milo. Sandwiches are for people. Here is your cat food!"
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "flower",
+          "x": 1650,
+          "y": 950
+        },
+        {
+          "name": "bird",
+          "x": 1880,
+          "y": 760
+        }
+      ],
+      "word": "Thursday",
+      "lines": [
+        {
+          "text": "Then comes Thursday. Lina and Adams are in the garden."
+        },
+        {
+          "who": "adams",
+          "text": "On Thursday, we water the flowers."
+        },
+        {
+          "who": "lina",
+          "text": "And we give seeds to the little birds."
+        },
+        {
+          "text": "Tweet, tweet! The bird says thank you."
+        },
+        {
+          "text": "Thursday comes after Wednesday."
+        },
+        {
+          "text": "Say it with me: Thursday!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "lamp",
+          "x": 1750,
+          "y": 950
+        }
+      ],
+      "lines": [
+        {
+          "text": "That night, Adams looks worried."
+        },
+        {
+          "who": "adams",
+          "text": "Lina, I forgot! Is the balloon party tomorrow?"
+        },
+        {
+          "who": "lina",
+          "text": "Let's think. Today is Thursday. Tomorrow is Friday."
+        },
+        {
+          "who": "lina",
+          "text": "After Friday comes Saturday. The party is in two days!"
+        },
+        {
+          "who": "adams",
+          "text": "Two more days. Thank you, Lina! Now I remember."
+        },
+        {
+          "text": "Lina draws the seven days on a paper for Adams."
+        },
+        {
+          "who": "lina",
+          "text": "Now we can see the days every morning."
+        },
+        {
+          "text": "Milo curls up next to the lamp. Purr, purr."
+        }
+      ]
+    },
+    {
+      "setting": "classroom",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "board": "Friday",
+      "props": [
+        {
+          "name": "star",
+          "x": 1700,
+          "y": 950
+        }
+      ],
+      "word": "Friday",
+      "lines": [
+        {
+          "text": "Good morning! Today is Friday."
+        },
+        {
+          "text": "On Friday, the class draws pictures of stars."
+        },
+        {
+          "who": "lina",
+          "text": "My star is big and yellow!"
+        },
+        {
+          "who": "adams",
+          "text": "Friday is the last school day of the week."
+        },
+        {
+          "text": "Friday comes after Thursday."
+        },
+        {
+          "text": "Can you say it? Friday!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "adams",
+          "text": "Tomorrow is the party! Yay!"
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "balloon",
+          "x": 1650,
+          "y": 650
+        },
+        {
+          "name": "balloon",
+          "x": 1880,
+          "y": 620
+        },
+        {
+          "name": "ball",
+          "x": 300,
+          "y": 950
+        }
+      ],
+      "word": "Saturday",
+      "lines": [
+        {
+          "text": "At last, it is Saturday! The sun is shining in the park."
+        },
+        {
+          "text": "There are many balloons. Pink balloons and happy friends!"
+        },
+        {
+          "who": "adams",
+          "text": "Today is Saturday. It is the balloon party!"
+        },
+        {
+          "who": "lina",
+          "text": "We waited all week. Now it is here!"
+        },
+        {
+          "text": "Saturday is a weekend day. There is no school."
+        },
+        {
+          "text": "Say it with me: Saturday!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "adams",
+          "text": "Let's share our balloons with everyone."
+        }
+      ]
+    },
+    {
+      "setting": "beach",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "boat",
+          "x": 1750,
+          "y": 820
+        }
+      ],
+      "word": "Sunday",
+      "lines": [
+        {
+          "text": "The next day is Sunday. Lina and Adams go to the beach with their families."
+        },
+        {
+          "text": "They watch a little boat on the water."
+        },
+        {
+          "who": "lina",
+          "text": "On Sunday, we rest and play with our families."
+        },
+        {
+          "who": "adams",
+          "text": "Sunday is the last day of the week."
+        },
+        {
+          "text": "Sunday is a weekend day too."
+        },
+        {
+          "text": "Can you say it? Sunday!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "cup",
+          "x": 1700,
+          "y": 950
+        }
+      ],
+      "lines": [
+        {
+          "text": "On Sunday evening, everyone is back home."
+        },
+        {
+          "who": "lina",
+          "text": "Let's say all the days of the week, Adams!"
+        },
+        {
+          "who": "adams",
+          "text": "Monday, Tuesday, Wednesday!"
+        },
+        {
+          "who": "lina",
+          "text": "Thursday, Friday!"
+        },
+        {
+          "who": "adams",
+          "text": "Saturday and Sunday!"
+        },
+        {
+          "text": "Now you try! Say the seven days with Lina and Adams."
+        },
+        {
+          "pause": 2.5
+        },
+        {
+          "text": "Great job! Milo says: Meow!"
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "lamp",
+          "x": 1750,
+          "y": 950
+        },
+        {
+          "name": "book",
+          "x": 300,
+          "y": 950
+        }
+      ],
+      "lines": [
+        {
+          "text": "It is time for bed. The moon is shining outside."
+        },
+        {
+          "who": "adams",
+          "text": "Tomorrow is Monday again. A new week!"
+        },
+        {
+          "who": "lina",
+          "text": "A new week means new fun days."
+        },
+        {
+          "text": "Lina and Adams look at their seven days paper."
+        },
+        {
+          "who": "lina",
+          "text": "Good night, week. Good night, Milo."
+        },
+        {
+          "who": "adams",
+          "text": "Good night, everyone. See you on Monday!"
+        }
+      ]
+    }
+  ]
+}
