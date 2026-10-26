@@ -1,0 +1,440 @@
+{
+ "name": "Plurals Test",
+ "header": "Plurals",
+ "noun": "words",
+ "read_options": true,
+ "title": "Plurals Test: Easy to Impossible 🧠 32 Words | One Moose, Two...?",
+ "about": "Do you know the plural of these 32 English words? From easy to impossible!",
+ "thumb": {
+  "top": "PLURALS TEST",
+  "card": [
+   "One moose,",
+   "two...?"
+  ]
+ },
+ "ar": "اختبار الجمع في الإنجليزية من السهل إلى المستحيل — هل تعرف جمع هذه الكلمات؟",
+ "fr": "Test des pluriels en anglais du plus facile à l'impossible — connais-tu tous ces pluriels ?",
+ "hashtags": "#Plurals #EnglishGrammar #EnglishQuiz #LearnEnglish",
+ "tags": [
+  "english plurals",
+  "irregular plurals",
+  "plural nouns",
+  "english grammar quiz",
+  "english quiz",
+  "easy to impossible",
+  "QuizNado",
+  "الجمع في الانجليزية",
+  "قواعد اللغة الانجليزية",
+  "تعلم الانجليزية",
+  "pluriel anglais",
+  "grammaire anglaise",
+  "quiz anglais"
+ ],
+ "levels": [
+  [
+   [
+    "One box, two...",
+    [
+     "boxes",
+     "boxs",
+     "boxies"
+    ],
+    "boxes",
+    "After X, add -ES: boxes.",
+    "One box, two...?"
+   ],
+   [
+    "One baby, two...",
+    [
+     "babies",
+     "babys",
+     "babyes"
+    ],
+    "babies",
+    "Consonant + Y: change Y to IES.",
+    "One baby, two...?"
+   ],
+   [
+    "One bus, two...",
+    [
+     "buses",
+     "buss",
+     "busies"
+    ],
+    "buses",
+    "After S, add -ES: buses.",
+    "One bus, two...?"
+   ],
+   [
+    "One man, two...",
+    [
+     "men",
+     "mans",
+     "mens"
+    ],
+    "men",
+    "Man becomes men!",
+    "One man, two...?"
+   ],
+   [
+    "One foot, two...",
+    [
+     "feet",
+     "foots",
+     "feets"
+    ],
+    "feet",
+    "Foot becomes feet!",
+    "One foot, two...?"
+   ],
+   [
+    "One knife, two...",
+    [
+     "knives",
+     "knifes",
+     "knive"
+    ],
+    "knives",
+    "F becomes V: knives.",
+    "One knife, two...?"
+   ],
+   [
+    "One city, two...",
+    [
+     "cities",
+     "citys",
+     "cityes"
+    ],
+    "cities",
+    "Y becomes IES: cities.",
+    "One city, two...?"
+   ],
+   [
+    "One leaf, two...",
+    [
+     "leaves",
+     "leafs",
+     "leafes"
+    ],
+    "leaves",
+    "F becomes V: leaves.",
+    "One leaf, two...?"
+   ]
+  ],
+  [
+   [
+    "One goose, two...",
+    [
+     "geese",
+     "gooses",
+     "geeses"
+    ],
+    "geese",
+    "Goose becomes geese!",
+    "One goose, two...?"
+   ],
+   [
+    "One tomato, two...",
+    [
+     "tomatoes",
+     "tomatos",
+     "tomatoe"
+    ],
+    "tomatoes",
+    "Tomato + ES = tomatoes.",
+    "One tomato, two...?"
+   ],
+   [
+    "One deer, two...",
+    [
+     "deer",
+     "deers",
+     "deeres"
+    ],
+    "deer",
+    "Deer stays the same!",
+    "One deer, two...?"
+   ],
+   [
+    "One wolf, two...",
+    [
+     "wolves",
+     "wolfs",
+     "wolfes"
+    ],
+    "wolves",
+    "F becomes V: wolves.",
+    "One wolf, two...?"
+   ],
+   [
+    "One ox, two...",
+    [
+     "oxen",
+     "oxes",
+     "oxs"
+    ],
+    "oxen",
+    "Ox becomes oxen!",
+    "One ox, two...?"
+   ],
+   [
+    "One hero, two...",
+    [
+     "heroes",
+     "heros",
+     "heroies"
+    ],
+    "heroes",
+    "Hero + ES = heroes.",
+    "One hero, two...?"
+   ],
+   [
+    "One half, two...",
+    [
+     "halves",
+     "halfs",
+     "halfes"
+    ],
+    "halves",
+    "F becomes V: halves.",
+    "One half, two...?"
+   ],
+   [
+    "One wife, two...",
+    [
+     "wives",
+     "wifes",
+     "wivs"
+    ],
+    "wives",
+    "F becomes V: wives.",
+    "One wife, two...?"
+   ]
+  ],
+  [
+   [
+    "One crisis, two...",
+    [
+     "crises",
+     "crisises",
+     "crisis"
+    ],
+    "crises",
+    "-IS becomes -ES: crises.",
+    "One crisis, two...?"
+   ],
+   [
+    "One analysis, two...",
+    [
+     "analyses",
+     "analysises",
+     "analysis"
+    ],
+    "analyses",
+    "-IS becomes -ES: analyses.",
+    "One analysis, two...?"
+   ],
+   [
+    "One criterion, two...",
+    [
+     "criteria",
+     "criterions",
+     "criterias"
+    ],
+    "criteria",
+    "Criterion becomes criteria.",
+    "One criterion, two...?"
+   ],
+   [
+    "One species, two...",
+    [
+     "species",
+     "specieses",
+     "specy"
+    ],
+    "species",
+    "Species stays the same!",
+    "One species, two...?"
+   ],
+   [
+    "One series, two...",
+    [
+     "series",
+     "serieses",
+     "seris"
+    ],
+    "series",
+    "Series stays the same!",
+    "One series, two...?"
+   ],
+   [
+    "One thesis, two...",
+    [
+     "theses",
+     "thesises",
+     "thesis"
+    ],
+    "theses",
+    "-IS becomes -ES: theses.",
+    "One thesis, two...?"
+   ],
+   [
+    "One axis, two...",
+    [
+     "axes",
+     "axises",
+     "axis"
+    ],
+    "axes",
+    "-IS becomes -ES: axes.",
+    "One axis, two...?"
+   ],
+   [
+    "One bacterium, two...",
+    [
+     "bacteria",
+     "bacteriums",
+     "bacterias"
+    ],
+    "bacteria",
+    "Bacterium becomes bacteria.",
+    "One bacterium, two...?"
+   ]
+  ],
+  [
+   [
+    "One datum, two...",
+    [
+     "data",
+     "datums",
+     "datas"
+    ],
+    "data",
+    "Datum becomes data.",
+    "One datum, two...?"
+   ],
+   [
+    "One alumnus, two...",
+    [
+     "alumni",
+     "alumnis",
+     "alumnuses"
+    ],
+    "alumni",
+    "Alumnus becomes alumni.",
+    "One alumnus, two...?"
+   ],
+   [
+    "One die (for games), two...",
+    [
+     "dice",
+     "dies",
+     "dyes"
+    ],
+    "dice",
+    "One die, two dice!",
+    "One die, for games, two...?"
+   ],
+   [
+    "One passer-by, two...",
+    [
+     "passers-by",
+     "passer-bys",
+     "passers-bys"
+    ],
+    "passers-by",
+    "The S goes on passer: passers-by.",
+    "One passer-by, two...?"
+   ],
+   [
+    "One mother-in-law, two...",
+    [
+     "mothers-in-law",
+     "mother-in-laws",
+     "mothers-in-laws"
+    ],
+    "mothers-in-law",
+    "The S goes on mother: mothers-in-law.",
+    "One mother-in-law, two...?"
+   ],
+   [
+    "One nucleus, two...",
+    [
+     "nuclei",
+     "nucleus",
+     "nucleis"
+    ],
+    "nuclei",
+    "Nucleus becomes nuclei.",
+    "One nucleus, two...?"
+   ],
+   [
+    "One stimulus, two...",
+    [
+     "stimuli",
+     "stimula",
+     "stimulis"
+    ],
+    "stimuli",
+    "Stimulus becomes stimuli.",
+    "One stimulus, two...?"
+   ],
+   [
+    "One moose, two...",
+    [
+     "moose",
+     "meese",
+     "mooses"
+    ],
+    "moose",
+    "Moose stays the same: one moose, two moose!",
+    "One moose, two...?"
+   ]
+  ]
+ ],
+ "shorts": [
+  {
+   "picks": [
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     7
+    ]
+   ],
+   "title": "One Moose, Two...? 🤔 Plurals: Easy to Impossible #shorts"
+  },
+  {
+   "picks": [
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     2
+    ]
+   ],
+   "title": "Can You Make These Plurals? 🧠 The Last One Is Impossible #shorts"
+  }
+ ],
+ "slug": "plurals-easy-impossible"
+}

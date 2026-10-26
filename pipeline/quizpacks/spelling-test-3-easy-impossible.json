@@ -1,0 +1,436 @@
+{
+ "name": "Spelling Test 3",
+ "header": "Spelling test",
+ "noun": "words",
+ "read_options": false,
+ "spoken_cycle": [
+  "Which word is spelled correctly?",
+  "Which spelling is right?",
+  "And this one?",
+  "Which one is correct?"
+ ],
+ "title": "Spelling Test 3: Easy to Impossible 😳 32 New Words | Can You Spell Them All?",
+ "about": "32 NEW English words, from easy to impossible. Which spelling is correct?",
+ "thumb": {
+  "top": "SPELLING TEST 3",
+  "card": [
+   "Massachusets?",
+   "Massachusetts?"
+  ]
+ },
+ "ar": "اختبار الإملاء الإنجليزي 3 من السهل إلى المستحيل — 32 كلمة جديدة!",
+ "fr": "Test d'orthographe anglaise 3 du plus facile à l'impossible — 32 nouveaux mots !",
+ "hashtags": "#SpellingTest #EnglishTest #LearnEnglish #EnglishQuiz",
+ "tags": [
+  "spelling test",
+  "english spelling",
+  "spelling test 3",
+  "commonly misspelled words",
+  "english test",
+  "easy to impossible",
+  "learn english",
+  "QuizNado",
+  "الاملاء بالانجليزي",
+  "اختبار اللغة الانجليزية",
+  "تعلم الانجليزية",
+  "orthographe anglaise",
+  "test d'anglais",
+  "quiz anglais"
+ ],
+ "levels": [
+  [
+   [
+    "Which word is spelled correctly?",
+    [
+     "Thrusday",
+     "Thursday",
+     "Thurday"
+    ],
+    "Thursday",
+    "T-H-U-R-S-D-A-Y."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "ninty",
+     "ninety",
+     "ninetey"
+    ],
+    "ninety",
+    "Nine keeps its E: nine-ty."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "brekfast",
+     "breakfast",
+     "breakfest"
+    ],
+    "breakfast",
+    "Break + fast = breakfast!"
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "laf",
+     "laugh",
+     "lauph"
+    ],
+    "laugh",
+    "L-A-U-G-H: the GH sounds like F."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "mony",
+     "money",
+     "monney"
+    ],
+    "money",
+    "M-O-N-E-Y."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "nife",
+     "knife",
+     "knif"
+    ],
+    "knife",
+    "The K is silent: K-nife."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "juise",
+     "juice",
+     "jiuce"
+    ],
+    "juice",
+    "J-U-I-C-E."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "suger",
+     "sugar",
+     "shugar"
+    ],
+    "sugar",
+    "It ends with -AR: sug-AR."
+   ]
+  ],
+  [
+   [
+    "Which word is spelled correctly?",
+    [
+     "reciept",
+     "receipt",
+     "receit"
+    ],
+    "receipt",
+    "E before I after C, and a silent P!"
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "hieght",
+     "height",
+     "heigth"
+    ],
+    "height",
+    "H-E-I-G-H-T."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "cieling",
+     "ceiling",
+     "celing"
+    ],
+    "ceiling",
+    "E before I after C: c-EI-ling."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "acheive",
+     "achieve",
+     "achive"
+    ],
+    "achieve",
+    "I before E: ach-IE-ve."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "bycicle",
+     "bicycle",
+     "bicicle"
+    ],
+    "bicycle",
+    "BI-cycle: bi means two!"
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "medecine",
+     "medicine",
+     "medicin"
+    ],
+    "medicine",
+    "Med-I-cine, not like French médecine!"
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "Carribean",
+     "Caribbean",
+     "Caribean"
+    ],
+    "Caribbean",
+    "One R, double B."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "catagory",
+     "category",
+     "categorie"
+    ],
+    "category",
+    "Cat-E-gory."
+   ]
+  ],
+  [
+   [
+    "Which word is spelled correctly?",
+    [
+     "accidently",
+     "accidentally",
+     "accidentaly"
+    ],
+    "accidentally",
+    "Accidental + ly = accidentALLY."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "occasionaly",
+     "occasionally",
+     "ocasionally"
+    ],
+    "occasionally",
+    "Double C, one S, double L."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "conscientous",
+     "conscientious",
+     "consciencious"
+    ],
+    "conscientious",
+    "Con-sci-EN-tious."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "aquaintance",
+     "acquaintance",
+     "acquaintence"
+    ],
+    "acquaintance",
+    "There's a C before the Q: ac-quaint-ANCE."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "personell",
+     "personnel",
+     "personel"
+    ],
+    "personnel",
+    "Double N, one L: person-NEL."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "passtime",
+     "pastime",
+     "pasttime"
+    ],
+    "pastime",
+    "Pas + time: only one S and one T!"
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "millionnaire",
+     "millionaire",
+     "milionaire"
+    ],
+    "millionaire",
+    "Double L, ONE N, not like French!"
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "heirarchy",
+     "hierarchy",
+     "hierachy"
+    ],
+    "hierarchy",
+    "H-I-E-R-A-R-C-H-Y."
+   ]
+  ],
+  [
+   [
+    "Which word is spelled correctly?",
+    [
+     "nemonic",
+     "mnemonic",
+     "mneumonic"
+    ],
+    "mnemonic",
+    "The first M is silent: M-nemonic."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "terodactyl",
+     "pterodactyl",
+     "pteradactyl"
+    ],
+    "pterodactyl",
+    "The P is silent: P-tero-dactyl."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "daschund",
+     "dachshund",
+     "dashund"
+    ],
+    "dachshund",
+    "Dachs + hund: badger dog in German!"
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "fuschia",
+     "fuchsia",
+     "fushia"
+    ],
+    "fuchsia",
+    "F-U-C-H-S-I-A, named after Mr Fuchs."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "camoflage",
+     "camouflage",
+     "camouflague"
+    ],
+    "camouflage",
+    "Cam-OU-flage."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "flegm",
+     "phlegm",
+     "phelgm"
+    ],
+    "phlegm",
+    "PH sounds like F, and a silent G!"
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "chauffer",
+     "chauffeur",
+     "chaufeur"
+    ],
+    "chauffeur",
+    "From French: chauff-EUR."
+   ],
+   [
+    "Which word is spelled correctly?",
+    [
+     "Massachusets",
+     "Massachusetts",
+     "Massachussetts"
+    ],
+    "Massachusetts",
+    "Double S, one S, double S, double T!"
+   ]
+  ]
+ ],
+ "shorts": [
+  {
+   "picks": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     7
+    ]
+   ],
+   "title": "Can You Spell These 4 Words? 😳 Spelling Test 3 #shorts"
+  },
+  {
+   "picks": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     3,
+     0
+    ]
+   ],
+   "title": "The Last Word Is Impossible to Spell 🤯 #shorts"
+  },
+  {
+   "picks": [
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     2
+    ]
+   ],
+   "title": "Spelling Test: Easy to Impossible ✍️ Can You Get 4/4? #shorts"
+  }
+ ],
+ "slug": "spelling-test-3-easy-impossible"
+}

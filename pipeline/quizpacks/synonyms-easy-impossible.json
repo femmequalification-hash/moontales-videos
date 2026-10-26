@@ -1,0 +1,440 @@
+{
+ "name": "Synonyms Test",
+ "header": "Synonyms",
+ "noun": "words",
+ "read_options": true,
+ "title": "Synonyms Test: Easy to Impossible 🔁 32 Words | Find the Same Meaning!",
+ "about": "Find the word with the same meaning! 32 English synonyms from easy to impossible.",
+ "thumb": {
+  "top": "SYNONYMS TEST",
+  "card": [
+   "Same meaning as",
+   "\"secret\"?"
+  ]
+ },
+ "ar": "اختبار المرادفات في الإنجليزية من السهل إلى المستحيل — ابحث عن الكلمة التي لها نفس المعنى!",
+ "fr": "Test des synonymes en anglais du plus facile à l'impossible — trouve le mot de même sens !",
+ "hashtags": "#Synonyms #EnglishVocabulary #EnglishQuiz #LearnEnglish",
+ "tags": [
+  "synonyms",
+  "english synonyms",
+  "same meaning words",
+  "english vocabulary",
+  "english quiz",
+  "easy to impossible",
+  "QuizNado",
+  "مرادفات انجليزية",
+  "كلمات بنفس المعنى",
+  "تعلم الانجليزية",
+  "synonymes anglais",
+  "vocabulaire anglais",
+  "quiz anglais"
+ ],
+ "levels": [
+  [
+   [
+    "Same meaning as \"big\"?",
+    [
+     "large",
+     "tiny",
+     "short"
+    ],
+    "large",
+    "Big = large.",
+    "Which word has the same meaning as big?"
+   ],
+   [
+    "Same meaning as \"easy\"?",
+    [
+     "simple",
+     "hard",
+     "slow"
+    ],
+    "simple",
+    "Easy = simple.",
+    "Which word has the same meaning as easy?"
+   ],
+   [
+    "Same meaning as \"shut\"?",
+    [
+     "close",
+     "open",
+     "cut"
+    ],
+    "close",
+    "Shut the door = close the door.",
+    "Which word has the same meaning as shut?"
+   ],
+   [
+    "Same meaning as \"end\"?",
+    [
+     "finish",
+     "start",
+     "send"
+    ],
+    "finish",
+    "End = finish.",
+    "Which word has the same meaning as end?"
+   ],
+   [
+    "Same meaning as \"correct\"?",
+    [
+     "right",
+     "wrong",
+     "left"
+    ],
+    "right",
+    "Correct = right.",
+    "Which word has the same meaning as correct?"
+   ],
+   [
+    "Same meaning as \"gift\"?",
+    [
+     "present",
+     "past",
+     "prize"
+    ],
+    "present",
+    "A gift = a present.",
+    "Which word has the same meaning as gift?"
+   ],
+   [
+    "Same meaning as \"sick\"?",
+    [
+     "ill",
+     "well",
+     "tall"
+    ],
+    "ill",
+    "Sick = ill.",
+    "Which word has the same meaning as sick?"
+   ],
+   [
+    "Same meaning as \"scared\"?",
+    [
+     "afraid",
+     "brave",
+     "tired"
+    ],
+    "afraid",
+    "Scared = afraid.",
+    "Which word has the same meaning as scared?"
+   ]
+  ],
+  [
+   [
+    "Same meaning as \"buy\"?",
+    [
+     "purchase",
+     "sell",
+     "borrow"
+    ],
+    "purchase",
+    "Buy = purchase.",
+    "Which word has the same meaning as buy?"
+   ],
+   [
+    "Same meaning as \"rich\"?",
+    [
+     "wealthy",
+     "poor",
+     "healthy"
+    ],
+    "wealthy",
+    "Rich = wealthy.",
+    "Which word has the same meaning as rich?"
+   ],
+   [
+    "Same meaning as \"strange\"?",
+    [
+     "odd",
+     "normal",
+     "even"
+    ],
+    "odd",
+    "Strange = odd.",
+    "Which word has the same meaning as strange?"
+   ],
+   [
+    "Same meaning as \"answer\"?",
+    [
+     "reply",
+     "ask",
+     "repeat"
+    ],
+    "reply",
+    "Answer = reply.",
+    "Which word has the same meaning as answer?"
+   ],
+   [
+    "Same meaning as \"help\"?",
+    [
+     "assist",
+     "insist",
+     "resist"
+    ],
+    "assist",
+    "Help = assist.",
+    "Which word has the same meaning as help?"
+   ],
+   [
+    "Same meaning as \"mistake\"?",
+    [
+     "error",
+     "mirror",
+     "terror"
+    ],
+    "error",
+    "A mistake = an error.",
+    "Which word has the same meaning as mistake?"
+   ],
+   [
+    "Same meaning as \"quiet\"?",
+    [
+     "silent",
+     "loud",
+     "quick"
+    ],
+    "silent",
+    "Quiet = silent.",
+    "Which word has the same meaning as quiet?"
+   ],
+   [
+    "Same meaning as \"choose\"?",
+    [
+     "select",
+     "reject",
+     "collect"
+    ],
+    "select",
+    "Choose = select.",
+    "Which word has the same meaning as choose?"
+   ]
+  ],
+  [
+   [
+    "Same meaning as \"brave\"?",
+    [
+     "courageous",
+     "cowardly",
+     "curious"
+    ],
+    "courageous",
+    "Brave = courageous.",
+    "Which word has the same meaning as brave?"
+   ],
+   [
+    "Same meaning as \"famous\"?",
+    [
+     "renowned",
+     "unknown",
+     "renewed"
+    ],
+    "renowned",
+    "Famous = renowned.",
+    "Which word has the same meaning as famous?"
+   ],
+   [
+    "Same meaning as \"funny\"?",
+    [
+     "amusing",
+     "amazing",
+     "annoying"
+    ],
+    "amusing",
+    "Funny = amusing.",
+    "Which word has the same meaning as funny?"
+   ],
+   [
+    "Same meaning as \"important\"?",
+    [
+     "crucial",
+     "cruel",
+     "casual"
+    ],
+    "crucial",
+    "Very important = crucial.",
+    "Which word has the same meaning as important?"
+   ],
+   [
+    "Same meaning as \"sad\"?",
+    [
+     "miserable",
+     "admirable",
+     "comfortable"
+    ],
+    "miserable",
+    "Very sad = miserable.",
+    "Which word has the same meaning as sad?"
+   ],
+   [
+    "Same meaning as \"enough\"?",
+    [
+     "sufficient",
+     "efficient",
+     "deficient"
+    ],
+    "sufficient",
+    "Enough = sufficient.",
+    "Which word has the same meaning as enough?"
+   ],
+   [
+    "Same meaning as \"true\"?",
+    [
+     "accurate",
+     "accused",
+     "adequate"
+    ],
+    "accurate",
+    "True and correct = accurate.",
+    "Which word has the same meaning as true?"
+   ],
+   [
+    "Same meaning as \"dangerous\"?",
+    [
+     "hazardous",
+     "harmless",
+     "humorous"
+    ],
+    "hazardous",
+    "Dangerous = hazardous.",
+    "Which word has the same meaning as dangerous?"
+   ]
+  ],
+  [
+   [
+    "Same meaning as \"talkative\"?",
+    [
+     "loquacious",
+     "luscious",
+     "laconic"
+    ],
+    "loquacious",
+    "Loquacious = talks a lot.",
+    "Which word has the same meaning as talkative?"
+   ],
+   [
+    "Same meaning as \"stubborn\"?",
+    [
+     "obstinate",
+     "obedient",
+     "obvious"
+    ],
+    "obstinate",
+    "Stubborn = obstinate.",
+    "Which word has the same meaning as stubborn?"
+   ],
+   [
+    "Same meaning as \"brief\"?",
+    [
+     "succinct",
+     "extinct",
+     "distinct"
+    ],
+    "succinct",
+    "Brief and clear = succinct.",
+    "Which word has the same meaning as brief?"
+   ],
+   [
+    "Same meaning as \"hate\"?",
+    [
+     "loathe",
+     "love",
+     "loaf"
+    ],
+    "loathe",
+    "Hate = loathe.",
+    "Which word has the same meaning as hate?"
+   ],
+   [
+    "Same meaning as \"lazy\"?",
+    [
+     "indolent",
+     "insolent",
+     "indulgent"
+    ],
+    "indolent",
+    "Lazy = indolent.",
+    "Which word has the same meaning as lazy?"
+   ],
+   [
+    "Same meaning as \"friendly\"?",
+    [
+     "amiable",
+     "miserable",
+     "capable"
+    ],
+    "amiable",
+    "Friendly = amiable.",
+    "Which word has the same meaning as friendly?"
+   ],
+   [
+    "Same meaning as \"calm\"?",
+    [
+     "serene",
+     "severe",
+     "sincere"
+    ],
+    "serene",
+    "Calm and peaceful = serene.",
+    "Which word has the same meaning as calm?"
+   ],
+   [
+    "Same meaning as \"secret\"?",
+    [
+     "clandestine",
+     "clementine",
+     "celestial"
+    ],
+    "clandestine",
+    "Secret = clandestine. A clementine is a fruit!",
+    "Which word has the same meaning as secret?"
+   ]
+  ]
+ ],
+ "shorts": [
+  {
+   "picks": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     0
+    ]
+   ],
+   "title": "Same Meaning? 🔁 Synonyms: Easy to Impossible #shorts"
+  },
+  {
+   "picks": [
+    [
+     0,
+     7
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     7
+    ]
+   ],
+   "title": "Find the Synonym 🤔 The Last One Is Impossible! #shorts"
+  }
+ ],
+ "slug": "synonyms-easy-impossible"
+}

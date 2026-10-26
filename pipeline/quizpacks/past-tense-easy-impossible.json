@@ -1,0 +1,462 @@
+{
+ "name": "Past Tense Test",
+ "header": "Past tense",
+ "noun": "verbs",
+ "read_options": true,
+ "title": "Past Tense Test: Easy to Impossible ⏳ 32 Irregular Verbs | Can You Get Them All?",
+ "about": "32 irregular verbs in the past tense, from easy to impossible. Do you know them all?",
+ "thumb": {
+  "top": "PAST TENSE TEST",
+  "card": [
+   "\"Grind\" in",
+   "the past is...?"
+  ]
+ },
+ "ar": "اختبار الماضي للأفعال الشاذة في الإنجليزية — من السهل إلى المستحيل!",
+ "fr": "Test du passé des verbes irréguliers anglais — du plus facile à l'impossible !",
+ "hashtags": "#PastTense #IrregularVerbs #EnglishGrammar #LearnEnglish",
+ "tags": [
+  "past tense",
+  "irregular verbs",
+  "english irregular verbs",
+  "past simple",
+  "english grammar quiz",
+  "english test",
+  "easy to impossible",
+  "QuizNado",
+  "الأفعال الشاذة",
+  "الماضي في الانجليزية",
+  "تعلم الانجليزية",
+  "verbes irréguliers anglais",
+  "prétérit anglais",
+  "quiz anglais"
+ ],
+ "levels": [
+  [
+   [
+    "\"Eat\" in the past is...",
+    [
+     "ate",
+     "eated",
+     "eat"
+    ],
+    "ate",
+    "Eat, ate, eaten.",
+    "Eat, in the past, is"
+   ],
+   [
+    "\"See\" in the past is...",
+    [
+     "saw",
+     "seed",
+     "seen"
+    ],
+    "saw",
+    "See, saw, seen.",
+    "See, in the past, is"
+   ],
+   [
+    "\"Come\" in the past is...",
+    [
+     "came",
+     "comed",
+     "come"
+    ],
+    "came",
+    "Come, came, come.",
+    "Come, in the past, is"
+   ],
+   [
+    "\"Write\" in the past is...",
+    [
+     "wrote",
+     "writed",
+     "written"
+    ],
+    "wrote",
+    "Write, wrote, written.",
+    "Write, in the past, is"
+   ],
+   [
+    "\"Sleep\" in the past is...",
+    [
+     "slept",
+     "sleeped",
+     "slep"
+    ],
+    "slept",
+    "Sleep, slept, slept.",
+    "Sleep, in the past, is"
+   ],
+   [
+    "\"Drink\" in the past is...",
+    [
+     "drank",
+     "drinked",
+     "drunk"
+    ],
+    "drank",
+    "Drink, drank, drunk.",
+    "Drink, in the past, is"
+   ],
+   [
+    "\"Have\" in the past is...",
+    [
+     "had",
+     "haved",
+     "has"
+    ],
+    "had",
+    "Have, had, had.",
+    "Have, in the past, is"
+   ],
+   [
+    "\"Make\" in the past is...",
+    [
+     "made",
+     "maked",
+     "mad"
+    ],
+    "made",
+    "Make, made, made.",
+    "Make, in the past, is"
+   ]
+  ],
+  [
+   [
+    "\"Bring\" in the past is...",
+    [
+     "brought",
+     "bringed",
+     "brang"
+    ],
+    "brought",
+    "Bring, brought, brought.",
+    "Bring, in the past, is"
+   ],
+   [
+    "\"Fly\" in the past is...",
+    [
+     "flew",
+     "flied",
+     "flown"
+    ],
+    "flew",
+    "Fly, flew, flown.",
+    "Fly, in the past, is"
+   ],
+   [
+    "\"Begin\" in the past is...",
+    [
+     "began",
+     "begined",
+     "begun"
+    ],
+    "began",
+    "Begin, began, begun.",
+    "Begin, in the past, is"
+   ],
+   [
+    "\"Choose\" in the past is...",
+    [
+     "chose",
+     "choosed",
+     "chosen"
+    ],
+    "chose",
+    "Choose, chose, chosen.",
+    "Choose, in the past, is"
+   ],
+   [
+    "\"Feel\" in the past is...",
+    [
+     "felt",
+     "feeled",
+     "fell"
+    ],
+    "felt",
+    "Feel, felt, felt. Fell is the past of fall!",
+    "Feel, in the past, is"
+   ],
+   [
+    "\"Leave\" in the past is...",
+    [
+     "left",
+     "leaved",
+     "leaft"
+    ],
+    "left",
+    "Leave, left, left.",
+    "Leave, in the past, is"
+   ],
+   [
+    "\"Fall\" in the past is...",
+    [
+     "fell",
+     "falled",
+     "felt"
+    ],
+    "fell",
+    "Fall, fell, fallen. Felt is the past of feel!",
+    "Fall, in the past, is"
+   ],
+   [
+    "\"Find\" in the past is...",
+    [
+     "found",
+     "finded",
+     "founded"
+    ],
+    "found",
+    "Find, found, found. Founded means created!",
+    "Find, in the past, is"
+   ]
+  ],
+  [
+   [
+    "\"Seek\" in the past is...",
+    [
+     "sought",
+     "seeked",
+     "saught"
+    ],
+    "sought",
+    "Seek, sought, sought.",
+    "Seek, in the past, is"
+   ],
+   [
+    "\"Freeze\" in the past is...",
+    [
+     "froze",
+     "freezed",
+     "frozen"
+    ],
+    "froze",
+    "Freeze, froze, frozen.",
+    "Freeze, in the past, is"
+   ],
+   [
+    "\"Lead\" in the past is...",
+    [
+     "led",
+     "leaded",
+     "lead"
+    ],
+    "led",
+    "Lead, led, led.",
+    "Lead, in the past, is"
+   ],
+   [
+    "\"Shake\" in the past is...",
+    [
+     "shook",
+     "shaked",
+     "shaken"
+    ],
+    "shook",
+    "Shake, shook, shaken.",
+    "Shake, in the past, is"
+   ],
+   [
+    "\"Steal\" in the past is...",
+    [
+     "stole",
+     "stealed",
+     "stolen"
+    ],
+    "stole",
+    "Steal, stole, stolen.",
+    "Steal, in the past, is"
+   ],
+   [
+    "\"Bite\" in the past is...",
+    [
+     "bit",
+     "bited",
+     "bitten"
+    ],
+    "bit",
+    "Bite, bit, bitten.",
+    "Bite, in the past, is"
+   ],
+   [
+    "\"Bend\" in the past is...",
+    [
+     "bent",
+     "bended",
+     "bend"
+    ],
+    "bent",
+    "Bend, bent, bent.",
+    "Bend, in the past, is"
+   ],
+   [
+    "\"Lend\" in the past is...",
+    [
+     "lent",
+     "lended",
+     "lend"
+    ],
+    "lent",
+    "Lend, lent, lent.",
+    "Lend, in the past, is"
+   ]
+  ],
+  [
+   [
+    "\"Tread\" in the past is...",
+    [
+     "trod",
+     "treaded",
+     "trodden"
+    ],
+    "trod",
+    "Tread, trod, trodden.",
+    "Tread, in the past, is"
+   ],
+   [
+    "\"Cling\" in the past is...",
+    [
+     "clung",
+     "clinged",
+     "clang"
+    ],
+    "clung",
+    "Cling, clung, clung.",
+    "Cling, in the past, is"
+   ],
+   [
+    "\"Forsake\" in the past is...",
+    [
+     "forsook",
+     "forsaked",
+     "forsaken"
+    ],
+    "forsook",
+    "Forsake, forsook, forsaken.",
+    "Forsake, in the past, is"
+   ],
+   [
+    "\"Stride\" in the past is...",
+    [
+     "strode",
+     "strided",
+     "stridden"
+    ],
+    "strode",
+    "Stride, strode, stridden.",
+    "Stride, in the past, is"
+   ],
+   [
+    "\"Sting\" in the past is...",
+    [
+     "stung",
+     "stang",
+     "stinged"
+    ],
+    "stung",
+    "Sting, stung, stung.",
+    "Sting, in the past, is"
+   ],
+   [
+    "\"Wring\" in the past is...",
+    [
+     "wrung",
+     "wringed",
+     "wrang"
+    ],
+    "wrung",
+    "Wring, wrung, wrung.",
+    "Wring, in the past, is"
+   ],
+   [
+    "\"Arise\" in the past is...",
+    [
+     "arose",
+     "arised",
+     "arisen"
+    ],
+    "arose",
+    "Arise, arose, arisen.",
+    "Arise, in the past, is"
+   ],
+   [
+    "\"Grind\" in the past is...",
+    [
+     "ground",
+     "grinded",
+     "grand"
+    ],
+    "ground",
+    "Grind, ground, ground. Like ground coffee!",
+    "Grind, in the past, is"
+   ]
+  ]
+ ],
+ "shorts": [
+  {
+   "picks": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     7
+    ]
+   ],
+   "title": "Can You Get 4/4? 🤔 Past Tense: Easy to Impossible #shorts"
+  },
+  {
+   "picks": [
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     4
+    ]
+   ],
+   "title": "Irregular Verbs: The Last One Is Impossible 😳 #shorts"
+  },
+  {
+   "picks": [
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     1
+    ]
+   ],
+   "title": "Past Tense Test ⏱️ Only 5 Seconds Each! #shorts"
+  }
+ ],
+ "slug": "past-tense-easy-impossible"
+}
