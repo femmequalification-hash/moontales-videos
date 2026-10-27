@@ -1,0 +1,572 @@
+{
+  "slug": "dress-up-show",
+  "story_title": "Lina and Adams and the Dress-Up Show",
+  "lesson": "Learn clothes words in English!",
+  "title": "Lina and Adams and the Dress-Up Show 🎩 | Learn Clothes Words in English for Kids | Moon Tales Kids",
+  "thumbnail_title": "The Dress-Up Show",
+  "thumbnail_word": "Clothes words",
+  "thumbnail_scene": {
+    "setting": "bedroom",
+    "time": "sunset",
+    "props": [
+      {
+        "name": "hat",
+        "x": 1650,
+        "y": 950
+      },
+      {
+        "name": "shoes",
+        "x": 300,
+        "y": 980
+      }
+    ],
+    "chars": [
+      "lina",
+      "adams",
+      "milo"
+    ]
+  },
+  "description": "Grandma is coming! Lina, Adams and Milo the cat put on a funny dress-up show with a big box of clothes. 🎩👟🧦\nIn this English story for kids, children learn 7 new words: hat, shoes, socks, shirt, jacket, button and pocket. Listen, repeat, and learn English with Lina, Adams and Milo the cat.\n\n📚 New words in this story:\n🎩 hat — قبعة / طاقية — le chapeau\n👟 shoes — حذاء / صباط — les chaussures\n🧦 socks — جوارب / تقاشر — les chaussettes\n👕 shirt — قميص — la chemise / le t-shirt\n🧥 jacket — سترة / جاكيط — la veste\n🔘 button — زر / بوطونة — le bouton\n👖 pocket — جيب — la poche\n\n👨‍👩‍👧 For parents: when your child gets dressed, name each piece of clothing in English together: \"Where are your socks?\" Pause after each new word and say it out loud. Perfect for ages 3 to 8 and for children learning English as a second language.\n\n🇲🇦 قصة باللغة الإنجليزية للأطفال لتعلم أسماء الملابس.\n🇫🇷 Une histoire en anglais pour enfants pour apprendre les vêtements.\n\n🌙 Subscribe to Moon Tales Kids for a new English story every day!\n\n#EnglishForKids #KidsStories #LearnEnglish #MoonTalesKids",
+  "tags": [
+    "english stories for kids",
+    "learn english for kids",
+    "clothes words for kids",
+    "clothes in english",
+    "kids stories in english",
+    "Lina and Adams",
+    "Moon Tales Kids",
+    "ESL kids",
+    "قصص اطفال بالانجليزي",
+    "تعلم الانجليزية للاطفال",
+    "الملابس بالانجليزي",
+    "قصص للاطفال",
+    "histoire en anglais pour enfant",
+    "apprendre l'anglais enfant",
+    "les vêtements en anglais",
+    "vocabulaire anglais enfant"
+  ],
+  "scenes": [
+    {
+      "setting": "bedroom",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "gift",
+          "x": 1650,
+          "y": 950
+        }
+      ],
+      "lines": [
+        {
+          "text": "It is the evening. The sky is orange and pink."
+        },
+        {
+          "text": "Lina and Adams are playing in the bedroom with Milo the cat."
+        },
+        {
+          "who": "lina",
+          "text": "Adams! Grandma is coming to visit tonight!"
+        },
+        {
+          "who": "adams",
+          "text": "Let's make a show for Grandma. A dress-up show!"
+        },
+        {
+          "text": "Lina opens a big box. It is full of clothes."
+        },
+        {
+          "who": "lina",
+          "text": "Look at all these clothes! This will be so much fun."
+        },
+        {
+          "who": "milo",
+          "text": "Meow! Meow!"
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "hat",
+          "x": 1650,
+          "y": 950
+        }
+      ],
+      "word": "hat",
+      "lines": [
+        {
+          "text": "Lina finds something round and soft in the box."
+        },
+        {
+          "who": "lina",
+          "text": "A hat! A big blue hat!"
+        },
+        {
+          "text": "Lina puts the hat on her head. It is very big!"
+        },
+        {
+          "who": "adams",
+          "text": "I cannot see your eyes, Lina! Ha ha!"
+        },
+        {
+          "text": "A hat is something we wear on our head."
+        },
+        {
+          "text": "Say it with me: hat!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Milo jumps into the hat. Now Milo is in the hat! Meow!"
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "shoes",
+          "x": 1650,
+          "y": 980
+        }
+      ],
+      "word": "shoes",
+      "lines": [
+        {
+          "text": "Adams finds two big brown shoes. They are Daddy's shoes."
+        },
+        {
+          "who": "adams",
+          "text": "Look at me! I have big shoes!"
+        },
+        {
+          "text": "Adams walks. Clop, clop, clop!"
+        },
+        {
+          "who": "lina",
+          "text": "Your shoes are so big. Be careful, Adams!"
+        },
+        {
+          "text": "Shoes are what we wear on our feet when we walk outside."
+        },
+        {
+          "text": "Can you say it? Shoes!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "adams",
+          "text": "These shoes are too big. I will walk slowly."
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "word": "socks",
+      "lines": [
+        {
+          "text": "Next, Lina finds some soft socks with yellow dots."
+        },
+        {
+          "who": "lina",
+          "text": "Socks! We wear socks inside our shoes."
+        },
+        {
+          "text": "Socks keep our feet warm and cosy."
+        },
+        {
+          "text": "Say it with me: socks!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "lina",
+          "text": "Oh no! I have only one sock. Where is the other sock?"
+        },
+        {
+          "who": "adams",
+          "text": "Don't worry, Lina. We will find it together!"
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "word": "shirt",
+      "lines": [
+        {
+          "text": "Adams takes out a shirt with green stripes."
+        },
+        {
+          "who": "adams",
+          "text": "I will wear this shirt for the show."
+        },
+        {
+          "text": "Adams puts his arms in the shirt. But it is upside down! Ha ha!"
+        },
+        {
+          "who": "lina",
+          "text": "Let me help you, Adams. Arms in here, head in here."
+        },
+        {
+          "who": "adams",
+          "text": "Thank you, Lina! Now my shirt is right."
+        },
+        {
+          "text": "A shirt is clothes we wear on our body and arms."
+        },
+        {
+          "text": "Let's say it together: shirt!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "word": "jacket",
+      "lines": [
+        {
+          "text": "At the bottom of the box, there is a yellow jacket."
+        },
+        {
+          "who": "lina",
+          "text": "I love this jacket! It is yellow like the sun."
+        },
+        {
+          "text": "Lina puts on the jacket. It is soft and warm."
+        },
+        {
+          "text": "A jacket is something we wear over our clothes, when it is cool outside."
+        },
+        {
+          "text": "Can you say it? Jacket!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "milo",
+          "text": "Meow!"
+        },
+        {
+          "who": "adams",
+          "text": "Milo likes your jacket, Lina!"
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "circle",
+          "x": 1650,
+          "y": 900
+        }
+      ],
+      "word": "button",
+      "lines": [
+        {
+          "text": "The jacket has three round buttons."
+        },
+        {
+          "who": "lina",
+          "text": "Oh! This button is very hard. I cannot close it."
+        },
+        {
+          "who": "adams",
+          "text": "I can help! Let's do it together."
+        },
+        {
+          "text": "Lina holds the jacket, and Adams pushes the button. Pop!"
+        },
+        {
+          "text": "A button is a small round thing that closes our clothes."
+        },
+        {
+          "text": "Say it with me: button!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "lina",
+          "text": "We did it! Teamwork!"
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "word": "pocket",
+      "lines": [
+        {
+          "text": "Lina puts her hand in the jacket pocket."
+        },
+        {
+          "who": "lina",
+          "text": "Wait! There is something soft in my pocket."
+        },
+        {
+          "text": "Lina pulls it out. It is the other sock!"
+        },
+        {
+          "who": "adams",
+          "text": "You found your sock! But how did it get there?"
+        },
+        {
+          "who": "milo",
+          "text": "Meow!"
+        },
+        {
+          "text": "Milo the cat hid the sock in the pocket! Silly Milo!"
+        },
+        {
+          "text": "A pocket is a little bag in our clothes. Say it with me: pocket!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "sunset",
+      "weather": "cloudy",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "flower",
+          "x": 1700,
+          "y": 980
+        },
+        {
+          "name": "flower",
+          "x": 300,
+          "y": 980
+        }
+      ],
+      "lines": [
+        {
+          "text": "Ding dong! Grandma is here!"
+        },
+        {
+          "text": "Lina and Adams go out to the garden for the show."
+        },
+        {
+          "who": "lina",
+          "text": "Welcome, Grandma! It is our dress-up show!"
+        },
+        {
+          "text": "Lina walks in her yellow jacket, her blue hat and her dotty socks."
+        },
+        {
+          "text": "Adams walks in his green shirt and Daddy's big shoes. Clop, clop!"
+        },
+        {
+          "text": "Grandma claps and claps. Hooray!"
+        },
+        {
+          "who": "adams",
+          "text": "Thank you for watching, Grandma!"
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "sunset",
+      "weather": "cloudy",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "hat",
+          "x": 1650,
+          "y": 950
+        }
+      ],
+      "lines": [
+        {
+          "who": "lina",
+          "text": "And now, the last star of the show is... Milo!"
+        },
+        {
+          "text": "Milo walks in, wearing a tiny little hat."
+        },
+        {
+          "who": "milo",
+          "text": "Meow! Meow!"
+        },
+        {
+          "text": "Everybody laughs. Milo is so funny!"
+        },
+        {
+          "who": "adams",
+          "text": "Milo is the best dancer in the show!"
+        },
+        {
+          "text": "Grandma gives Milo a gentle pat on the head."
+        },
+        {
+          "who": "lina",
+          "text": "We made a great show together."
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "star",
+          "x": 1700,
+          "y": 300
+        },
+        {
+          "name": "lamp",
+          "x": 300,
+          "y": 950
+        }
+      ],
+      "lines": [
+        {
+          "text": "Now the sky is dark. The stars are shining."
+        },
+        {
+          "text": "Grandma gives Lina and Adams a big warm hug."
+        },
+        {
+          "who": "lina",
+          "text": "Thank you for coming, Grandma. We love you!"
+        },
+        {
+          "who": "adams",
+          "text": "Did you like our show?"
+        },
+        {
+          "text": "Grandma smiles. She liked it very, very much."
+        },
+        {
+          "text": "Lina and Adams are happy. They made Grandma smile."
+        },
+        {
+          "who": "milo",
+          "text": "Purr, purr."
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "bed",
+          "x": 1650,
+          "y": 950
+        }
+      ],
+      "lines": [
+        {
+          "text": "It is bedtime now."
+        },
+        {
+          "text": "Lina and Adams fold the clothes and put them back in the box."
+        },
+        {
+          "who": "adams",
+          "text": "The hat, the shoes, the socks, the shirt and the jacket."
+        },
+        {
+          "who": "lina",
+          "text": "And no more socks in the pocket, Milo!"
+        },
+        {
+          "text": "Milo curls up on the bed and closes his eyes."
+        },
+        {
+          "who": "adams",
+          "text": "Goodnight, Lina. Goodnight, Milo."
+        },
+        {
+          "who": "lina",
+          "text": "Goodnight! Let's make another show tomorrow!"
+        }
+      ]
+    }
+  ]
+}

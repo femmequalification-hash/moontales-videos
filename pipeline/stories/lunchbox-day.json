@@ -1,0 +1,583 @@
+{
+  "slug": "lunchbox-day",
+  "story_title": "Lina and Adams and the Lunchbox Day",
+  "lesson": "Learn lunch food words in English!",
+  "title": "Lina and Adams and the Lunchbox Day 🥪 | Learn Food Words in English for Kids | Moon Tales Kids",
+  "thumbnail_title": "The Lunchbox Day",
+  "thumbnail_word": "Food words",
+  "thumbnail_scene": {
+    "setting": "park",
+    "time": "day",
+    "weather": "sunny",
+    "props": [
+      {
+        "name": "sandwich",
+        "x": 1650,
+        "y": 950
+      },
+      {
+        "name": "apple",
+        "x": 350,
+        "y": 970
+      }
+    ],
+    "chars": [
+      "lina",
+      "adams"
+    ]
+  },
+  "description": "Today the class eats lunch in the park! Lina and Adams pack their lunchboxes, and when Adams drops his sandwich, Lina kindly shares. 🥪🧃🍎\nIn this English story for kids, children learn 8 new words: lunchbox, bread, cheese, egg, juice, water, crunchy and napkin. Listen, repeat, and learn English with Lina, Adams and Milo the cat.\n\n📚 New words in this story:\n🍱 lunchbox — علبة الغداء — la boîte à goûter\n🍞 bread — خبز — le pain\n🧀 cheese — جبن / فرماج — le fromage\n🥚 egg — بيضة — l'œuf\n🧃 juice — عصير — le jus\n💧 water — ماء / الما — l'eau\n🥕 crunchy — مقرمش — croquant\n🧻 napkin — منديل / كلينيكس — la serviette\n\n👨‍👩‍👧 For parents: pack a lunchbox with your child and name each food in English. Talk about sharing with friends. Pause after each new word and say it out loud. Perfect for ages 3 to 8 and for children learning English as a second language.\n\n🇲🇦 قصة باللغة الإنجليزية للأطفال لتعلم أسماء الأكل والمشاركة مع الأصدقاء.\n🇫🇷 Une histoire en anglais pour enfants pour apprendre les mots du déjeuner et le partage.\n\n🌙 Subscribe to Moon Tales Kids for a new English story every day!\n\n#EnglishForKids #KidsStories #LearnEnglish #MoonTalesKids",
+  "tags": [
+    "english stories for kids",
+    "learn english for kids",
+    "food words for kids",
+    "lunchbox story",
+    "kids stories in english",
+    "Lina and Adams",
+    "Moon Tales Kids",
+    "ESL kids",
+    "قصص اطفال بالانجليزي",
+    "تعلم الانجليزية للاطفال",
+    "الاكل بالانجليزي",
+    "قصص للاطفال",
+    "histoire en anglais pour enfant",
+    "apprendre l'anglais enfant",
+    "la nourriture en anglais",
+    "vocabulaire anglais enfant"
+  ],
+  "scenes": [
+    {
+      "setting": "kitchen",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "table",
+          "x": 1650,
+          "y": 960
+        }
+      ],
+      "word": "lunchbox",
+      "lines": [
+        {
+          "text": "Good morning! The sun is shining in the kitchen."
+        },
+        {
+          "who": "lina",
+          "text": "Adams! Today our class will eat lunch in the park!"
+        },
+        {
+          "who": "adams",
+          "text": "Hooray! We need to pack our lunch."
+        },
+        {
+          "text": "Mama gives Lina and Adams two little boxes. One is pink, and one is blue."
+        },
+        {
+          "text": "A lunchbox is a box to carry our food to school."
+        },
+        {
+          "text": "Say it with me: lunchbox!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "milo",
+          "text": "Meow! Is there food for me?"
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "table",
+          "x": 1650,
+          "y": 960
+        }
+      ],
+      "word": "bread",
+      "lines": [
+        {
+          "text": "First, they need bread for a sandwich."
+        },
+        {
+          "who": "adams",
+          "text": "Here is the bread. It is soft and brown."
+        },
+        {
+          "who": "lina",
+          "text": "Two pieces of bread for me, and two for you."
+        },
+        {
+          "text": "Bread is a food made from flour. We eat it every day."
+        },
+        {
+          "text": "Can you say it? Bread!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Milo sniffs the bread. Sniff, sniff!"
+        },
+        {
+          "who": "lina",
+          "text": "Sorry, Milo. This bread is for our sandwich."
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "sandwich",
+          "x": 1650,
+          "y": 950
+        }
+      ],
+      "word": "cheese",
+      "lines": [
+        {
+          "text": "Next, Adams opens the fridge."
+        },
+        {
+          "who": "adams",
+          "text": "Look! Yellow cheese! I love cheese!"
+        },
+        {
+          "text": "Lina puts the cheese on the bread. Then she closes the sandwich."
+        },
+        {
+          "who": "lina",
+          "text": "Ta-da! A cheese sandwich!"
+        },
+        {
+          "text": "Cheese is a food made from milk."
+        },
+        {
+          "text": "Say it with me: cheese!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "adams",
+          "text": "Say cheese! Ha ha! Smile, Lina!"
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "word": "egg",
+      "lines": [
+        {
+          "text": "Mama gives them an egg. It is cooked, so it is hard inside."
+        },
+        {
+          "text": "Only grown-ups use the hot stove. Mama cooked the egg this morning."
+        },
+        {
+          "who": "adams",
+          "text": "Can I take the shell off?"
+        },
+        {
+          "text": "Adams taps the egg gently. Tap, tap, tap. The shell comes off."
+        },
+        {
+          "text": "An egg comes from a chicken. It is white outside and yellow inside."
+        },
+        {
+          "text": "Let's say it together: egg!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "lina",
+          "text": "One egg for each lunchbox."
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "orange",
+          "x": 1650,
+          "y": 950
+        },
+        {
+          "name": "cup",
+          "x": 1800,
+          "y": 950
+        }
+      ],
+      "word": "juice",
+      "lines": [
+        {
+          "text": "Now they want something to drink."
+        },
+        {
+          "who": "lina",
+          "text": "Can we take orange juice, Mama?"
+        },
+        {
+          "text": "Mama pours orange juice into two little bottles."
+        },
+        {
+          "who": "adams",
+          "text": "Orange juice is sweet and yummy!"
+        },
+        {
+          "text": "Juice is a drink made from fruit."
+        },
+        {
+          "text": "Can you say it? Juice!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "lina",
+          "text": "We will drink our juice at the park."
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "cup",
+          "x": 1650,
+          "y": 950
+        }
+      ],
+      "word": "water",
+      "lines": [
+        {
+          "text": "Mama gives them a bottle of water too."
+        },
+        {
+          "text": "Milo is drinking from his bowl. Lap, lap, lap!"
+        },
+        {
+          "who": "adams",
+          "text": "Look! Milo is drinking water."
+        },
+        {
+          "who": "lina",
+          "text": "Water is the best drink when we are thirsty."
+        },
+        {
+          "text": "We drink water every day to grow strong and healthy."
+        },
+        {
+          "text": "Say it with me: water!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "milo",
+          "text": "Meow! I love water too!"
+        }
+      ]
+    },
+    {
+      "setting": "classroom",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "board": "Lunch at the park!",
+      "lines": [
+        {
+          "text": "At school, the teacher writes on the board."
+        },
+        {
+          "text": "It says: Lunch at the park!"
+        },
+        {
+          "who": "lina",
+          "text": "I have my lunchbox. Do you have your lunchbox, Adams?"
+        },
+        {
+          "who": "adams",
+          "text": "Yes! It is in my hand."
+        },
+        {
+          "text": "Everybody walks to the park together, holding hands."
+        },
+        {
+          "text": "Stop, look and listen at the street. Then they cross safely."
+        },
+        {
+          "who": "lina",
+          "text": "The park! I can see the trees!"
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "apple",
+          "x": 1650,
+          "y": 960
+        },
+        {
+          "name": "carrot",
+          "x": 1800,
+          "y": 960
+        }
+      ],
+      "word": "crunchy",
+      "lines": [
+        {
+          "text": "At the park, they sit on the green grass."
+        },
+        {
+          "text": "Lina has an apple. Adams has a carrot."
+        },
+        {
+          "text": "Lina bites her apple. Crunch, crunch!"
+        },
+        {
+          "who": "adams",
+          "text": "My carrot is crunchy too! Crunch!"
+        },
+        {
+          "text": "Crunchy food makes a loud sound when we bite it."
+        },
+        {
+          "text": "Can you say it? Crunchy!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "lina",
+          "text": "Crunchy apples are my favourite!"
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "bird",
+          "x": 1650,
+          "y": 930
+        },
+        {
+          "name": "sandwich",
+          "x": 1500,
+          "y": 980
+        }
+      ],
+      "lines": [
+        {
+          "text": "Now it is time for the sandwiches."
+        },
+        {
+          "text": "Adams opens his lunchbox. But oh no! His sandwich falls on the grass."
+        },
+        {
+          "who": "adams",
+          "text": "Oh no! My sandwich is dirty. I cannot eat it now."
+        },
+        {
+          "text": "Adams feels sad. His tummy is still hungry."
+        },
+        {
+          "text": "A little bird hops near the sandwich. Tweet, tweet!"
+        },
+        {
+          "who": "lina",
+          "text": "Don't be sad, Adams. I have an idea!"
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "sandwich",
+          "x": 1650,
+          "y": 950
+        },
+        {
+          "name": "heart",
+          "x": 1700,
+          "y": 500
+        }
+      ],
+      "lines": [
+        {
+          "text": "Lina breaks her cheese sandwich into two pieces."
+        },
+        {
+          "who": "lina",
+          "text": "Here, Adams. Half for you, and half for me."
+        },
+        {
+          "who": "adams",
+          "text": "Really? Thank you, Lina! You are so kind."
+        },
+        {
+          "text": "Sharing is kind. Sharing makes friends happy."
+        },
+        {
+          "who": "adams",
+          "text": "Here, Lina. You can have some of my egg."
+        },
+        {
+          "text": "Now they both have a sandwich and an egg."
+        },
+        {
+          "who": "lina",
+          "text": "Sharing is fun!"
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "word": "napkin",
+      "lines": [
+        {
+          "text": "After lunch, their hands are a little bit sticky."
+        },
+        {
+          "who": "lina",
+          "text": "I have a napkin. Let's clean our hands and mouths."
+        },
+        {
+          "text": "Wipe, wipe! Now their hands are clean."
+        },
+        {
+          "text": "A napkin is a soft paper we use to clean our hands and mouths when we eat."
+        },
+        {
+          "text": "Say it with me: napkin!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "adams",
+          "text": "And we put the rubbish in the bin. The park stays clean!"
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "table",
+          "x": 1650,
+          "y": 960
+        }
+      ],
+      "lines": [
+        {
+          "text": "In the evening, Lina and Adams are back home."
+        },
+        {
+          "who": "milo",
+          "text": "Meow! Meow! You are back!"
+        },
+        {
+          "who": "adams",
+          "text": "Mama, I dropped my sandwich, but Lina shared her lunch with me."
+        },
+        {
+          "text": "Mama smiles. She is proud of Lina."
+        },
+        {
+          "who": "lina",
+          "text": "Tomorrow, let's pack a lunchbox together again!"
+        },
+        {
+          "who": "adams",
+          "text": "And a little treat for Milo too!"
+        },
+        {
+          "text": "Lunchbox, bread, cheese, egg, juice, water, crunchy and napkin. What a yummy day!"
+        }
+      ]
+    }
+  ]
+}
