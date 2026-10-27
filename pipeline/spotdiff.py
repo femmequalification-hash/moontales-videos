@@ -41,7 +41,7 @@ RED = (232, 49, 47)
 import cv2  # noqa: E402
 
 
-def border_mask(patch, tol=38):
+def border_mask(patch, tol=38, keep_all=False):
     """Object pixels inside a box: everything that differs from the box's border (background) colour."""
     a = np.asarray(patch.convert("RGB")).astype(np.float32)
     ring = np.concatenate([a[:2].reshape(-1, 3), a[-2:].reshape(-1, 3), a[:, :2].reshape(-1, 3), a[:, -2:].reshape(-1, 3)])
@@ -51,7 +51,7 @@ def border_mask(patch, tol=38):
     m = cv2.morphologyEx(m, cv2.MORPH_OPEN, k)
     m = cv2.morphologyEx(m, cv2.MORPH_CLOSE, np.ones((7, 7), np.uint8))
     n, lab, stats, _ = cv2.connectedComponentsWithStats(m)
-    if n > 2:  # keep the big pieces only
+    if n > 2 and not keep_all:  # keep the big pieces only
         keep = [i for i in range(1, n) if stats[i, cv2.CC_STAT_AREA] > 0.08 * stats[1:, cv2.CC_STAT_AREA].max()]
         m = np.isin(lab, keep).astype(np.uint8) * 255
     return m
@@ -63,11 +63,15 @@ def soft(m, grow=2, blur=1.2):
     return Image.fromarray(m).filter(ImageFilter.GaussianBlur(blur))
 
 
-def center_mask(patch, tol=60):
-    """Pixels with the same colour as the middle of the box (for recolouring one part)."""
+def center_mask(patch, tol=60, ref_xy=None):
+    """Pixels with the same colour as the middle of the box (or as the point ref_xy, box coords)."""
     a = np.asarray(patch.convert("RGB")).astype(np.float32)
     h, w, _ = a.shape
-    ref = np.median(a[int(h * .4):int(h * .6), int(w * .4):int(w * .6)].reshape(-1, 3), axis=0)
+    if ref_xy:
+        rx, ry = int(ref_xy[0]), int(ref_xy[1])
+        ref = np.median(a[max(ry - 6, 0):ry + 7, max(rx - 6, 0):rx + 7].reshape(-1, 3), axis=0)
+    else:
+        ref = np.median(a[int(h * .4):int(h * .6), int(w * .4):int(w * .6)].reshape(-1, 3), axis=0)
     return (np.sqrt(((a - ref) ** 2).sum(axis=2)) < tol).astype(np.uint8) * 255
 
 
@@ -94,40 +98,83 @@ def erase(img, box, m):
     img.paste(Image.fromarray(np.ascontiguousarray(arr)))
 
 
+def feather_mask(w, h, k=0.12):
+    m = Image.new("L", (w, h), 0)
+    pad = max(2, int(min(w, h) * k))
+    ImageDraw.Draw(m).rounded_rectangle((pad, pad, w - pad, h - pad), radius=pad * 2, fill=255)
+    return m.filter(ImageFilter.GaussianBlur(pad * 0.8))
+
+
+def rect_mask(w, h, k=0.14):
+    """Soft rectangle: fully opaque in the middle, fading at the edges (for textured backgrounds)."""
+    return feather_mask(w, h, k)
+
+
 def apply_edit(img, e):
-    """img: RGB picture (edited in place). Returns the circle (cx, cy, r) for the reveal."""
+    """img: RGB picture (edited in place). Returns the circle (cx, cy, r) for the reveal.
+
+    mode "box" (flip / scale / copy): move the whole box with soft edges (object must sit in its middle).
+    remove with "src": [dx, dy]: cover the object with the area dx,dy away (good for grass, sand, water).
+    """
     x0, y0, x1, y1 = [int(v) for v in e["box"]]
     w, h = x1 - x0, y1 - y0
     patch = img.crop((x0, y0, x1, y1))
     t = e["type"]
-    cx, cy, rad = (x0 + x1) / 2, (y0 + y1) / 2, max(w, h) / 2 * 1.05 + 12
+    box_mode = e.get("mode") == "box"
+    cx, cy, rad = (x0 + x1) / 2, (y0 + y1) / 2, max(w, h) / 2 * 1.0 + 10
+    if box_mode:
+        rad = max(w, h) / 2 * 0.85 + 10
     tol = e.get("tol", 38)
     if t == "recolor":
         new = colorize(patch, e["to"]) if e.get("to") else hue_rotate(patch, e.get("hue", 140))
-        m = center_mask(patch, e.get("tol", 60)) if e.get("part") else border_mask(patch, tol)
+        ref = [e["ref"][0] - x0, e["ref"][1] - y0] if "ref" in e else None
+        m = center_mask(patch, e.get("tol", 60), ref) if e.get("part") else border_mask(patch, tol, e.get("all"))
+        m = np.minimum(m, np.asarray(feather_mask(w, h, 0.03)))
         img.paste(new, (x0, y0), soft(m, 1, 1.0))
     elif t == "remove":
-        erase(img, (x0, y0, x1, y1), border_mask(patch, tol))
+        if "src" in e:
+            dx, dy = e["src"]
+            src = img.crop((x0 + dx, y0 + dy, x1 + dx, y1 + dy))
+            if e.get("rect"):
+                mm = rect_mask(w, h, e.get("k", 0.16))
+            else:  # cover the object (grown a little) with the neighbouring background
+                mm = soft(border_mask(patch, tol, True), e.get("grow", 9), 3)
+            img.paste(src, (x0, y0), mm)
+        else:
+            erase(img, (x0, y0, x1, y1), border_mask(patch, tol, e.get("all")))
     elif t == "copy":
         tx, ty = [int(v) for v in e["to"]]
-        img.paste(patch, (tx, ty), soft(border_mask(patch, tol), 1, 1.0))
+        mm = rect_mask(w, h, 0.16) if box_mode else soft(border_mask(patch, tol), 1, 1.0)
+        img.paste(patch, (tx, ty), mm)
         cx, cy = tx + w / 2, ty + h / 2
     elif t == "flip":
-        m = border_mask(patch, tol)
-        erase(img, (x0, y0, x1, y1), m)
-        img.paste(patch.transpose(Image.FLIP_LEFT_RIGHT), (x0, y0), soft(m, 1, 1.0).transpose(Image.FLIP_LEFT_RIGHT))
+        if box_mode:
+            img.paste(patch.transpose(Image.FLIP_LEFT_RIGHT), (x0, y0), rect_mask(w, h, 0.14))
+        else:
+            m = border_mask(patch, tol)
+            erase(img, (x0, y0, x1, y1), m)
+            img.paste(patch.transpose(Image.FLIP_LEFT_RIGHT), (x0, y0), soft(m, 1, 1.0).transpose(Image.FLIP_LEFT_RIGHT))
     elif t == "scale":
         f = e.get("factor", 1.35)
-        m = border_mask(patch, tol)
-        if f < 1:
-            erase(img, (x0, y0, x1, y1), m)
         nw, nh = int(w * f), int(h * f)
         big = patch.resize((nw, nh), Image.LANCZOS)
-        mm = soft(m, 1, 1.0).resize((nw, nh), Image.LANCZOS)
+        if e.get("shape") == "circle":
+            m0 = Image.new("L", (nw * 4, nh * 4), 0)
+            ImageDraw.Draw(m0).ellipse((6, 6, nw * 4 - 6, nh * 4 - 6), fill=255)
+            mm = m0.resize((nw, nh), Image.LANCZOS)
+        elif box_mode:
+            mm = rect_mask(nw, nh, 0.15)
+        else:
+            m = border_mask(patch, tol)
+            if f < 1:
+                erase(img, (x0, y0, x1, y1), m)
+            mm = soft(m, 1, 1.0).resize((nw, nh), Image.LANCZOS)
         img.paste(big, (int(cx - nw / 2), int(cy - nh / 2)), mm)
-        rad = max(nw, nh) / 2 * 1.05 + 12
+        rad = max(nw, nh) / 2 * (0.85 if box_mode else 1.0) + 10
     else:
         raise ValueError(t)
+    if "circle" in e:  # manual circle override [cx, cy, r]
+        cx, cy, rad = e["circle"]
     return cx, cy, rad
 
 

@@ -1,0 +1,679 @@
+{
+ "slug": "spot-the-difference-3",
+ "title": "Spot the Difference: Easy to Impossible 👀 10 HD Puzzles | Can You Find All 50?",
+ "about": "Find the 5 differences between the two pictures! 10 colorful puzzles from easy to impossible: park, beach, farm, toy shop, under the sea, space and more.",
+ "thumb_top": "SPOT THE DIFFERENCE",
+ "thumb_bottom": "10 PUZZLES · EASY TO IMPOSSIBLE",
+ "ar": "ابحث عن الاختلافات الخمسة بين الصورتين — من السهل إلى المستحيل!",
+ "fr": "Trouve les 5 différences entre les deux images — du plus facile à l'impossible !",
+ "hashtags": "#SpotTheDifference #FindTheDifference #Puzzle #BrainGames",
+ "tags": [
+  "spot the difference",
+  "find the difference",
+  "spot 5 differences",
+  "picture puzzle",
+  "brain games",
+  "visual puzzle",
+  "easy to impossible",
+  "QuizNado",
+  "ابحث عن الاختلاف",
+  "أوجد الفرق",
+  "ألغاز الصور",
+  "trouve les différences",
+  "jeu des différences",
+  "jeu des 7 erreurs"
+ ],
+ "puzzles": [
+  {
+   "image": "gpt1/p01.png",
+   "level": 0,
+   "edits": [
+    {
+     "type": "scale",
+     "box": [
+      1283,
+      520,
+      1428,
+      662
+     ],
+     "factor": 1.32,
+     "shape": "circle"
+    },
+    {
+     "type": "recolor",
+     "box": [
+      955,
+      522,
+      1030,
+      700
+     ],
+     "part": true,
+     "to": "#E8457A"
+    },
+    {
+     "type": "remove",
+     "box": [
+      1180,
+      5,
+      1356,
+      178
+     ],
+     "all": true
+    },
+    {
+     "type": "copy",
+     "box": [
+      1295,
+      168,
+      1462,
+      218
+     ],
+     "to": [
+      905,
+      30
+     ]
+    },
+    {
+     "type": "recolor",
+     "box": [
+      15,
+      515,
+      390,
+      740
+     ],
+     "part": true,
+     "hue": 170,
+     "tol": 95
+    }
+   ]
+  },
+  {
+   "image": "gpt1/p02.png",
+   "level": 0,
+   "edits": [
+    {
+     "type": "flip",
+     "box": [
+      708,
+      212,
+      840,
+      282
+     ],
+     "mode": "box"
+    },
+    {
+     "type": "recolor",
+     "box": [
+      498,
+      700,
+      735,
+      875
+     ],
+     "part": true,
+     "to": "#3FB34F"
+    },
+    {
+     "type": "copy",
+     "box": [
+      948,
+      738,
+      1032,
+      818
+     ],
+     "to": [
+      1200,
+      845
+     ]
+    },
+    {
+     "type": "flip",
+     "box": [
+      446,
+      22,
+      570,
+      192
+     ],
+     "mode": "box"
+    },
+    {
+     "type": "recolor",
+     "box": [
+      0,
+      228,
+      132,
+      405
+     ],
+     "part": true,
+     "to": "#E84A4A"
+    }
+   ]
+  },
+  {
+   "image": "gpt1/p03.png",
+   "level": 0,
+   "edits": [
+    {
+     "type": "remove",
+     "box": [
+      788,
+      204,
+      902,
+      346
+     ],
+     "src": [
+      -260,
+      0
+     ]
+    },
+    {
+     "type": "recolor",
+     "box": [
+      348,
+      662,
+      542,
+      848
+     ],
+     "part": true,
+     "to": "#3E86E0"
+    },
+    {
+     "type": "remove",
+     "box": [
+      1063,
+      718,
+      1263,
+      866
+     ],
+     "src": [
+      -230,
+      4
+     ]
+    },
+    {
+     "type": "copy",
+     "box": [
+      690,
+      642,
+      795,
+      722
+     ],
+     "to": [
+      385,
+      858
+     ]
+    },
+    {
+     "type": "recolor",
+     "box": [
+      845,
+      28,
+      1455,
+      305
+     ],
+     "part": true,
+     "ref": [
+      1070,
+      215
+     ],
+     "tol": 95,
+     "to": "#3E86E0"
+    }
+   ]
+  },
+  {
+   "image": "gpt1/p04.png",
+   "level": 1,
+   "edits": [
+    {
+     "type": "remove",
+     "box": [
+      1530,
+      70,
+      1597,
+      128
+     ]
+    },
+    {
+     "type": "recolor",
+     "box": [
+      1158,
+      168,
+      1322,
+      312
+     ],
+     "part": true,
+     "to": "#E84A4A"
+    },
+    {
+     "type": "recolor",
+     "box": [
+      1238,
+      388,
+      1382,
+      648
+     ],
+     "part": true,
+     "ref": [
+      1262,
+      455
+     ],
+     "tol": 55,
+     "to": "#E84A4A"
+    },
+    {
+     "type": "copy",
+     "box": [
+      1582,
+      102,
+      1643,
+      162
+     ],
+     "to": [
+      1520,
+      360
+     ]
+    },
+    {
+     "type": "recolor",
+     "box": [
+      560,
+      612,
+      695,
+      668
+     ],
+     "part": true,
+     "to": "#3E86E0"
+    }
+   ]
+  },
+  {
+   "image": "gpt1/p05.png",
+   "level": 1,
+   "edits": [
+    {
+     "type": "recolor",
+     "box": [
+      215,
+      58,
+      310,
+      152
+     ],
+     "part": true,
+     "to": "#E84A4A"
+    },
+    {
+     "type": "remove",
+     "box": [
+      885,
+      725,
+      962,
+      797
+     ],
+     "src": [
+      85,
+      0
+     ]
+    },
+    {
+     "type": "recolor",
+     "box": [
+      1400,
+      555,
+      1660,
+      718
+     ],
+     "part": true,
+     "to": "#3E86E0"
+    },
+    {
+     "type": "recolor",
+     "box": [
+      1135,
+      645,
+      1298,
+      835
+     ],
+     "part": true,
+     "ref": [
+      1180,
+      690
+     ],
+     "tol": 45,
+     "to": "#FF9A2E"
+    },
+    {
+     "type": "remove",
+     "box": [
+      243,
+      738,
+      328,
+      830
+     ],
+     "src": [
+      90,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "image": "gpt1/p06.png",
+   "level": 1,
+   "edits": [
+    {
+     "type": "remove",
+     "box": [
+      1326,
+      830,
+      1404,
+      898
+     ],
+     "src": [
+      78,
+      0
+     ]
+    },
+    {
+     "type": "recolor",
+     "box": [
+      630,
+      315,
+      775,
+      480
+     ],
+     "part": true,
+     "to": "#E84A4A"
+    },
+    {
+     "type": "remove",
+     "box": [
+      1470,
+      150,
+      1515,
+      192
+     ],
+     "all": true
+    },
+    {
+     "type": "recolor",
+     "box": [
+      1252,
+      722,
+      1462,
+      828
+     ],
+     "part": true,
+     "ref": [
+      1340,
+      760
+     ],
+     "tol": 75,
+     "to": "#3FB34F"
+    },
+    {
+     "type": "flip",
+     "box": [
+      866,
+      22,
+      1003,
+      170
+     ],
+     "mode": "box"
+    }
+   ]
+  },
+  {
+   "image": "gpt1/p07.png",
+   "level": 2,
+   "edits": [
+    {
+     "type": "recolor",
+     "box": [
+      605,
+      205,
+      678,
+      278
+     ],
+     "part": true,
+     "to": "#FF8A2E"
+    },
+    {
+     "type": "recolor",
+     "box": [
+      705,
+      28,
+      800,
+      152
+     ],
+     "part": true,
+     "to": "#FF8FB1"
+    },
+    {
+     "type": "flip",
+     "box": [
+      538,
+      315,
+      618,
+      405
+     ],
+     "mode": "box"
+    },
+    {
+     "type": "recolor",
+     "box": [
+      472,
+      215,
+      590,
+      278
+     ],
+     "part": true,
+     "to": "#3FB34F"
+    },
+    {
+     "type": "recolor",
+     "box": [
+      1015,
+      405,
+      1112,
+      485
+     ],
+     "part": true,
+     "ref": [
+      1062,
+      448
+     ],
+     "to": "#3E86E0"
+    }
+   ]
+  },
+  {
+   "image": "gpt1/p08.png",
+   "level": 2,
+   "edits": [
+    {
+     "type": "remove",
+     "box": [
+      600,
+      378,
+      672,
+      414
+     ]
+    },
+    {
+     "type": "recolor",
+     "box": [
+      188,
+      360,
+      325,
+      458
+     ],
+     "part": true,
+     "to": "#FF8A2E"
+    },
+    {
+     "type": "flip",
+     "box": [
+      328,
+      262,
+      412,
+      438
+     ],
+     "mode": "box"
+    },
+    {
+     "type": "remove",
+     "box": [
+      1495,
+      846,
+      1532,
+      886
+     ]
+    },
+    {
+     "type": "recolor",
+     "box": [
+      418,
+      722,
+      615,
+      862
+     ],
+     "part": true,
+     "to": "#E8A21F"
+    }
+   ]
+  },
+  {
+   "image": "gpt1/p09.png",
+   "level": 3,
+   "edits": [
+    {
+     "type": "recolor",
+     "box": [
+      600,
+      105,
+      660,
+      188
+     ],
+     "part": true,
+     "to": "#E84A4A"
+    },
+    {
+     "type": "recolor",
+     "box": [
+      905,
+      222,
+      1000,
+      275
+     ],
+     "part": true,
+     "to": "#3E86E0"
+    },
+    {
+     "type": "flip",
+     "box": [
+      490,
+      95,
+      570,
+      208
+     ],
+     "mode": "box"
+    },
+    {
+     "type": "remove",
+     "box": [
+      376,
+      678,
+      414,
+      714
+     ]
+    },
+    {
+     "type": "recolor",
+     "box": [
+      1172,
+      205,
+      1258,
+      282
+     ],
+     "part": true,
+     "to": "#FF8FB1"
+    }
+   ]
+  },
+  {
+   "image": "gpt1/p10.png",
+   "level": 3,
+   "edits": [
+    {
+     "type": "remove",
+     "box": [
+      1153,
+      178,
+      1202,
+      230
+     ]
+    },
+    {
+     "type": "recolor",
+     "box": [
+      1175,
+      520,
+      1222,
+      590
+     ],
+     "part": true,
+     "to": "#B05AE0"
+    },
+    {
+     "type": "flip",
+     "box": [
+      945,
+      88,
+      1078,
+      192
+     ],
+     "mode": "box"
+    },
+    {
+     "type": "recolor",
+     "box": [
+      955,
+      455,
+      1088,
+      585
+     ],
+     "part": true,
+     "hue": 40,
+     "tol": 70
+    },
+    {
+     "type": "remove",
+     "box": [
+      963,
+      653,
+      1024,
+      700
+     ]
+    }
+   ]
+  }
+ ],
+ "shorts": [
+  {
+   "puzzle": 0,
+   "title": "Find 5 Differences in 15 Seconds 👀 Spot the Difference #shorts"
+  },
+  {
+   "puzzle": 4,
+   "title": "Can You Spot All 5 Differences on the Farm? 🐮 #shorts"
+  },
+  {
+   "puzzle": 7,
+   "title": "Only Sharp Eyes Find All 5 🐠 Spot the Difference #shorts"
+  },
+  {
+   "puzzle": 9,
+   "title": "Impossible Spot the Difference 🚀 Did You Find All 5? #shorts"
+  }
+ ]
+}
