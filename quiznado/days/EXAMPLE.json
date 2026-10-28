@@ -1,0 +1,74 @@
+{
+ "number": 2,
+ "date": "2026-10-29",
+ "long": {
+  "title": "ULTIMATE QUIZ #2: 35 Questions 🧠 Only 1% Get Them All!",
+  "extra_tags": "ultimate quiz, 35 questions quiz, family quiz, iq test, english test, riddles, مسابقة, أسئلة ثقافية, اختبار الذكاء, grand quiz, test de QI",
+  "rounds": [
+   {"topic": "General Knowledge", "questions": [
+    {"q": "How many colors are in a standard chessboard?", "options": ["2", "3", "4"], "answer": 0},
+    {"q": "Which country has the most people?", "options": ["USA", "India", "Brazil"], "answer": 1},
+    {"q": "How many hours are in two days?", "options": ["36", "48", "24"], "answer": 1},
+    {"q": "Which bird is a symbol of peace?", "options": ["Eagle", "Dove", "Owl"], "answer": 1},
+    {"q": "What is the largest desert in Africa?", "options": ["Sahara", "Kalahari", "Namib"], "answer": 0}]},
+   {"topic": "IQ Test", "questions": [
+    {"q": "3, 6, 9, 12 ... what comes next?", "options": ["14", "15", "16"], "answer": 1},
+    {"q": "Which one is the odd one out?", "options": ["Square", "Circle", "Triangle"], "answer": 1},
+    {"q": "If 2 cats catch 2 mice in 2 minutes, how many cats catch 6 mice in 6 minutes?", "options": ["2", "3", "6"], "answer": 0},
+    {"q": "Book is to reading as fork is to...", "options": ["Drawing", "Eating", "Writing"], "answer": 1},
+    {"q": "100, 50, 25 ... what comes next?", "options": ["12.5", "10", "15"], "answer": 0}]},
+   {"topic": "English Test", "questions": [
+    {"q": "What is the plural of \"child\"?", "options": ["Childs", "Children", "Childes"], "answer": 1},
+    {"q": "Choose the correct word: She is ___ than me.", "options": ["tall", "taller", "tallest"], "answer": 1},
+    {"q": "What is the opposite of \"generous\"?", "options": ["Kind", "Selfish", "Brave"], "answer": 1},
+    {"q": "Which word is a verb?", "options": ["Quickly", "Run", "Happy"], "answer": 1},
+    {"q": "They ___ football every Sunday.", "options": ["plays", "play", "playing"], "answer": 1}]},
+   {"topic": "Math Speed", "questions": [
+    {"q": "6 × 7 = ?", "options": ["42", "48", "36"], "answer": 0},
+    {"q": "45 − 18 = ?", "options": ["27", "37", "23"], "answer": 0},
+    {"q": "81 ÷ 9 = ?", "options": ["8", "9", "7"], "answer": 1},
+    {"q": "25 × 4 = ?", "options": ["90", "100", "120"], "answer": 1},
+    {"q": "Half of 150 = ?", "options": ["70", "75", "80"], "answer": 1}]},
+   {"topic": "Riddles", "questions": [
+    {"q": "What has to be broken before you can use it?", "options": ["An egg", "A door", "A key"], "answer": 0},
+    {"q": "What goes up but never comes down?", "options": ["A balloon", "Your age", "Smoke"], "answer": 1},
+    {"q": "What has one eye but cannot see?", "options": ["A needle", "A fish", "A storm"], "answer": 0},
+    {"q": "What runs but never walks?", "options": ["Water", "A dog", "A clock"], "answer": 0},
+    {"q": "What has many teeth but cannot bite?", "options": ["A shark", "A comb", "A saw"], "answer": 1}]},
+   {"topic": "Science Quiz", "questions": [
+    {"q": "What do bees make?", "options": ["Milk", "Honey", "Silk"], "answer": 1},
+    {"q": "Which planet is the biggest?", "options": ["Saturn", "Jupiter", "Neptune"], "answer": 1},
+    {"q": "What part of the plant makes food?", "options": ["Roots", "Leaves", "Flowers"], "answer": 1},
+    {"q": "How many bones does an adult human have?", "options": ["206", "180", "250"], "answer": 0},
+    {"q": "What is H2O?", "options": ["Salt", "Water", "Oxygen"], "answer": 1}]},
+   {"topic": "Capitals Quiz", "questions": [
+    {"q": "What is the capital of Spain?", "options": ["Madrid", "Barcelona", "Seville"], "answer": 0},
+    {"q": "What is the capital of Turkey?", "options": ["Istanbul", "Ankara", "Izmir"], "answer": 1},
+    {"q": "What is the capital of Brazil?", "options": ["Rio", "São Paulo", "Brasília"], "answer": 2},
+    {"q": "What is the capital of Saudi Arabia?", "options": ["Jeddah", "Riyadh", "Mecca"], "answer": 1},
+    {"q": "What is the capital of Italy?", "options": ["Rome", "Milan", "Venice"], "answer": 0}]}
+  ]
+ },
+ "shorts": [
+  {"id": "brain_teasers", "topic": "Brain Teasers", "hook": "Only geniuses get #5!",
+   "title": "Only Geniuses Get #5! 🧠 Brain Teasers #shorts",
+   "first_line": "5 brain teasers that trick almost everyone. Can you solve them? 🧠",
+   "extra_tags": "brain teasers, tricky questions, logic quiz, ألغاز ذكاء, أسئلة صعبة, énigmes, casse-tête",
+   "questions": [
+    {"q": "How many months have 28 days?", "options": ["1", "6", "12"], "answer": 2},
+    {"q": "A farmer has 10 sheep. All but 7 run away. How many are left?", "options": ["3", "7", "10"], "answer": 1},
+    {"q": "What weighs more: 1 kg of iron or 1 kg of feathers?", "options": ["Iron", "Feathers", "Same"], "answer": 2},
+    {"q": "If you pass the 2nd runner in a race, what place are you?", "options": ["1st", "2nd", "3rd"], "answer": 1},
+    {"q": "How many times can you subtract 5 from 25?", "options": ["Once", "5 times", "4 times"], "answer": 0}]},
+  {"id": "which_is_bigger", "topic": "Which Is Bigger", "hook": "Most people get #3 wrong!",
+   "title": "Which Is Bigger? 🤔 Most People Get #3 Wrong #shorts",
+   "first_line": "5 \"which is bigger\" questions. Trust your brain, not your eyes! 🤔",
+   "extra_tags": "which is bigger, comparison quiz, size quiz, أيهما أكبر, اختبار معلومات, lequel est le plus grand",
+   "questions": [
+    {"q": "Which is bigger: the Sun or the Moon?", "options": ["The Sun", "The Moon", "Same size"], "answer": 0},
+    {"q": "Which is bigger: 0.5 or 0.45?", "options": ["0.5", "0.45", "Same"], "answer": 0},
+    {"q": "Which is bigger: Africa or Europe?", "options": ["Africa", "Europe", "Same"], "answer": 0},
+    {"q": "Which is bigger: a blue whale or an elephant?", "options": ["Blue whale", "Elephant", "Same"], "answer": 0},
+    {"q": "Which is bigger: 3/4 or 2/3?", "options": ["3/4", "2/3", "Same"], "answer": 0}]}
+ ]
+}
