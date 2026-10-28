@@ -60,6 +60,6 @@ and the fiche `.txt`. Then a short SendUserMessage + PushNotification (if availa
 ## 5. Save
 ```
 python3 daily_tools.py done days/<DATE>.json      # adds questions to history.json
-git add days/<DATE>.json history.json && git commit -m "QuizNado #N (<DATE>)" && git push origin main
+git add days/<DATE>.json history.json && git commit -m "QuizNado #N (<DATE>)" && git -c push.negotiate=false push origin main
 ```
 (fetch/rebase first if the push is rejected). Never commit .mp4 files.
