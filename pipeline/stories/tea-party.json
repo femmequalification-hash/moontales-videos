@@ -1,0 +1,632 @@
+{
+  "slug": "tea-party",
+  "story_title": "Lina and Adams and the Garden Tea Party",
+  "lesson": "Learn tea party words in English!",
+  "title": "Lina and Adams and the Garden Tea Party 🫖 | Tea Party Words in English for Kids | Moon Tales Kids",
+  "thumbnail_title": "The Tea Party",
+  "thumbnail_word": "Tea party words",
+  "thumbnail_scene": {
+    "setting": "garden",
+    "time": "sunset",
+    "weather": "sunny",
+    "props": [
+      {
+        "name": "table",
+        "x": 1700,
+        "y": 940
+      },
+      {
+        "name": "cup",
+        "x": 1700,
+        "y": 820
+      }
+    ],
+    "chars": [
+      "lina",
+      "adams",
+      "milo"
+    ]
+  },
+  "description": "Lina invites Adams to a tea party in the garden at sunset! When Milo the cat knocks the cookies down, Lina shares and the party is still wonderful. 🫖🍪🌇\nIn this English story for kids, children learn 8 new words: invite, guest, tea, cup, plate, pour, cookie and sip. Listen, repeat, and learn English with Lina, Adams and Milo the cat.\n\n📚 New words in this story:\n💌 invite — يدعو / عرض على — inviter\n🙋 guest — ضيف — l'invité\n🫖 tea — شاي / أتاي — le thé\n☕ cup — كوب / كاس — la tasse\n🍽️ plate — صحن / طبسيل — l'assiette\n🫗 pour — يصب / كبّ — verser\n🍪 cookie — بسكويت / حلوة — le biscuit\n👄 sip — رشفة / شفطة صغيرة — une petite gorgée\n\n👨‍👩‍👧 For parents: have a pretend tea party at home with toy cups and plates. Ask your child: \"Can you pour the tea?\" Remember: hot drinks are only for grown-ups to make. Pause after each new word and say it out loud. Perfect for ages 3 to 8 and for children learning English as a second language.\n\n🇲🇦 قصة باللغة الإنجليزية للأطفال لتعلم كلمات حفلة الشاي واستقبال الضيوف والمشاركة.\n🇫🇷 Une histoire en anglais pour enfants pour apprendre les mots du goûter et l'art de recevoir.\n\n🌙 Subscribe to Moon Tales Kids for a new English story every day!\n\n#EnglishForKids #KidsStories #LearnEnglish #MoonTalesKids",
+  "tags": [
+    "english stories for kids",
+    "learn english for kids",
+    "tea party story",
+    "good manners for kids",
+    "kids stories in english",
+    "Lina and Adams",
+    "Moon Tales Kids",
+    "ESL kids",
+    "قصص اطفال بالانجليزي",
+    "تعلم الانجليزية للاطفال",
+    "كلمات انجليزية للاطفال",
+    "قصص للاطفال",
+    "histoire en anglais pour enfant",
+    "apprendre l'anglais enfant",
+    "le goûter en anglais",
+    "vocabulaire anglais enfant"
+  ],
+  "scenes": [
+    {
+      "setting": "bedroom",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "milo"
+      ],
+      "props": [
+        "book",
+        {
+          "name": "heart",
+          "x": 1700,
+          "y": 600
+        }
+      ],
+      "word": "invite",
+      "lines": [
+        {
+          "text": "It is a calm afternoon. Lina is in her room with Milo the cat."
+        },
+        {
+          "who": "lina",
+          "text": "Milo, I have an idea! Let's have a tea party in the garden!"
+        },
+        {
+          "text": "Lina takes a paper and draws a big heart on it."
+        },
+        {
+          "who": "lina",
+          "text": "I will invite Adams. I will write: Please come to my tea party!"
+        },
+        {
+          "text": "To invite means to ask someone to come to your home or your party."
+        },
+        {
+          "text": "Say it with me: invite!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "milo",
+          "text": "Meow! Milo wants to come too."
+        }
+      ]
+    },
+    {
+      "setting": "street",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "flower",
+          "x": 1700,
+          "y": 950
+        }
+      ],
+      "word": "guest",
+      "lines": [
+        {
+          "text": "Lina walks to Adams's house and gives him the paper."
+        },
+        {
+          "who": "adams",
+          "text": "A tea party? For me? Thank you, Lina!"
+        },
+        {
+          "who": "lina",
+          "text": "Yes! You are my guest. Please come at six o'clock."
+        },
+        {
+          "text": "A guest is a person you invite to your home or your party."
+        },
+        {
+          "text": "Can you say it? Guest!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "adams",
+          "text": "I will be a very good guest. I will bring a flower!"
+        },
+        {
+          "text": "Adams smiles a big smile."
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "milo"
+      ],
+      "props": [
+        "table",
+        {
+          "name": "cup",
+          "x": 1650,
+          "y": 820
+        }
+      ],
+      "word": "tea",
+      "lines": [
+        {
+          "text": "In the kitchen, Mama is making mint tea."
+        },
+        {
+          "text": "The water is very hot, so only Mama touches the teapot."
+        },
+        {
+          "who": "lina",
+          "text": "Mmm! The tea smells so nice, Mama."
+        },
+        {
+          "text": "Tea is a warm drink. We make it with hot water and leaves."
+        },
+        {
+          "text": "Let's say it together: tea!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Mama says: We will let the tea cool down. Then it is just warm, not hot."
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "milo"
+      ],
+      "props": [
+        "table",
+        {
+          "name": "cup",
+          "x": 1600,
+          "y": 820
+        },
+        {
+          "name": "cup",
+          "x": 1760,
+          "y": 820
+        }
+      ],
+      "word": "cup",
+      "lines": [
+        {
+          "text": "Now Lina needs something to drink from."
+        },
+        {
+          "who": "lina",
+          "text": "One for me, one for Adams. Two little cups!"
+        },
+        {
+          "text": "Lina puts the cups on a tray, very carefully."
+        },
+        {
+          "text": "A cup is a small thing we drink from. It often has a handle."
+        },
+        {
+          "text": "Say it with me: cup!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "milo",
+          "text": "Meow? Milo looks at the cups. He wants milk!"
+        },
+        {
+          "who": "lina",
+          "text": "Don't worry, Milo. You will get a little bowl of milk."
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "milo"
+      ],
+      "props": [
+        "table",
+        {
+          "name": "apple",
+          "x": 1650,
+          "y": 840
+        },
+        {
+          "name": "circle",
+          "x": 1820,
+          "y": 840
+        }
+      ],
+      "word": "plate",
+      "lines": [
+        {
+          "who": "lina",
+          "text": "Now we need something for the food. Where are the plates?"
+        },
+        {
+          "text": "Lina finds two round, white plates."
+        },
+        {
+          "text": "A plate is a flat, round dish. We put food on a plate."
+        },
+        {
+          "text": "Can you say it? Plate!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "lina",
+          "text": "One plate for me, one plate for Adams."
+        },
+        {
+          "text": "Lina puts some apple slices on the plates too. Yummy!"
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "milo"
+      ],
+      "props": [
+        "table",
+        {
+          "name": "circle",
+          "x": 1650,
+          "y": 840
+        },
+        {
+          "name": "circle",
+          "x": 1800,
+          "y": 840
+        }
+      ],
+      "word": "cookie",
+      "lines": [
+        {
+          "text": "Mama opens the oven. Look! A tray of golden cookies!"
+        },
+        {
+          "who": "lina",
+          "text": "Cookies! They are round and sweet!"
+        },
+        {
+          "text": "A cookie is a small, sweet, flat cake. It can be soft or crunchy."
+        },
+        {
+          "text": "Say it with me: cookie!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Lina puts four cookies on each plate. One, two, three, four."
+        },
+        {
+          "who": "lina",
+          "text": "Adams will love these cookies!"
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "table",
+          "x": 1700,
+          "y": 940
+        },
+        {
+          "name": "cup",
+          "x": 1700,
+          "y": 820
+        },
+        {
+          "name": "flower",
+          "x": 300,
+          "y": 960
+        }
+      ],
+      "word": "pour",
+      "lines": [
+        {
+          "text": "Ding dong! Adams is here. He has a flower for Lina."
+        },
+        {
+          "who": "adams",
+          "text": "Hello, Lina! Thank you for inviting me."
+        },
+        {
+          "who": "lina",
+          "text": "Welcome, Adams! Please sit down."
+        },
+        {
+          "text": "The tea is warm now, not hot. Lina holds the little teapot and pours."
+        },
+        {
+          "text": "To pour means to let a drink go slowly from one thing into another."
+        },
+        {
+          "text": "Let's say it together: pour!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "lina",
+          "text": "Pour, pour, pour. Your cup is ready, Adams!"
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "table",
+          "x": 1700,
+          "y": 940
+        },
+        {
+          "name": "cup",
+          "x": 1700,
+          "y": 820
+        }
+      ],
+      "word": "sip",
+      "lines": [
+        {
+          "who": "adams",
+          "text": "Can I drink it all at once?"
+        },
+        {
+          "who": "lina",
+          "text": "No, Adams. Take a little sip. Slowly, like this."
+        },
+        {
+          "text": "Lina drinks a tiny bit of tea. Sip!"
+        },
+        {
+          "text": "A sip is a very small drink. We take a sip slowly."
+        },
+        {
+          "text": "Can you say it? Sip!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "adams",
+          "text": "Sip. Mmm! It is sweet and minty!"
+        },
+        {
+          "text": "Milo drinks his milk. Lap, lap, lap!"
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "table",
+          "x": 1700,
+          "y": 940
+        },
+        {
+          "name": "butterfly",
+          "x": 1650,
+          "y": 560
+        }
+      ],
+      "lines": [
+        {
+          "text": "Then Milo sees a butterfly. He jumps on the table!"
+        },
+        {
+          "text": "Oh no! Adams's plate falls down. The cookies land on the grass."
+        },
+        {
+          "who": "adams",
+          "text": "My cookies! Now they are dirty. I can't eat them."
+        },
+        {
+          "text": "Adams looks very sad. Milo looks sad too. Meow."
+        },
+        {
+          "who": "lina",
+          "text": "It is okay, Adams. It was an accident."
+        },
+        {
+          "who": "lina",
+          "text": "Milo did not mean it. Let's pick them up together."
+        },
+        {
+          "text": "They put the dirty cookies in the bin. Milo says sorry with a soft purr."
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "lamp",
+          "x": 1750,
+          "y": 900
+        },
+        {
+          "name": "table",
+          "x": 1500,
+          "y": 940
+        },
+        {
+          "name": "cup",
+          "x": 1500,
+          "y": 820
+        }
+      ],
+      "lines": [
+        {
+          "text": "Now the sky is dark, and the garden lamp is on."
+        },
+        {
+          "who": "lina",
+          "text": "Adams, I have four cookies. Let's share them!"
+        },
+        {
+          "who": "lina",
+          "text": "Two for you, and two for me."
+        },
+        {
+          "who": "adams",
+          "text": "Really? Thank you, Lina! You are so kind."
+        },
+        {
+          "text": "Sharing makes everybody happy. Now both friends have cookies."
+        },
+        {
+          "who": "adams",
+          "text": "I am a guest, and you are a great host!"
+        },
+        {
+          "text": "They eat the cookies and sip their tea. Crunch, crunch!"
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "lamp",
+          "x": 1750,
+          "y": 900
+        },
+        {
+          "name": "star",
+          "x": 1600,
+          "y": 300
+        }
+      ],
+      "lines": [
+        {
+          "text": "Twinkle, twinkle. The stars come out in the sky."
+        },
+        {
+          "who": "adams",
+          "text": "This was the best tea party ever!"
+        },
+        {
+          "who": "lina",
+          "text": "Next time, you can invite me to your house!"
+        },
+        {
+          "who": "adams",
+          "text": "Yes! I will invite you, and you will be my guest."
+        },
+        {
+          "text": "Milo curls up next to the lamp. Purr, purr."
+        },
+        {
+          "text": "Adams says goodbye and walks home with his dad."
+        },
+        {
+          "who": "lina",
+          "text": "Good night, Adams! See you tomorrow!"
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "milo"
+      ],
+      "props": [
+        "bed",
+        "lamp"
+      ],
+      "lines": [
+        {
+          "text": "Lina is in bed now. Milo is sleeping at her feet."
+        },
+        {
+          "who": "lina",
+          "text": "Milo, today we had tea, cookies and a good friend."
+        },
+        {
+          "who": "lina",
+          "text": "And when the cookies fell, we shared. That was the best part."
+        },
+        {
+          "text": "Lina closes her eyes. She dreams of a big tea party with all her friends."
+        },
+        {
+          "text": "Good night, Lina. Good night, Milo."
+        },
+        {
+          "text": "Sweet dreams, everyone!"
+        },
+        {
+          "pause": 1.0
+        }
+      ]
+    }
+  ]
+}

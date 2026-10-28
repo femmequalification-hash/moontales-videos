@@ -1,0 +1,616 @@
+{
+  "slug": "music-show",
+  "story_title": "Lina and Adams and the Music Show",
+  "lesson": "Learn music and action words in English!",
+  "title": "Lina and Adams and the Music Show 🎵 | Learn Music Words in English for Kids | Moon Tales Kids",
+  "thumbnail_title": "The Music Show",
+  "thumbnail_word": "Music words",
+  "thumbnail_scene": {
+    "setting": "classroom",
+    "time": "day",
+    "weather": "sunny",
+    "board": "Music Show",
+    "props": [
+      {
+        "name": "star",
+        "x": 1700,
+        "y": 600
+      },
+      {
+        "name": "balloon",
+        "x": 300,
+        "y": 700
+      }
+    ],
+    "chars": [
+      "lina",
+      "adams",
+      "milo"
+    ]
+  },
+  "description": "The class is getting ready for a music show! Adams feels a little shy, but Lina helps him, and they sing together. 🎵👏💃\nIn this English story for kids, children learn 8 new words: music, song, sing, clap, dance, jump, loud and soft. Listen, repeat, and learn English with Lina, Adams and Milo the cat.\n\n📚 New words in this story:\n🎵 music — موسيقى / الموسيقى — la musique\n🎶 song — أغنية / غنية — la chanson\n🎤 sing — يغني / غنّي — chanter\n👏 clap — يصفق / صفّق — taper des mains\n💃 dance — يرقص / شطح — danser\n🦘 jump — يقفز / نقز — sauter\n🔊 loud — بصوت عالٍ / جهير — fort\n🤫 soft — بصوت خافت / بشوية — doux\n\n👨‍👩‍👧 For parents: put on a song at home and play \"Simon says\" in English: \"clap\", \"jump\", \"dance\", \"sing loud\", \"sing soft\". Pause after each new word and say it out loud. Perfect for ages 3 to 8 and for children learning English as a second language.\n\n🇲🇦 قصة باللغة الإنجليزية للأطفال لتعلم كلمات الموسيقى والحركة: يغني، يصفق، يرقص، يقفز.\n🇫🇷 Une histoire en anglais pour enfants pour apprendre les mots de la musique : chanter, taper des mains, danser, sauter.\n\n🌙 Subscribe to Moon Tales Kids for a new English story every day!\n\n#EnglishForKids #KidsStories #LearnEnglish #MoonTalesKids",
+  "tags": [
+    "english stories for kids",
+    "learn english for kids",
+    "music words for kids",
+    "action words for kids",
+    "kids songs story",
+    "Lina and Adams",
+    "Moon Tales Kids",
+    "ESL kids",
+    "قصص اطفال بالانجليزي",
+    "تعلم الانجليزية للاطفال",
+    "الموسيقى بالانجليزي",
+    "قصص للاطفال",
+    "histoire en anglais pour enfant",
+    "apprendre l'anglais enfant",
+    "la musique en anglais",
+    "vocabulaire anglais enfant"
+  ],
+  "scenes": [
+    {
+      "setting": "classroom",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "star",
+          "x": 1750,
+          "y": 560
+        }
+      ],
+      "word": "music",
+      "board": "Music Show",
+      "lines": [
+        {
+          "text": "It is Monday morning at school. The sun is bright."
+        },
+        {
+          "text": "On the board, the teacher wrote two big words: Music Show!"
+        },
+        {
+          "who": "lina",
+          "text": "Adams, look! On Friday, our class has a music show!"
+        },
+        {
+          "who": "adams",
+          "text": "A music show? For our mums and dads?"
+        },
+        {
+          "text": "Music is the happy sound we hear in songs. We can sing it and play it."
+        },
+        {
+          "text": "Say it with me: music!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "lina",
+          "text": "I love music. It makes my feet want to move!"
+        }
+      ]
+    },
+    {
+      "setting": "classroom",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "book",
+          "x": 1650,
+          "y": 930
+        }
+      ],
+      "word": "song",
+      "board": "Our song",
+      "lines": [
+        {
+          "text": "The children must choose one song for the show."
+        },
+        {
+          "who": "lina",
+          "text": "Let's sing the song about the moon and the stars!"
+        },
+        {
+          "who": "adams",
+          "text": "Yes! I know that song. Twinkle, twinkle!"
+        },
+        {
+          "text": "A song is music with words. We sing a song with our voice."
+        },
+        {
+          "text": "Can you say it? Song!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Lina and Adams smile. They have a song for the show."
+        },
+        {
+          "who": "adams",
+          "text": "Now we must practise every day!"
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "flower",
+          "x": 1700,
+          "y": 950
+        },
+        {
+          "name": "bird",
+          "x": 300,
+          "y": 520
+        }
+      ],
+      "word": "sing",
+      "lines": [
+        {
+          "text": "After school, Lina and Adams go to the park with Milo the cat."
+        },
+        {
+          "who": "lina",
+          "text": "Let's practise our song here, under the big tree."
+        },
+        {
+          "text": "Lina opens her mouth and sings. La, la, la!"
+        },
+        {
+          "text": "Adams sings very, very quietly. He looks a little shy."
+        },
+        {
+          "text": "To sing means to make music with your voice."
+        },
+        {
+          "text": "Say it with me: sing!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "milo",
+          "text": "Meow, meow! Milo wants to sing too!"
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "flower",
+          "x": 1700,
+          "y": 950
+        }
+      ],
+      "word": "clap",
+      "lines": [
+        {
+          "who": "lina",
+          "text": "Our song needs a little beat. Let's clap our hands!"
+        },
+        {
+          "text": "Clap, clap, clap! Lina claps her hands together."
+        },
+        {
+          "who": "adams",
+          "text": "I can do it too! Clap, clap!"
+        },
+        {
+          "text": "When we clap, we hit our hands together and they make a sound."
+        },
+        {
+          "text": "Let's say it together: clap!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Can you clap your hands three times? One, two, three!"
+        },
+        {
+          "who": "milo",
+          "text": "Meow! Milo cannot clap. He has paws!"
+        }
+      ]
+    },
+    {
+      "setting": "park",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "butterfly",
+          "x": 1650,
+          "y": 600
+        },
+        {
+          "name": "flower",
+          "x": 1800,
+          "y": 960
+        }
+      ],
+      "word": "dance",
+      "lines": [
+        {
+          "text": "A little breeze moves the flowers. They look like they are moving to the music."
+        },
+        {
+          "who": "adams",
+          "text": "Look, Lina! The flowers are dancing!"
+        },
+        {
+          "who": "lina",
+          "text": "Let's dance like the flowers! Turn around and move your arms."
+        },
+        {
+          "text": "Lina and Adams turn, and turn, and wave their arms."
+        },
+        {
+          "text": "To dance means to move your body to music."
+        },
+        {
+          "text": "Say it with me: dance!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "adams",
+          "text": "Dancing is fun! I feel happy!"
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "ball",
+          "x": 1650,
+          "y": 960
+        }
+      ],
+      "word": "jump",
+      "lines": [
+        {
+          "text": "Back home in the garden, Adams has a new idea."
+        },
+        {
+          "who": "adams",
+          "text": "At the end of the song, we can jump up high!"
+        },
+        {
+          "text": "Lina bends her knees and jumps. Hop! Up into the air!"
+        },
+        {
+          "text": "To jump means to push with your legs and go up into the air."
+        },
+        {
+          "text": "Can you say it? Jump!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Milo jumps too, right over the ball. Boing!"
+        },
+        {
+          "who": "lina",
+          "text": "Ha ha! Milo is the best jumper!"
+        }
+      ]
+    },
+    {
+      "setting": "street",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "car",
+          "x": 1750,
+          "y": 940
+        }
+      ],
+      "word": "loud",
+      "lines": [
+        {
+          "text": "In the evening, they walk home on the street. The sky is orange."
+        },
+        {
+          "who": "adams",
+          "text": "I want to be brave. I will sing very loud! LA, LA, LA!"
+        },
+        {
+          "text": "Milo puts his paws on his ears. Meow!"
+        },
+        {
+          "who": "lina",
+          "text": "Oh, Adams, that is very loud! Milo's ears are small."
+        },
+        {
+          "text": "Loud means a big, strong sound that we hear very well."
+        },
+        {
+          "text": "Say it with me: loud!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "adams",
+          "text": "Oops! Sorry, Milo. Not too loud."
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "milo"
+      ],
+      "props": [
+        "bed",
+        "lamp"
+      ],
+      "word": "soft",
+      "lines": [
+        {
+          "text": "At night, Lina sits on her bed with Milo."
+        },
+        {
+          "who": "lina",
+          "text": "Shh, Milo. Now I will sing the song very soft."
+        },
+        {
+          "text": "Lina sings gently, like a little whisper. Twinkle, twinkle, little star."
+        },
+        {
+          "text": "Soft means a small, gentle sound. It is the opposite of loud."
+        },
+        {
+          "text": "Let's say it together, softly: soft."
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Milo closes his eyes. Purr, purr. He likes the soft song."
+        },
+        {
+          "who": "lina",
+          "text": "Good night, Milo. Tomorrow is the music show!"
+        }
+      ]
+    },
+    {
+      "setting": "classroom",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "balloon",
+          "x": 1700,
+          "y": 650
+        },
+        {
+          "name": "star",
+          "x": 300,
+          "y": 520
+        }
+      ],
+      "board": "Music Show",
+      "lines": [
+        {
+          "text": "Friday is here! All the mums and dads are sitting in the classroom."
+        },
+        {
+          "text": "Adams holds Lina's hand. His tummy feels funny."
+        },
+        {
+          "who": "adams",
+          "text": "Lina, I am shy. What if I forget the words?"
+        },
+        {
+          "who": "lina",
+          "text": "It is okay, Adams. We will sing together, side by side."
+        },
+        {
+          "who": "lina",
+          "text": "If you forget, just clap and smile. I am here with you."
+        },
+        {
+          "text": "Adams takes a big, slow breath. In, and out."
+        },
+        {
+          "who": "adams",
+          "text": "Okay. Together. Let's do it!"
+        }
+      ]
+    },
+    {
+      "setting": "classroom",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "balloon",
+          "x": 1700,
+          "y": 650
+        },
+        {
+          "name": "star",
+          "x": 300,
+          "y": 520
+        }
+      ],
+      "board": "Music Show",
+      "lines": [
+        {
+          "text": "The music starts. Lina and Adams sing the song."
+        },
+        {
+          "text": "They sing loud, and then they sing soft."
+        },
+        {
+          "text": "They clap their hands. Clap, clap!"
+        },
+        {
+          "text": "They dance, and turn, and wave their arms."
+        },
+        {
+          "text": "At the end, they jump up high. Hooray!"
+        },
+        {
+          "who": "adams",
+          "text": "I did it! I sang the whole song!"
+        },
+        {
+          "who": "lina",
+          "text": "You were wonderful, Adams!"
+        }
+      ]
+    },
+    {
+      "setting": "classroom",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "heart",
+          "x": 1700,
+          "y": 620
+        }
+      ],
+      "board": "Thank you!",
+      "lines": [
+        {
+          "text": "Everybody claps for Lina and Adams. Clap, clap, clap!"
+        },
+        {
+          "text": "Adams feels warm and happy inside."
+        },
+        {
+          "who": "adams",
+          "text": "Thank you for helping me, Lina. You are a good friend."
+        },
+        {
+          "who": "lina",
+          "text": "We are a team! Music is better together."
+        },
+        {
+          "text": "When a friend feels shy, we can help them with kind words."
+        },
+        {
+          "text": "Can you remember the song? Let's hum it together. Mmm, mmm."
+        },
+        {
+          "pause": 1.5
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "bird",
+          "x": 1700,
+          "y": 520
+        },
+        {
+          "name": "flower",
+          "x": 1800,
+          "y": 960
+        }
+      ],
+      "lines": [
+        {
+          "text": "In the evening, Lina, Adams and Milo sit in the garden."
+        },
+        {
+          "text": "The sun is going down. The birds are singing too."
+        },
+        {
+          "who": "adams",
+          "text": "Listen, Lina! The birds have a song too."
+        },
+        {
+          "who": "lina",
+          "text": "Everybody loves music, even the birds!"
+        },
+        {
+          "text": "Milo dances around the flowers. Meow, meow!"
+        },
+        {
+          "who": "adams",
+          "text": "Let's have another music show next week!"
+        },
+        {
+          "text": "And they all laugh together. What a happy day!"
+        }
+      ]
+    }
+  ]
+}
