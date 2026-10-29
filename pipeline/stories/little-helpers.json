@@ -1,0 +1,510 @@
+{
+  "slug": "little-helpers",
+  "story_title": "Lina and Adams the Little Helpers",
+  "lesson": "Learn helping-at-home words in English!",
+  "title": "Lina and Adams the Little Helpers 🧹 | Helping at Home Words in English for Kids | Moon Tales Kids",
+  "thumbnail_title": "Little Helpers",
+  "thumbnail_word": "Home words",
+  "thumbnail_scene": {
+    "setting": "kitchen",
+    "time": "day",
+    "weather": "sunny",
+    "props": [
+      "cup",
+      "table"
+    ],
+    "chars": [
+      "lina",
+      "adams",
+      "milo"
+    ]
+  },
+  "description": "Mama has a busy day, so Lina and Adams become little helpers! They sweep, wash the dishes and fold the laundry — and Milo the cat helps too, in his own funny way. 🧹🍽️🧺\nIn this English story for kids, children learn 8 new words: chores, broom, sweep, dishes, dry, laundry, basket and fold. Listen, repeat, and learn English with Lina, Adams and Milo the cat.\n\n📚 New words in this story:\n🏠 chores — أشغال الدار — les tâches ménagères\n🧹 broom — مكنسة / شطابة — le balai\n✨ sweep — يكنس / شطّب — balayer\n🍽️ dishes — الأواني / الماعن — la vaisselle\n🌬️ dry — ناشف / يجفف — sec / sécher\n👕 laundry — الصابون / الغسيل — le linge\n🧺 basket — سلة / قفة — le panier\n🧦 fold — يطوي — plier\n\n👨‍👩‍👧 For parents: give your child a small, safe job at home — folding small clothes or drying plastic cups — and name it in English: \"Let's fold!\" Pause after each new word and say it out loud. Perfect for ages 3 to 8 and for children learning English as a second language.\n\n🇲🇦 قصة باللغة الإنجليزية للأطفال لتعلم كلمات أشغال البيت ومساعدة العائلة.\n🇫🇷 Une histoire en anglais pour enfants pour apprendre les mots des tâches ménagères et aider à la maison.\n\n🌙 Subscribe to Moon Tales Kids for a new English story every day!\n\n#EnglishForKids #KidsStories #LearnEnglish #MoonTalesKids",
+  "tags": [
+    "english stories for kids",
+    "learn english for kids",
+    "helping at home for kids",
+    "chores for kids",
+    "kids stories in english",
+    "Lina and Adams",
+    "Moon Tales Kids",
+    "ESL kids",
+    "قصص اطفال بالانجليزي",
+    "تعلم الانجليزية للاطفال",
+    "مساعدة ماما",
+    "قصص للاطفال",
+    "histoire en anglais pour enfant",
+    "apprendre l'anglais enfant",
+    "aider à la maison en anglais",
+    "vocabulaire anglais enfant"
+  ],
+  "scenes": [
+    {
+      "setting": "kitchen",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "table",
+        "cup"
+      ],
+      "lines": [
+        {
+          "text": "It is Saturday morning. The sun comes in through the kitchen window."
+        },
+        {
+          "text": "Mama is very busy today. She has many things to do."
+        },
+        {
+          "who": "lina",
+          "text": "Adams, Mama looks a little tired."
+        },
+        {
+          "who": "adams",
+          "text": "Let's help her! We can be little helpers!"
+        },
+        {
+          "who": "lina",
+          "text": "Yes! Little helpers, here we come!"
+        },
+        {
+          "text": "Milo the cat stretches and yawns. Meow! He wants to help too."
+        },
+        {
+          "text": "Let's see what they do!"
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "table"
+      ],
+      "word": "chores",
+      "lines": [
+        {
+          "who": "lina",
+          "text": "Mama, can we help you with the chores?"
+        },
+        {
+          "who": "adams",
+          "text": "We want to do jobs in the house, like big kids!"
+        },
+        {
+          "text": "Mama smiles a big smile. Thank you, my darlings!"
+        },
+        {
+          "text": "Chores are the little jobs we do to take care of our home."
+        },
+        {
+          "text": "Say it with me: chores!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "lina",
+          "text": "We can do the chores together. Teamwork!"
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "word": "broom",
+      "lines": [
+        {
+          "text": "There are crumbs on the kitchen floor from breakfast."
+        },
+        {
+          "who": "adams",
+          "text": "I will get the broom! It is next to the door."
+        },
+        {
+          "who": "lina",
+          "text": "The broom has a long handle and soft brushy bristles."
+        },
+        {
+          "text": "A broom is a brush with a long handle for cleaning the floor."
+        },
+        {
+          "text": "Can you say it? Broom!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Milo looks at the broom. What is that big brush? Meow?"
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "word": "sweep",
+      "lines": [
+        {
+          "text": "Adams moves the broom from side to side. Swish, swish, swish!"
+        },
+        {
+          "who": "adams",
+          "text": "Look, Lina! I sweep the crumbs into a little pile."
+        },
+        {
+          "who": "lina",
+          "text": "Good job! You sweep so well!"
+        },
+        {
+          "text": "When we sweep, we move dirt across the floor with a broom."
+        },
+        {
+          "text": "Say it with me: sweep!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Milo chases the broom. Swish! Pounce! Lina and Adams laugh."
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        "cup",
+        "table"
+      ],
+      "word": "dishes",
+      "lines": [
+        {
+          "text": "Next, they look at the table. There are bowls and cups from breakfast."
+        },
+        {
+          "who": "lina",
+          "text": "Now let's help Mama with the dishes."
+        },
+        {
+          "text": "Mama washes the dishes in warm, soapy water. Bubbles, bubbles!"
+        },
+        {
+          "text": "Dishes are the plates, bowls and cups we eat and drink from."
+        },
+        {
+          "text": "Can you say it? Dishes!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "adams",
+          "text": "Mama, I can carry the plastic cups. They will not break!"
+        }
+      ]
+    },
+    {
+      "setting": "kitchen",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "cup"
+      ],
+      "word": "dry",
+      "lines": [
+        {
+          "text": "Lina takes a soft towel. Rub, rub, rub."
+        },
+        {
+          "who": "lina",
+          "text": "I will dry the cups. No more water!"
+        },
+        {
+          "who": "adams",
+          "text": "This cup is dry now. I will put it away."
+        },
+        {
+          "text": "Dry means there is no water on it."
+        },
+        {
+          "text": "Say it with me: dry!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Mama gives them a big thumbs up. Super helpers!"
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "bed"
+      ],
+      "word": "laundry",
+      "lines": [
+        {
+          "text": "Now they go to the bedroom. There is a big pile of clean clothes."
+        },
+        {
+          "who": "adams",
+          "text": "Wow! So many shirts and socks!"
+        },
+        {
+          "who": "lina",
+          "text": "This is the laundry. Mama washed it this morning."
+        },
+        {
+          "text": "Laundry is the clothes that are washed, or need washing."
+        },
+        {
+          "text": "Can you say it? Laundry!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "The clean laundry smells so fresh. Mmm, like flowers!"
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "bed"
+      ],
+      "word": "basket",
+      "lines": [
+        {
+          "text": "Adams finds something big and round next to the bed."
+        },
+        {
+          "who": "adams",
+          "text": "Here is the basket for the clothes!"
+        },
+        {
+          "who": "lina",
+          "text": "But wait! Something is inside the basket. It is moving!"
+        },
+        {
+          "text": "Peek-a-boo! It is Milo! He is sleeping in the basket. Meow!"
+        },
+        {
+          "text": "A basket is a box we use to carry and keep things."
+        },
+        {
+          "text": "Say it with me: basket!"
+        },
+        {
+          "pause": 1.8
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "bed"
+      ],
+      "word": "fold",
+      "lines": [
+        {
+          "text": "Lina picks up a shirt. She makes it small and neat."
+        },
+        {
+          "who": "lina",
+          "text": "First, the arms go in. Then, fold it in half!"
+        },
+        {
+          "who": "adams",
+          "text": "I can fold the small socks and the towels!"
+        },
+        {
+          "text": "When we fold, we bend clothes over to make them small and neat."
+        },
+        {
+          "text": "Can you say it? Fold!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "One, two, three. Soon there is a neat pile of folded clothes."
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "bed"
+      ],
+      "lines": [
+        {
+          "text": "But oh no! Milo jumps on the pile. Boing!"
+        },
+        {
+          "text": "The folded clothes fall down everywhere."
+        },
+        {
+          "who": "adams",
+          "text": "Oh, Milo! Now we must fold them again."
+        },
+        {
+          "who": "lina",
+          "text": "That's okay, Adams. Milo is only playing."
+        },
+        {
+          "who": "lina",
+          "text": "We can fold them again, together. It will be quick!"
+        },
+        {
+          "text": "And they do. Fold, fold, fold. All done!"
+        },
+        {
+          "text": "Milo sits nicely in the basket now. Sorry! Meow."
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "flower",
+        "ball"
+      ],
+      "lines": [
+        {
+          "text": "In the evening, Mama comes to see the house."
+        },
+        {
+          "text": "The floor is clean. The dishes are dry. The laundry is folded."
+        },
+        {
+          "who": "adams",
+          "text": "Surprise, Mama! We did the chores!"
+        },
+        {
+          "who": "lina",
+          "text": "We are your little helpers!"
+        },
+        {
+          "text": "Mama gives them a big hug. Thank you! I love you so much."
+        },
+        {
+          "text": "Now Mama has time to play. They play ball in the garden at sunset."
+        },
+        {
+          "text": "Helping makes everyone happy!"
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "lamp",
+        "bed"
+      ],
+      "lines": [
+        {
+          "text": "At night, Lina and Adams are ready for bed."
+        },
+        {
+          "who": "adams",
+          "text": "Today I used the broom to sweep the floor."
+        },
+        {
+          "who": "lina",
+          "text": "And I helped dry the dishes and fold the laundry."
+        },
+        {
+          "who": "adams",
+          "text": "And Milo slept in the basket!"
+        },
+        {
+          "text": "Milo is already asleep. Purr, purr."
+        },
+        {
+          "who": "lina",
+          "text": "Good night, little helpers."
+        },
+        {
+          "who": "adams",
+          "text": "Good night, everyone!"
+        }
+      ]
+    }
+  ]
+}

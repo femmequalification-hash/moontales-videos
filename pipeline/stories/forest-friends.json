@@ -1,0 +1,513 @@
+{
+  "slug": "forest-friends",
+  "story_title": "Lina and Adams and the Forest Friends",
+  "lesson": "Learn forest animal words in English!",
+  "title": "Lina and Adams and the Forest Friends 🌳 | Forest Animals in English for Kids | Moon Tales Kids",
+  "thumbnail_title": "Forest Friends",
+  "thumbnail_word": "Forest words",
+  "thumbnail_scene": {
+    "setting": "forest",
+    "time": "day",
+    "weather": "sunny",
+    "props": [
+      "bird",
+      "flower"
+    ],
+    "chars": [
+      "lina",
+      "adams",
+      "milo"
+    ]
+  },
+  "description": "Lina, Adams and Milo the cat go for a walk in the forest! They meet a rabbit, a squirrel and an owl, and they help keep the forest clean for all the animals. 🌳🐿️🦉\nIn this English story for kids, children learn 8 new words: forest, path, tree, rabbit, squirrel, nest, rubbish and owl. Listen, repeat, and learn English with Lina, Adams and Milo the cat.\n\n📚 New words in this story:\n🌲 forest — غابة — la forêt\n🥾 path — طريق صغير / ممر — le chemin\n🌳 tree — شجرة — l'arbre\n🐰 rabbit — أرنب — le lapin\n🐿️ squirrel — سنجاب — l'écureuil\n🪺 nest — عش — le nid\n🗑️ rubbish — زبل / أزبال — les déchets\n🦉 owl — بومة — le hibou\n\n👨‍👩‍👧 For parents: on your next walk, point to trees and birds and name them in English. Talk about keeping nature clean and looking at wild animals without touching them. Pause after each new word and say it out loud. Perfect for ages 3 to 8 and for children learning English as a second language.\n\n🇲🇦 قصة باللغة الإنجليزية للأطفال لتعلم أسماء حيوانات الغابة والحفاظ على نظافة الطبيعة.\n🇫🇷 Une histoire en anglais pour enfants pour apprendre les animaux de la forêt et garder la nature propre.\n\n🌙 Subscribe to Moon Tales Kids for a new English story every day!\n\n#EnglishForKids #KidsStories #LearnEnglish #MoonTalesKids",
+  "tags": [
+    "english stories for kids",
+    "learn english for kids",
+    "forest animals for kids",
+    "animal words in english",
+    "kids stories in english",
+    "Lina and Adams",
+    "Moon Tales Kids",
+    "ESL kids",
+    "قصص اطفال بالانجليزي",
+    "تعلم الانجليزية للاطفال",
+    "حيوانات الغابة بالانجليزي",
+    "قصص للاطفال",
+    "histoire en anglais pour enfant",
+    "apprendre l'anglais enfant",
+    "les animaux de la forêt en anglais",
+    "vocabulaire anglais enfant"
+  ],
+  "scenes": [
+    {
+      "setting": "garden",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "flower"
+      ],
+      "lines": [
+        {
+          "text": "It is a bright, sunny morning."
+        },
+        {
+          "text": "Lina and Adams are in the garden with Milo the cat."
+        },
+        {
+          "who": "lina",
+          "text": "Adams, today we are going on a big walk with Grandpa!"
+        },
+        {
+          "who": "adams",
+          "text": "Hooray! Where are we going?"
+        },
+        {
+          "who": "lina",
+          "text": "We are going to the forest. I am taking a bag for snacks."
+        },
+        {
+          "who": "adams",
+          "text": "And I am taking a small bag too. Just in case!"
+        },
+        {
+          "text": "Milo jumps up and down. Meow! He wants to come too."
+        }
+      ]
+    },
+    {
+      "setting": "forest",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "flower"
+      ],
+      "word": "forest",
+      "lines": [
+        {
+          "text": "Grandpa walks with them to the edge of the forest."
+        },
+        {
+          "who": "adams",
+          "text": "Wow! Look at all the green! It is so big!"
+        },
+        {
+          "who": "lina",
+          "text": "Listen! I can hear the birds singing."
+        },
+        {
+          "text": "A forest is a big place with many, many trees and animals."
+        },
+        {
+          "text": "Say it with me: forest!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Milo sniffs the air. Mmm, it smells fresh and green. Meow!"
+        }
+      ]
+    },
+    {
+      "setting": "forest",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "word": "path",
+      "lines": [
+        {
+          "text": "There is a long, thin line of soft brown ground between the trees."
+        },
+        {
+          "who": "lina",
+          "text": "Look, Adams! We can walk on this path."
+        },
+        {
+          "who": "adams",
+          "text": "Grandpa says we must stay on the path. Then we will not get lost."
+        },
+        {
+          "text": "A path is a little road for walking."
+        },
+        {
+          "text": "Can you say it? Path!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Step, step, step. Lina and Adams walk together on the path."
+        }
+      ]
+    },
+    {
+      "setting": "forest",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        {
+          "name": "bird",
+          "x": 1700,
+          "y": 600
+        }
+      ],
+      "word": "tree",
+      "lines": [
+        {
+          "text": "Next to the path, there is a very big tree."
+        },
+        {
+          "who": "adams",
+          "text": "This tree is so tall! It touches the sky!"
+        },
+        {
+          "who": "lina",
+          "text": "It has a big brown trunk and lots of green leaves."
+        },
+        {
+          "text": "A tree is a big plant with a trunk, branches and leaves."
+        },
+        {
+          "text": "Say it with me: tree!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Lina gives the tree a little hug. Hello, big tree!"
+        }
+      ]
+    },
+    {
+      "setting": "forest",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "flower"
+      ],
+      "word": "rabbit",
+      "lines": [
+        {
+          "text": "Hop, hop, hop! Something is moving in the grass."
+        },
+        {
+          "who": "lina",
+          "text": "Shh, Adams. Look! A little rabbit with long ears!"
+        },
+        {
+          "who": "adams",
+          "text": "It has a white fluffy tail. It is so cute!"
+        },
+        {
+          "text": "A rabbit is a small animal with long ears. It loves to hop."
+        },
+        {
+          "text": "Can you say it? Rabbit!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "They stand very still and quiet. Wild animals like to be left in peace."
+        }
+      ]
+    },
+    {
+      "setting": "forest",
+      "time": "day",
+      "weather": "cloudy",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "word": "squirrel",
+      "lines": [
+        {
+          "text": "Up in the branches, a little animal runs, quick, quick, quick!"
+        },
+        {
+          "who": "adams",
+          "text": "What is that? It has a big bushy tail!"
+        },
+        {
+          "who": "lina",
+          "text": "It is a squirrel! It is holding a nut in its paws."
+        },
+        {
+          "text": "A squirrel is a small animal that climbs trees and eats nuts."
+        },
+        {
+          "text": "Say it with me: squirrel!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Milo looks up at the squirrel. Meow? The squirrel just jumps away."
+        }
+      ]
+    },
+    {
+      "setting": "forest",
+      "time": "day",
+      "weather": "cloudy",
+      "chars": [
+        "lina",
+        "adams"
+      ],
+      "props": [
+        {
+          "name": "bird",
+          "x": 1650,
+          "y": 620
+        }
+      ],
+      "word": "nest",
+      "lines": [
+        {
+          "text": "High in a tree, there is a round little home made of sticks."
+        },
+        {
+          "who": "lina",
+          "text": "Look, Adams! A bird is sitting in it."
+        },
+        {
+          "who": "adams",
+          "text": "Tweet, tweet! I can hear baby birds!"
+        },
+        {
+          "text": "A nest is a home that birds make for their eggs and babies."
+        },
+        {
+          "text": "Can you say it? Nest!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "lina",
+          "text": "We will be quiet, so the baby birds can sleep."
+        }
+      ]
+    },
+    {
+      "setting": "forest",
+      "time": "day",
+      "weather": "cloudy",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "word": "rubbish",
+      "lines": [
+        {
+          "text": "But then, Adams stops. He sees something on the ground."
+        },
+        {
+          "who": "adams",
+          "text": "Oh no! Somebody left old paper and a bottle here."
+        },
+        {
+          "who": "lina",
+          "text": "That is rubbish! It is not good for the animals."
+        },
+        {
+          "text": "Rubbish is the things we do not need anymore. It goes in the bin."
+        },
+        {
+          "text": "Say it with me: rubbish!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "who": "adams",
+          "text": "Good thing I brought my small bag! Grandpa, can you help us?"
+        }
+      ]
+    },
+    {
+      "setting": "forest",
+      "time": "day",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "flower"
+      ],
+      "lines": [
+        {
+          "text": "Grandpa puts on his gloves and picks up the rubbish."
+        },
+        {
+          "text": "Lina and Adams hold the bag open wide."
+        },
+        {
+          "who": "lina",
+          "text": "Thank you, Grandpa! Now the forest is clean again."
+        },
+        {
+          "who": "adams",
+          "text": "The rabbit and the squirrel will be happy!"
+        },
+        {
+          "text": "They will put the bag in the bin at home."
+        },
+        {
+          "text": "Helping our forest is a very kind thing to do."
+        },
+        {
+          "text": "Milo purrs. Purr, purr. He is proud of his friends."
+        }
+      ]
+    },
+    {
+      "setting": "forest",
+      "time": "sunset",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "butterfly"
+      ],
+      "lines": [
+        {
+          "text": "The sky turns orange and pink. It is time to go home."
+        },
+        {
+          "who": "lina",
+          "text": "Let's walk back on the path, Adams."
+        },
+        {
+          "who": "adams",
+          "text": "Bye bye, big tree! Bye bye, little nest!"
+        },
+        {
+          "text": "A butterfly flies next to them, as if to say thank you."
+        },
+        {
+          "who": "lina",
+          "text": "The forest is so beautiful."
+        },
+        {
+          "who": "adams",
+          "text": "Let's always keep it clean!"
+        },
+        {
+          "text": "They walk slowly, holding hands, with Grandpa and Milo."
+        }
+      ]
+    },
+    {
+      "setting": "garden",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "word": "owl",
+      "lines": [
+        {
+          "text": "At home, it is night. The moon is in the sky."
+        },
+        {
+          "text": "Hoo, hoo! Hoo, hoo! What is that sound?"
+        },
+        {
+          "who": "lina",
+          "text": "Adams, look at the tree! A bird with big round eyes!"
+        },
+        {
+          "who": "adams",
+          "text": "It is an owl! Owls wake up at night."
+        },
+        {
+          "text": "An owl is a bird with big eyes. It says hoo, hoo!"
+        },
+        {
+          "text": "Can you say it? Owl!"
+        },
+        {
+          "pause": 1.8
+        },
+        {
+          "text": "Milo looks at the owl, and the owl looks at Milo. Meow! Hoo!"
+        }
+      ]
+    },
+    {
+      "setting": "bedroom",
+      "time": "night",
+      "weather": "sunny",
+      "chars": [
+        "lina",
+        "adams",
+        "milo"
+      ],
+      "props": [
+        "lamp"
+      ],
+      "lines": [
+        {
+          "text": "Lina and Adams are in bed, warm and sleepy."
+        },
+        {
+          "who": "adams",
+          "text": "Today we saw a forest, a path and a very big tree."
+        },
+        {
+          "who": "lina",
+          "text": "And a rabbit, a squirrel, a nest and an owl!"
+        },
+        {
+          "who": "adams",
+          "text": "And we picked up the rubbish to help the animals."
+        },
+        {
+          "text": "Outside the window, the owl says hoo, hoo. Good night!"
+        },
+        {
+          "who": "lina",
+          "text": "Good night, Milo. Good night, forest friends."
+        },
+        {
+          "who": "adams",
+          "text": "Good night, everyone!"
+        }
+      ]
+    }
+  ]
+}
