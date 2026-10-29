@@ -1,5 +1,7 @@
 # QuizNado daily run — 1 Ultimate Quiz (49 questions, 12+ min) + 2 Shorts + fiche
 
+> RETIRED (Oct 2026): the scheduled task now follows `RUN_QUIZNADO.md` (Easy to Impossible packs, every 3 days).
+
 Run by the daily scheduled task. Nobody is watching: do not ask questions. If one
 item fails, finish the others and say what failed at the end. Zahra publishes the
 videos herself on YouTube at **20:00 Morocco time**, so the files must reach her before then.

@@ -369,7 +369,7 @@ def build_long(p, pzs, out_dir, voice):
             f"{n} puzzles, 5 differences each. Count how many you find!\n"
             "👀 The hardest puzzle is at the start... and the answer is at the end!\n\n"
             f"💬 Share your score in the comments! Example: {int(tot * .8) + 2}/{tot} 🎉\n"
-            f"🔔 Subscribe to {CHANNEL} 🌪️ for new puzzles every week!\n\n"
+            f"🔔 Subscribe to {CHANNEL} 🌪️ for new puzzles every 3 days!\n\n"
             f"🇲🇦 {p['ar']}\n🇫🇷 {p['fr']}\n\n{p['hashtags']} #{CHANNEL}")
     write_kit(out_dir, slug, {"title": p["title"], "description": desc, "tags": p["tags"]}, False)
     print(f"done: {out} ({tl.t / 60:.1f} min)", flush=True)
@@ -394,7 +394,7 @@ def build_short(p, pzs, out_dir, voice, si):
     desc = (f"Spot the difference: can you find all 5 in {secs} seconds? 👀\n"
             "💬 Comment your score: 1/5, 3/5 or 5/5?\n"
             f"🎬 Want more? \"{p['title'].split(' |')[0]}\" is on our channel!\n"
-            f"👍 Liked it? Like & subscribe to {CHANNEL} 🌪️ for new puzzles every week!\n\n"
+            f"👍 Liked it? Like & subscribe to {CHANNEL} 🌪️ for new puzzles every 3 days!\n\n"
             f"🇲🇦 {p['ar']}\n🇫🇷 {p['fr']}\n\n#shorts {p['hashtags']} #{CHANNEL}")
     write_kit(out_dir, name, {"title": s["title"], "description": desc, "tags": p["tags"]}, True)
     print(f"short: {out} ({tl.t:.0f} s)", flush=True)
