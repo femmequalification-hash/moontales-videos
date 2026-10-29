@@ -1,27 +1,27 @@
-# Daily run — 2 new Moon Tales Kids videos + 4 Shorts
+# Run every 3 days — 1 new Moon Tales Kids video + 2 Shorts
 
-This is what the daily scheduled task does, start to finish, with no one watching.
+This is what the scheduled task (every 3 days) does, start to finish, with no one watching.
 Do not ask questions; if something fails, skip that item, finish the others, and
 report what happened at the end.
 
 ## 0. Get the code
-(Do step 3's day check first if you like: if there is no free day in the next
-10 days, stop and report — the queue is full.)
+Do step 3's day check FIRST: if the target day is more than 3 days away, stop
+quietly (no message, no notification) — the queue is already full.
 
 - Attach the repo: `add_repo(owner="femmequalification-hash", repo="moontales-videos", access="push")`,
   clone it to `/home/claude/moontales-videos` (one clone, ~10 min timeout).
 - `bash pipeline/setup.sh` (installs packages and downloads the free voice model, ~2 min).
 
-## 1. Write 2 new stories
+## 1. Write 1 new story
 - Read `pipeline/STORY_GUIDE.md` and `pipeline/stories/windy-day.json`.
-- List `pipeline/stories/*.json` and read their `story_title` and `word`s: the 2 new
-  stories must use **new topics and new words** not used before.
-- Use different settings and times of day for the 2. Write them to `pipeline/stories/<slug>.json`.
-- Validate each: JSON loads, title ≤ 100 chars, tags total < 450 chars, every `prop`
+- List `pipeline/stories/*.json` and read their `story_title` and `word`s: the new
+  story must use a **new topic and new words** not used before.
+- Use a setting / time of day different from the last stories. Write it to `pipeline/stories/<slug>.json`.
+- Validate it: JSON loads, title ≤ 100 chars, tags total < 450 chars, every `prop`
   is in the guide's list, no "rainbow" anywhere (`grep -i rainbow` must find nothing).
 
 ## 2. Build
-For each story, one after another:
+For the story:
 1. `python3 pipeline/build.py pipeline/stories/<slug>.json OUT` (OUT in the scratchpad), ~10 min.
 2. Two Shorts per story (vertical 1080x1920, 40–58 s, 2–3 new words each, different words):
    `python3 pipeline/short.py pipeline/stories/<slug>.json OUT 1` → `OUT/<slug>_short.mp4` + `_short_meta.json`
@@ -32,32 +32,30 @@ For each story, one after another:
    and look at it.
 
 ## 3. Pick the day, then the publish times (Morocco time)
-**Never post more than 2 long videos + 4 Shorts on one day.** First call Metricool
-`getScheduledPosts(brandId=7530657, fromDate=<today>T00:00:00+00:00,
-toDate=<today+10 days>T00:00:00+00:00, timezone="UTC")` and find the **first day,
-from today on, that has no long video (youtubeData.type "video") scheduled**. Use that
-day for the 6 slots below. If today already has posts, today is not free — move on.
+Owner's rule (Oct 2026): **one long video every 3 days**, and its 2 Shorts on the
+2 days after it — so the channel gets exactly ONE post per day, never more.
+Call Metricool `getScheduledPosts(brandId=7530657, fromDate=<today>T00:00:00+00:00,
+toDate=<today+14 days>T00:00:00+00:00, timezone="UTC")` and find L = the LAST day that
+already has a long video (youtubeData.type "video") scheduled.
+- Target day D = L + 3 days. If nothing is scheduled, D = tomorrow.
+- If D is more than 3 days after today, stop quietly: the queue is full.
+- D, D+1 and D+2 must have no other post; if one has, move D forward until they are free.
 
 | Morocco time | What |
 |---|---|
-| 10:00 | story 1 — long video |
-| 12:00 | story 1 — Short part 1 |
-| 15:00 | story 1 — Short part 2 |
-| 17:00 | story 2 — long video |
-| 19:00 | story 2 — Short part 1 |
-| 21:00 | story 2 — Short part 2 |
+| D at 17:00 | long video |
+| D+1 at 17:00 | Short part 1 |
+| D+2 at 17:00 | Short part 2 |
 
-If the chosen day is today and a slot is already past (or less than 15 minutes
-away), use the next free day instead.
 Morocco went back to plain GMT (= UTC) on 20 Sept 2026, but Metricool still thinks
-"Africa/Casablanca" is UTC+1. So always send times as **UTC**: Morocco 10:00 →
-`date="YYYY-MM-DDT10:00:00+00:00"` and `publicationDate.timezone="UTC"`.
+"Africa/Casablanca" is UTC+1. So always send times as **UTC**: Morocco 17:00 →
+`date="YYYY-MM-DDT17:00:00+00:00"` and `publicationDate.timezone="UTC"`.
 
 ## 4. Upload + schedule
 1. Upload all files at once:
-   `bash pipeline/upload.sh push OUT/<s1>.mp4 OUT/<s1>_thumb.jpg OUT/<s1>_short.mp4 OUT/<s1>_short2.mp4 OUT/<s2>.mp4 OUT/<s2>_thumb.jpg OUT/<s2>_short.mp4 OUT/<s2>_short2.mp4`
+   `bash pipeline/upload.sh push OUT/<s>.mp4 OUT/<s>_thumb.jpg OUT/<s>_short.mp4 OUT/<s>_short2.mp4`
    → prints one public URL per file.
-2. For each of the 6 posts call Metricool `createScheduledPost` with `blogId=7530657`,
+2. For each of the 3 posts call Metricool `createScheduledPost` with `blogId=7530657`,
    `date=<YYYY-MM-DDTHH:MM:00+00:00>`, and `info`:
 
    Long video (title/description/tags from the story JSON):
@@ -85,7 +83,7 @@ Morocco went back to plain GMT (= UTC) on 20 Sept 2026, but Metricool still thin
 4. After the last one: `bash pipeline/upload.sh clear`.
 
 ## 5. Save + report
-- Commit the 2 new story files to `main` and push (end the commit message with the
+- Commit the new story file to `main` and push (end the commit message with the
   attribution lines from the session's instructions).
 - Send the owner a short message (SendUserMessage + PushNotification if available):
-  the 2 video titles and 4 Shorts with their publish times, and anything that failed.
+  the video title and the 2 Shorts with their publish days and times, and anything that failed.
