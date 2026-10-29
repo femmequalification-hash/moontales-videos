@@ -11,9 +11,13 @@ from render import F, gradient, user_logo, tts, music, tick, ding, whoosh, ease,
 
 RED = (239, 68, 68)
 DIFF = [("EASY", (34, 197, 94)), ("MEDIUM", (234, 179, 8)), ("HARD", (249, 115, 22)), ("IMPOSSIBLE", RED)]
-LONG_LEVELS = [  # name, balls, swaps, slowest, fastest
-    ("EASY", 3, 8, 1.05, 0.75), ("MEDIUM", 3, 14, 0.9, 0.5), ("HARD", 3, 22, 0.8, 0.32),
-    ("VERY HARD", 4, 24, 0.75, 0.3), ("EXPERT", 4, 30, 0.7, 0.24), ("IMPOSSIBLE", 5, 36, 0.6, 0.19)]
+def _lv(i):
+    tier = ["EASY"] * 4 + ["MEDIUM"] * 4 + ["HARD"] * 4 + ["VERY HARD"] * 3 + ["EXPERT"] * 3 + ["IMPOSSIBLE"] * 2
+    n = 3 if i < 8 else (4 if i < 15 else 5)
+    return (tier[i], n, 10 + int(i * 1.6), round(1.1 - 0.03 * i, 2), round(max(0.19, 0.8 - 0.034 * i), 2))
+LONG_LEVELS = [_lv(i) for i in range(20)]  # name, balls, swaps, slowest, fastest  (~11 min)
+TIER_COL = {"EASY": (34, 197, 94), "MEDIUM": (234, 179, 8), "HARD": (249, 115, 22), "VERY HARD": (234, 88, 12),
+            "EXPERT": (220, 38, 38), "IMPOSSIBLE": (239, 68, 68)}
 VOICE = "af_heart"
 
 def ball_sprite(R, core, glow):
@@ -209,23 +213,23 @@ def make_short(out, level, n, nswaps, d0, d1, seed):
 def make_long(outdir, prefix, seed):
     segs = []; answers = []
     g3 = Geo(False, 3)
-    segs.append(card_seg(g3, [("CONCENTRATION TEST", 110, YELLOW), ("6 levels • faster and faster", 64, WHITE),
-                              ("Count your points: ___ / 6", 56, (221, 214, 254))],
+    segs.append(card_seg(g3, [("CONCENTRATION TEST", 110, YELLOW), (f"{len(LONG_LEVELS)} levels • faster and faster", 64, WHITE),
+                              (f"Count your points: ___ / {len(LONG_LEVELS)}", 56, (221, 214, 254))],
                          "Welcome to QuizNado! This is the ultimate concentration test. Six levels, faster and faster, "
                          "with more balls. Follow the yellow ball, and give yourself one point for every right answer. Let's go!", 3, 0.6, None))
     for i, (name, n, ns, d0, d1) in enumerate(LONG_LEVELS):
-        g = Geo(False, n); chip = f"LEVEL {i + 1} / 6 • {name}"
-        segs.append(card_seg(g, [(f"LEVEL {i + 1}", 130, YELLOW), (name, 90, DIFF[min(3, i * 4 // 6)][1] if name != "IMPOSSIBLE" else RED),
+        g = Geo(False, n); NL = len(LONG_LEVELS); chip = f"LEVEL {i + 1} / {NL} • {name}"
+        segs.append(card_seg(g, [(f"LEVEL {i + 1}", 130, YELLOW), (name, 90, TIER_COL[name]),
                                  (f"{n} balls", 60, WHITE)], f"Level {i + 1}. {name.lower()}. {n} balls.", 2.6, 0.5, chip))
         sg, ans = level_seg(g, n, ns, d0, d1, seed * 10 + i, chip, cta=False, long_mode=True)
         segs.append(sg); answers.append(ans)
-        if i in (1, 3):
+        if i in (3, 8, 13, 17):
             segs.append(card_seg(g, [("Enjoying it?", 90, WHITE), ("SUBSCRIBE & LIKE", 110, YELLOW),
                                      ("It really helps QuizNado", 52, (221, 214, 254))],
                                  "If you liked it so far, subscribe and like! It really helps QuizNado.", 3, 0.5, chip))
-    segs.append(card_seg(g3, [("What's your score?", 100, YELLOW), ("___ / 6", 130, WHITE),
+    segs.append(card_seg(g3, [("What's your score?", 100, YELLOW), (f"___ / {len(LONG_LEVELS)}", 130, WHITE),
                               ("Comment it below!", 64, (221, 214, 254))],
-                         "What is your score out of six? Write it in the comments! And subscribe to QuizNado for a new challenge every day.", 3, 1.2, None))
+                         f"What is your score out of {len(LONG_LEVELS)}? Write it in the comments! And subscribe to QuizNado for a new challenge every day.", 3, 1.2, None))
     total = render_multi(segs, outdir, prefix)
     thumbnail(f"{outdir}/{prefix}_thumbnail.jpg")
     print("long", round(total, 1), "s, answers", answers, flush=True); return answers
@@ -246,7 +250,7 @@ def thumbnail(out):
         x = 240 + i * 480; d = ImageDraw.Draw(im)
         d.rounded_rectangle([x - 205, 860, x + 205, 960], radius=50, fill=col)
         d.text((x, 910), nm, font=F(54), fill=WHITE, anchor="mm", stroke_width=3, stroke_fill=DEEP)
-    txt(im, (1650, 620), "6", 200, WHITE, 9); txt(im, (1650, 750), "LEVELS", 60, WHITE, 5)
+    txt(im, (1650, 620), str(len(LONG_LEVELS)), 200, WHITE, 9); txt(im, (1650, 750), "LEVELS", 60, WHITE, 5)
     im.convert("RGB").resize((1280, 720), Image.LANCZOS).save(out, quality=92)
 
 if __name__ == "__main__":

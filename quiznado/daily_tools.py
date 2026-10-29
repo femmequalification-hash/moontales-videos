@@ -8,6 +8,7 @@ import json, os, sys, re, datetime
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 HIST = os.path.join(HERE, "history.json")
+QPR = 7  # questions per round in the long video (7 x 7 = 49 -> ~12 min)
 ROUNDS = ["General Knowledge", "IQ Test", "English Test", "Math Speed", "Riddles", "Science Quiz", "Capitals Quiz"]
 SHORT_TOPICS = ["Brain Teasers", "Which Is Bigger", "Animals Quiz", "Odd One Out", "Spelling Test", "Food Quiz",
                 "Space Quiz", "Human Body Quiz", "Football Quiz", "Synonyms Test", "History Quiz", "Inventions Quiz",
@@ -44,7 +45,7 @@ def cmd_check(path):
     rounds = d.get("long", {}).get("rounds", [])
     if [r.get("topic") for r in rounds] != ROUNDS: errs.append(f"long.rounds topics must be exactly {ROUNDS}")
     for r in rounds:
-        if len(r.get("questions", [])) != 5: errs.append(f"round {r.get('topic')}: needs 5 questions")
+        if len(r.get("questions", [])) != QPR: errs.append(f"round {r.get('topic')}: needs {QPR} questions")
         for i, q in enumerate(r.get("questions", [])): chk_q(q, f"long/{r.get('topic')}/{i + 1}")
     if len(d.get("shorts", [])) != 2: errs.append("needs exactly 2 shorts")
     for s in d.get("shorts", []):
@@ -72,13 +73,14 @@ def desc_short(s):
 
 def desc_long(d):
     rounds = "\n".join(f"{i + 1}️⃣ {t}" for i, t in enumerate(ROUNDS))
-    return (f"Ultimate Quiz #{d['number']}: 35 brand-new questions in 7 rounds! 🧠\n"
+    nq = sum(len(r["questions"]) for r in d["long"]["rounds"])
+    return (f"Ultimate Quiz #{d['number']}: {nq} brand-new questions in 7 rounds! 🧠\n"
             "Grab a pen, count your points and see if you can beat them all.\n\n"
-            f"7 rounds:\n{rounds}\n\n👇 Comment your score out of 35!\nPlay it with your family and friends. Who gets the highest score?\n\n"
+            f"7 rounds:\n{rounds}\n\n👇 Comment your score out of {nq}!\nPlay it with your family and friends. Who gets the highest score?\n\n"
             "🔔 Subscribe to QuizNado for a new Ultimate Quiz every day at 20:00!\n\n"
-            "اختبر نفسك في 35 سؤالاً جديداً: ثقافة عامة، ذكاء، إنجليزية، رياضيات، ألغاز، علوم وعواصم 🧠\n"
+            f"اختبر نفسك في {nq} سؤالاً جديداً: ثقافة عامة، ذكاء، إنجليزية، رياضيات، ألغاز، علوم وعواصم 🧠\n"
             "اكتب نتيجتك في التعليقات واشترك في QuizNado!\n\n"
-            "35 nouvelles questions pour tester ta culture générale, ton QI et ton anglais !\n"
+            f"{nq} nouvelles questions pour tester ta culture générale, ton QI et ton anglais !\n"
             "Écris ton score en commentaire et abonne-toi à QuizNado !\n\n#quiz #trivia #iqtest #generalknowledge #QuizNado")
 
 def cmd_fiche(path, out):

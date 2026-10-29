@@ -244,9 +244,9 @@ def build(quiz_list, portrait, rounds=False):
         tl.sound(st + 0.15, a); tl.add(kind, max(min_d, len(a) / SR + 0.15 + pad), **kw); return st
     # intro
     if rounds:
-        hook = "Ultimate QuizNado Challenge: 35 questions. Can you beat them all?"
-        say("Welcome to QuizNado! 35 questions, 7 rounds. Grab a pen, count your points, and let's go!",
-            "intro", 0.6, lines=[("ULTIMATE QUIZ", 120, YELLOW), ("35 Questions • 7 Rounds", 64, WHITE),
+        NQ = sum(len(q["qs"]) for q in quiz_list); NR = len(quiz_list)
+        say(f"Welcome to QuizNado! {NQ} questions, {NR} rounds. Grab a pen, count your points, and let's go!",
+            "intro", 0.6, lines=[("ULTIMATE QUIZ", 120, YELLOW), (f"{NQ} Questions • {NR} Rounds", 64, WHITE),
                                  ("Count your score!", 54, LAV)])
     else:
         q = quiz_list[0]
@@ -276,9 +276,10 @@ def build(quiz_list, portrait, rounds=False):
             say("If you liked it so far, subscribe and like! It really helps QuizNado.", "cta", 0.5,
                 lines=[("Enjoying it?", 90, WHITE), ("SUBSCRIBE & LIKE", 110, YELLOW),
                        ("It really helps QuizNado", 52, LAV)])
-    end = ("Out of 35, what was your score? Write it in the comments! Subscribe to QuizNado for a new quiz every day."
+    NQ = sum(len(q["qs"]) for q in quiz_list)
+    end = (f"Out of {NQ}, what was your score? Write it in the comments! Subscribe to QuizNado for a new quiz every day."
            if rounds else "How many did you get right? Comment your score! And subscribe to QuizNado for a new quiz every day.")
-    say(end, "outro", 1.2, lines=[("Comment your score!", 96, YELLOW), ("___ / 35" if rounds else "___ / 5", 120, WHITE),
+    say(end, "outro", 1.2, lines=[("Comment your score!", 96, YELLOW), (f"___ / {NQ}", 120, WHITE),
                                   ("Subscribe for a new quiz every day", 54, LAV)])
     return tl
 
@@ -358,10 +359,10 @@ def thumbnail(L, title_lines, out, q=None):
     if not L.portrait: im = im.resize((1280, 720), Image.LANCZOS)
     im.save(out, quality=92)
 
-def long_thumbnail(out, number):
+def long_thumbnail(out, number, nq=35):
     im = gradient(1920, 1080); d = ImageDraw.Draw(im)
     im.alpha_composite(user_logo(250), (80, 50))
-    d.text((90, 340), "35 QUESTIONS", font=F(140), fill=YELLOW, stroke_width=8, stroke_fill=DEEP)
+    d.text((90, 340), f"{nq} QUESTIONS", font=F(140), fill=YELLOW, stroke_width=8, stroke_fill=DEEP)
     d.text((95, 560), "Only 1% get", font=F(110), fill=WHITE, stroke_width=6, stroke_fill=DEEP)
     d.text((95, 700), "them all!", font=F(110), fill=WHITE, stroke_width=6, stroke_fill=DEEP)
     d.rounded_rectangle([90, 880, 720, 980], radius=50, fill=WHITE)
@@ -393,7 +394,7 @@ if __name__ == "__main__":
     if which in ("long", "all"):
         out = f"{outdir}/{date}_QuizNado_Ultimate_Quiz_{n}.mp4"
         d = render(build([to_quiz(r) for r in day["long"]["rounds"]], False, rounds=True), Layout(False), out)
-        loudnorm(out); long_thumbnail(f"{outdir}/{date}_QuizNado_Ultimate_Quiz_{n}_thumbnail.jpg", n)
+        loudnorm(out); long_thumbnail(f"{outdir}/{date}_QuizNado_Ultimate_Quiz_{n}_thumbnail.jpg", n, sum(len(r["questions"]) for r in day["long"]["rounds"]))
         print("long", round(d, 1), flush=True)
     for i, sh in enumerate(day["shorts"], 1):
         if which not in ("all", f"short{i}"): continue

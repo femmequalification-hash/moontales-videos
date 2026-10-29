@@ -1,4 +1,4 @@
-# QuizNado daily run — 1 Ultimate Quiz (35 questions) + 2 Shorts + fiche
+# QuizNado daily run — 1 Ultimate Quiz (49 questions, 12+ min) + 2 Shorts + fiche
 
 Run by the daily scheduled task. Nobody is watching: do not ask questions. If one
 item fails, finish the others and say what failed at the end. Zahra publishes the
@@ -24,8 +24,9 @@ python3 daily_tools.py next     # (date = today in Morocco, = UTC) prints today'
 Copy the structure of `days/EXAMPLE.json` exactly.
 - `number` and `date` from `daily_tools.py next`.
 - `long.rounds`: the same 7 rounds in the same order (General Knowledge, IQ Test, English
-  Test, Math Speed, Riddles, Science Quiz, Capitals Quiz), 5 questions each.
-  Mix difficulty inside each round: 2 easy, 2 medium, 1 hard (the last one).
+  Test, Math Speed, Riddles, Science Quiz, Capitals Quiz), **7 questions each** (49 in total, so the
+  video is longer than 10 minutes — EXAMPLE.json shows only 5 per round: write 7).
+  Mix difficulty inside each round: 3 easy, 3 medium, 1 hard (the last one).
 - `shorts`: 2 Shorts, use the 2 suggested topics, 5 questions each, a hook ≤ 34 chars
   ("Only geniuses get #5!", "Most people miss #3!"), a catchy title ending in `#shorts`,
   a one-line `first_line` for the description, short `extra_tags` mixing **English, Arabic and French**.
@@ -40,7 +41,7 @@ Copy the structure of `days/EXAMPLE.json` exactly.
 python3 daily_tools.py check days/<DATE>.json     # must print OK; fix and re-run until OK
 ```
 
-## 3. Render (long ~16–20 min, Shorts ~3 min each) — run in parallel
+## 3. Render (long ~25–30 min, Shorts ~3 min each) — run in parallel
 ```
 OUT=<scratchpad>/out
 python3 render.py days/<DATE>.json $OUT long   &
