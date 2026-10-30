@@ -1,0 +1,10 @@
+{
+ "runs": [
+  {
+   "date": "2026-11-01",
+   "theme": "Concentration Test",
+   "slug": "concentration-test-16-levels",
+   "note": "made by hand in chat (concentration.py long, seed 1101); Shorts on 2 and 3 Nov"
+  }
+ ]
+}

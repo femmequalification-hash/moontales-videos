@@ -12,10 +12,11 @@ from render import F, gradient, user_logo, tts, music, tick, ding, whoosh, ease,
 RED = (239, 68, 68)
 DIFF = [("EASY", (34, 197, 94)), ("MEDIUM", (234, 179, 8)), ("HARD", (249, 115, 22)), ("IMPOSSIBLE", RED)]
 def _lv(i):
-    tier = ["EASY"] * 4 + ["MEDIUM"] * 4 + ["HARD"] * 4 + ["VERY HARD"] * 3 + ["EXPERT"] * 3 + ["IMPOSSIBLE"] * 2
-    n = 3 if i < 8 else (4 if i < 15 else 5)
-    return (tier[i], n, 10 + int(i * 1.6), round(1.1 - 0.03 * i, 2), round(max(0.19, 0.8 - 0.034 * i), 2))
-LONG_LEVELS = [_lv(i) for i in range(20)]  # name, balls, swaps, slowest, fastest  (~11 min)
+    # 16 levels, 4 per tier (Easy to Impossible, like the channel's best videos), ~9 min
+    tier = ["EASY"] * 4 + ["MEDIUM"] * 4 + ["HARD"] * 4 + ["IMPOSSIBLE"] * 4
+    n = 3 if i < 6 else (4 if i < 12 else 5)
+    return (tier[i], n, 13 + int(i * 2.2), round(1.05 - 0.035 * i, 2), round(max(0.19, 0.78 - 0.04 * i), 2))
+LONG_LEVELS = [_lv(i) for i in range(16)]  # name, balls, swaps, slowest, fastest
 TIER_COL = {"EASY": (34, 197, 94), "MEDIUM": (234, 179, 8), "HARD": (249, 115, 22), "VERY HARD": (234, 88, 12),
             "EXPERT": (220, 38, 38), "IMPOSSIBLE": (239, 68, 68)}
 VOICE = "af_heart"
@@ -48,7 +49,7 @@ def background(g, chip_text):
     if g.portrait:
         bg.alpha_composite(user_logo(200), ((W - 200) // 2, 145))
         bg.alpha_composite(user_logo(110, alpha=0.5), ((W - 110) // 2, H - 310))
-        d.text((W // 2, H - 180), "@QuizNado • New quiz every day", font=F(30), fill=(221, 214, 254), anchor="mm")
+        d.text((W // 2, H - 180), "@QuizNado • Easy to Impossible", font=F(30), fill=(221, 214, 254), anchor="mm")
     else:
         bg.alpha_composite(user_logo(135), (35, 22))
         bg.alpha_composite(user_logo(80, alpha=0.5), (W - 120, H - 120))
@@ -200,36 +201,53 @@ def render(segs, g, out):
     os.replace(tmp, out); return total
 
 def make_short(out, level, n, nswaps, d0, d1, seed):
-    g = Geo(True, n); chip = f"CONCENTRATION TEST • LEVEL {level}"
-    intro = card_seg(g, [("What is your level", 82, WHITE), ("of concentration?", 82, WHITE),
-                         (f"{n} balls • Level {level}", 64, YELLOW)],
-                     f"What is your level of concentration? Level {level.lower()}, with {n} balls. Follow the yellow ball!", 3.2, 0.3, chip)
-    lv, ans = level_seg(g, n, nswaps, d0, d1, seed, chip)
+    g = Geo(True, n); chip = f"CONCENTRATION TEST • {level}"
+    lv, ans = level_seg(g, n, nswaps, d0, d1, seed, chip,
+                        intro_voice=f"Only one percent can follow the yellow ball at level {level.lower()}. Can you?")
     outro = card_seg(g, [("Comment your level!", 84, YELLOW), ("EASY • HARD • IMPOSSIBLE", 54, WHITE),
-                         ("Subscribe for", 70, WHITE), ("a new test every day", 70, WHITE)],
-                     "Comment your level, and subscribe to QuizNado for a new test every day!", 3.0, 0.8, chip)
-    d = render([intro, lv, outro], g, out); print("short", level, round(d, 1), "s, answer", ans, flush=True); return ans
+                         ("Full test with 16 levels", 62, WHITE), ("on our channel!", 62, WHITE)],
+                     "Comment your level! The full test, with sixteen levels, is on our channel. Subscribe to QuizNado!", 3.0, 0.8, chip)
+    d = render([lv, outro], g, out); print("short", level, round(d, 1), "s, answer", ans, flush=True); return ans
+
+def teaser_seg(g, n, ns, d0, d1, seed, chip, NL):
+    """Hook: the first frames already move — 5 s of the LAST level's real shuffle, no answer."""
+    full, _ = level_seg(g, n, ns, d0, d1, seed, chip, cta=False, long_mode=True)
+    T0, D = 3.0, 5.5  # level_seg shows the target for 3 s, then shuffles
+    snd = [(at - T0, a) for at, a in full.sounds if T0 + 0.25 <= at < T0 + D - 0.4 and len(a) < SR]
+    say(snd, 0.1, f"This is level {NL}. Only one percent can follow it. Can you get this far?")
+    def draw(im, t):
+        full.draw(im, T0 + t)
+        txt(im, (g.W / 2, g.title_y), f"LEVEL {NL} • IMPOSSIBLE", 72, RED)
+        txt(im, (g.W / 2, g.note_y + 150), "Can you get this far?", 60, YELLOW)
+    return Seg(D, draw, snd, chip)
 
 def make_long(outdir, prefix, seed):
-    segs = []; answers = []
+    segs = []; answers = []; NL = len(LONG_LEVELS)
     g3 = Geo(False, 3)
-    segs.append(card_seg(g3, [("CONCENTRATION TEST", 110, YELLOW), (f"{len(LONG_LEVELS)} levels • faster and faster", 64, WHITE),
-                              (f"Count your points: ___ / {len(LONG_LEVELS)}", 56, (221, 214, 254))],
-                         "Welcome to QuizNado! This is the ultimate concentration test. Six levels, faster and faster, "
-                         "with more balls. Follow the yellow ball, and give yourself one point for every right answer. Let's go!", 3, 0.6, None))
+    last = LONG_LEVELS[-1]
+    segs.append(teaser_seg(Geo(False, last[1]), last[1], last[2], last[3], last[4], seed * 10 + NL - 1,
+                           f"LEVEL {NL} / {NL} • IMPOSSIBLE", NL))
+    segs.append(card_seg(g3, [("CONCENTRATION TEST", 110, YELLOW), (f"{NL} levels • Easy to Impossible", 64, WHITE),
+                              (f"Count your points: ___ / {NL}", 56, (221, 214, 254))],
+                         f"{NL} levels, from easy to impossible. One point for every right answer. Let's go!", 2.5, 0.3, None))
     for i, (name, n, ns, d0, d1) in enumerate(LONG_LEVELS):
-        g = Geo(False, n); NL = len(LONG_LEVELS); chip = f"LEVEL {i + 1} / {NL} • {name}"
-        segs.append(card_seg(g, [(f"LEVEL {i + 1}", 130, YELLOW), (name, 90, TIER_COL[name]),
-                                 (f"{n} balls", 60, WHITE)], f"Level {i + 1}. {name.lower()}. {n} balls.", 2.6, 0.5, chip))
-        sg, ans = level_seg(g, n, ns, d0, d1, seed * 10 + i, chip, cta=False, long_mode=True)
+        g = Geo(False, n); chip = f"LEVEL {i + 1} / {NL} • {name}"
+        if i % 4 == 0:
+            segs.append(card_seg(g, [(f"LEVEL {i + 1}", 130, YELLOW), (name, 90, TIER_COL[name]),
+                                     (f"{n} balls", 60, WHITE)], f"Level {i + 1}. {name.lower()}. {n} balls.", 2.2, 0.3, chip))
+            vo = None
+        else:
+            vo = f"Level {i + 1}."
+        sg, ans = level_seg(g, n, ns, d0, d1, seed * 10 + i, chip, cta=False, long_mode=True,
+                            intro_voice=vo, ask_count=5)
         segs.append(sg); answers.append(ans)
-        if i in (3, 8, 13, 17):
+        if i in (3, 9):
             segs.append(card_seg(g, [("Enjoying it?", 90, WHITE), ("SUBSCRIBE & LIKE", 110, YELLOW),
                                      ("It really helps QuizNado", 52, (221, 214, 254))],
-                                 "If you liked it so far, subscribe and like! It really helps QuizNado.", 3, 0.5, chip))
-    segs.append(card_seg(g3, [("What's your score?", 100, YELLOW), (f"___ / {len(LONG_LEVELS)}", 130, WHITE),
+                                 "Enjoying it? Subscribe and like! It really helps QuizNado.", 2.5, 0.3, chip))
+    segs.append(card_seg(g3, [("What's your score?", 100, YELLOW), (f"___ / {NL}", 130, WHITE),
                               ("Comment it below!", 64, (221, 214, 254))],
-                         f"What is your score out of {len(LONG_LEVELS)}? Write it in the comments! And subscribe to QuizNado for a new challenge every day.", 3, 1.2, None))
+                         f"What is your score out of {NL}? Write it in the comments, and subscribe to QuizNado for new tests every week!", 3, 1.2, None))
     total = render_multi(segs, outdir, prefix)
     thumbnail(f"{outdir}/{prefix}_thumbnail.jpg")
     print("long", round(total, 1), "s, answers", answers, flush=True); return answers
