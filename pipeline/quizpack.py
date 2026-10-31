@@ -1,9 +1,10 @@
 """"Easy to Impossible" quiz packs in the channel's purple quiz design.
 
-One pack (quizpacks/<slug>.json) = 1 long video (32 questions, 4 levels) + 2 vertical Shorts
-(4 questions each, one per level). Every Short ends by sending viewers to the full test.
+One pack (quizpacks/<slug>.json) = 1 long video (32 questions, 4 levels) + 1 vertical teaser Short:
+2 hard questions with answers, then the long video's IMPOSSIBLE question WITHOUT answer, ending on
+"Want the answer? Watch the full video" with the long video's thumbnail (Zahra's rule, Oct 2026).
 
-Usage:  python3 quizpack.py quizpacks/<slug>.json OUT_DIR [long|shorts|all|preview]
+Usage:  python3 quizpack.py quizpacks/<slug>.json OUT_DIR [long|short|all|preview]
 
 Pack JSON: name, header, noun, read_options, title, about, thumb{top, card[]}, ar, fr, hashtags,
 tags[], levels[4][8] of [shown, options, answer, why, (spoken)], shorts[{picks[[level, index]], title}],
@@ -222,7 +223,7 @@ SETTINGS = ("SETTINGS:\n- Audience: No, it's not made for kids (quiz for teens a
 def write_kit(out_dir, name, meta, short):
     meta = dict(meta, tags=list(dict.fromkeys(meta["tags"])))
     extra = ("- Cover: in the YouTube app choose the FIRST frame (the question without the answer)\n"
-             "- Related video: choose the full test (long video) so viewers can tap to it\n" if short else
+             "- Related video: choose the full video (long video) so viewers can tap to it and find the answer\n" if short else
              f"- Thumbnail: {name}_thumb.jpg\n- Pinned comment: What's your score out of 32? 👇 "
              "I reply to everyone!\n")
     text = (f"=== {'YOUTUBE SHORT' if short else 'YOUTUBE VIDEO'}: {name}.mp4 ===\n\n"
@@ -315,7 +316,66 @@ def build_long(pack, out_dir, voice):
     print(f"done: {out} ({tl.t / 60:.1f} min)", flush=True)
 
 
-# ---------------------------------------------------------------- shorts
+# ---------------------------------------------------------------- teaser Short (the only Short)
+def teaser_end(thumb_path, video_name, more_lines=None):
+    """Vertical end card: the long video's thumbnail + 'Want the answer? Watch the full video' + subscribe & like."""
+    img = card("Want the answer?", ["Watch the full video", f"\"{video_name}\"", "on our channel!",
+                                     "!Subscribe & like!"] + (more_lines or []), vertical=True)
+    c = Image.new("RGBA", img.size); c.paste(img)
+    th = Image.open(thumb_path).convert("RGB"); tw = 960
+    th = th.resize((tw, int(tw * th.height / th.width)), Image.LANCZOS)
+    x, y = 60, 225
+    shadow = Image.new("RGBA", (tw + 20, th.height + 20), (0, 0, 0, 70)); c.alpha_composite(shadow, (x - 4, y + 6))
+    frame_ = Image.new("RGBA", (tw + 16, th.height + 16), (255, 255, 255, 255)); c.alpha_composite(frame_, (x - 8, y - 8))
+    c.paste(th, (x, y))
+    from PIL import ImageDraw
+    d = ImageDraw.Draw(c); cx, cy, r = x + tw - 80, y + th.height - 70, 52
+    d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=(226, 59, 59)); d.polygon([(cx - 16, cy - 27), (cx - 16, cy + 27), (cx + 29, cy)], fill="white")
+    return c.convert("RGB")
+
+
+def build_teaser(pack, out_dir, voice):
+    p, nq, slug = pack.p, pack.nq, pack.slug
+    t = p.get("teaser") or {"picks": [p["shorts"][0]["picks"][2], p["shorts"][0]["picks"][3]],
+                            "title": p["shorts"][0]["title"]}
+    last = (3, len(p["levels"][3]) - 1)
+    picks = [tuple(x) for x in t["picks"]][:2] + [last]
+    name = f"{slug}_short"
+    thumb = os.path.join(out_dir, slug + "_thumb.jpg")
+    if not os.path.exists(thumb):
+        thumbnail(pack, thumb)
+    work = os.path.join(out_dir, "work_" + name)
+    os.makedirs(work, exist_ok=True)
+    tl = Timeline(work, voice)
+    qs = [pack.q[k] for k in picks]
+    hook = frame(qs[0]["key"], "ask", None, True, "3 HARD questions", level=pill(picks[0][0]),
+                 note="Only 1% get the last one!")
+    d = tl.say("Three hard questions. Only one percent get the last one!")
+    tl.show(hook, d + 0.3)
+    for i, (q, (li, _)) in enumerate(zip(qs[:2], picks[:2]), 1):
+        ask_question(tl, q, True, p["header"], i, 3, pill(li), None, f"Number {i}. " + q["spoken"])
+    # the impossible one: countdown, NO answer
+    q = qs[2]; key = q["key"]; foot = "The answer is in the full video!"
+    d = tl.say("Number 3, the impossible one! " + q["spoken"])
+    tl.show(frame(key, "ask", None, True, p["header"], 3, 3, foot, level=pill(3)), d + 0.4)
+    for s_ in range(quiz.THINK, 0, -1):
+        tl.add_sound(quiz.TICK, tl.t)
+        tl.show(frame(key, "ask", s_, True, p["header"], 3, 3, foot, level=pill(3)), 1.0)
+    vname = p["title"].split(" |")[0].split(":")[0]
+    d = tl.say(f"Want the answer? It's in the full video, {vname}, on our channel. Subscribe and like!")
+    tl.show(teaser_end(thumb, vname), d + 1.2)
+    out = os.path.join(out_dir, name + ".mp4")
+    tl.render(out, music_vol=0.07, vertical=True)
+    desc = (f"{p['header']}: 3 hard questions! 🧠 Only 1% get the last one...\n"
+            f"👉 The answer to number 3 is in the full video \"{p['title'].split(' |')[0]}\" on our channel!\n"
+            "💬 Comment your answer first, then go check it!\n"
+            "👍 Like & subscribe to QuizNado 🌪️ for new challenges every week!\n\n"
+            f"🇲🇦 {p['ar']}\n🇫🇷 {p['fr']}\n\n#shorts {p['hashtags']} #QuizNado")
+    write_kit(out_dir, name, {"title": t["title"], "description": desc, "tags": ["QuizNado"] + p["tags"]}, True)
+    print(f"short: {out} ({tl.t:.0f} s)", flush=True)
+
+
+# ---------------------------------------------------------------- old 2-Short format (not used any more)
 def build_short(pack, out_dir, voice, si):
     p, nq = pack.p, pack.nq
     s = p["shorts"][si]
@@ -370,11 +430,12 @@ if __name__ == "__main__":
         card("Score?", ["Comment your score!", "Want the full test?", "32 words", "on our channel!",
                         "!Like & subscribe!"], vertical=True).save(os.path.join(out_dir, f"{pack.slug}_pv_end.png"))
         thumbnail(pack, os.path.join(out_dir, f"{pack.slug}_thumb.jpg"))
+        teaser_end(os.path.join(out_dir, f"{pack.slug}_thumb.jpg"), pack.p["title"].split(" |")[0].split(":")[0]).save(
+            os.path.join(out_dir, f"{pack.slug}_pv_teaser_end.png"))
         sys.exit()
     tts = os.environ.get("MT_TTS_DIR", os.path.join(os.path.dirname(os.path.abspath(__file__)), "tts"))
     v = build.Voice(tts)
-    if what in ("shorts", "all"):
-        for i in range(len(pack.p["shorts"])):
-            build_short(pack, out_dir, v, i)
     if what in ("long", "all"):
         build_long(pack, out_dir, v)
+    if what in ("short", "shorts", "all"):
+        build_teaser(pack, out_dir, v)

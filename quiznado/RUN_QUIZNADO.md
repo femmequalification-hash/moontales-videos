@@ -1,9 +1,13 @@
-# QuizNado run — every 3 days: 1 "Easy to Impossible" video + 2 Shorts + fiche
+# QuizNado run — every 3 days: 1 "Easy to Impossible" video + 1 teaser Short + fiche
 
 Run by the scheduled task every 3 days. Nobody is watching: do not ask questions. If one item
 fails, finish the others and say what failed at the end. Zahra publishes **by hand** on YouTube
-(no Metricool, no scheduling tool): long video today at 20:00, Short 1 tomorrow at 20:00,
-Short 2 the day after at 20:00 (Morocco time). Files must reach her before 20:00 today.
+(no Metricool, no scheduling tool): long video today at 20:00, the Short tomorrow at 20:00,
+nothing on the 3rd day (Morocco time). Files must reach her before 20:00 today.
+
+**Only ONE Short per set** (her rule, 31 Oct 2026: posting a lot hurts views): the teaser Short =
+2 hard questions WITH answers, then the long video's IMPOSSIBLE last question WITHOUT answer, ending
+on "Want the answer? Watch the full video" with the long video's thumbnail + subscribe & like.
 
 Why this format (her YouTube Studio, Oct 2026): "Easy to Impossible" English tests (plurals,
 spelling, common mistakes, mental math, opposites, past tense) and Spot the Difference keep viewers
@@ -33,8 +37,9 @@ same kind of title/thumb/tags, same `spoken_cycle` / `read_options` / `math` set
   are 100 % sure of (standard British/American spelling both accepted only if the pack says so),
   question ≤ 60 chars, options ≤ 26, `why` ≤ 60 (a short, clear explanation).
 - ALL questions must be NEW: `check` refuses anything used in any earlier pack.
-- `shorts`: exactly 2, each 4 picks `[[0,i],[1,j],[2,k],[3,l]]`, all 8 picks different, never
-  `[3,7]`; catchy titles ending in `#shorts`.
+- `teaser`: `{"picks": [[2,i],[3,j]], "title": "... #shorts"}` = one HARD and one IMPOSSIBLE question
+  (index 0–6, never `[3,7]`: that one is shown unanswered at the end of the Short). No `shorts` field.
+  Title idea: `Only 1% Get The Last One 🧠 Answer In The Full Video! #shorts`.
 - `tags`: 12–16, mixing **English, Arabic and French**; `ar` and `fr` lines. Never "rainbow".
 ```
 python3 pack_tools.py check ../pipeline/quizpacks/<slug>.json   # fix until it prints OK
@@ -55,16 +60,20 @@ python3 quizpack.py quizpacks/<slug>.json $OUT preview   # (spot: spotdiff.py sp
 ```
 Look at the preview PNGs and the thumbnail (text fits, answers right, no rainbow), then:
 ```
-python3 quizpack.py quizpacks/<slug>.json $OUT shorts & python3 quizpack.py quizpacks/<slug>.json $OUT long & wait
+python3 quizpack.py quizpacks/<slug>.json $OUT long   # makes the thumbnail too
+python3 quizpack.py quizpacks/<slug>.json $OUT short  # the teaser Short (uses the thumbnail)
+# spot: python3 spotdiff.py spotpacks/<slug>.json $OUT long  then  ... $OUT short
 cd ../quiznado && python3 pack_tools.py fiche <slug> $OUT
 ```
-Check one frame of each video (`ffmpeg -ss 20 -i FILE -frames:v 1 check.png`, look at it).
+Check one frame of each video (`ffmpeg -ss 20 -i FILE -frames:v 1 check.png`, look at it), and the
+last frame of the Short (the end card with the thumbnail).
 
 ## 4. Deliver
 SendUserFile (status proactive, display attach): `<slug>.mp4`, `<slug>_thumb.jpg`,
-`<slug>_short1.mp4`, `<slug>_short2.mp4` and the fiche `.txt`. Then a short SendUserMessage +
+`<slug>_short.mp4` and the fiche `.txt`. Then a short SendUserMessage +
 PushNotification: "QuizNado ready — publish today at 20:00!" with the 3 titles and the plan
-(long today, Short 1 tomorrow, Short 2 the day after, all 20:00).
+(long video today 20:00, the Short tomorrow 20:00; in YouTube Studio set the Short's
+"Related video" = the long video).
 
 ## 5. Save
 ```

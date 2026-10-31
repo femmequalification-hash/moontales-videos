@@ -375,6 +375,41 @@ def build_long(p, pzs, out_dir, voice):
     print(f"done: {out} ({tl.t / 60:.1f} min)", flush=True)
 
 
+def build_teaser(p, pzs, out_dir, voice):
+    """The only Short: one hard puzzle with its answer, then the long video's IMPOSSIBLE puzzle WITHOUT answer."""
+    from quizpack import teaser_end
+    t = p.get("teaser") or {"puzzle": p["shorts"][-1]["puzzle"], "title": p["shorts"][-1]["title"]}
+    pz, last = pzs[t["puzzle"]], pzs[-1]
+    name = f"{p['slug']}_short"
+    thumb = os.path.join(out_dir, p["slug"] + "_thumb.jpg")
+    if not os.path.exists(thumb):
+        thumbnail(p, pzs, thumb)
+    work = os.path.join(out_dir, "work_" + name)
+    os.makedirs(work, exist_ok=True)
+    tl = Timeline(work, voice)
+    d = tl.say("Two hard puzzles. Only one percent find all five differences in the last one!")
+    tl.show(sd_frame(pz, True, "2 HARD puzzles", None, None, None, 0, "Only 1% solve the last one!"), d + 0.2)
+    play(tl, pz, True, "Spot the difference", 1, 2, "Puzzle one. Go!", None, 15)
+    secs = 15; foot = "The answer is in the full video!"
+    d = tl.say(f"Puzzle two, the impossible one! Find five differences in {secs} seconds. Go!")
+    tl.show(sd_frame(last, True, "Spot the difference", 2, 2, None, 0, f"{secs} seconds... GO!", foot), d + 0.3)
+    for s_ in range(secs, 0, -1):
+        tl.add_sound(quiz.TICK * (1.0 if s_ <= 5 else 0.45), tl.t)
+        tl.show(sd_frame(last, True, "Spot the difference", 2, 2, s_, 0, None, foot, secs), 1.0)
+    vname = p["title"].split(" |")[0].split(":")[0]
+    d = tl.say(f"Want the answer? It's in the full video, {vname}, on our channel. Subscribe and like!")
+    tl.show(teaser_end(thumb, vname), d + 1.2)
+    out = os.path.join(out_dir, name + ".mp4")
+    tl.render(out, music_vol=0.07, vertical=True)
+    desc = ("Spot the difference: 2 hard puzzles! 👀 Only 1% solve the last one...\n"
+            f"👉 The answer is in the full video \"{p['title'].split(' |')[0]}\" on our channel!\n"
+            "💬 How many did you find? Comment, then go check!\n"
+            f"👍 Like & subscribe to {CHANNEL} 🌪️ for new challenges every week!\n\n"
+            f"🇲🇦 {p['ar']}\n🇫🇷 {p['fr']}\n\n#shorts {p['hashtags']} #{CHANNEL}")
+    write_kit(out_dir, name, {"title": t["title"], "description": desc, "tags": p["tags"]}, True)
+    print(f"short: {out} ({tl.t:.0f} s)", flush=True)
+
+
 def build_short(p, pzs, out_dir, voice, si):
     s = p["shorts"][si]
     pz = pzs[s["puzzle"]]
@@ -416,8 +451,7 @@ if __name__ == "__main__":
         sys.exit()
     tts = os.environ.get("MT_TTS_DIR", os.path.join(os.path.dirname(os.path.abspath(__file__)), "tts"))
     v = build.Voice(tts)
-    if what in ("shorts", "all"):
-        for i in range(len(p.get("shorts", []))):
-            build_short(p, pzs, out_dir, v, i)
     if what in ("long", "all"):
         build_long(p, pzs, out_dir, v)
+    if what in ("short", "shorts", "all"):
+        build_teaser(p, pzs, out_dir, v)

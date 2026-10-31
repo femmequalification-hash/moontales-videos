@@ -97,7 +97,7 @@ def cmd_check(path):
     p = json.load(open(path))
     errs = []
     for f in ("slug", "name", "header", "noun", "title", "about", "thumb", "ar", "fr", "hashtags", "tags", "levels",
-              "shorts"):
+              "teaser"):
         if f not in p:
             errs.append(f"missing field {f}")
     if errs:
@@ -130,21 +130,13 @@ def cmd_check(path):
             if qkey(p, it) in seen:
                 errs.append(f"{w}: repeated in this pack: {shown}")
             seen.add(qkey(p, it))
-    sh = p["shorts"]
-    if len(sh) != 2:
-        errs.append("needs exactly 2 shorts")
-    picks = [tuple(x) for s in sh for x in s.get("picks", [])]
-    for s in sh:
-        if [x[0] for x in s.get("picks", [])] != [0, 1, 2, 3]:
-            errs.append("each short needs 4 picks, one per level in order [0,i],[1,i],[2,i],[3,i]")
-        if not s.get("title", "").endswith("#shorts") or len(s["title"]) > 100:
-            errs.append(f"short title must end with #shorts and be ≤ 100 chars: {s.get('title')}")
-    if len(set(picks)) != len(picks):
-        errs.append("the 2 shorts must use different questions")
-    if any(x[1] > 7 for x in picks):
-        errs.append("pick index must be 0-7")
-    if (3, 7) in picks:
-        errs.append("do not use [3,7] in a Short: it is the long video's teaser question")
+    t = p["teaser"]; picks = [tuple(x) for x in t.get("picks", [])]
+    if len(picks) != 2 or [x[0] for x in picks] != [2, 3]:
+        errs.append('teaser needs 2 picks: one HARD and one IMPOSSIBLE question, [[2,i],[3,j]]')
+    if any(not 0 <= x[1] <= 6 for x in picks):
+        errs.append("teaser pick index must be 0-6 (index 7 of level 4 is the unanswered last question)")
+    if not t.get("title", "").endswith("#shorts") or len(t.get("title", "")) > 100:
+        errs.append(f"teaser title must end with #shorts and be ≤ 100 chars: {t.get('title')}")
     if len(p["title"]) > 100:
         errs.append("title > 100 chars")
     tags = ["QuizNado"] + p["tags"]
@@ -174,8 +166,7 @@ def cmd_spotmeta(raw, slug, number):
         "tags": ["spot the difference", "find the difference", "spot 5 differences", "picture puzzle", "brain games",
                  "visual puzzle", "easy to impossible", f"spot the difference {n}", "QuizNado", "ابحث عن الاختلاف",
                  "أوجد الفرق", "ألغاز الصور", "trouve les différences", "jeu des 7 erreurs", "jeu des différences"],
-        "shorts": [{"puzzle": 1, "title": f"Can You Find 5 Differences? 👀 Spot the Difference {n} #shorts"},
-                   {"puzzle": 7, "title": "Only Geniuses Find All 5 Differences 🤯 #shorts"}],
+        "teaser": {"puzzle": 6, "title": "Only 1% Solve The Last One 👀 Answer In The Full Video! #shorts"},
     })
     if "rainbow" in json.dumps(d).lower():
         print("no rainbow allowed"); sys.exit(1)
@@ -186,12 +177,14 @@ def cmd_spotmeta(raw, slug, number):
 
 def cmd_fiche(slug, out):
     date = datetime.date.today()
-    names = [slug, slug + "_short1", slug + "_short2"]
-    days = [date + datetime.timedelta(days=i) for i in range(3)]
+    names = [slug, slug + "_short"]
+    days = [date + datetime.timedelta(days=i) for i in range(2)]
     parts = [f"QUIZNADO — {date.isoformat()} — publish by hand on YouTube at 20:00 (Morocco time)", "=" * 60,
              "PLAN (one post per day):"]
-    for nm, dd, what in zip(names, days, ["Long video + thumbnail", "Short 1", "Short 2"]):
+    for nm, dd, what in zip(names, days, ["Long video + thumbnail", "Short (teaser)"]):
         parts.append(f"  {dd.strftime('%a %d %b')} 20:00 — {what}: {nm}.mp4")
+    parts.append("  (nothing on the 3rd day: the next set comes then)")
+    parts.append("SHORT: in YouTube Studio set 'Related video' = the long video, so viewers tap to it for the answer.")
     parts.append("=" * 60)
     for nm in names:
         p = os.path.join(out, nm + ".txt")
