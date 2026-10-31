@@ -102,7 +102,8 @@ def card_seg(g, lines, voice_text, min_dur=2.5, pad=0.6, chip=None):
         else: im.alpha_composite(lay)
     return Seg(max(min_dur, d), draw, snd, chip)
 
-def level_seg(g, n, nswaps, d0, d1, seed, chip, *, intro_voice=None, cta=True, long_mode=False, ask_count=5):
+def level_seg(g, n, nswaps, d0, d1, seed, chip, *, intro_voice=None, cta=True, long_mode=False, ask_count=5,
+              reveal=True, note=None):
     """show target -> shuffle with bar -> ask + countdown -> reveal."""
     rnd = random.Random(seed); snd = []; R = g.R; sw = R * 2
     tgt = ball_sprite(R, (250, 204, 21), (250, 204, 21)); std = ball_sprite(R, (236, 233, 254), (167, 139, 250))
@@ -140,9 +141,12 @@ def level_seg(g, n, nswaps, d0, d1, seed, chip, *, intro_voice=None, cta=True, l
             sl[ba], sl[bb] = b, a
         return {ball: (g.slots[sl[ball]], g.BY) for ball in range(n)}
     final = positions(1e9)[start]; final_slot = g.slots.index(final[0])
-    snd.append((t_rev, ding()))
-    rv = say(snd, t_rev + 0.3, f"It was number {final_slot + 1}!" + (" One point if you got it!" if long_mode else " Did you get it right?"))
-    total = t_rev + max(3.0, rv + 0.9)
+    if reveal:
+        snd.append((t_rev, ding()))
+        rv = say(snd, t_rev + 0.3, f"It was number {final_slot + 1}!" + (" One point if you got it!" if long_mode else " Did you get it right?"))
+        total = t_rev + max(3.0, rv + 0.9)
+    else:
+        total = t_rev
     def draw(im, t):
         pos = positions(t)
         for ball in range(n):
@@ -165,7 +169,7 @@ def level_seg(g, n, nswaps, d0, d1, seed, chip, *, intro_voice=None, cta=True, l
                 txt(im, (g.slots[k], g.BY - g.num_off), str(k + 1), 140 if win else 100, YELLOW if win else WHITE, 7)
             if t < t_rev:
                 txt(im, (g.W / 2, g.title_y), "Where is the yellow ball?", 64, YELLOW)
-                txt(im, (g.W / 2, g.note_y), "Write down your answer!" if long_mode else f"Comment {nums}!", 56, WHITE)
+                txt(im, (g.W / 2, g.note_y), note or ("Write down your answer!" if long_mode else f"Comment {nums}!"), 56, WHITE)
                 if t >= t_ask + 1.4:
                     c = max(1, ask_count - int(t - t_ask - 1.4)); r = 70 if not g.portrait else 85
                     d = ImageDraw.Draw(im); d.ellipse([g.W / 2 - r, g.count_y - r, g.W / 2 + r, g.count_y + r], fill=WHITE)
@@ -252,6 +256,42 @@ def make_long(outdir, prefix, seed):
     thumbnail(f"{outdir}/{prefix}_thumbnail.jpg")
     print("long", round(total, 1), "s, answers", answers, flush=True); return answers
 
+def make_teaser(out, long_seed, long_thumb, level_index=None, levels=None):
+    """The ONE Short: an EXPERT level with its answer, then the long video's last level WITHOUT answer,
+    ending on the long video's thumbnail ("Want the answer? Watch the full video")."""
+    from render import shadowed
+    LV = levels or LONG_LEVELS
+    li = len(LV) - 1 if level_index is None else level_index
+    name, n, ns, d0, d1 = LV[li]; NL = len(LV)
+    g4, gn = Geo(True, 4), Geo(True, n)
+    chip1 = "CONCENTRATION TEST • EXPERT"; chip2 = f"LEVEL {li + 1} / {NL} • {name}"
+    segs = [card_seg(g4, [("Only 1% reach", 86, WHITE), (f"level {li + 1}!", 96, YELLOW), ("Follow the yellow ball", 60, WHITE)],
+                     f"Only one percent of people reach level {li + 1}! Follow the yellow ball.", 2.6, 0.2, chip1)]
+    s1, a1 = level_seg(g4, 4, 18, 0.7, 0.3, long_seed * 7 + 1, chip1, cta=False, ask_count=3)
+    s2, a2 = level_seg(gn, n, ns, d0, d1, long_seed * 10 + li, chip2, cta=False, ask_count=4, reveal=False,
+                       intro_voice=f"Now, level {li + 1}. {name.lower()}! Keep your eyes on the yellow ball.",
+                       note="Answer in the full video!")
+    segs += [s1, s2]
+    th = Image.open(long_thumb).convert("RGB")
+    snd = []; d = say(snd, 0.2, f"Want the answer? Watch the full concentration test, level {li + 1}, on the QuizNado channel. "
+                                "Subscribe and like!") + 0.9
+    def draw(im, t):
+        e = ease(t / 0.4); lay = Image.new("RGBA", (gn.W, gn.H), (0, 0, 0, 0))
+        txt(lay, (gn.W / 2, 560), "Want the answer?", 86, YELLOW, 7); txt(lay, (gn.W / 2, 665), "Watch the full video", 70, WHITE, 6)
+        tw = 940; t2 = th.resize((tw, int(tw * th.height / th.width)), Image.LANCZOS)
+        shadowed(lay, (70, 740, 70 + tw, 740 + t2.height), 24, WHITE, blur=16, off=10, alpha=110)
+        m = Image.new("L", t2.size, 0); ImageDraw.Draw(m).rounded_rectangle([0, 0, t2.width - 1, t2.height - 1], radius=24, fill=255)
+        lay.paste(t2, (70, 740), m); dd = ImageDraw.Draw(lay); cx, cy = 70 + tw - 70, 740 + t2.height - 55
+        dd.ellipse([cx - 48, cy - 48, cx + 48, cy + 48], fill=RED); dd.polygon([(cx - 15, cy - 24), (cx - 15, cy + 24), (cx + 26, cy)], fill=WHITE)
+        y = 740 + t2.height + 75; txt(lay, (gn.W / 2, y), f"Concentration Test • Level {li + 1}", 50, WHITE, 5)
+        dd = ImageDraw.Draw(lay); dd.rounded_rectangle([190, y + 70, 890, y + 175], radius=52, fill=RED)
+        dd.text((gn.W / 2, y + 122), "SUBSCRIBE & LIKE", font=F(60), fill=WHITE, anchor="mm")
+        if e < 1: lay.putalpha(lay.getchannel("A").point(lambda a: int(a * e)))
+        im.alpha_composite(lay)
+    segs.append(Seg(max(5.5, d), draw, snd, "QuizNado"))
+    total = render(segs, gn, out)
+    print("teaser", round(total, 1), "s; answer 1 =", a1, "; level", li + 1, "=", a2, flush=True)
+
 def render_multi(segs, outdir, prefix):
     # all segments are landscape 1920x1080; Geo only changes ball layout, background is the same size
     g = Geo(False, 3); return render(segs, g, f"{outdir}/{prefix}.mp4")
@@ -278,5 +318,13 @@ if __name__ == "__main__":
         make_short(out, level, int(n), int(ns), float(d0), float(d1), int(seed))
     elif mode == "long":
         make_long(sys.argv[2], sys.argv[3], int(sys.argv[4]))
+    elif mode == "teaser":
+        # optional 5th arg "v20" = the 20-level video made on 29 Oct 2026 (seed 30)
+        lv20 = None
+        if len(sys.argv) > 5 and sys.argv[5] == "v20":
+            t20 = ["EASY"] * 4 + ["MEDIUM"] * 4 + ["HARD"] * 4 + ["VERY HARD"] * 3 + ["EXPERT"] * 3 + ["IMPOSSIBLE"] * 2
+            lv20 = [(t20[i], 3 if i < 8 else (4 if i < 15 else 5), 10 + int(i * 1.6), round(1.1 - 0.03 * i, 2),
+                     round(max(0.19, 0.8 - 0.034 * i), 2)) for i in range(20)]
+        make_teaser(sys.argv[2], int(sys.argv[3]), sys.argv[4], levels=lv20)
     elif mode == "thumb":
         thumbnail(sys.argv[2])
