@@ -187,17 +187,21 @@ def card(g, lines, voice, min_dur=2.6, pad=0.6, chip=None):
         else: im.alpha_composite(lay)
     return Seg(max(min_dur, d), draw, lambda t: "s" if t >= 0.35 else None, snd, chip)
 
-def puzzle_seg(g, pz, chip, *, think=15, intro=None, short=False):
+def puzzle_seg(g, pz, chip, *, think=15, intro=None, short=False, reveal=True, hold=4.5, q_text=None):
     snd = []; pops = [0.3, 0.85, 1.4, 1.95]
     for p_ in pops: snd.append((p_, whoosh() * 0.6))
     vd = say(snd, 0.2, intro or "Find the missing weight!")
     t_opts = max(2.6, vd + 0.4); t_think = t_opts + 0.3
     for s in range(think): snd.append((t_think + s, tick() * (1.5 if s >= think - 3 else 1)))
-    t_rev = t_think + think; snd.append((t_rev, ding()))
-    names = ", ".join(f"{a} {v}" for a, v in zip(pz["trio"], pz["vals"]))
-    rv = say(snd, t_rev + 0.3, f"The answer is {'ABC'[pz['correct']]}: {pz['answer']} kilograms! {names}.")
-    total = t_rev + max(4.5, rv + 1.2)
-    q_text = "Comment your answer!" if short else "What is the missing weight?"
+    t_rev = t_think + think; t_end = t_rev
+    if reveal:
+        snd.append((t_rev, ding()))
+        names = ", ".join(f"{a} {v}" for a, v in zip(pz["trio"], pz["vals"]))
+        rv = say(snd, t_rev + 0.3, f"The answer is {'ABC'[pz['correct']]}: {pz['answer']} kilograms! {names}.")
+        total = t_rev + max(hold, rv + 1.0)
+    else:
+        total = t_rev; t_rev = 1e9
+    q_text = q_text or ("Comment your answer!" if short else "What is the missing weight?")
     def draw(im, t):
         rev = t >= t_rev
         for k in range(4):
@@ -209,7 +213,7 @@ def puzzle_seg(g, pz, chip, *, think=15, intro=None, short=False):
             txt(im, g.q_xy, "Here is the answer!" if rev else q_text, 58 if g.portrait else 50, WHITE if rev else YELLOW)
             options(im, g, pz, rev)
             if not rev and t >= t_think:
-                left = t_rev - t; bar(im, g, left / think, max(1, math.ceil(left)))
+                left = max(0.0, t_end - t); bar(im, g, left / think, max(1, math.ceil(left)))
             if rev: explanation(im, g, pz)
         if rev and t - t_rev < 0.25:
             im.alpha_composite(Image.new("RGBA", (g.W, g.H), (255, 255, 255, int(80 * (1 - (t - t_rev) / 0.25)))))
@@ -217,7 +221,7 @@ def puzzle_seg(g, pz, chip, *, think=15, intro=None, short=False):
         if t < 2.35 or (t_rev <= t < t_rev + 0.25): return None
         if t < t_opts: return "a"
         if t < t_think: return "b"
-        if t < t_rev: return ("c", int((t - t_think) * 10))
+        if t < min(t_rev, t_end): return ("c", int((t - t_think) * 10))
         return "r"
     return Seg(total, draw, key, snd, chip)
 
@@ -281,6 +285,42 @@ def make_short(out, typ, seed, trio):
     total = render(segs, g, out); json.dump(pz, open(out + ".answer.json", "w"))
     print("short", lvl, round(total, 1), "s answer", pz["answer"], flush=True)
 
+def make_teaser(out, long_thumb, seed=90):
+    """One Short: 2 hard puzzles with answers + Level 24 of the long video WITHOUT answer -> go watch the full video."""
+    g = Geo(True); rnd = random.Random(seed)
+    p1 = make_puzzle(["cat", "sheep", "horse"], 4, rnd); p2 = make_puzzle(["chicken", "dog", "cow"], 5, rnd)
+    r = random.Random(41); p3 = [make_puzzle(t, ty, r) for t, ty, _ in LONG_PLAN][-1]   # = Level 24 of the long video
+    N = len(LONG_PLAN)
+    segs = [card(g, [("3 HARD puzzles", 92, WHITE), ("Only 1% solve", 80, WHITE), ("the last one!", 80, YELLOW)],
+                 "Three hard weight puzzles. Only one percent can solve the last one!", 2.4, 0.2, "WEIGHT PUZZLE • 1 / 3"),
+            puzzle_seg(g, p1, "WEIGHT PUZZLE • 1 / 3", think=6, hold=3.6, intro="Puzzle one. Find the missing weight!"),
+            puzzle_seg(g, p2, "WEIGHT PUZZLE • 2 / 3", think=6, hold=3.6, intro="Puzzle two. Harder!"),
+            puzzle_seg(g, p3, f"LEVEL {N} • IMPOSSIBLE", think=6, reveal=False, q_text="Can you solve it?",
+                       intro=f"And now, level {N}. The impossible one!")]
+    th = Image.open(long_thumb).convert("RGBA")
+    snd = []; d = say(snd, 0.2, f"Want the answer? Watch the full video, Find the missing weight, level {N}, "
+                                "on the QuizNado channel. Subscribe and like!") + 0.8
+    def draw(im, t):
+        e = ease(t / 0.4); lay = Image.new("RGBA", (g.W, g.H), (0, 0, 0, 0))
+        txt(lay, (g.W / 2, 560), "Want the answer?", 86, YELLOW, 7)
+        txt(lay, (g.W / 2, 665), "Watch the full video", 70, WHITE, 6)
+        tw = 940; t2 = th.resize((tw, int(tw * th.height / th.width)), Image.LANCZOS)
+        shadowed(lay, (70, 740, 70 + tw, 740 + t2.height), 24, WHITE, blur=16, off=10, alpha=110)
+        m = Image.new("L", t2.size, 0); ImageDraw.Draw(m).rounded_rectangle([0, 0, t2.width - 1, t2.height - 1], radius=24, fill=255)
+        lay.paste(t2, (70, 740), m)
+        dd = ImageDraw.Draw(lay); cx, cy = 70 + tw - 70, 740 + t2.height - 55   # play button
+        dd.ellipse([cx - 48, cy - 48, cx + 48, cy + 48], fill=RED); dd.polygon([(cx - 15, cy - 24), (cx - 15, cy + 24), (cx + 26, cy)], fill=WHITE)
+        y = 740 + t2.height + 75
+        txt(lay, (g.W / 2, y), f"Find the Missing Weight • Level {N}", 50, WHITE, 5)
+        dd = ImageDraw.Draw(lay); dd.rounded_rectangle([190, y + 70, 890, y + 175], radius=52, fill=RED)
+        dd.text((g.W / 2, y + 122), "SUBSCRIBE & LIKE", font=F(60), fill=WHITE, anchor="mm")
+        if e < 1: lay.putalpha(lay.getchannel("A").point(lambda a: int(a * e)))
+        im.alpha_composite(lay)
+    segs.append(Seg(max(5.5, d), draw, lambda t: "s" if t >= 0.4 else None, snd, "QuizNado"))
+    total = render(segs, g, out)
+    json.dump({"p1": p1, "p2": p2, "p3": p3}, open(out + ".answer.json", "w"))
+    print("teaser", round(total, 1), "s; answers", p1["answer"], p2["answer"], "(level", N, "=", p3["answer"], ")", flush=True)
+
 def thumbnail(out, rnd, n):
     g = Geo(False); im = gradient(1920, 1080)
     im.alpha_composite(user_logo(200), (60, 40))
@@ -295,6 +335,7 @@ def thumbnail(out, rnd, n):
 if __name__ == "__main__":
     if sys.argv[1] == "long": make_long(sys.argv[2], sys.argv[3], int(sys.argv[4]))
     elif sys.argv[1] == "short": make_short(sys.argv[2], int(sys.argv[3]), int(sys.argv[4]), sys.argv[5].split(","))
+    elif sys.argv[1] == "teaser": make_teaser(sys.argv[2], sys.argv[3])
     elif sys.argv[1] == "frames":
         # preview: python3 weights.py frames OUT_DIR
         o = sys.argv[2]; rnd = random.Random(5)
