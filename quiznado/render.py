@@ -164,7 +164,7 @@ class Layout:
         wm = user_logo(110 if portrait else 70, alpha=0.5)
         self.bg.alpha_composite(wm, ((self.W - wm.width) // 2, self.H - (310 if portrait else 125)))
         d = ImageDraw.Draw(self.bg)
-        d.text((self.W // 2, self.H - (180 if portrait else 40)), "@QuizNado • New quiz every day",
+        d.text((self.W // 2, self.H - (180 if portrait else 40)), "@QuizNado • New quizzes every week",
                font=F(30 if portrait else 24, "SemiBold"), fill=(221, 214, 254), anchor="mm")
 
     def question_layer(self, num, total, q, opts, state, topic):
@@ -271,16 +271,16 @@ def build(quiz_list, portrait, rounds=False):
             if (not rounds and qi == 2):
                 say("If you liked it so far, subscribe and like!", "cta", 0.4,
                     lines=[("Enjoying it?", 90, WHITE), ("SUBSCRIBE & LIKE", 100, YELLOW),
-                           ("New quiz every day", 52, LAV)])
+                           ("New quizzes every week", 52, LAV)])
         if rounds and ri in (1, 4):
             say("If you liked it so far, subscribe and like! It really helps QuizNado.", "cta", 0.5,
                 lines=[("Enjoying it?", 90, WHITE), ("SUBSCRIBE & LIKE", 110, YELLOW),
                        ("It really helps QuizNado", 52, LAV)])
     NQ = sum(len(q["qs"]) for q in quiz_list)
-    end = (f"Out of {NQ}, what was your score? Write it in the comments! Subscribe to QuizNado for a new quiz every day."
-           if rounds else "How many did you get right? Comment your score! And subscribe to QuizNado for a new quiz every day.")
+    end = (f"Out of {NQ}, what was your score? Write it in the comments! Subscribe to QuizNado on YouTube for new quizzes every week."
+           if rounds else "How many did you get right? Comment your score! And subscribe to QuizNado on YouTube for new quizzes every week.")
     say(end, "outro", 1.2, lines=[("Comment your score!", 96, YELLOW), (f"___ / {NQ}", 120, WHITE),
-                                  ("Subscribe for a new quiz every day", 54, LAV)])
+                                  ("Subscribe for new quizzes every week", 54, LAV)])
     return tl
 
 # ---------------- render ----------------

@@ -5,6 +5,12 @@
    "theme": "Concentration Test",
    "slug": "concentration-test-16-levels",
    "note": "made by hand in chat (concentration.py long, seed 1101); Shorts on 2 and 3 Nov"
+  },
+  {
+   "date": "2026-11-04",
+   "theme": "Weight Puzzle",
+   "slug": "weight-puzzle-24-levels",
+   "note": "made by hand in chat (weights.py long, seed 41; Shorts seeds 77 and 90); Shorts on 5 and 6 Nov"
   }
  ]
 }

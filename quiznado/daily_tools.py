@@ -67,8 +67,8 @@ def cmd_check(path):
 
 def desc_short(s):
     return (f"{s['first_line']}\n\n👇 Comment your score! How many did you get right?\n\n"
-            "🔔 Subscribe to QuizNado for a new quiz every day: general knowledge, IQ tests, English tests, riddles and more!\n\n"
-            "اشترك في QuizNado لتحصل على اختبار جديد كل يوم 🧠\nAbonne-toi à QuizNado pour un nouveau quiz chaque jour !\n\n"
+            "🔔 Subscribe to QuizNado on YouTube for new quizzes every week: general knowledge, IQ tests, English tests, riddles and more!\n\n"
+            "اشترك في قناة QuizNado على يوتيوب لتحصل على اختبارات جديدة كل أسبوع 🧠\nAbonne-toi à la chaîne YouTube QuizNado pour de nouveaux quiz chaque semaine !\n\n"
             "#quiz #trivia #QuizNado #shorts")
 
 def desc_long(d):
@@ -77,7 +77,7 @@ def desc_long(d):
     return (f"Ultimate Quiz #{d['number']}: {nq} brand-new questions in 7 rounds! 🧠\n"
             "Grab a pen, count your points and see if you can beat them all.\n\n"
             f"7 rounds:\n{rounds}\n\n👇 Comment your score out of {nq}!\nPlay it with your family and friends. Who gets the highest score?\n\n"
-            "🔔 Subscribe to QuizNado for a new Ultimate Quiz every day at 20:00!\n\n"
+            "🔔 Subscribe to QuizNado on YouTube for new challenges every week!\n\n"
             f"اختبر نفسك في {nq} سؤالاً جديداً: ثقافة عامة، ذكاء، إنجليزية، رياضيات، ألغاز، علوم وعواصم 🧠\n"
             "اكتب نتيجتك في التعليقات واشترك في QuizNado!\n\n"
             f"{nq} nouvelles questions pour tester ta culture générale, ton QI et ton anglais !\n"

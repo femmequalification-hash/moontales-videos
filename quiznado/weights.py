@@ -247,11 +247,16 @@ def render(segs, g, out):
 
 def make_long(outdir, prefix, seed):
     rnd = random.Random(seed); g = Geo(False); N = len(LONG_PLAN); segs = []; ans = []
+    plan = list(LONG_PLAN)
+    if seed != 41:  # new episodes: shuffle the animal trios inside each difficulty tier
+        for tier in range(len(TIERS)):
+            idx = [i for i, p in enumerate(plan) if p[2] == tier]; trios = [plan[i][0] for i in idx]; rnd.shuffle(trios)
+            for i, tr in zip(idx, trios): plan[i] = (tr, plan[i][1], plan[i][2])
     segs.append(card(g, [("FIND THE MISSING WEIGHT", 100, YELLOW), (f"{N} levels • easy to impossible", 62, WHITE),
                          (f"Count your points: ___ / {N}", 54, SOFT)],
                      f"Welcome to QuizNado! {N} weight puzzles, from easy to impossible. Look at the scales, "
                      "find the missing weight, and count your points. Let's go!"))
-    for i, (trio, typ, tier) in enumerate(LONG_PLAN):
+    for i, (trio, typ, tier) in enumerate(plan):
         pz = make_puzzle(trio, typ, rnd); name, col = TIERS[tier]; chip = f"LEVEL {i + 1} / {N} • {name}"
         segs.append(card(g, [(f"LEVEL {i + 1}", 120, YELLOW), (name, 84, col)], f"Level {i + 1}. {name.lower()}.", 2.0, 0.3, chip))
         segs.append(puzzle_seg(g, pz, chip)); ans.append({"level": i + 1, "tier": name, **pz})
