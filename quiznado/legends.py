@@ -135,7 +135,7 @@ def legend_seg(g, L, num, total, rnd, think=8, reveal=True, chip=None, note=None
             spoken = c[2:].strip() if ord(c[0]) > 0x1F000 else c
             t += Wt.say(snd, t, f"Clue {i + 1}. {spoken.replace('–', ' to ')}.") + 0.5
         t_opts = t; t_think = t_opts + 0.4
-    for s in range(think): snd.append((t_think + s, tick() * (1.5 if s >= think - 3 else 1)))
+    for s in range(int(think)): snd.append((t_think + s, tick() * (1.5 if s >= think - 3 else 1)))
     t_rev = t_think + think; t_end = t_rev
     if reveal:
         snd.append((t_rev, ding()))
