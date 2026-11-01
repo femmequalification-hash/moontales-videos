@@ -54,6 +54,15 @@ class LG:  # landscape geometry (compatible with weights.background/card/render/
     q_y = 215; clues = [(830, 270 + i * 118, 1860, 270 + i * 118 + 100) for i in range(3)]
     opts = [(830 + i * 352, 650, 830 + i * 352 + 330, 760) for i in range(3)]
     timer = (930, 815, 1860, 848); count = (870, 831, 48)
+    qx = 1345; fact_xy = (1345, 905); jw, jh = 560, 640; label_dy = 75
+
+class LGP:  # portrait geometry for the teaser Short
+    portrait = True; W, H = 1080, 1920; chip_y = 405
+    jersey_box = (250, 455, 830, 1010)
+    q_y = 1060; clues = [(40, 1100 + i * 100, 1040, 1100 + i * 100 + 86) for i in range(3)]
+    opts = [(30 + i * 345, 1405, 30 + i * 345 + 330, 1510) for i in range(3)]
+    timer = (180, 1560, 1000, 1592); count = (95, 1576, 50)
+    qx = 540; fact_xy = (540, 1640); jw, jh = 400, 457; label_dy = 50
 
 def jersey(w, h, kit, name, number, mystery=False):
     S = 2; W, H = w * S, h * S
@@ -109,10 +118,10 @@ def options(im, g, opts, correct, reveal):
             w = t.split(); t = " ".join(w[-2:]) if w[-2].lower() in ("van", "de", "da") else w[-1]
         d.text((tx, cy), t, font=fit_font(d, t, bx1 - tx - 16, 38), fill=WHITE if ok else DEEP, anchor="lm")
 
-def legend_seg(g, L, num, total, rnd, think=8):
+def legend_seg(g, L, num, total, rnd, think=8, reveal=True, chip=None, note=None):
     name, shirt, number, kit, clues, wrongs, tier, fact = L
     opts = [name] + wrongs; rnd.shuffle(opts); correct = opts.index(name)
-    chip = f"LEGEND {num} / {total} • {TIERS[tier][0]}"; snd = []
+    chip = chip or f"LEGEND {num} / {total} • {TIERS[tier][0]}"; snd = []
     t = 0.3; starts = []
     for i, c in enumerate(clues):
         starts.append(t); snd.append((t, Wt.whoosh() * 0.5))
@@ -120,26 +129,30 @@ def legend_seg(g, L, num, total, rnd, think=8):
         t += Wt.say(snd, t, f"Clue {i + 1}. {spoken.replace('–', ' to ')}.") + 0.5
     t_opts = t; t_think = t_opts + 0.4
     for s in range(think): snd.append((t_think + s, tick() * (1.5 if s >= think - 3 else 1)))
-    t_rev = t_think + think; snd.append((t_rev, ding()))
-    rv = Wt.say(snd, t_rev + 0.3, f"It's {'ABC'[correct]}: {name}! {fact}.")
-    total_d = t_rev + max(4.0, rv + 1.0)
-    jm = jersey(560, 640, kit, shirt, number, True); jr = jersey(560, 640, kit, shirt, number, False)
+    t_rev = t_think + think; t_end = t_rev
+    if reveal:
+        snd.append((t_rev, ding()))
+        rv = Wt.say(snd, t_rev + 0.3, f"It's {'ABC'[correct]}: {name}! {fact}.")
+        total_d = t_rev + max(4.0, rv + 1.0)
+    else:
+        total_d = t_rev; t_rev = 1e9
+    jm = jersey(g.jw, g.jh, kit, shirt, number, True); jr = jersey(g.jw, g.jh, kit, shirt, number, False)
     def draw(im, t):
         rev = t >= t_rev; x0, y0, x1, y1 = g.jersey_box
         overlay_rect(im, g.jersey_box, 40, (255, 255, 255, 26))
         j = jr if rev else jm
         if rev and t - t_rev < 0.35:
             p = ease((t - t_rev) / 0.35); j = Image.blend(jm, jr, p)
-        im.alpha_composite(j, (int((x0 + x1) / 2 - 280), int(y0 + 30)))
+        im.alpha_composite(j, (int((x0 + x1) / 2 - g.jw / 2), int(y0 + 20)))
         lab = name if rev else "Who is this legend?"
-        txt(im, ((x0 + x1) / 2, y1 - 75), lab, 54 if rev else 46, YELLOW if rev else WHITE, 6)
-        txt(im, (1345, g.q_y), "Here is the answer!" if rev else "Guess the football legend!", 48, WHITE if rev else YELLOW, 6)
+        txt(im, ((x0 + x1) / 2, y1 - g.label_dy), lab, 54 if rev else 46, YELLOW if rev else WHITE, 6)
+        txt(im, (g.qx, g.q_y), "Here is the answer!" if rev else (note if (note and t >= t_opts) else "Guess the football legend!"), 48, WHITE if rev else YELLOW, 6)
         for i in range(3): clue_card(im, g.clues[i], i, clues[i], min(1, max(0, (t - starts[i]) / 0.35)))
         if t >= t_opts:
             options(im, g, opts, correct, rev)
             if not rev and t >= t_think:
-                left = t_rev - t; bar(im, g, left / think, max(1, math.ceil(left)))
-            if rev: txt(im, (1345, 905), fact, 46, WHITE, 5)
+                left = max(0.0, t_end - t); bar(im, g, left / think, max(1, math.ceil(left)))
+            if rev: txt(im, g.fact_xy, fact, 46, WHITE, 5)
         if rev and t - t_rev < 0.25:
             im.alpha_composite(Image.new("RGBA", (g.W, g.H), (255, 255, 255, int(80 * (1 - (t - t_rev) / 0.25)))))
     def key(t):
@@ -148,7 +161,7 @@ def legend_seg(g, L, num, total, rnd, think=8):
         if t_rev <= t < t_rev + 0.36: return None
         if t < t_opts: return ("clues", sum(t >= s for s in starts))
         if t < t_think: return "o"
-        if t < t_rev: return ("c", int((t - t_think) * 10))
+        if t < min(t_rev, t_end): return ("c", int((t - t_think) * 10))
         return "r"
     return Seg(total_d, draw, key, snd, chip), "ABC"[correct]
 
@@ -177,6 +190,38 @@ def make_long(outdir, prefix, seed=7):
     open(f"{outdir}/{prefix}_answers.txt", "w").write("\n".join(answers) + "\n")
     print("long", round(total, 1), "s", flush=True)
 
+def make_teaser(out, long_thumb, seed=7):
+    """The ONE Short: 2 HARD legends with answers + the long video's last legend WITHOUT answer -> full video."""
+    g = LGP(); N = len(LEGENDS); hard = [i for i, L in enumerate(LEGENDS) if L[6] == 2]
+    picks = [hard[2], hard[5]]  # Kaká, Buffon
+    r2 = random.Random(seed)  # replay the long video's option shuffles so the last legend has the same A/B/C order
+    for i in range(N - 1): r2.shuffle([LEGENDS[i][0]] + LEGENDS[i][5])
+    segs = [card(g, [("3 football legends", 80, WHITE), ("Only 1% know", 84, WHITE), ("the last one!", 84, YELLOW)],
+                 "Three football legends. Only one percent know the last one!", 2.4, 0.2, "GUESS THE LEGEND")]
+    rr = random.Random(seed + 99)
+    for k, i in enumerate(picks):
+        s, _ = legend_seg(g, LEGENDS[i], k + 1, 3, rr, think=5, chip=f"LEGEND {k + 1} / 3 • HARD"); segs.append(s)
+    s, a = legend_seg(g, LEGENDS[-1], 3, 3, r2, think=6, reveal=False, chip=f"LEGEND {N} • IMPOSSIBLE", note="Answer in the full video!")
+    segs.append(s)
+    th = Image.open(long_thumb).convert("RGB"); snd = []
+    d = say(snd, 0.2, f"Want the answer? Watch the full video, guess the football legend, on the QuizNado channel. Subscribe and like!") + 0.9
+    def draw(im, t):
+        e = ease(t / 0.4); lay = Image.new("RGBA", (g.W, g.H), (0, 0, 0, 0))
+        txt(lay, (g.W / 2, 560), "Want the answer?", 86, YELLOW, 7); txt(lay, (g.W / 2, 665), "Watch the full video", 70, WHITE, 6)
+        tw = 940; t2 = th.resize((tw, int(tw * th.height / th.width)), Image.LANCZOS)
+        shadowed(lay, (70, 740, 70 + tw, 740 + t2.height), 24, WHITE, blur=16, off=10, alpha=110)
+        m = Image.new("L", t2.size, 0); ImageDraw.Draw(m).rounded_rectangle([0, 0, t2.width - 1, t2.height - 1], radius=24, fill=255)
+        lay.paste(t2, (70, 740), m); dd = ImageDraw.Draw(lay); cx, cy = 70 + tw - 70, 740 + t2.height - 55
+        dd.ellipse([cx - 48, cy - 48, cx + 48, cy + 48], fill=RED); dd.polygon([(cx - 15, cy - 24), (cx - 15, cy + 24), (cx + 26, cy)], fill=WHITE)
+        y = 740 + t2.height + 75; txt(lay, (g.W / 2, y), f"Guess the Football Legend • {N} legends", 46, WHITE, 5)
+        dd = ImageDraw.Draw(lay); dd.rounded_rectangle([190, y + 70, 890, y + 175], radius=52, fill=RED)
+        dd.text((g.W / 2, y + 122), "SUBSCRIBE & LIKE", font=F(60), fill=WHITE, anchor="mm")
+        if e < 1: lay.putalpha(lay.getchannel("A").point(lambda a: int(a * e)))
+        im.alpha_composite(lay)
+    segs.append(Seg(max(5.5, d), draw, lambda t: "s" if t >= 0.4 else None, snd, "QuizNado"))
+    total = render(segs, g, out)
+    print("teaser", round(total, 1), "s; last legend answer", a, flush=True)
+
 def thumbnail(out):
     im = gradient(1920, 1080); im.alpha_composite(user_logo(190), (50, 40))
     txt(im, (330, 130), "GUESS THE", 100, WHITE, 8, "lm"); txt(im, (960, 280), "FOOTBALL LEGEND", 150, YELLOW, 10)
@@ -189,6 +234,7 @@ def thumbnail(out):
 
 if __name__ == "__main__":
     if sys.argv[1] == "long": make_long(sys.argv[2], sys.argv[3])
+    elif sys.argv[1] == "teaser": make_teaser(sys.argv[2], sys.argv[3])
     elif sys.argv[1] == "frames":
         o = sys.argv[2]; g = LG(); s, _ = legend_seg(g, LEGENDS[17], 18, 26, random.Random(1))
         for tt, nm in ((5.0, "clues"), (s.dur - 9, "think"), (s.dur - 1.0, "rev")):
