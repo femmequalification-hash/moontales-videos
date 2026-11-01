@@ -178,12 +178,10 @@ def cmd_spotmeta(raw, slug, number):
 def cmd_fiche(slug, out):
     date = datetime.date.today()
     names = [slug, slug + "_short"]
-    days = [date + datetime.timedelta(days=i) for i in range(2)]
-    parts = [f"QUIZNADO — {date.isoformat()} — publish by hand on YouTube at 20:00 (Morocco time)", "=" * 60,
-             "PLAN (one post per day):"]
-    for nm, dd, what in zip(names, days, ["Long video + thumbnail", "Short (teaser)"]):
-        parts.append(f"  {dd.strftime('%a %d %b')} 20:00 — {what}: {nm}.mp4")
-    parts.append("  (nothing on the 3rd day: the next set comes then)")
+    parts = [f"QUIZNADO — {date.isoformat()} — publish by hand on YouTube (Morocco time)", "=" * 60,
+             "PLAN (same day, then 2 free days):"]
+    for nm, hh, what in zip(names, ["18:00", "20:00"], ["Long video + thumbnail", "Short (teaser)"]):
+        parts.append(f"  {date.strftime('%a %d %b')} {hh} — {what}: {nm}.mp4")
     parts.append("SHORT: in YouTube Studio set 'Related video' = the long video, so viewers tap to it for the answer.")
     parts.append("=" * 60)
     for nm in names:

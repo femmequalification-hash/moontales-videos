@@ -2,8 +2,9 @@
 
 Run by the scheduled task every 3 days. Nobody is watching: do not ask questions. If one item
 fails, finish the others and say what failed at the end. Zahra publishes **by hand** on YouTube
-(no Metricool, no scheduling tool): long video today at 20:00, the Short tomorrow at 20:00,
-nothing on the 3rd day (Morocco time). Files must reach her before 20:00 today.
+(no Metricool, no scheduling tool): long video today at 18:00, the teaser Short the SAME day at 20:00
+(after the long video, so its "Related video" can point to it), then 2 free days (Morocco time).
+Files must reach her before 18:00 today.
 
 **Only ONE Short per set** (her rule, 31 Oct 2026: posting a lot hurts views): the teaser Short =
 2 hard questions WITH answers, then the long video's IMPOSSIBLE last question WITHOUT answer, ending
@@ -71,8 +72,8 @@ last frame of the Short (the end card with the thumbnail).
 ## 4. Deliver
 SendUserFile (status proactive, display attach): `<slug>.mp4`, `<slug>_thumb.jpg`,
 `<slug>_short.mp4` and the fiche `.txt`. Then a short SendUserMessage +
-PushNotification: "QuizNado ready — publish today at 20:00!" with the 3 titles and the plan
-(long video today 20:00, the Short tomorrow 20:00; in YouTube Studio set the Short's
+PushNotification: "QuizNado ready — long video today 18:00, Short 20:00!" with the 2 titles and the plan
+(long video today 18:00, the Short today 20:00; in YouTube Studio set the Short's
 "Related video" = the long video).
 
 ## 5. Save
