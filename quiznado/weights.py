@@ -187,11 +187,14 @@ def card(g, lines, voice, min_dur=2.6, pad=0.6, chip=None):
         else: im.alpha_composite(lay)
     return Seg(max(min_dur, d), draw, lambda t: "s" if t >= 0.35 else None, snd, chip)
 
-def puzzle_seg(g, pz, chip, *, think=15, intro=None, short=False, reveal=True, hold=4.5, q_text=None):
+def puzzle_seg(g, pz, chip, *, think=15, intro=None, short=False, reveal=True, hold=4.5, q_text=None, instant=False):
     snd = []; pops = [0.3, 0.85, 1.4, 1.95]
     for p_ in pops: snd.append((p_, whoosh() * 0.6))
     vd = say(snd, 0.2, intro or "Find the missing weight!")
     t_opts = max(2.6, vd + 0.4); t_think = t_opts + 0.3
+    if instant:  # hook: everything on screen from frame 0, countdown while the voice speaks
+        pops = [-1.0] * 4; snd = [snd[-1]]  # keep only the voice (no pop whooshes)
+        t_opts = 0.0; t_think = 0.0; think = max(think, int(math.ceil(vd + 0.6)))
     for s in range(think): snd.append((t_think + s, tick() * (1.5 if s >= think - 3 else 1)))
     t_rev = t_think + think; t_end = t_rev
     if reveal:
@@ -218,6 +221,7 @@ def puzzle_seg(g, pz, chip, *, think=15, intro=None, short=False, reveal=True, h
         if rev and t - t_rev < 0.25:
             im.alpha_composite(Image.new("RGBA", (g.W, g.H), (255, 255, 255, int(80 * (1 - (t - t_rev) / 0.25)))))
     def key(t):
+        if instant: return ("c", int(t * 10))
         if t < 2.35 or (t_rev <= t < t_rev + 0.25): return None
         if t < t_opts: return "a"
         if t < t_think: return "b"
@@ -258,7 +262,7 @@ def make_long(outdir, prefix, seed):
             for i, tr in zip(idx, trios): plan[i] = (tr, plan[i][1], plan[i][2])
     pzs = [make_puzzle(trio, typ, rnd) for trio, typ, tier in plan]
     # HOOK (first frames): the impossible last puzzle, no answer -> "the answer is at the very end"
-    segs.append(puzzle_seg(g, pzs[-1], f"LEVEL {N} / {N} • IMPOSSIBLE", think=1, reveal=False, q_text="Only 1% solve this!",
+    segs.append(puzzle_seg(g, pzs[-1], f"LEVEL {N} / {N} • IMPOSSIBLE", think=1, reveal=False, q_text="Only 1% solve this!", instant=True,
                            intro=f"Only one percent can solve level {N}. The answer is at the very end!"))
     for i, (trio, typ, tier) in enumerate(plan):
         pz = pzs[i]; name, col = TIERS[tier]; chip = f"LEVEL {i + 1} / {N} • {name}"
