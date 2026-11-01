@@ -225,7 +225,14 @@ def teaser_seg(g, n, ns, d0, d1, seed, chip, NL):
         txt(im, (g.W / 2, g.note_y + 150), "Can you get this far?", 60, YELLOW)
     return Seg(D, draw, snd, chip)
 
-def make_long(outdir, prefix, seed):
+def lv20():
+    """The 20-level set used for the video made on 29 Oct 2026 (seed 30)."""
+    t20 = ["EASY"] * 4 + ["MEDIUM"] * 4 + ["HARD"] * 4 + ["VERY HARD"] * 3 + ["EXPERT"] * 3 + ["IMPOSSIBLE"] * 2
+    return [(t20[i], 3 if i < 8 else (4 if i < 15 else 5), 10 + int(i * 1.6), round(1.1 - 0.03 * i, 2),
+             round(max(0.19, 0.8 - 0.034 * i), 2)) for i in range(20)]
+
+def make_long(outdir, prefix, seed, levels=None):
+    LONG_LEVELS = levels or globals()["LONG_LEVELS"]
     segs = []; answers = []; NL = len(LONG_LEVELS)
     g3 = Geo(False, 3)
     last = LONG_LEVELS[-1]
@@ -253,7 +260,7 @@ def make_long(outdir, prefix, seed):
                               ("Comment it below!", 64, (221, 214, 254))],
                          f"What is your score out of {NL}? Write it in the comments, and subscribe to QuizNado for new tests every week!", 3, 1.2, None))
     total = render_multi(segs, outdir, prefix)
-    thumbnail(f"{outdir}/{prefix}_thumbnail.jpg")
+    thumbnail(f"{outdir}/{prefix}_thumbnail.jpg", NL)
     print("long", round(total, 1), "s, answers", answers, flush=True); return answers
 
 def make_teaser(out, long_seed, long_thumb, level_index=None, levels=None):
@@ -296,19 +303,24 @@ def render_multi(segs, outdir, prefix):
     # all segments are landscape 1920x1080; Geo only changes ball layout, background is the same size
     g = Geo(False, 3); return render(segs, g, f"{outdir}/{prefix}.mp4")
 
-def thumbnail(out):
-    g = Geo(False, 3); im = background(g, None); im = gradient(1920, 1080); d = ImageDraw.Draw(im)
-    im.alpha_composite(user_logo(220), (70, 50))
-    txt(im, (1180, 190), "CONCENTRATION", 130, YELLOW, 9); txt(im, (1180, 340), "TEST", 150, WHITE, 9)
-    R = 95; tg = ball_sprite(R, (250, 204, 21), (250, 204, 21)); st = ball_sprite(R, (236, 233, 254), (167, 139, 250))
-    for i, x in enumerate([560, 960, 1360]):
-        im.alpha_composite(tg if i == 1 else st, (x - 2 * R, 620 - 2 * R))
-    arrow(im, 960, 420)
-    for i, (nm, col) in enumerate(DIFF):
-        x = 240 + i * 480; d = ImageDraw.Draw(im)
-        d.rounded_rectangle([x - 205, 860, x + 205, 960], radius=50, fill=col)
-        d.text((x, 910), nm, font=F(54), fill=WHITE, anchor="mm", stroke_width=3, stroke_fill=DEEP)
-    txt(im, (1650, 620), str(len(LONG_LEVELS)), 200, WHITE, 9); txt(im, (1650, 750), "LEVELS", 60, WHITE, 5)
+def thumbnail(out, nl=None):
+    """Few big words + one clear picture: 5 balls, one yellow, 'WHERE IS IT?'."""
+    nl = nl or len(LONG_LEVELS)
+    im = gradient(1920, 1080); d = ImageDraw.Draw(im)
+    im.alpha_composite(user_logo(150), (40, 30))
+    txt(im, (960, 150), "WHERE IS IT?", 175, YELLOW, 11)
+    R = 105; tg = ball_sprite(R, (250, 204, 21), (250, 204, 21)); st = ball_sprite(R, (236, 233, 254), (167, 139, 250))
+    xs = [300, 630, 960, 1290, 1620]
+    for x in xs:
+        if x == 960: continue
+        im.alpha_composite(st, (x - 2 * R, 600 - 2 * R)); txt(im, (x, 600), "?", 120, DEEP, 0)
+    # the yellow ball caught mid-swap, with a motion trail
+    for k in range(7, 0, -1):
+        ghost = tg.copy(); ghost.putalpha(ghost.getchannel("A").point(lambda a, k=k: int(a * 0.10 * (8 - k) / 8)))
+        im.alpha_composite(ghost, (int(960 - 2 * R - k * 38), int(470 - 2 * R + k * 12)))
+    im.alpha_composite(tg, (960 - 2 * R, 470 - 2 * R))
+    d = ImageDraw.Draw(im); d.rounded_rectangle([430, 820, 1490, 990], radius=85, fill=RED)
+    d.text((960, 905), f"ONLY 1% REACH LEVEL {nl}", font=F(72), fill=WHITE, anchor="mm", stroke_width=3, stroke_fill=(120, 20, 20))
     im.convert("RGB").resize((1280, 720), Image.LANCZOS).save(out, quality=92)
 
 if __name__ == "__main__":
@@ -317,7 +329,7 @@ if __name__ == "__main__":
         out, level, n, ns, d0, d1, seed = sys.argv[2:9]
         make_short(out, level, int(n), int(ns), float(d0), float(d1), int(seed))
     elif mode == "long":
-        make_long(sys.argv[2], sys.argv[3], int(sys.argv[4]))
+        make_long(sys.argv[2], sys.argv[3], int(sys.argv[4]), lv20() if len(sys.argv) > 5 and sys.argv[5] == "v20" else None)
     elif mode == "teaser":
         # optional 5th arg "v20" = the 20-level video made on 29 Oct 2026 (seed 30)
         lv20 = None
@@ -327,4 +339,4 @@ if __name__ == "__main__":
                      round(max(0.19, 0.8 - 0.034 * i), 2)) for i in range(20)]
         make_teaser(sys.argv[2], int(sys.argv[3]), sys.argv[4], levels=lv20)
     elif mode == "thumb":
-        thumbnail(sys.argv[2])
+        thumbnail(sys.argv[2], int(sys.argv[3]) if len(sys.argv) > 3 else None)

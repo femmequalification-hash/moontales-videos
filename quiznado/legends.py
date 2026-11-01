@@ -118,16 +118,23 @@ def options(im, g, opts, correct, reveal):
             w = t.split(); t = " ".join(w[-2:]) if w[-2].lower() in ("van", "de", "da") else w[-1]
         d.text((tx, cy), t, font=fit_font(d, t, bx1 - tx - 16, 38), fill=WHITE if ok else DEEP, anchor="lm")
 
-def legend_seg(g, L, num, total, rnd, think=8, reveal=True, chip=None, note=None):
+def legend_seg(g, L, num, total, rnd, think=8, reveal=True, chip=None, note=None, hook=None, lead=None):
     name, shirt, number, kit, clues, wrongs, tier, fact = L
     opts = [name] + wrongs; rnd.shuffle(opts); correct = opts.index(name)
     chip = chip or f"LEGEND {num} / {total} • {TIERS[tier][0]}"; snd = []
     t = 0.3; starts = []
-    for i, c in enumerate(clues):
-        starts.append(t); snd.append((t, Wt.whoosh() * 0.5))
-        spoken = c[2:].strip() if ord(c[0]) > 0x1F000 else c
-        t += Wt.say(snd, t, f"Clue {i + 1}. {spoken.replace('–', ' to ')}.") + 0.5
-    t_opts = t; t_think = t_opts + 0.4
+    if hook:  # hook mode: all clues pop at once, one voice line, no timer, no answer
+        starts = [0.1, 0.25, 0.4]
+        for st in starts: snd.append((st, Wt.whoosh() * 0.5))
+        t = max(4.0, Wt.say(snd, 0.2, hook) + 0.6)
+        t_opts = 0.6; t_think = t; think = 0.01; reveal = False
+    else:
+        if lead: t += Wt.say(snd, t, lead) + 0.3
+        for i, c in enumerate(clues):
+            starts.append(t); snd.append((t, Wt.whoosh() * 0.5))
+            spoken = c[2:].strip() if ord(c[0]) > 0x1F000 else c
+            t += Wt.say(snd, t, f"Clue {i + 1}. {spoken.replace('–', ' to ')}.") + 0.5
+        t_opts = t; t_think = t_opts + 0.4
     for s in range(think): snd.append((t_think + s, tick() * (1.5 if s >= think - 3 else 1)))
     t_rev = t_think + think; t_end = t_rev
     if reveal:
@@ -167,11 +174,12 @@ def legend_seg(g, L, num, total, rnd, think=8, reveal=True, chip=None, note=None
 
 def make_long(outdir, prefix, seed=7):
     g = LG(); rnd = random.Random(seed); N = len(LEGENDS); segs = []; answers = []
-    segs.append(card(g, [("GUESS THE FOOTBALL LEGEND", 92, YELLOW), (f"{N} legends • 3 clues each", 62, WHITE),
-                         (f"Count your points: ___ / {N}", 54, SOFT)],
-                     f"Welcome to QuizNado! Can you guess {N} football legends from just three clues? "
-                     "From easy to impossible. Count your points. Let's go!"))
-    tier_say = ["Level one: easy. Everybody knows them!", "Level two: medium. Real fans only!",
+    r2 = random.Random(seed)  # replay the option shuffles so the hook shows the same A/B/C as the last legend
+    for i in range(N - 1): r2.shuffle([LEGENDS[i][0]] + LEGENDS[i][5])
+    hs, _ = legend_seg(g, LEGENDS[-1], N, N, r2, chip=f"LEGEND {N} / {N} • IMPOSSIBLE", note="Answer at the very end!",
+                       hook=f"Only one percent know legend number {N}. The answer is at the very end!")
+    segs.append(hs)
+    tier_say = ["Let's start easy. Level one: everybody knows them!", "Level two: medium. Real fans only!",
                 "Level three: hard. Do you remember them?", "Level four: impossible! Only true football experts."]
     prev = -1
     for i, L in enumerate(LEGENDS):
@@ -182,7 +190,7 @@ def make_long(outdir, prefix, seed=7):
                                  "If you like it so far, subscribe and like! It really helps QuizNado.", 3, 0.5))
             segs.append(card(g, [(f"LEVEL {prev + 1}", 120, YELLOW), (nm, 90, col)], tier_say[prev], 2.4, 0.4,
                              f"LEVEL {prev + 1} • {nm}"))
-        s, a = legend_seg(g, L, i + 1, N, rnd); segs.append(s); answers.append(f"{i + 1}. {a} {L[0]}")
+        s, a = legend_seg(g, L, i + 1, N, rnd, lead=("Here is the legend from the start!" if i == N - 1 else None)); segs.append(s); answers.append(f"{i + 1}. {a} {L[0]}")
     segs.append(card(g, [("What's your score?", 96, YELLOW), (f"___ / {N}", 124, WHITE), ("Comment it below!", 60, SOFT)],
                      f"What is your score out of {N}? Write it in the comments! Which legend is your favourite? "
                      "Subscribe to QuizNado for more challenges!", 3, 1.2))
@@ -223,13 +231,15 @@ def make_teaser(out, long_thumb, seed=7):
     print("teaser", round(total, 1), "s; last legend answer", a, flush=True)
 
 def thumbnail(out):
-    im = gradient(1920, 1080); im.alpha_composite(user_logo(190), (50, 40))
-    txt(im, (330, 130), "GUESS THE", 100, WHITE, 8, "lm"); txt(im, (960, 280), "FOOTBALL LEGEND", 150, YELLOW, 10)
+    """Few big words + one clear picture."""
+    im = gradient(1920, 1080); im.alpha_composite(user_logo(120), (25, 20))
+    txt(im, (990, 180), "WHO ARE THEY?", 180, YELLOW, 12)
     for k, kit in enumerate([BRA, ARG, FRA, ESP, ITA]):
-        j = jersey(330, 380, kit, "", None, mystery=(k == 2)) if k == 2 else jersey(330, 380, kit, "", "?", False)
-        im.alpha_composite(j, (70 + k * 360, 420))
-    d = ImageDraw.Draw(im); d.rounded_rectangle([560, 880, 1360, 1000], radius=60, fill=RED)
-    d.text((960, 940), f"{len(LEGENDS)} LEGENDS • 3 CLUES", font=F(64), fill=WHITE, anchor="mm")
+        j = jersey(330, 380, kit, "", "?", False)
+        im.alpha_composite(j, (70 + k * 360, 360))
+    d = ImageDraw.Draw(im); d.rounded_rectangle([360, 840, 1560, 1000], radius=80, fill=RED)
+    d.text((960, 920), f"ONLY TRUE FANS GET {len(LEGENDS)}/{len(LEGENDS)}", font=F(74), fill=WHITE, anchor="mm",
+           stroke_width=3, stroke_fill=(120, 20, 20))
     im.convert("RGB").resize((1280, 720), Image.LANCZOS).save(out, quality=92)
 
 if __name__ == "__main__":

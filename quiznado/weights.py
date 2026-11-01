@@ -256,14 +256,18 @@ def make_long(outdir, prefix, seed):
         for tier in range(len(TIERS)):
             idx = [i for i, p in enumerate(plan) if p[2] == tier]; trios = [plan[i][0] for i in idx]; rnd.shuffle(trios)
             for i, tr in zip(idx, trios): plan[i] = (tr, plan[i][1], plan[i][2])
-    segs.append(card(g, [("FIND THE MISSING WEIGHT", 100, YELLOW), (f"{N} levels • easy to impossible", 62, WHITE),
-                         (f"Count your points: ___ / {N}", 54, SOFT)],
-                     f"Welcome to QuizNado! {N} weight puzzles, from easy to impossible. Look at the scales, "
-                     "find the missing weight, and count your points. Let's go!"))
+    pzs = [make_puzzle(trio, typ, rnd) for trio, typ, tier in plan]
+    # HOOK (first frames): the impossible last puzzle, no answer -> "the answer is at the very end"
+    segs.append(puzzle_seg(g, pzs[-1], f"LEVEL {N} / {N} • IMPOSSIBLE", think=1, reveal=False, q_text="Only 1% solve this!",
+                           intro=f"Only one percent can solve level {N}. The answer is at the very end!"))
     for i, (trio, typ, tier) in enumerate(plan):
-        pz = make_puzzle(trio, typ, rnd); name, col = TIERS[tier]; chip = f"LEVEL {i + 1} / {N} • {name}"
-        segs.append(card(g, [(f"LEVEL {i + 1}", 120, YELLOW), (name, 84, col)], f"Level {i + 1}. {name.lower()}.", 2.0, 0.3, chip))
-        segs.append(puzzle_seg(g, pz, chip)); ans.append({"level": i + 1, "tier": name, **pz})
+        pz = pzs[i]; name, col = TIERS[tier]; chip = f"LEVEL {i + 1} / {N} • {name}"
+        if i == 0:
+            segs.append(card(g, [("Let's start easy!", 90, WHITE), ("LEVEL 1", 120, YELLOW)], "Let's start easy. Level 1!", 1.6, 0.2, chip))
+        else:
+            segs.append(card(g, [(f"LEVEL {i + 1}", 120, YELLOW), (name, 84, col)], f"Level {i + 1}. {name.lower()}.", 1.8, 0.2, chip))
+        segs.append(puzzle_seg(g, pz, chip, intro=("Here is the puzzle from the start! Find the missing weight!" if i == N - 1 else None)))
+        ans.append({"level": i + 1, "tier": name, **pz})
         if i + 1 in (5, 12, 19):
             segs.append(card(g, [("Enjoying it?", 86, WHITE), ("SUBSCRIBE & LIKE", 104, YELLOW), ("It really helps QuizNado", 50, SOFT)],
                              "If you liked it so far, subscribe and like! It really helps QuizNado.", 3, 0.5, chip))
@@ -322,14 +326,15 @@ def make_teaser(out, long_thumb, seed=90):
     print("teaser", round(total, 1), "s; answers", p1["answer"], p2["answer"], "(level", N, "=", p3["answer"], ")", flush=True)
 
 def thumbnail(out, rnd, n):
-    g = Geo(False); im = gradient(1920, 1080)
-    im.alpha_composite(user_logo(200), (60, 40))
-    txt(im, (90, 330), "FIND THE", 110, WHITE, 8, "lm"); txt(im, (90, 470), "MISSING", 130, YELLOW, 9, "lm")
-    txt(im, (90, 620), "WEIGHT!", 130, YELLOW, 9, "lm")
-    d = ImageDraw.Draw(im); d.rounded_rectangle([90, 760, 700, 870], radius=55, fill=RED)
-    d.text((395, 815), f"{n} LEVELS", font=F(64), fill=WHITE, anchor="mm")
+    """Few big words + one clear picture."""
+    im = gradient(1920, 1080)
+    im.alpha_composite(user_logo(150), (40, 30))
+    txt(im, (90, 380), "ONLY 1%", 210, YELLOW, 12, "lm"); txt(im, (100, 580), "CAN SOLVE", 120, WHITE, 9, "lm")
+    txt(im, (100, 720), "THIS!", 120, WHITE, 9, "lm")
+    d = ImageDraw.Draw(im); d.rounded_rectangle([95, 850, 620, 970], radius=60, fill=RED)
+    d.text((357, 910), f"LEVEL {n}", font=F(70), fill=WHITE, anchor="mm")
     pz = {"trio": ["frog", "sheep", "horse"]}
-    draw_scale(im, (1000, 150, 1860, 900), pz, [0, 1, 2], "?", "question")
+    draw_scale(im, (1000, 140, 1880, 960), pz, [0, 1, 2], "? kg", "question")
     im.convert("RGB").resize((1280, 720), Image.LANCZOS).save(out, quality=92)
 
 if __name__ == "__main__":
