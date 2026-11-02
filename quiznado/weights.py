@@ -328,8 +328,8 @@ def make_long(outdir, prefix, seed):
 def make_short(out, typ, seed, trio):
     rnd = random.Random(seed); g = Geo(True); pz = make_puzzle(trio, typ, rnd)
     lvl = "EXPERT" if typ == 4 else "IMPOSSIBLE"; chip = f"WEIGHT PUZZLE • LEVEL {lvl}"
-    segs = [card(g, [("Only 1% can", 92, WHITE), ("solve this!", 92, WHITE), ("Find the missing weight", 60, YELLOW)],
-                 "Only one percent of people can solve this! Find the missing weight.", 2.8, 0.3, chip),
+    segs = [card(g, [("Can you", 92, WHITE), ("solve this?", 92, WHITE), ("Find the missing weight", 60, YELLOW)],
+                 "Can you solve this? Find the missing weight.", 2.8, 0.3, chip),
             puzzle_seg(g, pz, chip, think=12, short=True,
                        intro="Look at the scales. Comment your answer before the reveal!"),
             card(g, [("Did you get it?", 86, YELLOW), ("Subscribe to QuizNado", 70, WHITE), ("for more challenges!", 70, WHITE)],
@@ -343,8 +343,8 @@ def make_teaser(out, long_thumb, seed=90):
     p1 = make_puzzle(["cat", "sheep", "horse"], 4, rnd); p2 = make_puzzle(["chicken", "dog", "cow"], 5, rnd)
     r = random.Random(41); p3 = [make_puzzle(t, ty, r) for t, ty, _ in LONG_PLAN][-1]   # = Level 24 of the long video
     N = len(LONG_PLAN)
-    segs = [card(g, [("3 HARD puzzles", 92, WHITE), ("Only 1% solve", 80, WHITE), ("the last one!", 80, YELLOW)],
-                 "Three hard weight puzzles. Only one percent can solve the last one!", 2.4, 0.2, "WEIGHT PUZZLE • 1 / 3"),
+    segs = [card(g, [("3 HARD puzzles", 92, WHITE), ("Are you in the", 80, WHITE), ("TOP 10%?", 100, YELLOW)],
+                 "Three hard weight puzzles. Solve the last one, and you are in the top ten percent!", 2.4, 0.2, "WEIGHT PUZZLE • 1 / 3"),
             puzzle_seg(g, p1, "WEIGHT PUZZLE • 1 / 3", think=6, hold=3.6, intro="Puzzle one. Find the missing weight!"),
             puzzle_seg(g, p2, "WEIGHT PUZZLE • 2 / 3", think=6, hold=3.6, intro="Puzzle two. Harder!"),
             puzzle_seg(g, p3, f"LEVEL {N} • IMPOSSIBLE", think=6, reveal=False, q_text="Can you solve it?",
