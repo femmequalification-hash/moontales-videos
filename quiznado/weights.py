@@ -253,6 +253,43 @@ def render(segs, g, out):
                     "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-movflags", "+faststart", out + ".n.mp4"], check=True)
     os.remove(tmp); os.replace(out + ".n.mp4", out); return total
 
+def end_screen_seg(g, dur=20.0):
+    """20 s at the end, laid out for YouTube end-screen elements: text on top, free space below
+    (left: 'Best for viewer' video, right: Subscribe button)."""
+    snd = []; say(snd, 0.3, "Thanks for playing! Watch this next challenge, and subscribe to QuizNado for more!")
+    def draw(im, t):
+        txt(im, (g.W / 2, 150 if not g.portrait else 520), "Watch this next!", 80, YELLOW, 7)
+        txt(im, (g.W / 2, 245 if not g.portrait else 615), "and subscribe for more challenges", 50, WHITE, 5)
+        if not g.portrait:
+            for box in ((200, 330, 1040, 800), (1250, 400, 1650, 800)):
+                overlay_rect(im, box, 30, (255, 255, 255, 22))
+            ImageDraw.Draw(im).ellipse([1270, 420, 1630, 780], outline=(255, 255, 255, 60), width=4)
+    return Seg(dur, draw, lambda t: "e", snd, None)
+
+def thumbnail_variants(outdir, prefix, n):
+    """Two extra bright thumbnails (emoji style, readable on a TV) for YouTube 'Test & compare'."""
+    def bright(c1, c2):
+        y = np.linspace(0, 1, 1080)[:, None, None]; a = np.array(c1)[None, None, :]; b = np.array(c2)[None, None, :]
+        arr = (a * (1 - y) + b * y).repeat(1920, axis=1).astype(np.uint8)
+        return Image.fromarray(arr, "RGB").convert("RGBA")
+    # B: the equation, huge emojis, hot gradient
+    im = bright((255, 196, 0), (255, 84, 64))
+    im.alpha_composite(user_logo(120), (30, 25))
+    x = 120
+    for k, (ch, sz) in enumerate([("🐸", 230), ("➕", 130), ("🐑", 270), ("➕", 130), ("🐴", 300)]):
+        e = emoji(ch, sz); im.alpha_composite(e, (x, 360 - e.height // 2 + 40)); x += e.width + 25
+    txt(im, (x + 170, 400), "= ?", 210, WHITE, 14)
+    txt(im, (960, 820), "HOW MUCH?", 190, WHITE, 14)
+    im.convert("RGB").resize((1280, 720), Image.LANCZOS).save(f"{outdir}/{prefix}_thumbnail_B.jpg", quality=92)
+    # C: shocked face + scale, cool gradient
+    im = bright((40, 200, 255), (110, 60, 255))
+    im.alpha_composite(user_logo(120), (30, 25))
+    e = emoji("😱", 420); im.alpha_composite(e, (90, 300))
+    draw_scale(im, (700, 110, 1860, 880), {"trio": ["frog", "sheep", "horse"]}, [0, 1, 2], "? kg", "question")
+    d = ImageDraw.Draw(im); d.rounded_rectangle([300, 900, 1620, 1050], radius=75, fill=RED)
+    d.text((960, 975), f"CAN YOU BEAT LEVEL {n}?", font=F(84), fill=WHITE, anchor="mm", stroke_width=4, stroke_fill=(120, 20, 20))
+    im.convert("RGB").resize((1280, 720), Image.LANCZOS).save(f"{outdir}/{prefix}_thumbnail_C.jpg", quality=92)
+
 def make_long(outdir, prefix, seed):
     rnd = random.Random(seed); g = Geo(False); N = len(LONG_PLAN); segs = []; ans = []
     plan = list(LONG_PLAN)
@@ -262,22 +299,29 @@ def make_long(outdir, prefix, seed):
             for i, tr in zip(idx, trios): plan[i] = (tr, plan[i][1], plan[i][2])
     pzs = [make_puzzle(trio, typ, rnd) for trio, typ, tier in plan]
     # HOOK (first frames): the impossible last puzzle, no answer -> "the answer is at the very end"
-    segs.append(puzzle_seg(g, pzs[-1], f"LEVEL {N} / {N} • IMPOSSIBLE", think=1, reveal=False, q_text="Only 1% solve this!", instant=True,
-                           intro=f"Only one percent can solve level {N}. The answer is at the very end!"))
+    segs.append(puzzle_seg(g, pzs[-1], f"LEVEL {N} / {N} • IMPOSSIBLE", think=1, reveal=False, q_text="Can you solve this?", instant=True,
+                           intro=f"Can you solve level {N}? Almost nobody can. The answer is at the very end!"))
+    THINK = {0: 8, 1: 10, 2: 12, 3: 15, 4: 15, 5: 15}  # easy levels go fast, hard levels give time
     for i, (trio, typ, tier) in enumerate(plan):
         pz = pzs[i]; name, col = TIERS[tier]; chip = f"LEVEL {i + 1} / {N} • {name}"
         if i == 0:
             segs.append(card(g, [("Let's start easy!", 90, WHITE), ("LEVEL 1", 120, YELLOW)], "Let's start easy. Level 1!", 1.6, 0.2, chip))
         else:
             segs.append(card(g, [(f"LEVEL {i + 1}", 120, YELLOW), (name, 84, col)], f"Level {i + 1}. {name.lower()}.", 1.8, 0.2, chip))
-        segs.append(puzzle_seg(g, pz, chip, intro=("Here is the puzzle from the start! Find the missing weight!" if i == N - 1 else None)))
+        segs.append(puzzle_seg(g, pz, chip, think=THINK[tier], hold=3.6 if tier == 0 else 4.5,
+                               intro=("Here is the puzzle from the start! Find the missing weight!" if i == N - 1 else None)))
         ans.append({"level": i + 1, "tier": name, **pz})
+        if i + 1 in (8, 16):  # keep the curiosity alive
+            segs.append(card(g, [(f"LEVEL {N} is coming...", 92, YELLOW), ("Stay until the end!", 70, WHITE)],
+                             f"Level {N} is coming. Stay until the end to see the answer!", 2.2, 0.3, chip))
         if i + 1 in (5, 12, 19):
             segs.append(card(g, [("Enjoying it?", 86, WHITE), ("SUBSCRIBE & LIKE", 104, YELLOW), ("It really helps QuizNado", 50, SOFT)],
                              "If you liked it so far, subscribe and like! It really helps QuizNado.", 3, 0.5, chip))
     segs.append(card(g, [("What's your score?", 96, YELLOW), (f"___ / {N}", 124, WHITE), ("Comment it below!", 60, SOFT)],
-                     f"What is your score out of {N}? Write it in the comments, and subscribe to QuizNado for more challenges!", 3, 1.2))
+                     f"What is your score out of {N}? Write it in the comments!", 3, 0.8))
+    segs.append(end_screen_seg(g))
     total = render(segs, g, f"{outdir}/{prefix}.mp4"); thumbnail(f"{outdir}/{prefix}_thumbnail.jpg", rnd, N)
+    thumbnail_variants(outdir, prefix, N)
     json.dump(ans, open(f"{outdir}/{prefix}_answers.json", "w"))
     print("long", round(total, 1), "s", [a["answer"] for a in ans], flush=True)
 
@@ -333,8 +377,8 @@ def thumbnail(out, rnd, n):
     """Few big words + one clear picture."""
     im = gradient(1920, 1080)
     im.alpha_composite(user_logo(150), (40, 30))
-    txt(im, (90, 380), "ONLY 1%", 210, YELLOW, 12, "lm"); txt(im, (100, 580), "CAN SOLVE", 120, WHITE, 9, "lm")
-    txt(im, (100, 720), "THIS!", 120, WHITE, 9, "lm")
+    txt(im, (90, 330), "ARE YOU IN", 120, WHITE, 10, "lm"); txt(im, (90, 520), "THE TOP", 150, WHITE, 10, "lm")
+    txt(im, (90, 720), "10%?", 230, YELLOW, 14, "lm")
     d = ImageDraw.Draw(im); d.rounded_rectangle([95, 850, 620, 970], radius=60, fill=RED)
     d.text((357, 910), f"LEVEL {n}", font=F(70), fill=WHITE, anchor="mm")
     pz = {"trio": ["frog", "sheep", "horse"]}
