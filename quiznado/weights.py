@@ -373,6 +373,37 @@ def make_teaser(out, long_thumb, seed=90):
     json.dump({"p1": p1, "p2": p2, "p3": p3}, open(out + ".answer.json", "w"))
     print("teaser", round(total, 1), "s; answers", p1["answer"], p2["answer"], "(level", N, "=", p3["answer"], ")", flush=True)
 
+def make_teaser_v2(out, long_thumb, seed=90):
+    """Hook-first loop Short (<40 s): Level 24 flashes first, 2 fast warm-ups, Level 24 again with NO answer."""
+    g = Geo(True); rnd = random.Random(seed)
+    p1 = make_puzzle(["cat", "sheep", "horse"], 4, rnd); p2 = make_puzzle(["chicken", "dog", "cow"], 5, rnd)
+    r = random.Random(41); p3 = [make_puzzle(t, ty, r) for t, ty, _ in LONG_PLAN][-1]
+    N = len(LONG_PLAN); chip = f"LEVEL {N} \u2022 IMPOSSIBLE"
+    segs = [puzzle_seg(g, p3, chip, think=1, reveal=False, instant=True, hold=0.3, q_text="Most adults get this WRONG",
+                       intro="Most adults get this one wrong!"),
+            puzzle_seg(g, p1, "WARM-UP 1", think=4, hold=1.8, intro="Warm up. Go!"),
+            puzzle_seg(g, p2, "WARM-UP 2", think=4, hold=1.8, intro="Harder!"),
+            puzzle_seg(g, p3, chip, think=5, reveal=False, q_text="Your turn. 5 seconds!", intro=f"Level {N}. Your turn!")]
+    th = Image.open(long_thumb).convert("RGBA")
+    snd = []; d = say(snd, 0.1, "Comment your answer. The answer is in the full video!") + 0.4
+    def draw(im, t):
+        lay = Image.new("RGBA", (g.W, g.H), (0, 0, 0, 0))
+        txt(lay, (g.W / 2, 560), "Comment your answer!", 74, YELLOW, 7)
+        txt(lay, (g.W / 2, 665), "Answer in the full video", 66, WHITE, 6)
+        tw = 940; t2 = th.resize((tw, int(tw * th.height / th.width)), Image.LANCZOS)
+        shadowed(lay, (70, 740, 70 + tw, 740 + t2.height), 24, WHITE, blur=16, off=10, alpha=110)
+        m = Image.new("L", t2.size, 0); ImageDraw.Draw(m).rounded_rectangle([0, 0, t2.width - 1, t2.height - 1], radius=24, fill=255)
+        lay.paste(t2, (70, 740), m)
+        dd = ImageDraw.Draw(lay); cx, cy = 70 + tw - 70, 740 + t2.height - 55
+        dd.ellipse([cx - 48, cy - 48, cx + 48, cy + 48], fill=RED); dd.polygon([(cx - 15, cy - 24), (cx - 15, cy + 24), (cx + 26, cy)], fill=WHITE)
+        y = 740 + t2.height + 75
+        dd.rounded_rectangle([190, y + 10, 890, y + 115], radius=52, fill=RED)
+        dd.text((g.W / 2, y + 62), "SUBSCRIBE & LIKE", font=F(60), fill=WHITE, anchor="mm")
+        im.alpha_composite(lay)
+    segs.append(Seg(max(3.8, d), draw, lambda t: "s", snd, "QuizNado"))
+    total = render(segs, g, out)
+    print("teaser_v2", round(total, 1), "s; level", N, "=", p3["answer"], flush=True)
+
 def thumbnail(out, rnd, n):
     """Few big words + one clear picture."""
     im = gradient(1920, 1080)
@@ -389,6 +420,7 @@ if __name__ == "__main__":
     if sys.argv[1] == "long": make_long(sys.argv[2], sys.argv[3], int(sys.argv[4]))
     elif sys.argv[1] == "short": make_short(sys.argv[2], int(sys.argv[3]), int(sys.argv[4]), sys.argv[5].split(","))
     elif sys.argv[1] == "teaser": make_teaser(sys.argv[2], sys.argv[3])
+    elif sys.argv[1] == "teaser2": make_teaser_v2(sys.argv[2], sys.argv[3])
     elif sys.argv[1] == "frames":
         # preview: python3 weights.py frames OUT_DIR
         o = sys.argv[2]; rnd = random.Random(5)
