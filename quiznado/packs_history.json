@@ -17,6 +17,12 @@
    "theme": "Guess the Football Legend",
    "slug": "guess-the-football-legend",
    "note": "made by hand in chat (legends.py, 26 legends, seed 7); teaser Short on 8 Nov"
+  },
+  {
+   "date": "2026-11-10",
+   "theme": "Find The Number",
+   "slug": "find-the-number-24-levels",
+   "note": "made by hand in chat (findnum.py long, seed 11; hook-first teaser Short seed 11, same day 20:00)"
   }
  ]
 }
