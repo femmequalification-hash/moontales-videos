@@ -1,4 +1,4 @@
-"""QuizNado 'Guess the Football Legend' — 3 clues per legend, A/B/C, reveal on a drawn jersey (no photos).
+"""QuizNado07 'Guess the Football Legend' — 3 clues per legend, A/B/C, reveal on a drawn jersey (no photos).
 python3 legends.py long OUT_DIR PREFIX      -> PREFIX.mp4 (26 legends, 10+ min) + PREFIX_thumbnail.jpg
 python3 legends.py frames OUT_DIR           -> preview PNGs
 """
@@ -186,14 +186,14 @@ def make_long(outdir, prefix, seed=7):
         if L[6] != prev:
             prev = L[6]; nm, col = TIERS[prev]
             if prev == 2:
-                segs.append(card(g, [("Enjoying it?", 86, WHITE), ("SUBSCRIBE & LIKE", 104, YELLOW), ("It really helps QuizNado", 50, SOFT)],
-                                 "If you like it so far, subscribe and like! It really helps QuizNado.", 3, 0.5))
+                segs.append(card(g, [("Enjoying it?", 86, WHITE), ("SUBSCRIBE & LIKE", 104, YELLOW), ("It really helps QuizNado07", 50, SOFT)],
+                                 "If you like it so far, subscribe and like! It really helps QuizNado07.", 3, 0.5))
             segs.append(card(g, [(f"LEVEL {prev + 1}", 120, YELLOW), (nm, 90, col)], tier_say[prev], 2.4, 0.4,
                              f"LEVEL {prev + 1} • {nm}"))
         s, a = legend_seg(g, L, i + 1, N, rnd, lead=("Here is the legend from the start!" if i == N - 1 else None)); segs.append(s); answers.append(f"{i + 1}. {a} {L[0]}")
     segs.append(card(g, [("What's your score?", 96, YELLOW), (f"___ / {N}", 124, WHITE), ("Comment it below!", 60, SOFT)],
                      f"What is your score out of {N}? Write it in the comments! Which legend is your favourite? "
-                     "Subscribe to QuizNado for more challenges!", 3, 1.2))
+                     "Subscribe to QuizNado07 for more challenges!", 3, 1.2))
     total = render(segs, g, f"{outdir}/{prefix}.mp4"); thumbnail(f"{outdir}/{prefix}_thumbnail.jpg")
     open(f"{outdir}/{prefix}_answers.txt", "w").write("\n".join(answers) + "\n")
     print("long", round(total, 1), "s", flush=True)
@@ -212,7 +212,7 @@ def make_teaser(out, long_thumb, seed=7):
     s, a = legend_seg(g, LEGENDS[-1], 3, 3, r2, think=6, reveal=False, chip=f"LEGEND {N} • IMPOSSIBLE", note="Answer in the full video!")
     segs.append(s)
     th = Image.open(long_thumb).convert("RGB"); snd = []
-    d = say(snd, 0.2, f"Want the answer? Watch the full video, guess the football legend, on the QuizNado channel. Subscribe and like!") + 0.9
+    d = say(snd, 0.2, f"Want the answer? Watch the full video, guess the football legend, on the QuizNado07 channel. Subscribe and like!") + 0.9
     def draw(im, t):
         e = ease(t / 0.4); lay = Image.new("RGBA", (g.W, g.H), (0, 0, 0, 0))
         txt(lay, (g.W / 2, 560), "Want the answer?", 86, YELLOW, 7); txt(lay, (g.W / 2, 665), "Watch the full video", 70, WHITE, 6)
@@ -226,7 +226,7 @@ def make_teaser(out, long_thumb, seed=7):
         dd.text((g.W / 2, y + 122), "SUBSCRIBE & LIKE", font=F(60), fill=WHITE, anchor="mm")
         if e < 1: lay.putalpha(lay.getchannel("A").point(lambda a: int(a * e)))
         im.alpha_composite(lay)
-    segs.append(Seg(max(5.5, d), draw, lambda t: "s" if t >= 0.4 else None, snd, "QuizNado"))
+    segs.append(Seg(max(5.5, d), draw, lambda t: "s" if t >= 0.4 else None, snd, "QuizNado07"))
     total = render(segs, g, out)
     print("teaser", round(total, 1), "s; last legend answer", a, flush=True)
 

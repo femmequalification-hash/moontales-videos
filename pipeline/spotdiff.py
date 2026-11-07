@@ -1,4 +1,4 @@
-"""Spot the Difference videos (QuizNado design).
+"""Spot the Difference videos (QuizNado07 design).
 
 One picture per puzzle (e.g. made with ChatGPT). This script makes the second picture itself with
 EXACTLY 5 changes, so the reveal circles are always right.
@@ -28,7 +28,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import art  # noqa: E402
 import build  # noqa: E402
 import quiz  # noqa: E402
-import quizpack  # noqa: E402  (loads the QuizNado brand)
+import quizpack  # noqa: E402  (loads the QuizNado07 brand)
 from quiz import Timeline  # noqa: E402
 from quizpack import LEVELS, WORDS, CHANNEL, card, pill, write_kit  # noqa: E402
 

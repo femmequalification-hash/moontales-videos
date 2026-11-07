@@ -1,4 +1,4 @@
-"""QuizNado 'Follow the ball' concentration test Short (idea: track one ball while balls swap faster and faster).
+"""QuizNado07 'Follow the ball' concentration test Short (idea: track one ball while balls swap faster and faster).
 usage: python3 follow_ball.py OUT.mp4 [level: easy|hard|impossible] [seed]"""
 import sys, os, math, random, subprocess
 import numpy as np, soundfile as sf
@@ -33,7 +33,7 @@ def main(out, level="hard", seed=7):
     bg = gradient(W, H); d = ImageDraw.Draw(bg)
     bg.alpha_composite(user_logo(200), ((W - 200) // 2, 145))
     wm = user_logo(110, alpha=0.5); bg.alpha_composite(wm, ((W - 110) // 2, H - 310))
-    d.text((W // 2, H - 180), "@QuizNado • New quiz every day", font=F(30), fill=(221, 214, 254), anchor="mm")
+    d.text((W // 2, H - 180), "@QuizNado07 • New quiz every day", font=F(30), fill=(221, 214, 254), anchor="mm")
     def chip(im, text, y, fill=YELLOW, col=DEEP, size=40):
         dd = ImageDraw.Draw(im); f = F(size); w = dd.textlength(text, font=f) + 70
         dd.rounded_rectangle([W / 2 - w / 2, y - 38, W / 2 + w / 2, y + 38], radius=38, fill=fill)
@@ -74,7 +74,7 @@ def main(out, level="hard", seed=7):
     audio.append((t_rev, ding()))
     dur_rev = say(t_rev + 0.3, f"It was number {final_slot + 1}! Did you get it right?") + 0.8
     t_out = t_rev + max(3.2, dur_rev)
-    dur_out = say(t_out + 0.2, "Comment your level, and subscribe to QuizNado for level impossible!") + 1.0
+    dur_out = say(t_out + 0.2, "Comment your level, and subscribe to QuizNado07 for level impossible!") + 1.0
     total = t_out + dur_out
 
     # ---------- audio ----------

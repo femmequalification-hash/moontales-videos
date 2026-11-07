@@ -1,4 +1,4 @@
-"""QuizNado 'Find the missing weight' scale puzzles.
+"""QuizNado07 'Find the missing weight' scale puzzles.
 python3 weights.py long  OUT_DIR PREFIX SEED     -> PREFIX.mp4 (24 levels, 10+ min) + PREFIX_thumbnail.jpg, prints answers
 python3 weights.py short OUT.mp4 TYPE SEED TRIO  -> one-puzzle Short (TYPE 4 or 5, TRIO like frog,sheep,horse)
 """
@@ -114,10 +114,10 @@ def background(g, chip):
     bg = gradient(g.W, g.H); d = ImageDraw.Draw(bg)
     if g.portrait:
         bg.alpha_composite(user_logo(200), ((g.W - 200) // 2, 145))
-        d.text((g.W // 2, g.H - 150), "@QuizNado • Subscribe for more!", font=F(32), fill=SOFT, anchor="mm")
+        d.text((g.W // 2, g.H - 150), "@QuizNado07 • Subscribe for more!", font=F(32), fill=SOFT, anchor="mm")
     else:
         bg.alpha_composite(user_logo(120), (30, 18))
-        d.text((g.W - 30, g.H - 25), "@QuizNado", font=F(24), fill=SOFT, anchor="rm")
+        d.text((g.W - 30, g.H - 25), "@QuizNado07", font=F(24), fill=SOFT, anchor="rm")
     if chip:
         f = F(40 if g.portrait else 34); w = d.textlength(chip, font=f) + 70
         d.rounded_rectangle([g.W / 2 - w / 2, g.chip_y - 36, g.W / 2 + w / 2, g.chip_y + 36], radius=36, fill=YELLOW)
@@ -256,7 +256,7 @@ def render(segs, g, out):
 def end_screen_seg(g, dur=20.0):
     """20 s at the end, laid out for YouTube end-screen elements: text on top, free space below
     (left: 'Best for viewer' video, right: Subscribe button)."""
-    snd = []; say(snd, 0.3, "Thanks for playing! Watch this next challenge, and subscribe to QuizNado for more!")
+    snd = []; say(snd, 0.3, "Thanks for playing! Watch this next challenge, and subscribe to QuizNado07 for more!")
     def draw(im, t):
         txt(im, (g.W / 2, 150 if not g.portrait else 520), "Watch this next!", 80, YELLOW, 7)
         txt(im, (g.W / 2, 245 if not g.portrait else 615), "and subscribe for more challenges", 50, WHITE, 5)
@@ -315,8 +315,8 @@ def make_long(outdir, prefix, seed):
             segs.append(card(g, [(f"LEVEL {N} is coming...", 92, YELLOW), ("Stay until the end!", 70, WHITE)],
                              f"Level {N} is coming. Stay until the end to see the answer!", 2.2, 0.3, chip))
         if i + 1 in (5, 12, 19):
-            segs.append(card(g, [("Enjoying it?", 86, WHITE), ("SUBSCRIBE & LIKE", 104, YELLOW), ("It really helps QuizNado", 50, SOFT)],
-                             "If you liked it so far, subscribe and like! It really helps QuizNado.", 3, 0.5, chip))
+            segs.append(card(g, [("Enjoying it?", 86, WHITE), ("SUBSCRIBE & LIKE", 104, YELLOW), ("It really helps QuizNado07", 50, SOFT)],
+                             "If you liked it so far, subscribe and like! It really helps QuizNado07.", 3, 0.5, chip))
     segs.append(card(g, [("What's your score?", 96, YELLOW), (f"___ / {N}", 124, WHITE), ("Comment it below!", 60, SOFT)],
                      f"What is your score out of {N}? Write it in the comments!", 3, 0.8))
     segs.append(end_screen_seg(g))
@@ -332,8 +332,8 @@ def make_short(out, typ, seed, trio):
                  "Can you solve this? Find the missing weight.", 2.8, 0.3, chip),
             puzzle_seg(g, pz, chip, think=12, short=True,
                        intro="Look at the scales. Comment your answer before the reveal!"),
-            card(g, [("Did you get it?", 86, YELLOW), ("Subscribe to QuizNado", 70, WHITE), ("for more challenges!", 70, WHITE)],
-                 "Did you get it right? Subscribe to QuizNado for more challenges!", 2.8, 0.8, chip)]
+            card(g, [("Did you get it?", 86, YELLOW), ("Subscribe to QuizNado07", 70, WHITE), ("for more challenges!", 70, WHITE)],
+                 "Did you get it right? Subscribe to QuizNado07 for more challenges!", 2.8, 0.8, chip)]
     total = render(segs, g, out); json.dump(pz, open(out + ".answer.json", "w"))
     print("short", lvl, round(total, 1), "s answer", pz["answer"], flush=True)
 
@@ -351,7 +351,7 @@ def make_teaser(out, long_thumb, seed=90):
                        intro=f"And now, level {N}. The impossible one!")]
     th = Image.open(long_thumb).convert("RGBA")
     snd = []; d = say(snd, 0.2, f"Want the answer? Watch the full video, Find the missing weight, level {N}, "
-                                "on the QuizNado channel. Subscribe and like!") + 0.8
+                                "on the QuizNado07 channel. Subscribe and like!") + 0.8
     def draw(im, t):
         e = ease(t / 0.4); lay = Image.new("RGBA", (g.W, g.H), (0, 0, 0, 0))
         txt(lay, (g.W / 2, 560), "Want the answer?", 86, YELLOW, 7)
@@ -368,7 +368,7 @@ def make_teaser(out, long_thumb, seed=90):
         dd.text((g.W / 2, y + 122), "SUBSCRIBE & LIKE", font=F(60), fill=WHITE, anchor="mm")
         if e < 1: lay.putalpha(lay.getchannel("A").point(lambda a: int(a * e)))
         im.alpha_composite(lay)
-    segs.append(Seg(max(5.5, d), draw, lambda t: "s" if t >= 0.4 else None, snd, "QuizNado"))
+    segs.append(Seg(max(5.5, d), draw, lambda t: "s" if t >= 0.4 else None, snd, "QuizNado07"))
     total = render(segs, g, out)
     json.dump({"p1": p1, "p2": p2, "p3": p3}, open(out + ".answer.json", "w"))
     print("teaser", round(total, 1), "s; answers", p1["answer"], p2["answer"], "(level", N, "=", p3["answer"], ")", flush=True)
@@ -400,7 +400,7 @@ def make_teaser_v2(out, long_thumb, seed=90):
         dd.rounded_rectangle([190, y + 10, 890, y + 115], radius=52, fill=RED)
         dd.text((g.W / 2, y + 62), "SUBSCRIBE & LIKE", font=F(60), fill=WHITE, anchor="mm")
         im.alpha_composite(lay)
-    segs.append(Seg(max(3.8, d), draw, lambda t: "s", snd, "QuizNado"))
+    segs.append(Seg(max(3.8, d), draw, lambda t: "s", snd, "QuizNado07"))
     total = render(segs, g, out)
     print("teaser_v2", round(total, 1), "s; level", N, "=", p3["answer"], flush=True)
 

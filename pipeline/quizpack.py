@@ -2,7 +2,7 @@
 
 One pack (quizpacks/<slug>.json) = 1 long video (32 questions, 4 levels) + 1 vertical teaser Short:
 2 hard questions with answers, then the long video's IMPOSSIBLE question WITHOUT answer, ending on
-"Want the answer? Watch the full video" with the long video's thumbnail (Zahra's rule, Oct 2026).
+"Want the answer? Watch the full video" with the long video's thumbnail (channel rule, Oct 2026).
 
 Usage:  python3 quizpack.py quizpacks/<slug>.json OUT_DIR [long|short|all|preview]
 
@@ -25,7 +25,7 @@ from quiz import Q, Timeline, frame  # noqa: E402
 from PIL import Image  # noqa: E402
 
 LOGO = os.path.join(os.path.dirname(os.path.abspath(__file__)), "brand", "quiznado_logo.png")
-CHANNEL = "QuizNado"
+CHANNEL = "QuizNado07"
 if os.path.exists(LOGO):
     quiz.BRAND = {"logo": Image.open(LOGO).convert("RGBA"), "name": CHANNEL}
 
@@ -310,9 +310,9 @@ def build_long(pack, out_dir, voice):
             f"{nq} {noun}, 5 seconds each. Keep your score!\n"
             "👀 The hardest question is at the start... and the answer is at the end!\n\n"
             f"💬 Share your score in the comments! Example: {hi + 1}/{nq} 🎉\n"
-            "🔔 Subscribe to QuizNado 🌪️ for a new Easy to Impossible test every 3 days!\n\n"
-            f"🇲🇦 {p['ar']}\n🇫🇷 {p['fr']}\n\n{p['hashtags']} #EasyToImpossible #QuizNado")
-    write_kit(out_dir, slug, {"title": p["title"], "description": desc, "tags": ["QuizNado"] + p["tags"]}, False)
+            "🔔 Subscribe to QuizNado07 🌪️ for a new Easy to Impossible test every 3 days!\n\n"
+            f"🇲🇦 {p['ar']}\n🇫🇷 {p['fr']}\n\n{p['hashtags']} #EasyToImpossible #QuizNado07")
+    write_kit(out_dir, slug, {"title": p["title"], "description": desc, "tags": ["QuizNado07"] + p["tags"]}, False)
     print(f"done: {out} ({tl.t / 60:.1f} min)", flush=True)
 
 
@@ -369,9 +369,9 @@ def build_teaser(pack, out_dir, voice):
     desc = (f"{p['header']}: 3 hard questions! 🧠 Only 1% get the last one...\n"
             f"👉 The answer to number 3 is in the full video \"{p['title'].split(' |')[0]}\" on our channel!\n"
             "💬 Comment your answer first, then go check it!\n"
-            "👍 Like & subscribe to QuizNado 🌪️ for new challenges every week!\n\n"
-            f"🇲🇦 {p['ar']}\n🇫🇷 {p['fr']}\n\n#shorts {p['hashtags']} #QuizNado")
-    write_kit(out_dir, name, {"title": t["title"], "description": desc, "tags": ["QuizNado"] + p["tags"]}, True)
+            "👍 Like & subscribe to QuizNado07 🌪️ for new challenges every week!\n\n"
+            f"🇲🇦 {p['ar']}\n🇫🇷 {p['fr']}\n\n#shorts {p['hashtags']} #QuizNado07")
+    write_kit(out_dir, name, {"title": t["title"], "description": desc, "tags": ["QuizNado07"] + p["tags"]}, True)
     print(f"short: {out} ({tl.t:.0f} s)", flush=True)
 
 
@@ -406,9 +406,9 @@ def build_short(pack, out_dir, voice, si):
     desc = (f"{p['header']}: 4 questions, from easy to impossible! 🧠\n"
             "💬 Comment your score: 1/4, 2/4, 3/4 or 4/4?\n"
             f"🎬 Want the full test? \"{p['title'].split(' |')[0]}\" ({nq} {p['noun']}) is on our channel!\n"
-            "👍 Liked it? Like & subscribe to QuizNado 🌪️ for a new test every 3 days!\n\n"
-            f"🇲🇦 {p['ar']}\n🇫🇷 {p['fr']}\n\n#shorts {p['hashtags']} #QuizNado")
-    write_kit(out_dir, name, {"title": s["title"], "description": desc, "tags": ["QuizNado"] + p["tags"]}, True)
+            "👍 Liked it? Like & subscribe to QuizNado07 🌪️ for a new test every 3 days!\n\n"
+            f"🇲🇦 {p['ar']}\n🇫🇷 {p['fr']}\n\n#shorts {p['hashtags']} #QuizNado07")
+    write_kit(out_dir, name, {"title": s["title"], "description": desc, "tags": ["QuizNado07"] + p["tags"]}, True)
     print(f"short: {out} ({tl.t:.0f} s)", flush=True)
 
 

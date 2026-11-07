@@ -1,16 +1,16 @@
-# QuizNado run — every 3 days: 1 "Easy to Impossible" video + 1 teaser Short + fiche
+# QuizNado07 run — every 3 days: 1 "Easy to Impossible" video + 1 teaser Short + fiche
 
 Run by the scheduled task every 3 days. Nobody is watching: do not ask questions. If one item
-fails, finish the others and say what failed at the end. Zahra publishes **by hand** on YouTube
+fails, finish the others and say what failed at the end. The owner publishes **by hand** on YouTube
 (no Metricool, no scheduling tool): long video today at 18:00, the teaser Short the SAME day at 20:00
 (after the long video, so its "Related video" can point to it), then 2 free days (Morocco time).
-Files must reach her before 18:00 today.
+Files must reach the owner before 18:00 today.
 
-**Only ONE Short per set** (her rule, 31 Oct 2026: posting a lot hurts views): the teaser Short =
+**Only ONE Short per set** (channel rule, 31 Oct 2026: posting a lot hurts views): the teaser Short =
 2 hard questions WITH answers, then the long video's IMPOSSIBLE last question WITHOUT answer, ending
 on "Want the answer? Watch the full video" with the long video's thumbnail + subscribe & like.
 
-Why this format (her YouTube Studio, Oct 2026): "Easy to Impossible" English tests (plurals,
+Why this format (the channel's YouTube Studio, Oct 2026): "Easy to Impossible" English tests (plurals,
 spelling, common mistakes, mental math, opposites, past tense) and Spot the Difference keep viewers
 best (20–30 % watched). General knowledge, capitals, IQ, synonyms, vocabulary, riddles and the
 purple "level" quizzes lose people in 3 seconds — never make those. The old 49-question
@@ -72,7 +72,7 @@ last frame of the Short (the end card with the thumbnail).
 ## 4. Deliver
 SendUserFile (status proactive, display attach): `<slug>.mp4`, `<slug>_thumb.jpg`,
 `<slug>_short.mp4` and the fiche `.txt`. Then a short SendUserMessage +
-PushNotification: "QuizNado ready — long video today 18:00, Short 20:00!" with the 2 titles and the plan
+PushNotification: "QuizNado07 ready — long video today 18:00, Short 20:00!" with the 2 titles and the plan
 (long video today 18:00, the Short today 20:00; in YouTube Studio set the Short's
 "Related video" = the long video).
 
@@ -80,6 +80,6 @@ PushNotification: "QuizNado ready — long video today 18:00, Short 20:00!" with
 ```
 python3 pack_tools.py done <slug> "<theme>"
 git add quiznado/packs_history.json pipeline/quizpacks/<slug>.json   # (spot: pipeline/spotpacks/<slug>.json)
-git commit -m "QuizNado: <title>" && git -c push.negotiate=false push origin main
+git commit -m "QuizNado07: <title>" && git -c push.negotiate=false push origin main
 ```
 (fetch/rebase first if the push is rejected). Never commit .mp4 or .png files.

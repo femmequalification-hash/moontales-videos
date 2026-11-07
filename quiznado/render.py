@@ -1,4 +1,4 @@
-"""QuizNado video renderer: purple background, question card, A/B/C options,
+"""QuizNado07 video renderer: purple background, question card, A/B/C options,
 countdown timer, voiceover (Kokoro TTS), tick/ding sounds, soft music, logo watermark."""
 import os, sys, math, subprocess, re
 import numpy as np
@@ -96,17 +96,17 @@ def user_logo(size, alpha=1.0):
     return src.resize((size, size), Image.LANCZOS)
 
 def logo(h):
-    """QuizNado wordmark: tornado icon + 'Quiz' white + 'Nado' yellow."""
+    """QuizNado07 wordmark: tornado icon + 'Quiz' white + 'Nado' yellow."""
     f = F(int(h * 0.78), "ExtraBold")
     icon = tornado_icon(h)
     tmp = ImageDraw.Draw(Image.new("RGB", (10, 10)))
-    w1 = tmp.textlength("Quiz", font=f); w2 = tmp.textlength("Nado", font=f)
+    w1 = tmp.textlength("Quiz", font=f); w2 = tmp.textlength("Nado07", font=f)
     W = int(h + h * 0.2 + w1 + w2 + 10)
     im = Image.new("RGBA", (W, int(h * 1.1)), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
     im.alpha_composite(icon, (0, 0))
     x = int(h * 1.2); y = int(h * 0.5)
     d.text((x, y), "Quiz", font=f, fill=WHITE, anchor="lm")
-    d.text((x + w1, y), "Nado", font=f, fill=YELLOW, anchor="lm")
+    d.text((x + w1, y), "Nado07", font=f, fill=YELLOW, anchor="lm")
     return im
 
 def shadowed(base, box, radius, fill, blur=18, off=10, alpha=90):
@@ -164,7 +164,7 @@ class Layout:
         wm = user_logo(110 if portrait else 70, alpha=0.5)
         self.bg.alpha_composite(wm, ((self.W - wm.width) // 2, self.H - (310 if portrait else 125)))
         d = ImageDraw.Draw(self.bg)
-        d.text((self.W // 2, self.H - (180 if portrait else 40)), "@QuizNado • New quizzes every week",
+        d.text((self.W // 2, self.H - (180 if portrait else 40)), "@QuizNado07 • New quizzes every week",
                font=F(30 if portrait else 24, "SemiBold"), fill=(221, 214, 254), anchor="mm")
 
     def question_layer(self, num, total, q, opts, state, topic):
@@ -245,7 +245,7 @@ def build(quiz_list, portrait, rounds=False):
     # intro
     if rounds:
         NQ = sum(len(q["qs"]) for q in quiz_list); NR = len(quiz_list)
-        say(f"Welcome to QuizNado! {NQ} questions, {NR} rounds. Grab a pen, count your points, and let's go!",
+        say(f"Welcome to QuizNado07! {NQ} questions, {NR} rounds. Grab a pen, count your points, and let's go!",
             "intro", 0.6, lines=[("ULTIMATE QUIZ", 120, YELLOW), (f"{NQ} Questions • {NR} Rounds", 64, WHITE),
                                  ("Count your score!", 54, LAV)])
     else:
@@ -273,12 +273,12 @@ def build(quiz_list, portrait, rounds=False):
                     lines=[("Enjoying it?", 90, WHITE), ("SUBSCRIBE & LIKE", 100, YELLOW),
                            ("New quizzes every week", 52, LAV)])
         if rounds and ri in (1, 4):
-            say("If you liked it so far, subscribe and like! It really helps QuizNado.", "cta", 0.5,
+            say("If you liked it so far, subscribe and like! It really helps QuizNado07.", "cta", 0.5,
                 lines=[("Enjoying it?", 90, WHITE), ("SUBSCRIBE & LIKE", 110, YELLOW),
-                       ("It really helps QuizNado", 52, LAV)])
+                       ("It really helps QuizNado07", 52, LAV)])
     NQ = sum(len(q["qs"]) for q in quiz_list)
-    end = (f"Out of {NQ}, what was your score? Write it in the comments! Subscribe to QuizNado on YouTube for new quizzes every week."
-           if rounds else "How many did you get right? Comment your score! And subscribe to QuizNado on YouTube for new quizzes every week.")
+    end = (f"Out of {NQ}, what was your score? Write it in the comments! Subscribe to QuizNado07 on YouTube for new quizzes every week."
+           if rounds else "How many did you get right? Comment your score! And subscribe to QuizNado07 on YouTube for new quizzes every week.")
     say(end, "outro", 1.2, lines=[("Comment your score!", 96, YELLOW), (f"___ / {NQ}", 120, WHITE),
                                   ("Subscribe for new quizzes every week", 54, LAV)])
     return tl
@@ -392,9 +392,9 @@ if __name__ == "__main__":
     day = json.load(open(sys.argv[1])); outdir = sys.argv[2]; which = sys.argv[3] if len(sys.argv) > 3 else "all"
     os.makedirs(outdir, exist_ok=True); n = day["number"]; date = day["date"]
     if which in ("long", "all"):
-        out = f"{outdir}/{date}_QuizNado_Ultimate_Quiz_{n}.mp4"
+        out = f"{outdir}/{date}_QuizNado07_Ultimate_Quiz_{n}.mp4"
         d = render(build([to_quiz(r) for r in day["long"]["rounds"]], False, rounds=True), Layout(False), out)
-        loudnorm(out); long_thumbnail(f"{outdir}/{date}_QuizNado_Ultimate_Quiz_{n}_thumbnail.jpg", n, sum(len(r["questions"]) for r in day["long"]["rounds"]))
+        loudnorm(out); long_thumbnail(f"{outdir}/{date}_QuizNado07_Ultimate_Quiz_{n}_thumbnail.jpg", n, sum(len(r["questions"]) for r in day["long"]["rounds"]))
         print("long", round(d, 1), flush=True)
     for i, sh in enumerate(day["shorts"], 1):
         if which not in ("all", f"short{i}"): continue

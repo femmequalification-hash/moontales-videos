@@ -1,7 +1,7 @@
-"""QuizNado daily helpers.
+"""QuizNado07 daily helpers.
   python3 daily_tools.py next                 -> prints next number, today's date, rounds topics, short topics
   python3 daily_tools.py check days/DATE.json -> validates the day file (structure, repeats, lengths)
-  python3 daily_tools.py fiche days/DATE.json OUT -> writes OUT/DATE_QuizNado_fiche.txt
+  python3 daily_tools.py fiche days/DATE.json OUT -> writes OUT/DATE_QuizNado07_fiche.txt
   python3 daily_tools.py done days/DATE.json  -> adds the day's questions to history.json
 """
 import json, os, sys, re, datetime
@@ -14,7 +14,7 @@ SHORT_TOPICS = ["Brain Teasers", "Which Is Bigger", "Animals Quiz", "Odd One Out
                 "Space Quiz", "Human Body Quiz", "Football Quiz", "Synonyms Test", "History Quiz", "Inventions Quiz",
                 "Opposites Test", "World Records Quiz", "Missing Number", "Countries Quiz", "Past Tense Test",
                 "Logic Puzzles", "Geography Quiz", "Phrasal Verbs"] + ROUNDS
-COMMON_TAGS = ("quiz, quiz time, trivia, general knowledge quiz, brain test, QuizNado, اختبار, أسئلة وأجوبة, "
+COMMON_TAGS = ("quiz, quiz time, trivia, general knowledge quiz, brain test, QuizNado07, اختبار, أسئلة وأجوبة, "
                "ثقافة عامة, تحدي, اختبر نفسك, quiz culture générale, devinettes, questions réponses")
 
 def norm(q): return re.sub(r"[^a-z0-9]+", " ", q.lower()).strip()
@@ -67,9 +67,9 @@ def cmd_check(path):
 
 def desc_short(s):
     return (f"{s['first_line']}\n\n👇 Comment your score! How many did you get right?\n\n"
-            "🔔 Subscribe to QuizNado on YouTube for new quizzes every week: general knowledge, IQ tests, English tests, riddles and more!\n\n"
-            "اشترك في قناة QuizNado على يوتيوب لتحصل على اختبارات جديدة كل أسبوع 🧠\nAbonne-toi à la chaîne YouTube QuizNado pour de nouveaux quiz chaque semaine !\n\n"
-            "#quiz #trivia #QuizNado #shorts")
+            "🔔 Subscribe to QuizNado07 on YouTube for new quizzes every week: general knowledge, IQ tests, English tests, riddles and more!\n\n"
+            "اشترك في قناة QuizNado07 على يوتيوب لتحصل على اختبارات جديدة كل أسبوع 🧠\nAbonne-toi à la chaîne YouTube QuizNado07 pour de nouveaux quiz chaque semaine !\n\n"
+            "#quiz #trivia #QuizNado07 #shorts")
 
 def desc_long(d):
     rounds = "\n".join(f"{i + 1}️⃣ {t}" for i, t in enumerate(ROUNDS))
@@ -77,16 +77,16 @@ def desc_long(d):
     return (f"Ultimate Quiz #{d['number']}: {nq} brand-new questions in 7 rounds! 🧠\n"
             "Grab a pen, count your points and see if you can beat them all.\n\n"
             f"7 rounds:\n{rounds}\n\n👇 Comment your score out of {nq}!\nPlay it with your family and friends. Who gets the highest score?\n\n"
-            "🔔 Subscribe to QuizNado on YouTube for new challenges every week!\n\n"
+            "🔔 Subscribe to QuizNado07 on YouTube for new challenges every week!\n\n"
             f"اختبر نفسك في {nq} سؤالاً جديداً: ثقافة عامة، ذكاء، إنجليزية، رياضيات، ألغاز، علوم وعواصم 🧠\n"
-            "اكتب نتيجتك في التعليقات واشترك في QuizNado!\n\n"
+            "اكتب نتيجتك في التعليقات واشترك في QuizNado07!\n\n"
             f"{nq} nouvelles questions pour tester ta culture générale, ton QI et ton anglais !\n"
-            "Écris ton score en commentaire et abonne-toi à QuizNado !\n\n#quiz #trivia #iqtest #generalknowledge #QuizNado")
+            "Écris ton score en commentaire et abonne-toi à QuizNado07 !\n\n#quiz #trivia #iqtest #generalknowledge #QuizNado07")
 
 def cmd_fiche(path, out):
     d = json.load(open(path)); date = d["date"]; n = d["number"]; L = d["long"]
     parts = [f"QUIZNADO — {date} — publish everything at 20:00 (Morocco time)\n", "=" * 60]
-    parts += [f"\n1) LONG VIDEO: {date}_QuizNado_Ultimate_Quiz_{n}.mp4", f"   Thumbnail: {date}_QuizNado_Ultimate_Quiz_{n}_thumbnail.jpg",
+    parts += [f"\n1) LONG VIDEO: {date}_QuizNado07_Ultimate_Quiz_{n}.mp4", f"   Thumbnail: {date}_QuizNado07_Ultimate_Quiz_{n}_thumbnail.jpg",
               "\nTITLE:", L["title"], "\nDESCRIPTION:", desc_long(d), "\nTAGS:", COMMON_TAGS + ", " + L["extra_tags"], "\n" + "=" * 60]
     for i, s in enumerate(d["shorts"], 1):
         parts += [f"\n{i + 1}) SHORT {i}: {date}_Short_{i}_{s['id']}.mp4", "\nTITLE:", s["title"], "\nDESCRIPTION:", desc_short(s),
@@ -96,7 +96,7 @@ def cmd_fiche(path, out):
     for r in L["rounds"]:
         parts.append(f"  {r['topic']}: " + " | ".join(f"{q['q']} → {'ABC'[q['answer']]}) {q['options'][q['answer']]}" for q in r["questions"]))
     os.makedirs(out, exist_ok=True)
-    p = os.path.join(out, f"{date}_QuizNado_fiche.txt"); open(p, "w").write("\n".join(parts) + "\n"); print(p)
+    p = os.path.join(out, f"{date}_QuizNado07_fiche.txt"); open(p, "w").write("\n".join(parts) + "\n"); print(p)
 
 def cmd_done(path):
     d = json.load(open(path)); h = hist()

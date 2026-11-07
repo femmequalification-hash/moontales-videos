@@ -1,4 +1,4 @@
-"""QuizNado 'Find the number' — a hidden number in a grid of look-alike digits.
+"""QuizNado07 'Find the number' — a hidden number in a grid of look-alike digits.
 python3 findnum.py long   OUT_DIR PREFIX SEED   -> PREFIX.mp4 (24 levels, 10+ min) + 3 thumbnails + PREFIX_answers.json
 python3 findnum.py teaser OUT.mp4 SEED THUMB     -> hook-first loop Short (hardest level first, 2 warm-ups, hardest again, no answer)
 python3 findnum.py frames OUT_DIR                -> preview stills
@@ -193,8 +193,8 @@ def make_long(outdir, prefix, seed):
             segs.append(card(g, [(f"LEVEL {N} is coming...", 92, YELLOW), ("Stay until the end!", 70, WHITE)],
                              f"Level {N} is coming. Stay until the end to see the answer!", 2.2, 0.3, chip))
         if i + 1 in (6, 12, 19):
-            segs.append(card(g, [("Enjoying it?", 86, WHITE), ("SUBSCRIBE & LIKE", 104, YELLOW), ("It really helps QuizNado", 50, SOFT)],
-                             "If you like it so far, subscribe and like! It really helps QuizNado.", 3, 0.5, chip))
+            segs.append(card(g, [("Enjoying it?", 86, WHITE), ("SUBSCRIBE & LIKE", 104, YELLOW), ("It really helps QuizNado07", 50, SOFT)],
+                             "If you like it so far, subscribe and like! It really helps QuizNado07.", 3, 0.5, chip))
     segs.append(card(g, [("What's your score?", 96, YELLOW), (f"___ / {N}", 124, WHITE), ("Comment it below!", 60, SOFT)],
                      f"How many did you find out of {N}? Write your score in the comments!", 3, 0.8))
     segs.append(end_screen_seg(g))
@@ -226,7 +226,7 @@ def make_teaser(out, seed, long_thumb):
         y = 740 + t2.height + 75
         dd.rounded_rectangle([190, y + 10, 890, y + 115], radius=52, fill=RED)
         dd.text((g.W / 2, y + 62), "SUBSCRIBE & LIKE", font=F(60), fill=WHITE, anchor="mm")
-    segs.append(Seg(max(3.8, d), draw, lambda t: "s", snd, "QuizNado"))
+    segs.append(Seg(max(3.8, d), draw, lambda t: "s", snd, "QuizNado07"))
     total = render(segs, g, out)
     print("teaser", round(total, 1), "s; warm-ups", lvs[7]["target"], lvs[15]["target"], "; level", N, hard["target"], where(hard), flush=True)
 

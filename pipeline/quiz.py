@@ -29,7 +29,7 @@ H = art.hexc
 SR = build.SR
 THINK = 5  # seconds of countdown
 LETTERS = "ABCD"
-BRAND = None  # {"logo": RGBA image, "name": "QuizNado"} -> logo in header + mark inside the question card
+BRAND = None  # {"logo": RGBA image, "name": "QuizNado07"} -> logo in header + mark inside the question card
 
 
 def paste_logo(c, cx, cy, d):

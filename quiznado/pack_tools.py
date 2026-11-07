@@ -1,13 +1,13 @@
-"""QuizNado "Easy to Impossible" run helpers (every 3 days, Zahra publishes by hand).
+"""QuizNado07 "Easy to Impossible" run helpers (every 3 days, published by hand).
 
-Based on her YouTube Studio numbers (Oct 2026): English tests (plurals, spelling, common
+Based on the channel's YouTube Studio numbers (Oct 2026): English tests (plurals, spelling, common
 mistakes, mental math, opposites, past tense) and Spot the Difference keep viewers best;
 general knowledge, capitals, IQ, synonyms, vocabulary and "level" quizzes do not.
 
   python3 pack_tools.py next                 -> today's theme, new slug/title number, example pack to copy
   python3 pack_tools.py check PACK.json      -> validates a quiz pack (structure, NEW questions, tags, rainbow)
   python3 pack_tools.py spotmeta RAW.json SLUG NUMBER -> adds titles/tags/shorts to a spotgen.py output
-  python3 pack_tools.py fiche SLUG OUT       -> OUT/<date>_QuizNado_fiche.txt (all kits + publishing plan)
+  python3 pack_tools.py fiche SLUG OUT       -> OUT/<date>_QuizNado07_fiche.txt (all kits + publishing plan)
   python3 pack_tools.py done SLUG THEME      -> records the run in packs_history.json
 """
 import datetime
@@ -139,7 +139,7 @@ def cmd_check(path):
         errs.append(f"teaser title must end with #shorts and be ≤ 100 chars: {t.get('title')}")
     if len(p["title"]) > 100:
         errs.append("title > 100 chars")
-    tags = ["QuizNado"] + p["tags"]
+    tags = ["QuizNado07"] + p["tags"]
     if len(", ".join(dict.fromkeys(tags))) > 450:
         errs.append("tags too long (< 450 chars)")
     if not any(re.search(r"[؀-ۿ]", t) for t in p["tags"]):
@@ -164,7 +164,7 @@ def cmd_spotmeta(raw, slug, number):
         "fr": "Trouve les 5 différences entre les deux images — du plus facile à l'impossible !",
         "hashtags": "#SpotTheDifference #FindTheDifference #Puzzle #BrainGames",
         "tags": ["spot the difference", "find the difference", "spot 5 differences", "picture puzzle", "brain games",
-                 "visual puzzle", "easy to impossible", f"spot the difference {n}", "QuizNado", "ابحث عن الاختلاف",
+                 "visual puzzle", "easy to impossible", f"spot the difference {n}", "QuizNado07", "ابحث عن الاختلاف",
                  "أوجد الفرق", "ألغاز الصور", "trouve les différences", "jeu des 7 erreurs", "jeu des différences"],
         "teaser": {"puzzle": 6, "title": "Only 1% Solve The Last One 👀 Answer In The Full Video! #shorts"},
     })
@@ -188,7 +188,7 @@ def cmd_fiche(slug, out):
         p = os.path.join(out, nm + ".txt")
         parts.append(open(p).read() if os.path.exists(p) else f"(missing kit {nm}.txt)")
         parts.append("=" * 60)
-    pf = os.path.join(out, f"{date.isoformat()}_QuizNado_fiche.txt")
+    pf = os.path.join(out, f"{date.isoformat()}_QuizNado07_fiche.txt")
     open(pf, "w").write("\n".join(parts) + "\n")
     print(pf)
 

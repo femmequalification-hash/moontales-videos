@@ -1,13 +1,13 @@
-# QuizNado daily run — 1 Ultimate Quiz (49 questions, 12+ min) + 2 Shorts + fiche
+# QuizNado07 daily run — 1 Ultimate Quiz (49 questions, 12+ min) + 2 Shorts + fiche
 
 > RETIRED (Oct 2026): the scheduled task now follows `RUN_QUIZNADO.md` (Easy to Impossible packs, every 3 days).
 
 Run by the daily scheduled task. Nobody is watching: do not ask questions. If one
-item fails, finish the others and say what failed at the end. Zahra publishes the
-videos herself on YouTube at **20:00 Morocco time**, so the files must reach her before then.
+item fails, finish the others and say what failed at the end. The owner publishes the
+videos by hand on YouTube at **20:00 Morocco time**, so the files must reach the owner before then.
 
 Same design every day (purple background, white question card, A/B/C options,
-timer, her QuizNado logo, English voice "af_heart", "subscribe & like" moment,
+timer, the QuizNado07 logo, English voice "af_heart", "subscribe & like" moment,
 "comment your score" ending). **Only the questions change.**
 
 ## 0. Already done today?
@@ -58,11 +58,11 @@ and the thumbnail.
 ## 4. Deliver
 SendUserFile (status proactive, display attach): the long video, its thumbnail, the 2 Shorts
 and the fiche `.txt`. Then a short SendUserMessage + PushNotification (if available):
-"QuizNado #N ready for 20:00" with the 3 titles.
+"QuizNado07 #N ready for 20:00" with the 3 titles.
 
 ## 5. Save
 ```
 python3 daily_tools.py done days/<DATE>.json      # adds questions to history.json
-git add days/<DATE>.json history.json && git commit -m "QuizNado #N (<DATE>)" && git -c push.negotiate=false push origin main
+git add days/<DATE>.json history.json && git commit -m "QuizNado07 #N (<DATE>)" && git -c push.negotiate=false push origin main
 ```
 (fetch/rebase first if the push is rejected). Never commit .mp4 files.

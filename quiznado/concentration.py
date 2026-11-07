@@ -1,4 +1,4 @@
-"""QuizNado 'Follow the yellow ball' concentration test — Shorts (portrait) and multi-level long video (landscape).
+"""QuizNado07 'Follow the yellow ball' concentration test — Shorts (portrait) and multi-level long video (landscape).
 
 python3 concentration.py short OUT.mp4 LEVEL_NAME NBALLS NSWAPS D_START D_END SEED
 python3 concentration.py long  OUT_DIR  PREFIX SEED      -> PREFIX.mp4 + PREFIX_thumbnail.jpg (6 levels)
@@ -49,11 +49,11 @@ def background(g, chip_text):
     if g.portrait:
         bg.alpha_composite(user_logo(200), ((W - 200) // 2, 145))
         bg.alpha_composite(user_logo(110, alpha=0.5), ((W - 110) // 2, H - 310))
-        d.text((W // 2, H - 180), "@QuizNado • Easy to Impossible", font=F(30), fill=(221, 214, 254), anchor="mm")
+        d.text((W // 2, H - 180), "@QuizNado07 • Easy to Impossible", font=F(30), fill=(221, 214, 254), anchor="mm")
     else:
         bg.alpha_composite(user_logo(135), (35, 22))
         bg.alpha_composite(user_logo(80, alpha=0.5), (W - 120, H - 120))
-        d.text((W - 80, H - 20), "@QuizNado", font=F(22), fill=(221, 214, 254), anchor="mm")
+        d.text((W - 80, H - 20), "@QuizNado07", font=F(22), fill=(221, 214, 254), anchor="mm")
     if chip_text:
         f = F(40 if g.portrait else 38); w = d.textlength(chip_text, font=f) + 70
         d.rounded_rectangle([W / 2 - w / 2, g.chip_y - 38, W / 2 + w / 2, g.chip_y + 38], radius=38, fill=YELLOW)
@@ -210,7 +210,7 @@ def make_short(out, level, n, nswaps, d0, d1, seed):
                         intro_voice=f"Only one percent can follow the yellow ball at level {level.lower()}. Can you?")
     outro = card_seg(g, [("Comment your level!", 84, YELLOW), ("EASY • HARD • IMPOSSIBLE", 54, WHITE),
                          ("Full test with 16 levels", 62, WHITE), ("on our channel!", 62, WHITE)],
-                     "Comment your level! The full test, with sixteen levels, is on our channel. Subscribe to QuizNado!", 3.0, 0.8, chip)
+                     "Comment your level! The full test, with sixteen levels, is on our channel. Subscribe to QuizNado07!", 3.0, 0.8, chip)
     d = render([lv, outro], g, out); print("short", level, round(d, 1), "s, answer", ans, flush=True); return ans
 
 def teaser_seg(g, n, ns, d0, d1, seed, chip, NL):
@@ -254,11 +254,11 @@ def make_long(outdir, prefix, seed, levels=None):
         segs.append(sg); answers.append(ans)
         if i in (3, 9):
             segs.append(card_seg(g, [("Enjoying it?", 90, WHITE), ("SUBSCRIBE & LIKE", 110, YELLOW),
-                                     ("It really helps QuizNado", 52, (221, 214, 254))],
-                                 "Enjoying it? Subscribe and like! It really helps QuizNado.", 2.5, 0.3, chip))
+                                     ("It really helps QuizNado07", 52, (221, 214, 254))],
+                                 "Enjoying it? Subscribe and like! It really helps QuizNado07.", 2.5, 0.3, chip))
     segs.append(card_seg(g3, [("What's your score?", 100, YELLOW), (f"___ / {NL}", 130, WHITE),
                               ("Comment it below!", 64, (221, 214, 254))],
-                         f"What is your score out of {NL}? Write it in the comments, and subscribe to QuizNado for new tests every week!", 3, 1.2, None))
+                         f"What is your score out of {NL}? Write it in the comments, and subscribe to QuizNado07 for new tests every week!", 3, 1.2, None))
     total = render_multi(segs, outdir, prefix)
     thumbnail(f"{outdir}/{prefix}_thumbnail.jpg", NL)
     print("long", round(total, 1), "s, answers", answers, flush=True); return answers
@@ -280,7 +280,7 @@ def make_teaser(out, long_seed, long_thumb, level_index=None, levels=None):
                        note="Answer in the full video!")
     segs += [s1, s2]
     th = Image.open(long_thumb).convert("RGB")
-    snd = []; d = say(snd, 0.2, f"Want the answer? Watch the full concentration test, level {li + 1}, on the QuizNado channel. "
+    snd = []; d = say(snd, 0.2, f"Want the answer? Watch the full concentration test, level {li + 1}, on the QuizNado07 channel. "
                                 "Subscribe and like!") + 0.9
     def draw(im, t):
         e = ease(t / 0.4); lay = Image.new("RGBA", (gn.W, gn.H), (0, 0, 0, 0))
@@ -295,7 +295,7 @@ def make_teaser(out, long_seed, long_thumb, level_index=None, levels=None):
         dd.text((gn.W / 2, y + 122), "SUBSCRIBE & LIKE", font=F(60), fill=WHITE, anchor="mm")
         if e < 1: lay.putalpha(lay.getchannel("A").point(lambda a: int(a * e)))
         im.alpha_composite(lay)
-    segs.append(Seg(max(5.5, d), draw, snd, "QuizNado"))
+    segs.append(Seg(max(5.5, d), draw, snd, "QuizNado07"))
     total = render(segs, gn, out)
     print("teaser", round(total, 1), "s; answer 1 =", a1, "; level", li + 1, "=", a2, flush=True)
 
