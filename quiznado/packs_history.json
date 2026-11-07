@@ -1,28 +1,28 @@
 {
- "runs": [
-  {
-   "date": "2026-11-01",
-   "theme": "Concentration Test",
-   "slug": "concentration-test-16-levels",
-   "note": "made by hand in chat (concentration.py long, seed 1101); Shorts on 2 and 3 Nov"
-  },
-  {
-   "date": "2026-11-04",
-   "theme": "Weight Puzzle",
-   "slug": "weight-puzzle-24-levels",
-   "note": "made by hand in chat (weights.py long, seed 41; Shorts seeds 77 and 90); Shorts on 5 and 6 Nov"
-  },
-  {
-   "date": "2026-11-07",
-   "theme": "Guess the Football Legend",
-   "slug": "guess-the-football-legend",
-   "note": "made by hand in chat (legends.py, 26 legends, seed 7); teaser Short on 8 Nov"
-  },
-  {
-   "date": "2026-11-10",
-   "theme": "Find The Number",
-   "slug": "find-the-number-24-levels",
-   "note": "made by hand in chat (findnum.py long, seed 11; hook-first teaser Short seed 11, same day 20:00)"
-  }
- ]
+  "runs": [
+    {
+      "date": "2026-11-01",
+      "theme": "Concentration Test",
+      "slug": "concentration-test-16-levels",
+      "note": "made by hand in chat (concentration.py long, seed 1101); Shorts on 2 and 3 Nov"
+    },
+    {
+      "date": "2026-11-04",
+      "theme": "Weight Puzzle",
+      "slug": "weight-puzzle-24-levels",
+      "note": "made by hand in chat (weights.py long, seed 41; Shorts seeds 77 and 90); Shorts on 5 and 6 Nov"
+    },
+    {
+      "date": "2026-11-07",
+      "theme": "Guess the Football Legend",
+      "slug": "guess-the-football-legend",
+      "note": "made by hand in chat (legends.py, 26 legends, seed 7); teaser Short on 8 Nov; owner posted Guess the Player (football legend) at 13:00 on 7 Nov to test that hour"
+    },
+    {
+      "date": "2026-11-10",
+      "theme": "Find The Number",
+      "slug": "find-the-number-24-levels",
+      "note": "made by hand in chat (findnum.py long, seed 11; hook-first teaser Short seed 11, same day 20:00)"
+    }
+  ]
 }
