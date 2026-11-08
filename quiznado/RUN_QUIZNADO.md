@@ -73,8 +73,8 @@ last frame of the Short (the end card with the thumbnail).
 ## 4. Deliver
 SendUserFile (status proactive, display attach): `<slug>.mp4`, `<slug>_thumb.jpg`,
 `<slug>_short.mp4`, the fiche `.txt`, and the TikTok files `<slug>_tiktok_part1.mp4`, `<slug>_tiktok_part1.txt`,
-`<slug>_tiktok_part2.mp4`, `<slug>_tiktok_part2.txt` (TikTok plan: Part 1 the same day as the long video, ~21:00;
-Part 2 the next day ~21:00, say it in the message). Then a short SendUserMessage +
+`<slug>_tiktok_part2.mp4`, `<slug>_tiktok_part2.txt` (TikTok plan: Part 1 the NEXT day at 12:30, Part 2 the day after at 12:30 —
+the owner's TikTok audience (mostly Asia) peaks 13:00–15:00 Morocco time; say it in the message). Then a short SendUserMessage +
 PushNotification: "QuizNado07 ready — long video today 18:00, Short 20:00!" with the 2 titles and the plan
 (long video today 18:00, the Short today 20:00; in YouTube Studio set the Short's
 "Related video" = the long video).
