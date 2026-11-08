@@ -17,8 +17,9 @@ DIRS = {"H": (0, 1), "V": (1, 0), "D": (1, 1)}
 ALL8 = [(0, 1), (0, -1), (1, 0), (-1, 0), (1, 1), (-1, -1), (1, -1), (-1, 1)]
 PAIRS = [("2", "9"), ("1", "7"), ("6", "9"), ("3", "8"), ("5", "6"), ("0", "8"), ("4", "7"), ("2", "5"), ("1", "4"), ("8", "9")]
 # (grid size, allowed directions, tier, think seconds)
-PLAN = ([(5, "H", 0, 10)] * 4 + [(6, "HV", 1, 12)] * 5 + [(7, "HV", 2, 15)] * 5 +
-        [(8, "HVD", 3, 18)] * 5 + [(9, "HVD", 4, 20)] * 3 + [(10, "HVD", 5, 22)] * 2)
+PLAN = ([(5, "H", 0, 8)] * 4 + [(6, "HV", 1, 10)] + [(6, "HV", 1, 6)] * 3 + [(6, "HV", 1, 10)] + [(7, "HV", 2, 17)] * 5 +
+        [(8, "HVD", 3, 20)] * 5 + [(9, "HVD", 4, 22)] * 3 + [(10, "HVD", 5, 24)] * 2)
+SPEED = (5, 6, 7)   # level indexes of the speed round (pattern interrupt around minute 2)
 HINT = {"H": "Hidden ACROSS", "HV": "Hidden ACROSS or DOWN", "HVD": "ACROSS, DOWN or DIAGONAL"}
 
 def count(grid, t):
@@ -103,7 +104,18 @@ def find_label(im, g, lv):
     ImageDraw.Draw(im).text((cx, cy), s, font=F(size), fill=DEEP, anchor="mm")
     txt(im, g.hint_xy, HINT[lv["dirs"]], 46 if not g.portrait else 44, SOFT, 5)
 
-def level_seg(g, lv, chip, *, think, intro=None, reveal=True, hold=4.0, q_text="Can you find it?", instant=False):
+def progress(im, g, cur, N):
+    if g.portrait or cur is None: return
+    d = ImageDraw.Draw(im); x0, y, step = 1120, 935, 29
+    d.text((x0 - 10, y - 50), "YOUR PROGRESS", font=F(30), fill=SOFT, anchor="lm")
+    for k in range(N - 1):
+        x = x0 + k * step
+        if k < cur: d.ellipse([x - 9, y - 9, x + 9, y + 9], fill=YELLOW)
+        elif k == cur: d.ellipse([x - 13, y - 13, x + 13, y + 13], fill=WHITE, outline=YELLOW, width=4)
+        else: d.ellipse([x - 8, y - 8, x + 8, y + 8], fill=(255, 255, 255, 70))
+    e = emoji("🏆", 54 if cur == N - 1 else 44); im.alpha_composite(e, (int(x0 + (N - 1) * step - e.width / 2), int(y - e.height / 2)))
+
+def level_seg(g, lv, chip, *, think, intro=None, reveal=True, hold=4.0, q_text="Can you find it?", instant=False, prog=None):
     snd = []
     vd = say(snd, 0.2, intro or f"Find {spoken(lv['target'])}!")
     if not instant: snd.insert(0, (0.25, whoosh() * 0.6))
@@ -124,6 +136,7 @@ def level_seg(g, lv, chip, *, think, intro=None, reveal=True, hold=4.0, q_text="
         else:
             draw_grid(im, g, lv, reveal=(t - t_rev) / 0.3 if t >= t_rev else 0.0)
         find_label(im, g, lv)
+        if prog: progress(im, g, *prog)
         if t >= t_rev:
             txt(im, g.q_xy, "Here it is!", 64, YELLOW, 6)
         elif t >= t_think:
@@ -181,20 +194,28 @@ def make_long(outdir, prefix, seed):
     for i, (lv, (n, dirs, tier, th)) in enumerate(zip(lvs, PLAN)):
         name, col = TIERS[tier]; chip = f"LEVEL {i + 1} / {N} • {name}"
         if i == 0:
-            segs.append(card(g, [("Let's start easy!", 90, WHITE), ("LEVEL 1", 120, YELLOW)], "Let's start easy. Level 1!", 1.6, 0.2, chip))
-        else:
-            segs.append(card(g, [(f"LEVEL {i + 1}", 120, YELLOW), (name, 84, col)], f"Level {i + 1}. {name.lower()}.", 1.6, 0.2, chip))
+            segs.append(card(g, [("Let's start easy!", 90, WHITE), ("LEVEL 1", 120, YELLOW)], "Let's start easy. Level 1!", 1.2, 0.1, chip))
+        elif i == SPEED[0]:
+            segs.append(card(g, [("SPEED ROUND!", 120, YELLOW), ("3 levels • 6 seconds each", 70, WHITE)],
+                             "Speed round! Three levels, only six seconds each. Ready? Go!", 2.0, 0.1, chip))
+        elif i not in SPEED:
+            segs.append(card(g, [(f"LEVEL {i + 1}", 120, YELLOW), (name, 84, col)], f"Level {i + 1}. {name.lower()}.", 1.2, 0.1, chip))
         if i in (4, 14):
             segs.append(card(g, [("NEW RULE!", 110, YELLOW), (HINT[dirs], 70, WHITE)],
-                             "New rule! Now it can also hide going down." if dirs == "HV" else "New rule! Now it can also hide on a diagonal.", 2.4, 0.3, chip))
-        segs.append(level_seg(g, lv, chip, think=th, hold=3.4 if tier == 0 else 4.0,
-                              intro=(f"Here is the one from the start! Find {spoken(lv['target'])}!" if i == N - 1 else None)))
-        if i + 1 in (8, 16):
-            segs.append(card(g, [(f"LEVEL {N} is coming...", 92, YELLOW), ("Stay until the end!", 70, WHITE)],
-                             f"Level {N} is coming. Stay until the end to see the answer!", 2.2, 0.3, chip))
-        if i + 1 in (6, 12, 19):
+                             "New rule! Now it can also hide going down." if dirs == "HV" else "New rule! Now it can also hide on a diagonal.", 2.0, 0.2, chip))
+        segs.append(level_seg(g, lv, chip.replace(name, "SPEED ROUND") if i in SPEED else chip, think=th,
+                              hold=2.6 if (tier == 0 or i in SPEED) else 3.6, prog=(i, N),
+                              intro=(f"Here is the one from the start! Find {spoken(lv['target'])}!" if i == N - 1 else
+                                     (f"Six seconds! Find {spoken(lv['target'])}!" if i in SPEED else None))))
+        if i + 1 in (4, 14):
+            segs.append(card(g, [("Still perfect?", 104, YELLOW), (f"Found all {i + 1}?", 84, WHITE), ("Type YES in the comments!", 58, SOFT)],
+                             f"Did you find all {i + 1} so far? Type yes in the comments!", 2.4, 0.2, chip))
+        if i + 1 in (9, 17):
+            segs.append(card(g, [(f"LEVEL {N} is coming...", 92, YELLOW), ("the one from the start!", 64, WHITE), ("Stay until the end!", 70, WHITE)],
+                             f"Level {N} is coming. The one from the start! Stay until the end to see the answer!", 2.2, 0.2, chip))
+        if i + 1 in (11, 20):
             segs.append(card(g, [("Enjoying it?", 86, WHITE), ("SUBSCRIBE & LIKE", 104, YELLOW), ("It really helps QuizNado07", 50, SOFT)],
-                             "If you like it so far, subscribe and like! It really helps QuizNado07.", 3, 0.5, chip))
+                             "If you like it so far, subscribe and like! It really helps QuizNado07.", 3, 0.4, chip))
     segs.append(card(g, [("What's your score?", 96, YELLOW), (f"___ / {N}", 124, WHITE), ("Comment it below!", 60, SOFT)],
                      f"How many did you find out of {N}? Write your score in the comments!", 3, 0.8))
     segs.append(end_screen_seg(g))
@@ -204,19 +225,31 @@ def make_long(outdir, prefix, seed):
     for i, lv in enumerate(lvs): print(f"L{i + 1} {lv['target']}: {where(lv)}")
 
 # ---------------- teaser Short (hook-first loop) ----------------
-def make_teaser(out, seed, long_thumb):
-    g = G(True); lvs = build_levels(seed); N = len(lvs); hard = lvs[-1]; chip = f"LEVEL {N} • IMPOSSIBLE"
-    segs = [level_seg(g, hard, chip, think=1, reveal=False, instant=True, q_text="Most adults can't find it",
-                      intro=f"Most adults can't find {spoken(hard['target'])}!"),
-            level_seg(g, lvs[7], "WARM-UP 1", think=5, hold=2.4, intro="Warm up first. Go!"),
-            level_seg(g, lvs[15], "WARM-UP 2", think=6, hold=2.4, intro="Harder!"),
+def make_teaser(out, seed, long_thumb, mode="after"):
+    """mode 'before': posted the DAY BEFORE the long video (level 24, 'full video tomorrow', bell).
+       mode 'after':  posted after the long video (level 24, 'full video out now')."""
+    g = G(True); lvs = build_levels(seed); N = len(lvs)
+    hi, w1, w2 = (N - 1, 4, 12) if mode == "before" else (N - 1, 7, 15)   # both on level 24 = the thumbnail
+    hard = lvs[hi]; chip = f"LEVEL {hi + 1} • {'IMPOSSIBLE' if hi >= N - 2 else 'EXPERT'}"
+    segs = [level_seg(g, hard, chip, think=1, reveal=False, instant=True,
+                      q_text="New challenge TOMORROW!" if mode == "before" else "Most adults can't find it",
+                      intro=(f"New challenge tomorrow! Can you find {spoken(hard['target'])}?" if mode == "before"
+                             else f"Most adults can't find {spoken(hard['target'])}!")),
+            level_seg(g, lvs[w1], "WARM-UP 1", think=5, hold=2.4, intro="Warm up first. Go!"),
+            level_seg(g, lvs[w2], "WARM-UP 2", think=6, hold=2.4, intro="Harder!"),
             level_seg(g, hard, chip, think=6, reveal=False, q_text="Your turn. 6 seconds!",
-                      intro=f"Level {N}. Find {spoken(hard['target'])}!")]
+                      intro=f"Level {hi + 1}. Find {spoken(hard['target'])}!")]
     th = Image.open(long_thumb).convert("RGBA")
-    snd = []; d = say(snd, 0.1, "Comment where it is. The answer is in the full video!") + 0.4
+    if mode == "before":
+        l1, l2, btn = "FULL VIDEO TOMORROW", "Answer + 24 levels inside", "SUBSCRIBE + TURN ON"
+        voice = "The answer is in the full video, tomorrow! Subscribe and turn on notifications so you don't miss it!"
+    else:
+        l1, l2, btn = "FULL VIDEO OUT NOW!", "Watch it to see the answer", "SUBSCRIBE & LIKE"
+        voice = "The full video is out now on QuizNado07! Go watch it to see the answer!"
+    snd = []; d = say(snd, 0.1, voice) + 0.4
     def draw(im, t):
-        txt(im, (g.W / 2, 560), "Comment where it is!", 74, YELLOW, 7)
-        txt(im, (g.W / 2, 665), "Answer in the full video", 66, WHITE, 6)
+        txt(im, (g.W / 2, 555), l1, 76, YELLOW, 7)
+        txt(im, (g.W / 2, 660), l2, 60, WHITE, 6)
         tw = 940; t2 = th.resize((tw, int(tw * th.height / th.width)), Image.LANCZOS)
         shadowed(im, (70, 740, 70 + tw, 740 + t2.height), 24, WHITE, blur=16, off=10, alpha=110)
         m = Image.new("L", t2.size, 0); ImageDraw.Draw(m).rounded_rectangle([0, 0, t2.width - 1, t2.height - 1], radius=24, fill=255)
@@ -224,15 +257,18 @@ def make_teaser(out, seed, long_thumb):
         dd = ImageDraw.Draw(im); cx, cy = 70 + tw - 70, 740 + t2.height - 55
         dd.ellipse([cx - 48, cy - 48, cx + 48, cy + 48], fill=RED); dd.polygon([(cx - 15, cy - 24), (cx - 15, cy + 24), (cx + 26, cy)], fill=WHITE)
         y = 740 + t2.height + 75
-        dd.rounded_rectangle([190, y + 10, 890, y + 115], radius=52, fill=RED)
-        dd.text((g.W / 2, y + 62), "SUBSCRIBE & LIKE", font=F(60), fill=WHITE, anchor="mm")
+        dd.rounded_rectangle([130, y + 10, 950, y + 115], radius=52, fill=RED)
+        bx = g.W / 2 - (38 if mode == "before" else 0)
+        dd.text((bx, y + 62), btn, font=F(56), fill=WHITE, anchor="mm")
+        if mode == "before":
+            e = emoji("🔔", 64); im.alpha_composite(e, (int(bx + dd.textlength(btn, font=F(56)) / 2 + 12), int(y + 62 - e.height / 2)))
     segs.append(Seg(max(3.8, d), draw, lambda t: "s", snd, "QuizNado07"))
     total = render(segs, g, out)
-    print("teaser", round(total, 1), "s; warm-ups", lvs[7]["target"], lvs[15]["target"], "; level", N, hard["target"], where(hard), flush=True)
+    print("teaser", mode, round(total, 1), "s; warm-ups", lvs[w1]["target"], lvs[w2]["target"], "; level", hi + 1, hard["target"], where(hard), flush=True)
 
 if __name__ == "__main__":
     if sys.argv[1] == "long": make_long(sys.argv[2], sys.argv[3], int(sys.argv[4]))
-    elif sys.argv[1] == "teaser": make_teaser(sys.argv[2], int(sys.argv[3]), sys.argv[4])
+    elif sys.argv[1] == "teaser": make_teaser(sys.argv[2], int(sys.argv[3]), sys.argv[4], sys.argv[5] if len(sys.argv) > 5 else "after")
     elif sys.argv[1] == "frames":
         o = sys.argv[2]; lvs = build_levels(11)
         for portrait in (False, True):
