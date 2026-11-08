@@ -410,6 +410,46 @@ def build_teaser(p, pzs, out_dir, voice):
     print(f"short: {out} ({tl.t:.0f} s)", flush=True)
 
 
+def build_tiktok(p, pzs, out_dir, voice):
+    """TikTok only, 2 parts: Part 1 ends on a puzzle WITHOUT answer ('Answer in Part 2, follow!'),
+    Part 2 opens with those 5 differences circled, then ends on the hardest puzzle unanswered."""
+    from quizpack import tiktok_caption
+    parts = [(None, [0, 2], len(pzs) - 2), (len(pzs) - 2, [3], len(pzs) - 1)]
+    for pi, (pay, answered, cliff) in enumerate(parts, 1):
+        name = f"{p['slug']}_tiktok_part{pi}"
+        work = os.path.join(out_dir, "work_" + name); os.makedirs(work, exist_ok=True)
+        tl = Timeline(work, voice); pc = pzs[cliff]
+        if pay is None:
+            d = tl.say("Can you find all five differences? The last one is the hardest!")
+            tl.show(sd_frame(pc, True, "Part 1", None, None, None, 0, "Can you find them all?"), d + 0.2)
+        else:
+            d = tl.say("Part 2! Here are the five differences from part 1!")
+            tl.show(sd_frame(pzs[pay], True, "Part 1 answer", None, None, None, 5, "All 5 differences!"), d + 1.8)
+        n = len(answered) + 1
+        for i, k in enumerate(answered, 1):
+            play(tl, pzs[k], True, "Spot the difference", i, n, "Go!" if i == 1 else "Next one!", None, 15)
+        secs = 15; foot = "Answer in PART 2!" if pi == 1 else "Comment how many you found!"
+        d = tl.say(f"{'Last one' if pi == 1 else 'Final one'}! Five differences in {secs} seconds. Go!")
+        tl.show(sd_frame(pc, True, "Spot the difference", n, n, None, 0, f"{secs} seconds... GO!", foot), d + 0.3)
+        for s_ in range(secs, 0, -1):
+            tl.add_sound(quiz.TICK * (1.0 if s_ <= 5 else 0.45), tl.t)
+            tl.show(sd_frame(pc, True, "Spot the difference", n, n, s_, 0, None, foot, secs), 1.0)
+        if pi == 1:
+            d = tl.say("The answer is in part 2! Follow so you don't miss it!")
+            tl.show(card("Answer in PART 2!", ["How many did you find?", "Follow so you", "don't miss it!", "!+ FOLLOW"],
+                         vertical=True, logo=True), d + 1.0)
+            cap = "Spot the difference 👀 Can you find all 5? The last one is the hardest 😱 Answer in Part 2, follow!"
+        else:
+            d = tl.say("How many did you find? Comment! More puzzles? Search QuizNado07 on YouTube. And follow for more!")
+            tl.show(card("How many?", ["Comment: 3/5? 5/5?", "More puzzles:", "search QuizNado07 on YouTube",
+                                       "!+ FOLLOW for more"], vertical=True, logo=True), d + 1.0)
+            cap = "Part 2 ✅ How many did you find in the last one? 👇 More puzzles: QuizNado07 on YouTube 🔎"
+        out = os.path.join(out_dir, name + ".mp4")
+        tl.render(out, music_vol=0.07, vertical=True)
+        tiktok_caption(out_dir, name, cap, p.get("hashtags", ""))
+        print(f"tiktok: {out} ({tl.t:.0f} s)", flush=True)
+
+
 def build_short(p, pzs, out_dir, voice, si):
     s = p["shorts"][si]
     pz = pzs[s["puzzle"]]
@@ -453,5 +493,7 @@ if __name__ == "__main__":
     v = build.Voice(tts)
     if what in ("long", "all"):
         build_long(p, pzs, out_dir, v)
+    if what in ("tiktok", "all"):
+        build_tiktok(p, pzs, out_dir, v)
     if what in ("short", "shorts", "all"):
         build_teaser(p, pzs, out_dir, v)

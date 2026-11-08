@@ -1,4 +1,4 @@
-# QuizNado07 run — every 3 days: 1 "Easy to Impossible" video + 1 teaser Short + fiche
+# QuizNado07 run — every 3 days: 1 "Easy to Impossible" video + 1 teaser Short + 2 TikTok parts + fiche
 
 Run by the scheduled task every 3 days. Nobody is watching: do not ask questions. If one item
 fails, finish the others and say what failed at the end. The owner publishes **by hand** on YouTube
@@ -63,7 +63,8 @@ Look at the preview PNGs and the thumbnail (text fits, answers right, no rainbow
 ```
 python3 quizpack.py quizpacks/<slug>.json $OUT long   # makes the thumbnail too
 python3 quizpack.py quizpacks/<slug>.json $OUT short  # the teaser Short (uses the thumbnail)
-# spot: python3 spotdiff.py spotpacks/<slug>.json $OUT long  then  ... $OUT short
+python3 quizpack.py quizpacks/<slug>.json $OUT tiktok # TikTok Part 1 + Part 2 (+ caption .txt each)
+# spot: python3 spotdiff.py spotpacks/<slug>.json $OUT long  then  ... $OUT short  then  ... $OUT tiktok
 cd ../quiznado && python3 pack_tools.py fiche <slug> $OUT
 ```
 Check one frame of each video (`ffmpeg -ss 20 -i FILE -frames:v 1 check.png`, look at it), and the
@@ -71,7 +72,9 @@ last frame of the Short (the end card with the thumbnail).
 
 ## 4. Deliver
 SendUserFile (status proactive, display attach): `<slug>.mp4`, `<slug>_thumb.jpg`,
-`<slug>_short.mp4` and the fiche `.txt`. Then a short SendUserMessage +
+`<slug>_short.mp4`, the fiche `.txt`, and the TikTok files `<slug>_tiktok_part1.mp4`, `<slug>_tiktok_part1.txt`,
+`<slug>_tiktok_part2.mp4`, `<slug>_tiktok_part2.txt` (TikTok plan: Part 1 the same day as the long video, ~21:00;
+Part 2 the next day ~21:00, say it in the message). Then a short SendUserMessage +
 PushNotification: "QuizNado07 ready — long video today 18:00, Short 20:00!" with the 2 titles and the plan
 (long video today 18:00, the Short today 20:00; in YouTube Studio set the Short's
 "Related video" = the long video).

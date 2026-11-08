@@ -266,9 +266,58 @@ def make_teaser(out, seed, long_thumb, mode="after"):
     total = render(segs, g, out)
     print("teaser", mode, round(total, 1), "s; warm-ups", lvs[w1]["target"], lvs[w2]["target"], "; level", hi + 1, hard["target"], where(hard), flush=True)
 
+# ---------------- TikTok series (3 parts, 60-90 s, cliffhanger -> "Follow for Part N") ----------------
+# No YouTube talk inside parts 1-2 (TikTok wants people to follow on TikTok); part 3 ends on the full video.
+TT_PARTS = [  # (payoff level from the previous part or None, answered levels, cliffhanger level, think)
+    (None, [0, 2, 4, 7], 12, 6),
+    (12, [9, 14, 17], 23, 8),
+    (23, [19, 21], 22, 10),
+]
+def end_card(g, l1, l2, btn, voice, sub=None):
+    snd = []; d = say(snd, 0.1, voice) + 0.5
+    def draw(im, t):
+        txt(im, (g.W / 2, 760), l1, 96, YELLOW, 9)
+        txt(im, (g.W / 2, 880), l2, 64, WHITE, 6)
+        if sub: txt(im, (g.W / 2, 980), sub, 54, SOFT, 5)
+        dd = ImageDraw.Draw(im); pulse = 1 + 0.04 * math.sin(t * 6); w, h = 640 * pulse, 130 * pulse; y = 1180
+        dd.rounded_rectangle([g.W / 2 - w / 2, y - h / 2, g.W / 2 + w / 2, y + h / 2], radius=65, fill=(254, 44, 85))
+        dd.text((g.W / 2, y), btn, font=F(64), fill=WHITE, anchor="mm")
+    return Seg(max(3.5, d), draw, lambda t: ("e", int(t * 10) % 11), snd, "QuizNado07")
+
+def make_tiktok(outdir, prefix, seed):
+    lvs = build_levels(seed); N = len(lvs); res = []
+    for pi, (pay, ans, cliff, th) in enumerate(TT_PARTS, 1):
+        g = G(True); g.footer = "@QuizNado07 • Follow for more!" if pi < len(TT_PARTS) else "@QuizNado07"
+        chip = lambda i: f"PART {pi} • LEVEL {i + 1}"
+        segs = []
+        if pay is None:   # part 1 hook: the cliffhanger grid in the first frame
+            segs.append(level_seg(g, lvs[cliff], chip(cliff), think=1, reveal=False, instant=True, q_text="Can you find it?",
+                                  intro=f"Can you find {spoken(lvs[cliff]['target'])}? Warm up first!"))
+        else:             # payoff first: the answer they followed for
+            segs.append(level_seg(g, lvs[pay], f"PART {pi - 1} ANSWER", think=1, instant=True, hold=3.2, q_text="Did you find it?",
+                                  intro=f"Part {pi}! Did you find {spoken(lvs[pay]['target'])}?"))
+        for k, i in enumerate(ans):
+            segs.append(level_seg(g, lvs[i], chip(i), think=th, hold=2.4, intro=("Go!" if k == 0 else None)))
+        last = pi == len(TT_PARTS)
+        segs.append(level_seg(g, lvs[cliff], chip(cliff), think=th, reveal=False,
+                              q_text="Comment the row!" if last else "Last one. Find it!",
+                              intro=f"{'Final one' if last else 'Last one'}! Find {spoken(lvs[cliff]['target'])}!"))
+        if not last:
+            segs.append(end_card(g, f"Answer in PART {pi + 1}!", "Follow so you don't miss it", "+ FOLLOW",
+                                 f"The answer is in part {pi + 1}! Follow so you don't miss it!", "Comment where you think it is"))
+        else:
+            segs.append(end_card(g, "Comment the row!", "Full video: 24 levels", "+ FOLLOW",
+                                 "Comment the row! Want all 24 levels? Search QuizNado07 on YouTube. And follow for more!",
+                                 "Search QuizNado07 on YouTube"))
+        out = f"{outdir}/{prefix}_Part{pi}.mp4"; total = render(segs, g, out)
+        res.append((out, round(total, 1), lvs[cliff]["target"], where(lvs[cliff])))
+        print("tiktok part", pi, round(total, 1), "s; cliff", lvs[cliff]["target"], where(lvs[cliff]), flush=True)
+    return res
+
 if __name__ == "__main__":
     if sys.argv[1] == "long": make_long(sys.argv[2], sys.argv[3], int(sys.argv[4]))
     elif sys.argv[1] == "teaser": make_teaser(sys.argv[2], int(sys.argv[3]), sys.argv[4], sys.argv[5] if len(sys.argv) > 5 else "after")
+    elif sys.argv[1] == "tiktok": make_tiktok(sys.argv[2], sys.argv[3], int(sys.argv[4]))
     elif sys.argv[1] == "frames":
         o = sys.argv[2]; lvs = build_levels(11)
         for portrait in (False, True):

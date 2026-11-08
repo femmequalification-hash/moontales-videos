@@ -114,7 +114,7 @@ def background(g, chip):
     bg = gradient(g.W, g.H); d = ImageDraw.Draw(bg)
     if g.portrait:
         bg.alpha_composite(user_logo(200), ((g.W - 200) // 2, 145))
-        d.text((g.W // 2, g.H - 150), "@QuizNado07 • Subscribe for more!", font=F(32), fill=SOFT, anchor="mm")
+        d.text((g.W // 2, g.H - 150), getattr(g, "footer", "@QuizNado07 • Subscribe for more!"), font=F(32), fill=SOFT, anchor="mm")
     else:
         bg.alpha_composite(user_logo(120), (30, 18))
         d.text((g.W - 30, g.H - 25), "@QuizNado07", font=F(24), fill=SOFT, anchor="rm")

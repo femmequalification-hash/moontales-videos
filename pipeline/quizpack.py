@@ -375,6 +375,54 @@ def build_teaser(pack, out_dir, voice):
     print(f"short: {out} ({tl.t:.0f} s)", flush=True)
 
 
+# ---------------------------------------------------------------- TikTok series (2 parts, cliffhanger)
+def tiktok_caption(out_dir, name, text, hashtags):
+    tags = [h for h in hashtags.split() if h.startswith("#")][:3] + ["#quiz", "#QuizNado07"]
+    tags = list({t.lower(): t for t in reversed(tags)}.values())[::-1]
+    with open(os.path.join(out_dir, name + ".txt"), "w") as f:
+        f.write("TIKTOK CAPTION (copy-paste):\n" + text + "\n\n" + " ".join(tags) + "\n")
+
+
+def build_tiktok(pack, out_dir, voice):
+    """TikTok only: Part 1 ends on a question WITHOUT answer ('Answer in Part 2, follow!'),
+    Part 2 opens with that answer, then ends on another unanswered one ('comment + search QuizNado07 on YouTube')."""
+    p, nq, slug = pack.p, pack.nq, pack.slug
+    parts = [(None, [(0, 1), (1, 2), (2, 3)], (3, 5)), ((3, 5), [(1, 6), (2, 6), (3, 2)], (3, 6))]
+    for pi, (pay, answered, cliff) in enumerate(parts, 1):
+        name = f"{slug}_tiktok_part{pi}"
+        work = os.path.join(out_dir, "work_" + name); os.makedirs(work, exist_ok=True)
+        tl = Timeline(work, voice); qc = pack.q[cliff]
+        if pay is None:
+            d = tl.say(f"{p['header']}! Can you get them all? The last one is impossible!")
+            tl.show(frame(qc["key"], "ask", None, True, "Part 1", level=pill(3), note="Can you get them all?"), d + 0.2)
+        else:
+            d = tl.say("Part 2! Here is the answer from part 1!")
+            tl.show(frame(pack.q[pay]["key"], "reveal", None, True, "Part 1 answer", level=pill(pay[0])), d + 1.5)
+        n = len(answered) + 1
+        for i, k in enumerate(answered, 1):
+            ask_question(tl, pack.q[k], True, p["header"], i, n, pill(k[0]), None, pack.q[k]["spoken"])
+        foot = "Answer in PART 2!" if pi == 1 else "Comment your answer!"
+        d = tl.say(("Last one, the impossible one! " if pi == 1 else "Final one! ") + qc["spoken"])
+        tl.show(frame(qc["key"], "ask", None, True, p["header"], n, n, foot, level=pill(3)), d + 0.4)
+        for s_ in range(quiz.THINK, 0, -1):
+            tl.add_sound(quiz.TICK, tl.t)
+            tl.show(frame(qc["key"], "ask", s_, True, p["header"], n, n, foot, level=pill(3)), 1.0)
+        if pi == 1:
+            d = tl.say("The answer is in part 2! Follow so you don't miss it!")
+            tl.show(card("Answer in PART 2!", ["Comment your answer", "Follow so you", "don't miss it!", "!+ FOLLOW"],
+                         vertical=True, logo=True), d + 1.0)
+            cap = f"{p['header']} 🧠 Can you get them all? The last one is IMPOSSIBLE 😱 Answer in Part 2 👀 Follow!"
+        else:
+            d = tl.say(f"Comment your answer! Want all {nq} questions? Search QuizNado07 on YouTube. And follow for more!")
+            tl.show(card("Comment your answer!", [f"Want all {nq} questions?", "Search QuizNado07", "on YouTube",
+                                                  "!+ FOLLOW for more"], vertical=True, logo=True), d + 1.0)
+            cap = f"Part 2 ✅ Did you get the last one? 👇 Comment your answer! Full test ({nq} questions): QuizNado07 on YouTube 🔎"
+        out = os.path.join(out_dir, name + ".mp4")
+        tl.render(out, music_vol=0.07, vertical=True)
+        tiktok_caption(out_dir, name, cap, p.get("hashtags", ""))
+        print(f"tiktok: {out} ({tl.t:.0f} s)", flush=True)
+
+
 # ---------------------------------------------------------------- old 2-Short format (not used any more)
 def build_short(pack, out_dir, voice, si):
     p, nq = pack.p, pack.nq
@@ -437,5 +485,7 @@ if __name__ == "__main__":
     v = build.Voice(tts)
     if what in ("long", "all"):
         build_long(pack, out_dir, v)
+    if what in ("tiktok", "all"):
+        build_tiktok(pack, out_dir, v)
     if what in ("short", "shorts", "all"):
         build_teaser(pack, out_dir, v)
