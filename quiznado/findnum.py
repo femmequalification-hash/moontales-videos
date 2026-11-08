@@ -115,17 +115,36 @@ def progress(im, g, cur, N):
         else: d.ellipse([x - 8, y - 8, x + 8, y + 8], fill=(255, 255, 255, 70))
     e = emoji("🏆", 54 if cur == N - 1 else 44); im.alpha_composite(e, (int(x0 + (N - 1) * step - e.width / 2), int(y - e.height / 2)))
 
-def level_seg(g, lv, chip, *, think, intro=None, reveal=True, hold=4.0, q_text="Can you find it?", instant=False, prog=None):
+def badge_next(im, g, text):
+    """small top-right badge 'NEXT: 2922' + eyes: keeps the open loop alive during warm-ups"""
+    d = ImageDraw.Draw(im); f = F(40); w = d.textlength(text, font=f) + 120; x1, y0 = g.W - 30, 190
+    d.rounded_rectangle([x1 - w, y0, x1, y0 + 78], radius=39, fill=(254, 44, 85), outline=WHITE, width=4)
+    d.text((x1 - w + 30, y0 + 39), text, font=f, fill=WHITE, anchor="lm")
+    e = emoji("👀", 50); im.alpha_composite(e, (int(x1 - 75), int(y0 + 39 - e.height / 2)))
+
+def hook_banner(im, g, text, t, dur):
+    """big challenge banner over the grid for the first seconds"""
+    if t >= dur: return
+    a = min(1, (dur - t) / 0.25); sc = 1.0 if t < 0.05 else 0.92 + 0.08 * abs(math.sin(t * 5))
+    lay = Image.new("RGBA", im.size, (0, 0, 0, 0)); d = ImageDraw.Draw(lay); size = 84
+    while size > 40 and d.textlength(text, font=F(size)) + 90 > g.W - 50: size -= 2
+    f = F(int(size * sc)); w = d.textlength(text, font=f) + 90; cy = (g.box[1] + g.box[3]) / 2; h = 150 * sc
+    d.rounded_rectangle([g.W / 2 - w / 2, cy - h / 2, g.W / 2 + w / 2, cy + h / 2], radius=34, fill=(254, 44, 85), outline=WHITE, width=6)
+    d.text((g.W / 2, cy), text, font=f, fill=WHITE, anchor="mm")
+    lay.putalpha(lay.getchannel("A").point(lambda v: int(v * a))); im.alpha_composite(lay)
+
+def level_seg(g, lv, chip, *, think, intro=None, reveal=True, hold=4.0, q_text="Can you find it?", instant=False, prog=None,
+              badge=None, hook=None, hook_dur=2.4, min_intro=2.4, reveal_say=None):
     snd = []
     vd = say(snd, 0.2, intro or f"Find {spoken(lv['target'])}!")
     if not instant: snd.insert(0, (0.25, whoosh() * 0.6))
-    t_think = 0.0 if instant else max(2.4, vd + 0.4)
+    t_think = 0.0 if instant else max(min_intro, vd + 0.4)
     if instant: think = max(think, int(math.ceil(vd + 0.5)))
     for s in range(think): snd.append((t_think + s, tick() * (1.5 if s >= think - 3 else 1)))
     t_rev = t_think + think
     if reveal:
-        snd.append((t_rev, ding())); rv = say(snd, t_rev + 0.3, f"Here it is! {where(lv)}.")
-        total = t_rev + max(hold, rv + 1.0)
+        snd.append((t_rev, ding())); rv = say(snd, t_rev + 0.3, reveal_say or f"Here it is! {where(lv)}.")
+        total = t_rev + max(hold, rv + (0.5 if reveal_say else 1.0))
     else:
         total = t_rev; t_rev = 1e9
     def draw(im, t):
@@ -137,6 +156,8 @@ def level_seg(g, lv, chip, *, think, intro=None, reveal=True, hold=4.0, q_text="
             draw_grid(im, g, lv, reveal=(t - t_rev) / 0.3 if t >= t_rev else 0.0)
         find_label(im, g, lv)
         if prog: progress(im, g, *prog)
+        if badge: badge_next(im, g, badge)
+        if hook: hook_banner(im, g, hook, t, hook_dur)
         if t >= t_rev:
             txt(im, g.q_xy, "Here it is!", 64, YELLOW, 6)
         elif t >= t_think:
@@ -144,6 +165,7 @@ def level_seg(g, lv, chip, *, think, intro=None, reveal=True, hold=4.0, q_text="
             left = max(0.0, t_rev - t if reveal else total - t); bar(im, g, left / think, max(1, math.ceil(left)))
     def key(t):
         if t < 0.4 and not instant: return None
+        if hook and t < hook_dur: return None
         if t >= t_rev: return ("r", min(4, int((t - t_rev) / 0.1)))
         if t < t_think: return "a"
         return ("c", int((t - t_think) * 10))
@@ -268,50 +290,60 @@ def make_teaser(out, seed, long_thumb, mode="after"):
 
 # ---------------- TikTok series (3 parts, 60-90 s, cliffhanger -> "Follow for Part N") ----------------
 # No YouTube talk inside parts 1-2 (TikTok wants people to follow on TikTok); part 3 ends on the full video.
-TT_PARTS = [  # (payoff level from the previous part or None, answered levels, cliffhanger level, think)
-    (None, [0, 2, 4, 7], 12, 6),
-    (12, [9, 14, 17], 23, 8),
-    (23, [19, 21], 22, 10),
+TT_PARTS = [  # (payoff level from the previous part or None, warm-ups, cliffhanger level, think, hook banner)
+    (None, [4, 7, 9], 12, 5, "MOST PEOPLE MISS IT"),          # Part 1: 3 medium warm-ups -> 2922 (no answer)
+    (12, [14, 17, 19], 23, 6, "PART 2: IT GETS HARDER"),     # Part 2: answer 2922 -> 3 hard -> 1717 (no answer)
+    (23, [20, 21], 22, 7, "FINAL: HIDDEN ON A DIAGONAL"),   # Part 3: answer 1717 -> 2 expert -> 2292 (no answer)
 ]
-def end_card(g, l1, l2, btn, voice, sub=None):
+def end_card(g, l1, l2, btn, voice, sub=None, behind=None):
     snd = []; d = say(snd, 0.1, voice) + 0.5
+    bg = None
+    if behind is not None:   # the unanswered grid, blurred behind the text -> natural loop back to the start
+        from PIL import ImageFilter
+        lay = Image.new("RGBA", (g.W, g.H), (0, 0, 0, 0)); draw_grid(lay, g, behind)
+        bg = lay.filter(ImageFilter.GaussianBlur(9)); bg.putalpha(bg.getchannel("A").point(lambda v: int(v * .55)))
     def draw(im, t):
-        txt(im, (g.W / 2, 760), l1, 96, YELLOW, 9)
-        txt(im, (g.W / 2, 880), l2, 64, WHITE, 6)
-        if sub: txt(im, (g.W / 2, 980), sub, 54, SOFT, 5)
-        dd = ImageDraw.Draw(im); pulse = 1 + 0.04 * math.sin(t * 6); w, h = 640 * pulse, 130 * pulse; y = 1180
-        dd.rounded_rectangle([g.W / 2 - w / 2, y - h / 2, g.W / 2 + w / 2, y + h / 2], radius=65, fill=(254, 44, 85))
+        if bg is not None: im.alpha_composite(bg); find_label(im, g, behind)
+        txt(im, (g.W / 2, 940), l1, 96, YELLOW, 10)
+        txt(im, (g.W / 2, 1060), l2, 64, WHITE, 7)
+        if sub: txt(im, (g.W / 2, 1160), sub, 52, WHITE, 6)
+        dd = ImageDraw.Draw(im); pulse = 1 + 0.04 * math.sin(t * 6); w, h = 640 * pulse, 130 * pulse; y = 1340
+        dd.rounded_rectangle([g.W / 2 - w / 2, y - h / 2, g.W / 2 + w / 2, y + h / 2], radius=65, fill=(254, 44, 85), outline=WHITE, width=5)
         dd.text((g.W / 2, y), btn, font=F(64), fill=WHITE, anchor="mm")
     return Seg(max(3.5, d), draw, lambda t: ("e", int(t * 10) % 11), snd, "QuizNado07")
 
-def make_tiktok(outdir, prefix, seed):
+def make_tiktok(outdir, prefix, seed, only=None):
     lvs = build_levels(seed); N = len(lvs); res = []
-    for pi, (pay, ans, cliff, th) in enumerate(TT_PARTS, 1):
+    for pi, (pay, ans, cliff, th, hook) in enumerate(TT_PARTS, 1):
+        if only and pi not in only: continue
         g = G(True); g.footer = "@QuizNado07 • Follow for more!" if pi < len(TT_PARTS) else "@QuizNado07"
-        chip = lambda i: f"PART {pi} • LEVEL {i + 1}"
+        last = pi == len(TT_PARTS); tgt = lvs[cliff]["target"]; n = len(ans); badge = f"NEXT: {tgt}"
         segs = []
-        if pay is None:   # part 1 hook: the cliffhanger grid in the first frame
-            segs.append(level_seg(g, lvs[cliff], chip(cliff), think=1, reveal=False, instant=True, q_text="Can you find it?",
-                                  intro=f"Can you find {spoken(lvs[cliff]['target'])}? Warm up first!"))
-        else:             # payoff first: the answer they followed for
-            segs.append(level_seg(g, lvs[pay], f"PART {pi - 1} ANSWER", think=1, instant=True, hold=3.2, q_text="Did you find it?",
+        if pay is None:   # hook: the cliffhanger grid in the very first frame + big challenge banner
+            segs.append(level_seg(g, lvs[cliff], f"PART {pi} • THE BIG ONE", think=1, reveal=False, instant=True, q_text="Can you find it?",
+                                  hook=hook, hook_dur=2.6,
+                                  intro=f"Find {spoken(tgt)}! But first, {n} quick ones!"))
+        else:             # payoff first (the answer they followed for) + banner
+            segs.append(level_seg(g, lvs[pay], f"PART {pi - 1} ANSWER", think=1, instant=True, hold=2.0, q_text="Did you find it?",
+                                  hook=hook, hook_dur=2.2, reveal_say="There it is!",
                                   intro=f"Part {pi}! Did you find {spoken(lvs[pay]['target'])}?"))
         for k, i in enumerate(ans):
-            segs.append(level_seg(g, lvs[i], chip(i), think=th, hold=2.4, intro=("Go!" if k == 0 else None)))
-        last = pi == len(TT_PARTS)
-        segs.append(level_seg(g, lvs[cliff], chip(cliff), think=th, reveal=False,
-                              q_text="Comment the row!" if last else "Last one. Find it!",
-                              intro=f"{'Final one' if last else 'Last one'}! Find {spoken(lvs[cliff]['target'])}!"))
+            segs.append(level_seg(g, lvs[i], f"PART {pi} • WARM-UP {k + 1}/{n}", think=th, hold=1.6, min_intro=1.6,
+                                  badge=badge, reveal_say=("Yes!", "Got it?", "Nice!")[k % 3]))
+        segs.append(level_seg(g, lvs[cliff], f"PART {pi} • THE BIG ONE", think=th + 1, reveal=False, min_intro=1.8,
+                              q_text="Comment the row!" if last else "Find it! No answer here...",
+                              intro=f"{'Final one' if last else 'Now the big one'}! Find {spoken(tgt)}!"))
         if not last:
             segs.append(end_card(g, f"Answer in PART {pi + 1}!", "Follow so you don't miss it", "+ FOLLOW",
-                                 f"The answer is in part {pi + 1}! Follow so you don't miss it!", "Comment where you think it is"))
+                                 f"The answer is in part {pi + 1}! Follow so you don't miss it!", "Comment where you think it is",
+                                 behind=lvs[cliff]))
         else:
             segs.append(end_card(g, "Comment the row!", "Full video: 24 levels", "+ FOLLOW",
                                  "Comment the row! Want all 24 levels? Search QuizNado07 on YouTube. And follow for more!",
-                                 "Search QuizNado07 on YouTube"))
+                                 "Search QuizNado07 on YouTube", behind=lvs[cliff]))
         out = f"{outdir}/{prefix}_Part{pi}.mp4"; total = render(segs, g, out)
-        res.append((out, round(total, 1), lvs[cliff]["target"], where(lvs[cliff])))
-        print("tiktok part", pi, round(total, 1), "s; cliff", lvs[cliff]["target"], where(lvs[cliff]), flush=True)
+        res.append((out, round(total, 1), tgt, where(lvs[cliff])))
+        print("tiktok part", pi, round(total, 1), "s; warm-ups", [lvs[i]["target"] for i in ans], "; cliff", tgt, where(lvs[cliff]), flush=True)
     return res
 
 if __name__ == "__main__":

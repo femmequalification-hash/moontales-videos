@@ -420,8 +420,8 @@ def build_tiktok(p, pzs, out_dir, voice):
         work = os.path.join(out_dir, "work_" + name); os.makedirs(work, exist_ok=True)
         tl = Timeline(work, voice); pc = pzs[cliff]
         if pay is None:
-            d = tl.say("Can you find all five differences? The last one is the hardest!")
-            tl.show(sd_frame(pc, True, "Part 1", None, None, None, 0, "Can you find them all?"), d + 0.2)
+            d = tl.say("Most people miss one of these differences! But first, two quick ones!")
+            tl.show(sd_frame(pc, True, "Part 1 • The big one", None, None, None, 0, "MOST PEOPLE MISS ONE!"), d + 0.2)
         else:
             d = tl.say("Part 2! Here are the five differences from part 1!")
             tl.show(sd_frame(pzs[pay], True, "Part 1 answer", None, None, None, 5, "All 5 differences!"), d + 1.8)

@@ -393,8 +393,8 @@ def build_tiktok(pack, out_dir, voice):
         work = os.path.join(out_dir, "work_" + name); os.makedirs(work, exist_ok=True)
         tl = Timeline(work, voice); qc = pack.q[cliff]
         if pay is None:
-            d = tl.say(f"{p['header']}! Can you get them all? The last one is impossible!")
-            tl.show(frame(qc["key"], "ask", None, True, "Part 1", level=pill(3), note="Can you get them all?"), d + 0.2)
+            d = tl.say("Most people miss this one! But first, three quick ones!")
+            tl.show(frame(qc["key"], "ask", None, True, "Part 1 • The big one", level=pill(3), note="MOST PEOPLE MISS IT!"), d + 0.2)
         else:
             d = tl.say("Part 2! Here is the answer from part 1!")
             tl.show(frame(pack.q[pay]["key"], "reveal", None, True, "Part 1 answer", level=pill(pay[0])), d + 1.5)
