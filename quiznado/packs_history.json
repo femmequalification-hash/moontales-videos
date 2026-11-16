@@ -29,6 +29,11 @@
    "theme": "Memory Test",
    "slug": "memory-test-20-levels",
    "note": "made by hand in chat (memory.py long seed 7 + teaser Short posted at the same time)"
+  },
+  {
+   "date": "2026-11-16",
+   "theme": "Plurals Test",
+   "slug": "plurals-2-easy-impossible"
   }
  ]
 }

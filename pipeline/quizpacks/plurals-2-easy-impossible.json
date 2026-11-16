@@ -1,0 +1,412 @@
+{
+ "name": "Plurals Test 2",
+ "header": "Plurals",
+ "noun": "words",
+ "read_options": true,
+ "title": "Plurals Test 2: Easy to Impossible 🧠 32 New Words | Nobody Passes The Last One",
+ "about": "Do you know the plural of these 32 NEW English words? From easy to impossible — how far can you get?",
+ "thumb": {
+  "top": "PLURALS TEST 2",
+  "card": [
+   "One faux pas,",
+   "two...?"
+  ]
+ },
+ "ar": "اختبار الجمع في الإنجليزية 2 من السهل إلى المستحيل — 32 كلمة جديدة، إلى أين ستصل؟",
+ "fr": "Test des pluriels en anglais 2, du plus facile à l'impossible — 32 nouveaux mots, jusqu'où iras-tu ?",
+ "hashtags": "#Plurals #EnglishGrammar #EnglishQuiz #LearnEnglish",
+ "tags": [
+  "english plurals",
+  "irregular plurals",
+  "plural nouns",
+  "plurals test",
+  "english grammar quiz",
+  "english quiz",
+  "easy to impossible",
+  "QuizNado07",
+  "الجمع في الانجليزية",
+  "قواعد اللغة الانجليزية",
+  "اختبار انجليزي",
+  "تعلم الانجليزية",
+  "pluriel anglais",
+  "pluriels irréguliers",
+  "grammaire anglaise",
+  "quiz anglais"
+ ],
+ "levels": [
+  [
+   [
+    "One church, two...",
+    [
+     "churches",
+     "churchs",
+     "churchies"
+    ],
+    "churches",
+    "After CH, add -ES: churches.",
+    "One church, two...?"
+   ],
+   [
+    "One watch, two...",
+    [
+     "watchs",
+     "watches",
+     "watchies"
+    ],
+    "watches",
+    "After CH, add -ES: watches.",
+    "One watch, two...?"
+   ],
+   [
+    "One lady, two...",
+    [
+     "ladys",
+     "ladyes",
+     "ladies"
+    ],
+    "ladies",
+    "Consonant + Y: change Y to IES.",
+    "One lady, two...?"
+   ],
+   [
+    "One child, two...",
+    [
+     "children",
+     "childs",
+     "childrens"
+    ],
+    "children",
+    "Child becomes children!",
+    "One child, two...?"
+   ],
+   [
+    "One tooth, two...",
+    [
+     "tooths",
+     "teeth",
+     "teeths"
+    ],
+    "teeth",
+    "Tooth becomes teeth!",
+    "One tooth, two...?"
+   ],
+   [
+    "One woman, two...",
+    [
+     "womans",
+     "womens",
+     "women"
+    ],
+    "women",
+    "Woman becomes women!",
+    "One woman, two...?"
+   ],
+   [
+    "One photo, two...",
+    [
+     "photos",
+     "photoes",
+     "photies"
+    ],
+    "photos",
+    "Photo just adds -S: photos.",
+    "One photo, two...?"
+   ],
+   [
+    "One key, two...",
+    [
+     "keies",
+     "keys",
+     "kies"
+    ],
+    "keys",
+    "Vowel + Y: just add -S: keys.",
+    "One key, two...?"
+   ]
+  ],
+  [
+   [
+    "One potato, two...",
+    [
+     "potatos",
+     "potatoes",
+     "potatoe"
+    ],
+    "potatoes",
+    "Potato + ES = potatoes.",
+    "One potato, two...?"
+   ],
+   [
+    "One piano, two...",
+    [
+     "pianoes",
+     "pianos",
+     "pianies"
+    ],
+    "pianos",
+    "Piano just adds -S: pianos.",
+    "One piano, two...?"
+   ],
+   [
+    "One loaf, two...",
+    [
+     "loafs",
+     "loafes",
+     "loaves"
+    ],
+    "loaves",
+    "F becomes V: loaves.",
+    "One loaf, two...?"
+   ],
+   [
+    "One thief, two...",
+    [
+     "thieves",
+     "thiefs",
+     "thiefes"
+    ],
+    "thieves",
+    "F becomes V: thieves.",
+    "One thief, two...?"
+   ],
+   [
+    "One shelf, two...",
+    [
+     "shelfs",
+     "shelves",
+     "shelfes"
+    ],
+    "shelves",
+    "F becomes V: shelves.",
+    "One shelf, two...?"
+   ],
+   [
+    "One mouse (animal), two...",
+    [
+     "mouses",
+     "mices",
+     "mice"
+    ],
+    "mice",
+    "Mouse becomes mice!",
+    "One mouse, the animal, two...?"
+   ],
+   [
+    "One quiz, two...",
+    [
+     "quizzes",
+     "quizes",
+     "quizs"
+    ],
+    "quizzes",
+    "Double the Z, then add -ES.",
+    "One quiz, two...?"
+   ],
+   [
+    "One echo, two...",
+    [
+     "echos",
+     "echoes",
+     "echoies"
+    ],
+    "echoes",
+    "Echo + ES = echoes.",
+    "One echo, two...?"
+   ]
+  ],
+  [
+   [
+    "One hypothesis, two...",
+    [
+     "hypothesi",
+     "hypothesisses",
+     "hypotheses"
+    ],
+    "hypotheses",
+    "-IS becomes -ES: hypotheses.",
+    "One hypothesis, two...?"
+   ],
+   [
+    "One oasis, two...",
+    [
+     "oases",
+     "oasises",
+     "oasi"
+    ],
+    "oases",
+    "-IS becomes -ES: oases.",
+    "One oasis, two...?"
+   ],
+   [
+    "One diagnosis, two...",
+    [
+     "diagnosises",
+     "diagnoses",
+     "diagnosi"
+    ],
+    "diagnoses",
+    "-IS becomes -ES: diagnoses.",
+    "One diagnosis, two...?"
+   ],
+   [
+    "One parenthesis, two...",
+    [
+     "parenthesi",
+     "parenthesises",
+     "parentheses"
+    ],
+    "parentheses",
+    "-IS becomes -ES: parentheses.",
+    "One parenthesis, two...?"
+   ],
+   [
+    "One aircraft, two...",
+    [
+     "aircrafts",
+     "aircraft",
+     "aircraftes"
+    ],
+    "aircraft",
+    "Aircraft stays the same!",
+    "One aircraft, two...?"
+   ],
+   [
+    "One basis, two...",
+    [
+     "bases",
+     "basises",
+     "basi"
+    ],
+    "bases",
+    "-IS becomes -ES: bases.",
+    "One basis, two...?"
+   ],
+   [
+    "One louse (insect), two...",
+    [
+     "louses",
+     "lices",
+     "lice"
+    ],
+    "lice",
+    "Louse becomes lice, like mouse/mice.",
+    "One louse, the insect, two...?"
+   ],
+   [
+    "One sister-in-law, two...",
+    [
+     "sister-in-laws",
+     "sisters-in-law",
+     "sisters-in-laws"
+    ],
+    "sisters-in-law",
+    "The S goes on sister: sisters-in-law.",
+    "One sister-in-law, two...?"
+   ]
+  ],
+  [
+   [
+    "One ovum, two...",
+    [
+     "ova",
+     "ovums",
+     "ovi"
+    ],
+    "ova",
+    "Ovum becomes ova.",
+    "One ovum, two...?"
+   ],
+   [
+    "One alumna, two...",
+    [
+     "alumnas",
+     "alumnaes",
+     "alumnae"
+    ],
+    "alumnae",
+    "Alumna becomes alumnae.",
+    "One alumna, two...?"
+   ],
+   [
+    "One erratum, two...",
+    [
+     "erratums",
+     "errata",
+     "erratas"
+    ],
+    "errata",
+    "Erratum becomes errata.",
+    "One erratum, two...?"
+   ],
+   [
+    "One phylum, two...",
+    [
+     "phyla",
+     "phylums",
+     "phylas"
+    ],
+    "phyla",
+    "Phylum becomes phyla.",
+    "One phylum, two...?"
+   ],
+   [
+    "One man-of-war, two...",
+    [
+     "man-of-wars",
+     "men-of-wars",
+     "men-of-war"
+    ],
+    "men-of-war",
+    "Only man changes: men-of-war.",
+    "One man-of-war, two...?"
+   ],
+   [
+    "One corps, two...",
+    [
+     "corpses",
+     "corps",
+     "corpes"
+    ],
+    "corps",
+    "Corps stays the same! Corpses = dead bodies.",
+    "One corps, two...?"
+   ],
+   [
+    "One rendezvous, two...",
+    [
+     "rendezvouses",
+     "rendezvous",
+     "rendezvoux"
+    ],
+    "rendezvous",
+    "Rendezvous stays the same!",
+    "One rendezvous, two...?"
+   ],
+   [
+    "One faux pas, two...",
+    [
+     "faux pas",
+     "faux pases",
+     "fauxs pas"
+    ],
+    "faux pas",
+    "Faux pas stays the same!",
+    "One faux pas, two...?"
+   ]
+  ]
+ ],
+ "teaser": {
+  "picks": [
+   [
+    2,
+    4
+   ],
+   [
+    3,
+    5
+   ]
+  ],
+  "title": "Can You Beat The Last One? 🧠 Answer In The Full Video! #shorts"
+ },
+ "slug": "plurals-2-easy-impossible"
+}
