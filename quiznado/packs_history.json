@@ -34,6 +34,12 @@
    "date": "2026-11-16",
    "theme": "Plurals Test",
    "slug": "plurals-2-easy-impossible"
+  },
+  {
+   "date": "2026-11-19",
+   "theme": "Find The Odd Emoji",
+   "slug": "find-the-odd-emoji-30-levels",
+   "note": "made by hand in chat (oddemoji.py long seed 19 + same-time Short)"
   }
  ]
 }
