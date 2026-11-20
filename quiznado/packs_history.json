@@ -46,6 +46,12 @@
    "theme": "Count Fast",
    "slug": "count-fast-30-levels",
    "note": "made by hand in chat (countfast.py long seed 22 + same-time Short)"
+  },
+  {
+   "date": "2026-11-25",
+   "theme": "How Many Triangles & Squares",
+   "slug": "how-many-triangles-24-levels",
+   "note": "made by hand in chat (shapes.py long + same-time Short; counts by brute force)"
   }
  ]
 }
