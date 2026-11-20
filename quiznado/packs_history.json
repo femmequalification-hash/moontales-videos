@@ -40,6 +40,12 @@
    "theme": "Find The Odd Emoji",
    "slug": "find-the-odd-emoji-30-levels",
    "note": "made by hand in chat (oddemoji.py long seed 19 + same-time Short)"
+  },
+  {
+   "date": "2026-11-22",
+   "theme": "Count Fast",
+   "slug": "count-fast-30-levels",
+   "note": "made by hand in chat (countfast.py long seed 22 + same-time Short)"
   }
  ]
 }
